@@ -1,0 +1,613 @@
+2025-12-15 09:46:11,321-DEBUG-root-16164::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251215094611314.log'
+2025-12-15 09:46:11,321-INFO-root-16164::base::Start|1183:: TIR Version: 2.4.3
+2025-12-15 09:46:11,321-INFO-root-16164::base::Start|1184:: Python Version: 3.12.10
+2025-12-15 09:46:11,321-INFO-root-16164::base::Start|1185:: Starting the browser
+2025-12-15 09:46:18,898-INFO-root-16164::base::get_url|1294:: Page is ready!
+2025-12-15 09:46:18,901-INFO-root-16164::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-15 09:46:18,901-INFO-root-16164::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-15 09:46:18,962-INFO-root-16164::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-15 09:46:18,962-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 18.9%
+2025-12-15 09:46:18,963-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 92.6%
+2025-12-15 09:46:18,963-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 7.43%
+2025-12-15 09:46:18,971-INFO-root-16164::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-15 09:46:19,165-INFO-root-16164::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-15 09:46:19,165-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:46:19,579-DEBUG-root-16164::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:20,162-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:20,165-DEBUG-root-16164::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-15 09:46:21,041-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-15 09:46:21,041-INFO-root-16164::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-15 09:46:21,041-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:46:21,064-DEBUG-root-16164::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:21,229-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:21,232-DEBUG-root-16164::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-15 09:46:21,548-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-15 09:46:21,572-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:21,583-DEBUG-root-16164::webapp_internal::user_screen|519:: Filling user screen
+2025-12-15 09:46:28,531-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:28,589-DEBUG-root-16164::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-15 09:46:28,720-INFO-root-16164::webapp_internal::user_screen|561:: Filling User
+2025-12-15 09:46:28,745-DEBUG-root-16164::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-15 09:46:28,932-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-15 09:46:28,956-INFO-root-16164::webapp_internal::user_screen|621:: Filling Password
+2025-12-15 09:46:28,975-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:29,047-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: Deire20191817+
+2025-12-15 09:46:29,048-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:29,074-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:29,096-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:29,126-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:29,161-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:29,188-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:29,189-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:46:29,196-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:30,239-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:46:30,240-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 09:46:32,694-DEBUG-root-16164::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-15 09:46:32,739-INFO-root-16164::webapp_internal::filling_date|885:: Filling Date: "15/12/2025"
+2025-12-15 09:46:32,739-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:32,772-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:32,775-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:32,794-DEBUG-root-16164::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-15 09:46:32,888-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: 15/12/2025
+2025-12-15 09:46:33,969-INFO-root-16164::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-15 09:46:33,970-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:34,003-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:34,006-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:34,060-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-15 09:46:35,123-INFO-root-16164::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-15 09:46:35,123-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:35,156-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:35,160-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:35,212-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-15 09:46:36,326-INFO-root-16164::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-15 09:46:36,326-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:36,362-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:36,365-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:36,421-DEBUG-root-16164::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-15 09:46:37,429-DEBUG-root-16164::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-15 09:46:38,459-DEBUG-root-16164::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-15 09:46:39,562-INFO-root-16164::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-15 09:46:39,562-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:39,596-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 09:46:39,599-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:40,609-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:41,615-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:42,623-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:43,631-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:44,640-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:45,646-DEBUG-root-16164::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-15 09:46:45,699-DEBUG-root-16164::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-15 09:46:46,740-DEBUG-root-16164::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-15 09:46:46,740-DEBUG-root-16164::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-15 09:46:47,291-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:47,352-DEBUG-root-16164::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-15 09:46:48,398-DEBUG-root-16164::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-15 09:46:48,399-DEBUG-root-16164::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-15 09:46:48,495-INFO-root-16164::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-15 09:46:48,495-INFO-root-16164::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-15 09:46:48,504-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:46:48,541-DEBUG-root-16164::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:48,703-INFO-root-16164::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-15 09:46:48,703-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:48,791-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:49,121-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:49,396-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:49,457-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:51,730-INFO-root-16164::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-15 09:46:51,730-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:51,794-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:52,196-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:52,546-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:52,611-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:55,259-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:55,327-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:55,397-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:46:55,438-DEBUG-root-16164::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:55,607-INFO-root-16164::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-15 09:46:55,607-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:55,675-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:55,855-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:55,927-DEBUG-root-16164::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-15 09:46:55,928-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 8.2%
+2025-12-15 09:46:55,928-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.4%
+2025-12-15 09:46:55,928-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.61%
+2025-12-15 09:46:56,095-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:56,200-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:56,271-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:56,291-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:56,366-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:56,366-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:46:56,368-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:46:57,400-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:46:57,401-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 09:46:57,401-DEBUG-root-16164::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-15 09:46:57,401-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 6.6%
+2025-12-15 09:46:57,401-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.5%
+2025-12-15 09:46:57,403-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.48%
+2025-12-15 09:46:57,403-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:46:57,485-INFO-root-16164::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Gestao de Viagens > Solicitações
+2025-12-15 09:46:57,494-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:46:57,529-DEBUG-root-16164::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:57,691-INFO-root-16164::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-15 09:46:57,692-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:57,754-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:46:58,152-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:46:58,494-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:46:58,556-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:00,855-INFO-root-16164::webapp_internal::SetLateralMenu|4203:: Menu item: "Gestao de Viagens"
+2025-12-15 09:47:00,855-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:00,946-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:01,713-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:02,424-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:02,525-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:04,821-INFO-root-16164::webapp_internal::SetLateralMenu|4203:: Menu item: "Solicitações"
+2025-12-15 09:47:04,822-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:04,899-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:05,783-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:06,578-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:06,652-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:10,153-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:10,226-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:10,302-INFO-root-16164::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-15 09:47:16,245-INFO-root-16164::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-15 09:47:21,793-INFO-root-16164::webapp_internal::WaitShow|4980:: Waiting show text 'Solicitação de Viagens/Treinamento'...
+2025-12-15 09:47:21,847-INFO-root-16164::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-15 09:47:21,847-INFO-root-16164::webapp_internal::SetButton|4444:: Clicking on Filtrar
+2025-12-15 09:47:21,847-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:21,942-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:22,391-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:22,672-DEBUG-root-16164::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Filtrar
+2025-12-15 09:47:22,672-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 10.2%
+2025-12-15 09:47:22,672-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.2%
+2025-12-15 09:47:22,673-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.79%
+2025-12-15 09:47:23,043-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:23,365-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:23,462-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:23,492-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:23,590-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:23,590-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:47:23,593-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:47:24,629-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:47:24,629-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 09:47:24,629-DEBUG-root-16164::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-15 09:47:24,630-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 9.4%
+2025-12-15 09:47:24,630-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.3%
+2025-12-15 09:47:24,630-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.74%
+2025-12-15 09:47:24,831-INFO-root-16164::webapp_internal::ClickCheckBox|8826:: ClickCheckBox - Clicking on Solicitação em Aberto
+2025-12-15 09:47:24,831-DEBUG-root-16164::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 09:47:24,876-DEBUG-root-16164::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:25,122-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:25,274-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:25,312-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:25,444-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:25,444-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:47:25,461-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:47:26,511-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:47:26,511-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 09:47:26,675-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:26,810-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:26,883-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:27,021-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:27,022-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:47:27,034-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:47:28,081-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:47:28,093-DEBUG-root-16164::base::click|192:: Click Type: ClickType.SELENIUM
+2025-12-15 09:47:29,199-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:47:29,199-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 09:47:29,251-INFO-root-16164::webapp_internal::SetButton|4444:: Clicking on Aplicar filtros selecionados
+2025-12-15 09:47:29,251-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:29,388-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:29,728-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:29,949-DEBUG-root-16164::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Aplicar filtros selecionados
+2025-12-15 09:47:29,949-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 13.7%
+2025-12-15 09:47:29,949-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.1%
+2025-12-15 09:47:29,950-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.85%
+2025-12-15 09:47:30,263-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:30,543-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:30,664-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:30,696-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:30,832-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:30,832-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:47:30,839-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:47:31,876-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:47:31,876-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 09:47:31,878-DEBUG-root-16164::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-15 09:47:31,878-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 9.2%
+2025-12-15 09:47:31,878-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.1%
+2025-12-15 09:47:31,879-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.93%
+2025-12-15 09:47:32,779-INFO-root-16164::webapp_internal::SetButton|4444:: Clicking on Outras Ações
+2025-12-15 09:47:32,779-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:32,917-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:33,397-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:33,795-DEBUG-root-16164::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Outras Ações
+2025-12-15 09:47:33,795-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 16.3%
+2025-12-15 09:47:33,796-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 93.4%
+2025-12-15 09:47:33,796-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 6.55%
+2025-12-15 09:47:34,209-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:34,566-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:34,656-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:34,679-DEBUG-root-16164::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 09:47:34,773-DEBUG-root-16164::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 09:47:34,774-DEBUG-root-16164::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 09:47:34,776-DEBUG-root-16164::base::click|192:: Click Type: ClickType.JS
+2025-12-15 09:47:35,822-DEBUG-root-16164::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 09:47:35,822-DEBUG-root-16164::webapp_internal::send_action|10523:: send_action selenium status: True
+2025-12-15 09:47:35,955-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:35,997-INFO-root-16164::webapp_internal::SetButton|4588:: Clicking on Env_p/Aprovação
+2025-12-15 09:47:36,128-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:36,489-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:36,846-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:37,206-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:37,562-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:37,937-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:38,297-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:38,668-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:39,057-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:39,434-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:39,793-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:40,178-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:40,538-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:40,929-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:41,279-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:41,638-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:41,994-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:42,360-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:42,716-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:43,068-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:43,507-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:43,896-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:44,250-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:44,609-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:44,971-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:45,331-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:45,701-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:46,089-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:46,473-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:46,878-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:47,250-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:47,633-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:48,016-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:48,376-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:48,744-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:49,116-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:49,510-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:49,894-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:50,293-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:50,696-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:51,063-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:51,431-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:51,808-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:52,183-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:52,580-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:52,930-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:53,279-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:53,633-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:53,999-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:54,365-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:54,728-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:55,090-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:55,462-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:55,882-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:56,291-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:56,689-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:57,050-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:57,418-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:57,814-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:58,193-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:58,590-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:58,972-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:59,391-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:47:59,806-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:00,224-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:00,629-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:01,008-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:01,380-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:01,756-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:02,132-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:02,565-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:02,978-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:03,360-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:03,734-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:04,111-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:04,644-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:05,156-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:05,534-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:05,912-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:06,445-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:06,930-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:07,330-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:07,734-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:08,143-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:08,539-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:08,991-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:09,373-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:09,762-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:10,174-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:10,559-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:11,012-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:11,440-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:11,856-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:12,230-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:12,597-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:12,974-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:13,511-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:13,905-DEBUG-root-16164::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 09:48:15,243-ERROR-root-16164::webapp_internal::SetButton|4680:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4595, in SetButton
+    self.wait_element_timeout(term=".tmenupopupitem, wa-menu-popup", scrap_type=enum.ScrapType.CSS_SELECTOR, main_container="body", check_error=False)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7713, in wait_element_timeout
+    if self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4073, in element_exists
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:15,252-DEBUG-root-16164::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-15 09:48:15,252-DEBUG-root-16164::psutil_info::system_info|5:: CPU USAGE: 13.7%
+2025-12-15 09:48:15,253-DEBUG-root-16164::psutil_info::system_info|6:: MEMORY USAGE: 87.8%
+2025-12-15 09:48:15,254-DEBUG-root-16164::psutil_info::system_info|7:: MEMORY AVAILABLE: 12.2%
+2025-12-15 09:48:16,154-INFO-root-16164::webapp_internal::WaitShow|4980:: Waiting show text 'ZA1MAIL'...
+2025-12-15 09:48:16,157-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:16,662-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:17,166-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:17,670-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:18,173-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:18,676-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:19,180-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 09:48:19,683-ERROR-root-16164::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+

@@ -1,0 +1,13 @@
+{
+    "Url": "https://qasrverp:10020/webapp/",
+    "Browser": "Firefox",
+    "Environment": "POUPEX_TST",
+    "Language": "pt-br",
+    "User": "97137227104",
+    "Password": "Val20221080080094+",
+    "DebugLog": true,
+    "TimeOut": 120,
+    "Headless": false,
+    "POUILogin": true,
+    "ChromeDriverAutoInstall": true
+}

@@ -1,0 +1,167 @@
+2025-12-16 11:22:14,542-DEBUG-root-37568::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251216112214538.log'
+2025-12-16 11:22:14,543-INFO-root-37568::base::Start|1183:: TIR Version: 2.4.3
+2025-12-16 11:22:14,543-INFO-root-37568::base::Start|1184:: Python Version: 3.12.10
+2025-12-16 11:22:14,543-INFO-root-37568::base::Start|1185:: Starting the browser
+2025-12-16 11:22:21,656-INFO-root-37568::base::get_url|1294:: Page is ready!
+2025-12-16 11:22:21,721-INFO-root-37568::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-16 11:22:21,722-INFO-root-37568::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-16 11:22:21,870-INFO-root-37568::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-16 11:22:21,870-DEBUG-root-37568::psutil_info::system_info|5:: CPU USAGE: 18.7%
+2025-12-16 11:22:21,870-DEBUG-root-37568::psutil_info::system_info|6:: MEMORY USAGE: 87.7%
+2025-12-16 11:22:21,871-DEBUG-root-37568::psutil_info::system_info|7:: MEMORY AVAILABLE: 12.34%
+2025-12-16 11:22:21,886-INFO-root-37568::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-16 11:22:21,921-INFO-root-37568::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-16 11:22:21,921-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:22:21,996-DEBUG-root-37568::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:22,164-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:22,170-DEBUG-root-37568::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-16 11:22:22,888-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-16 11:22:22,889-INFO-root-37568::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-16 11:22:22,889-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:22:22,914-DEBUG-root-37568::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:23,093-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:23,098-DEBUG-root-37568::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-16 11:22:23,414-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-16 11:22:23,431-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:23,444-DEBUG-root-37568::webapp_internal::user_screen|519:: Filling user screen
+2025-12-16 11:22:29,363-DEBUG-root-37568::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-16 11:22:29,398-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:29,459-DEBUG-root-37568::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-16 11:22:29,595-INFO-root-37568::webapp_internal::user_screen|561:: Filling User
+2025-12-16 11:22:29,621-DEBUG-root-37568::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-16 11:22:29,804-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-16 11:22:29,826-INFO-root-37568::webapp_internal::user_screen|621:: Filling Password
+2025-12-16 11:22:29,848-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:29,917-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: Deire20191817+
+2025-12-16 11:22:29,917-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:29,946-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:29,968-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:29,995-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:30,028-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:30,055-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:30,055-DEBUG-root-37568::webapp_internal::send_action|10480:: Trying to send action
+2025-12-16 11:22:30,061-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:31,102-DEBUG-root-37568::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-16 11:22:31,102-DEBUG-root-37568::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-16 11:22:33,624-DEBUG-root-37568::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-16 11:22:33,675-INFO-root-37568::webapp_internal::filling_date|885:: Filling Date: "17/09/2025"
+2025-12-16 11:22:33,675-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:33,722-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:33,725-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:33,744-DEBUG-root-37568::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-16 11:22:33,810-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: 17/09/2025
+2025-12-16 11:22:34,892-INFO-root-37568::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-16 11:22:34,893-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:34,926-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:34,929-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:34,982-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-16 11:22:36,043-INFO-root-37568::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-16 11:22:36,043-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:36,074-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:36,079-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:36,132-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-16 11:22:37,210-INFO-root-37568::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-16 11:22:37,211-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:37,243-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:37,246-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:37,299-DEBUG-root-37568::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-16 11:22:38,308-DEBUG-root-37568::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-16 11:22:39,345-DEBUG-root-37568::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-16 11:22:40,450-INFO-root-37568::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-16 11:22:40,450-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:40,483-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:22:40,485-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:41,498-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:42,505-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:43,513-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:44,521-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:45,530-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:46,537-DEBUG-root-37568::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-16 11:22:46,583-DEBUG-root-37568::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-16 11:22:47,623-DEBUG-root-37568::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-16 11:22:47,623-DEBUG-root-37568::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-16 11:22:48,172-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:48,229-DEBUG-root-37568::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-16 11:22:49,276-DEBUG-root-37568::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-16 11:22:49,276-DEBUG-root-37568::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-16 11:22:49,388-INFO-root-37568::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-16 11:22:49,388-INFO-root-37568::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-16 11:22:49,414-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:22:49,456-DEBUG-root-37568::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:49,618-INFO-root-37568::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-16 11:22:49,618-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:49,684-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:50,022-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:50,321-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:50,395-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:52,682-INFO-root-37568::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-16 11:22:52,682-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:52,753-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:53,146-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:53,497-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:53,561-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:56,182-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:56,270-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:56,351-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:22:56,406-DEBUG-root-37568::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:56,581-INFO-root-37568::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-16 11:22:56,581-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:56,651-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:56,827-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:56,905-DEBUG-root-37568::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-16 11:22:56,906-DEBUG-root-37568::psutil_info::system_info|5:: CPU USAGE: 8.2%
+2025-12-16 11:22:56,906-DEBUG-root-37568::psutil_info::system_info|6:: MEMORY USAGE: 88.1%
+2025-12-16 11:22:56,907-DEBUG-root-37568::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.9%
+2025-12-16 11:22:57,070-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:57,169-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:57,238-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:57,256-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:57,328-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:57,328-DEBUG-root-37568::webapp_internal::send_action|10480:: Trying to send action
+2025-12-16 11:22:57,330-DEBUG-root-37568::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:22:58,361-DEBUG-root-37568::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-16 11:22:58,361-DEBUG-root-37568::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-16 11:22:58,361-DEBUG-root-37568::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-16 11:22:58,361-DEBUG-root-37568::psutil_info::system_info|5:: CPU USAGE: 6.4%
+2025-12-16 11:22:58,363-DEBUG-root-37568::psutil_info::system_info|6:: MEMORY USAGE: 88.2%
+2025-12-16 11:22:58,364-DEBUG-root-37568::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.76%
+2025-12-16 11:22:58,364-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:22:58,448-INFO-root-37568::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Miscelanea > Spool
+2025-12-16 11:22:58,457-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:22:58,494-DEBUG-root-37568::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:58,653-INFO-root-37568::webapp_internal::SetLateralMenu|4203:: Menu item: "Miscelanea"
+2025-12-16 11:22:58,653-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:58,718-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:22:59,106-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:22:59,456-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:22:59,526-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:23:01,827-INFO-root-37568::webapp_internal::SetLateralMenu|4203:: Menu item: "Spool"
+2025-12-16 11:23:01,827-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:23:01,928-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:23:03,178-DEBUG-root-37568::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:23:04,410-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:23:04,523-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:23:08,552-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:23:08,649-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:23:08,752-INFO-root-37568::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-16 11:23:14,327-DEBUG-root-37568::log::checks_empty_line|221:: Checking empty default log info
+2025-12-16 11:23:14,331-DEBUG-root-37568::log::generate_log|503:: Json log_data: {'cLogDtExec': '16/12/2025 11:23:14', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 1, 'nLogCtsNok': 0, 'nLogCtsSeg': 60.14, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': '', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251216', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'c0f977', 'nLogCtsTot': 1, 'cLogDtExea': '16/12/2025', 'cLogHrExea': '11:23:14', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 1.0023333333333333}
+2025-12-16 11:23:14,331-INFO-root-37568::log::send_log_with_retries|515:: Saving log locally.
+2025-12-16 11:23:14,331-INFO-root-37568::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-16 11:23:14,331-INFO-root-37568::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1765894994.json.
+2025-12-16 11:23:14,333-INFO-root-37568::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-16 11:23:19,961-DEBUG-root-37568::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:23:20,088-DEBUG-root-37568::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:23:20,089-DEBUG-root-37568::webapp_internal::wait_element|7623:: Waiting for element

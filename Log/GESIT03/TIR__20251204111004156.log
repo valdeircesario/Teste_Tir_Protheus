@@ -1,0 +1,1174 @@
+2025-12-04 11:10:04,161-DEBUG-root-36300::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251204111004156.log'
+2025-12-04 11:10:04,161-INFO-root-36300::base::Start|1183:: TIR Version: 2.4.3
+2025-12-04 11:10:04,161-INFO-root-36300::base::Start|1184:: Python Version: 3.12.10
+2025-12-04 11:10:04,161-INFO-root-36300::base::Start|1185:: Starting the browser
+2025-12-04 11:10:11,429-INFO-root-36300::base::get_url|1294:: Page is ready!
+2025-12-04 11:10:11,456-INFO-root-36300::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-04 11:10:11,457-INFO-root-36300::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-04 11:10:11,515-INFO-root-36300::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-04 11:10:11,515-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 20.3%
+2025-12-04 11:10:11,516-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 88.1%
+2025-12-04 11:10:11,516-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.87%
+2025-12-04 11:10:11,523-INFO-root-36300::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-04 11:10:11,550-INFO-root-36300::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-04 11:10:11,550-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:11,604-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:11,753-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:11,758-DEBUG-root-36300::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-04 11:10:12,084-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-04 11:10:12,084-INFO-root-36300::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-04 11:10:12,085-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:12,116-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:12,292-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:12,298-DEBUG-root-36300::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-04 11:10:12,616-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-04 11:10:12,640-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:12,651-DEBUG-root-36300::webapp_internal::user_screen|519:: Filling user screen
+2025-12-04 11:10:18,473-DEBUG-root-36300::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 11:10:18,513-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:18,583-DEBUG-root-36300::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 11:10:18,734-INFO-root-36300::webapp_internal::user_screen|561:: Filling User
+2025-12-04 11:10:18,770-DEBUG-root-36300::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 11:10:18,961-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-04 11:10:18,988-INFO-root-36300::webapp_internal::user_screen|621:: Filling Password
+2025-12-04 11:10:19,015-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:19,100-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-12-04 11:10:19,100-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:19,132-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:19,162-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:19,196-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:19,238-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:19,275-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:19,276-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:10:19,283-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:20,328-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:10:20,328-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:10:24,180-DEBUG-root-36300::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 11:10:24,242-INFO-root-36300::webapp_internal::filling_date|885:: Filling Date: "04/11/2025"
+2025-12-04 11:10:24,243-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:24,282-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:24,285-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:24,302-DEBUG-root-36300::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-04 11:10:24,396-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 04/11/2025
+2025-12-04 11:10:25,480-INFO-root-36300::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-04 11:10:25,480-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:25,512-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:25,515-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:25,568-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-04 11:10:26,630-INFO-root-36300::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-04 11:10:26,631-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:26,664-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:26,668-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:26,720-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-04 11:10:27,811-INFO-root-36300::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-04 11:10:27,811-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:27,844-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:27,847-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:27,899-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-04 11:10:28,909-DEBUG-root-36300::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 11:10:29,942-DEBUG-root-36300::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 11:10:31,040-INFO-root-36300::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-04 11:10:31,040-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:31,075-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:31,078-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:32,086-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:33,096-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:34,103-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:35,112-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:36,119-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:37,127-DEBUG-root-36300::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-04 11:10:37,172-DEBUG-root-36300::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 11:10:38,222-DEBUG-root-36300::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 11:10:38,222-DEBUG-root-36300::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 11:10:38,792-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:38,850-DEBUG-root-36300::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 11:10:39,900-DEBUG-root-36300::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 11:10:39,901-DEBUG-root-36300::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 11:10:40,014-INFO-root-36300::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-04 11:10:40,014-INFO-root-36300::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-04 11:10:40,022-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:40,062-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:40,243-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-04 11:10:40,243-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:40,312-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:40,673-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:40,957-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:41,026-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:43,318-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-04 11:10:43,318-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:43,407-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:43,860-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:44,297-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:44,385-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:47,029-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:47,098-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:47,214-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:47,282-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:47,476-INFO-root-36300::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-04 11:10:47,476-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:47,575-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:47,776-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:47,867-DEBUG-root-36300::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-04 11:10:47,868-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 10.3%
+2025-12-04 11:10:47,868-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 89.1%
+2025-12-04 11:10:47,870-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 10.94%
+2025-12-04 11:10:48,044-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:48,173-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:48,289-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:48,319-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:48,466-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:48,466-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:10:48,470-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:49,503-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:10:49,503-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:10:49,504-DEBUG-root-36300::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 11:10:49,504-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 7.1%
+2025-12-04 11:10:49,505-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 88.8%
+2025-12-04 11:10:49,505-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.22%
+2025-12-04 11:10:49,505-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:49,630-INFO-root-36300::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Especificos > Tipo de Convenio
+2025-12-04 11:10:49,644-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:49,706-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:49,898-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-04 11:10:49,898-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:49,989-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:50,517-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:51,029-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:51,114-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:53,416-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Especificos"
+2025-12-04 11:10:53,416-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:53,582-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:54,489-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:55,362-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:55,528-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:57,838-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Tipo de Convenio"
+2025-12-04 11:10:57,838-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:57,979-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:59,791-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:01,845-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:02,038-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:07,337-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:07,516-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:07,688-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-04 11:11:12,980-DEBUG-root-36300::log::checks_empty_line|221:: Checking empty default log info
+2025-12-04 11:11:12,982-DEBUG-root-36300::log::generate_log|503:: Json log_data: {'cLogDtExec': '04/12/2025 11:11:12', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 1, 'nLogCtsNok': 0, 'nLogCtsSeg': 68.94, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': '', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251204', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'e92e5a', 'nLogCtsTot': 1, 'cLogDtExea': '04/12/2025', 'cLogHrExea': '11:11:12', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 1.149}
+2025-12-04 11:11:12,984-INFO-root-36300::log::send_log_with_retries|515:: Saving log locally.
+2025-12-04 11:11:12,984-INFO-root-36300::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-04 11:11:12,987-INFO-root-36300::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1764857472.json.
+2025-12-04 11:11:12,989-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-04 11:11:18,139-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convênios'...
+2025-12-04 11:11:18,267-INFO-root-36300::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 11:11:18,267-INFO-root-36300::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-04 11:11:18,268-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:18,447-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:19,042-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:19,426-DEBUG-root-36300::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-04 11:11:19,428-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 13.6%
+2025-12-04 11:11:19,429-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 86.6%
+2025-12-04 11:11:19,429-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 13.39%
+2025-12-04 11:11:19,995-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:20,464-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:20,711-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:20,822-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:21,024-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:21,025-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:11:21,028-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:11:22,124-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:11:22,125-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:11:22,126-DEBUG-root-36300::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 11:11:22,127-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 16.6%
+2025-12-04 11:11:22,146-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 86.9%
+2025-12-04 11:11:22,148-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 13.08%
+2025-12-04 11:11:22,155-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convenios - INCLUIR'...
+2025-12-04 11:11:22,396-INFO-root-36300::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 11:11:22,397-DEBUG-root-36300::webapp_internal::SetFocus|6011:: Setting focus on element ZD_DESCONV.
+2025-12-04 11:11:22,726-DEBUG-root-36300::base::click|192:: Click Type: ClickType.SELENIUM
+2025-12-04 11:11:22,793-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:23,055-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:23,056-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:23,235-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:23,370-INFO-root-36300::webapp_internal::input_value|2941:: Looking for element: ZD_DESCONV
+2025-12-04 11:11:23,582-INFO-root-36300::webapp_internal::input_value|2951:: Element: ZD_DESCONV Found!
+2025-12-04 11:11:23,582-INFO-root-36300::webapp_internal::input_value|2953:: Filling element: ZD_DESCONV
+2025-12-04 11:11:23,625-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value:                                                             
+2025-12-04 11:11:23,677-DEBUG-root-36300::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 11:11:23,952-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:24,196-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:24,558-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: TESTE INCLUSAO 01                                           
+2025-12-04 11:11:24,559-INFO-root-36300::webapp_internal::input_value|3059:: Current field value: TESTE INCLUSAO 01
+2025-12-04 11:11:24,594-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:24,832-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:24,854-INFO-root-36300::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 11:11:24,855-DEBUG-root-36300::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 11:11:26,860-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:27,056-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:27,094-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:27,308-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:27,308-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:11:28,360-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:11:28,361-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:11:28,362-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:28,622-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:28,622-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:28,745-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:28,878-INFO-root-36300::webapp_internal::input_value|2941:: Looking for element: ZD_TPMOV
+2025-12-04 11:11:29,078-INFO-root-36300::webapp_internal::input_value|2951:: Element: ZD_TPMOV Found!
+2025-12-04 11:11:29,078-INFO-root-36300::webapp_internal::input_value|2953:: Filling element: ZD_TPMOV
+2025-12-04 11:11:30,277-INFO-root-36300::base::select_combo|871:: Selected value for combo is: 1 - Titular
+2025-12-04 11:11:30,347-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:30,530-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:30,530-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:30,641-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:30,729-INFO-root-36300::webapp_internal::input_value|2941:: Looking for element: ZD_TPALTSA
+2025-12-04 11:11:30,916-INFO-root-36300::webapp_internal::input_value|2951:: Element: ZD_TPALTSA Found!
+2025-12-04 11:11:30,917-INFO-root-36300::webapp_internal::input_value|2953:: Filling element: ZD_TPALTSA
+2025-12-04 11:11:30,946-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value:    
+2025-12-04 11:11:30,984-DEBUG-root-36300::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 11:11:31,243-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:31,457-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:31,786-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 003
+2025-12-04 11:11:31,787-INFO-root-36300::webapp_internal::input_value|3059:: Current field value: 003
+2025-12-04 11:11:31,798-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Histórico'...
+2025-12-04 11:11:34,039-INFO-root-36300::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 11:11:34,040-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:34,297-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:34,297-INFO-root-36300::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 11:11:34,298-DEBUG-root-36300::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 11:11:34,298-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:34,440-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:34,773-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:35,000-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:35,000-INFO-root-36300::webapp_internal::LoadGrid|6298:: Filling grid field: Data Inicio
+2025-12-04 11:11:35,000-DEBUG-root-36300::webapp_internal::fill_grid|6399:: Grid loading...
+2025-12-04 11:11:35,169-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:11:35,242-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:11:40,709-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:11:40,992-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:41,132-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:41,318-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:41,645-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 04/11/2025
+2025-12-04 11:11:41,944-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:42,088-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:47,446-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:47,576-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:47,601-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:47,750-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:47,750-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:11:48,788-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:11:48,788-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:11:48,789-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:48,915-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:48,915-INFO-root-36300::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 11:11:48,915-DEBUG-root-36300::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 11:11:48,915-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:48,989-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:49,226-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:49,359-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:49,360-INFO-root-36300::webapp_internal::LoadGrid|6298:: Filling grid field: Vlr Titular
+2025-12-04 11:11:49,360-DEBUG-root-36300::webapp_internal::fill_grid|6399:: Grid loading...
+2025-12-04 11:11:49,472-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:11:49,507-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:11:54,922-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:11:55,201-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:55,360-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:55,566-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:55,777-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:11:55,951-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:11:56,246-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:56,374-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:56,527-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:56,800-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:11:56,836-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:02,241-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:02,524-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:02,661-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:02,850-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:03,010-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:03,188-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:03,492-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:03,635-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:03,846-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:04,152-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:04,191-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:09,533-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:09,817-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:09,973-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:10,166-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:10,331-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:10,512-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:10,795-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:10,936-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:11,097-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:11,394-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:11,427-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:16,757-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:17,040-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:17,177-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:17,401-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:17,561-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:17,751-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:18,051-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:18,178-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:18,331-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:18,610-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:18,644-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:24,066-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:24,360-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:24,515-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:24,698-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:24,866-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:25,060-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:25,360-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:25,484-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:25,636-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:25,911-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:25,949-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:31,384-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:31,665-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:31,816-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:32,015-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:32,176-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:32,358-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:32,661-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:32,806-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:32,962-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:33,260-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:33,297-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:38,635-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:38,926-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:39,067-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:39,257-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:39,439-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:39,615-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:39,751-ERROR-root-36300::webapp_internal::fill_grid|6675:: fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6581, in fill_grid
+    ActionChains(self.driver).move_to_element(selenium_input()).send_keys(user_value).perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+2025-12-04 11:12:39,803-WARNING-root-36300::webapp_internal::log_error|8143:: Warning log_error fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+2025-12-04 11:12:39,803-DEBUG-root-36300::webapp_internal::log_error|8146:: ***System Info*** in log_error():
+2025-12-04 11:12:39,804-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 10.8%
+2025-12-04 11:12:39,806-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 86.7%
+2025-12-04 11:12:39,806-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 13.34%
+2025-12-04 11:12:39,867-ERROR-root-36300::webapp_internal::log_error|8181:: Warning Log Error Close Message: Failed to decode response from marionette
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6581, in fill_grid
+    ActionChains(self.driver).move_to_element(selenium_input()).send_keys(user_value).perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8179, in log_error
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+2025-12-04 11:12:39,869-ERROR-root-36300::webapp_internal::SetKey|5901:: False is not true : Convenio - fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6581, in fill_grid
+    ActionChains(self.driver).move_to_element(selenium_input()).send_keys(user_value).perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 5861, in SetKey
+    self.LoadGrid()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6301, in LoadGrid
+    self.fill_grid(field, x3_dictionaries, initial_layer, duplicate_fields)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6676, in fill_grid
+    self.log_error(f'fill grid error: {str(e)}')
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8206, in log_error
+    self.assertTrue(False, log_message)
+  File "C:\Users\97137227104\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 727, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true : Convenio - fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+2025-12-04 11:12:39,873-DEBUG-root-36300::webapp_internal::SetFocus|6011:: Setting focus on element ZD_DESCONV.
+2025-12-04 11:12:39,878-ERROR-root-36300::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-04 11:12:39,884-ERROR-root-36300::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-04 11:12:40,196-ERROR-root-36300::webapp_internal::TearDown|9654:: Warning tearDown Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 9652, in TearDown
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-04 11:10:04,161-DEBUG-root-36300::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251204111004156.log'
+2025-12-04 11:10:04,161-INFO-root-36300::base::Start|1183:: TIR Version: 2.4.3
+2025-12-04 11:10:04,161-INFO-root-36300::base::Start|1184:: Python Version: 3.12.10
+2025-12-04 11:10:04,161-INFO-root-36300::base::Start|1185:: Starting the browser
+2025-12-04 11:10:11,429-INFO-root-36300::base::get_url|1294:: Page is ready!
+2025-12-04 11:10:11,456-INFO-root-36300::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-04 11:10:11,457-INFO-root-36300::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-04 11:10:11,515-INFO-root-36300::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-04 11:10:11,515-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 20.3%
+2025-12-04 11:10:11,516-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 88.1%
+2025-12-04 11:10:11,516-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.87%
+2025-12-04 11:10:11,523-INFO-root-36300::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-04 11:10:11,550-INFO-root-36300::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-04 11:10:11,550-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:11,604-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:11,753-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:11,758-DEBUG-root-36300::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-04 11:10:12,084-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-04 11:10:12,084-INFO-root-36300::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-04 11:10:12,085-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:12,116-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:12,292-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:12,298-DEBUG-root-36300::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-04 11:10:12,616-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-04 11:10:12,640-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:12,651-DEBUG-root-36300::webapp_internal::user_screen|519:: Filling user screen
+2025-12-04 11:10:18,473-DEBUG-root-36300::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 11:10:18,513-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:18,583-DEBUG-root-36300::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 11:10:18,734-INFO-root-36300::webapp_internal::user_screen|561:: Filling User
+2025-12-04 11:10:18,770-DEBUG-root-36300::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 11:10:18,961-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-04 11:10:18,988-INFO-root-36300::webapp_internal::user_screen|621:: Filling Password
+2025-12-04 11:10:19,015-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:19,100-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-12-04 11:10:19,100-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:19,132-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:19,162-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:19,196-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:19,238-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:19,275-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:19,276-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:10:19,283-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:20,328-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:10:20,328-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:10:24,180-DEBUG-root-36300::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 11:10:24,242-INFO-root-36300::webapp_internal::filling_date|885:: Filling Date: "04/11/2025"
+2025-12-04 11:10:24,243-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:24,282-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:24,285-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:24,302-DEBUG-root-36300::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-04 11:10:24,396-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 04/11/2025
+2025-12-04 11:10:25,480-INFO-root-36300::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-04 11:10:25,480-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:25,512-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:25,515-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:25,568-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-04 11:10:26,630-INFO-root-36300::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-04 11:10:26,631-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:26,664-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:26,668-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:26,720-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-04 11:10:27,811-INFO-root-36300::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-04 11:10:27,811-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:27,844-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:27,847-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:27,899-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-04 11:10:28,909-DEBUG-root-36300::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 11:10:29,942-DEBUG-root-36300::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 11:10:31,040-INFO-root-36300::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-04 11:10:31,040-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:31,075-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 11:10:31,078-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:32,086-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:33,096-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:34,103-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:35,112-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:36,119-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:37,127-DEBUG-root-36300::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-04 11:10:37,172-DEBUG-root-36300::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 11:10:38,222-DEBUG-root-36300::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 11:10:38,222-DEBUG-root-36300::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 11:10:38,792-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:38,850-DEBUG-root-36300::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 11:10:39,900-DEBUG-root-36300::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 11:10:39,901-DEBUG-root-36300::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 11:10:40,014-INFO-root-36300::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-04 11:10:40,014-INFO-root-36300::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-04 11:10:40,022-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:40,062-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:40,243-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-04 11:10:40,243-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:40,312-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:40,673-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:40,957-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:41,026-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:43,318-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-04 11:10:43,318-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:43,407-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:43,860-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:44,297-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:44,385-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:47,029-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:47,098-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:47,214-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:47,282-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:47,476-INFO-root-36300::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-04 11:10:47,476-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:47,575-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:47,776-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:47,867-DEBUG-root-36300::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-04 11:10:47,868-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 10.3%
+2025-12-04 11:10:47,868-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 89.1%
+2025-12-04 11:10:47,870-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 10.94%
+2025-12-04 11:10:48,044-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:48,173-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:48,289-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:48,319-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:48,466-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:48,466-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:10:48,470-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:10:49,503-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:10:49,503-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:10:49,504-DEBUG-root-36300::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 11:10:49,504-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 7.1%
+2025-12-04 11:10:49,505-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 88.8%
+2025-12-04 11:10:49,505-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.22%
+2025-12-04 11:10:49,505-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:49,630-INFO-root-36300::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Especificos > Tipo de Convenio
+2025-12-04 11:10:49,644-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:10:49,706-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:49,898-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-04 11:10:49,898-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:49,989-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:50,517-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:51,029-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:51,114-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:53,416-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Especificos"
+2025-12-04 11:10:53,416-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:53,582-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:54,489-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:10:55,362-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:55,528-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:57,838-INFO-root-36300::webapp_internal::SetLateralMenu|4203:: Menu item: "Tipo de Convenio"
+2025-12-04 11:10:57,838-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:10:57,979-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:10:59,791-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:01,845-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:02,038-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:07,337-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:07,516-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:07,688-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-04 11:11:12,980-DEBUG-root-36300::log::checks_empty_line|221:: Checking empty default log info
+2025-12-04 11:11:12,982-DEBUG-root-36300::log::generate_log|503:: Json log_data: {'cLogDtExec': '04/12/2025 11:11:12', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 1, 'nLogCtsNok': 0, 'nLogCtsSeg': 68.94, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': '', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251204', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'e92e5a', 'nLogCtsTot': 1, 'cLogDtExea': '04/12/2025', 'cLogHrExea': '11:11:12', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 1.149}
+2025-12-04 11:11:12,984-INFO-root-36300::log::send_log_with_retries|515:: Saving log locally.
+2025-12-04 11:11:12,984-INFO-root-36300::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-04 11:11:12,987-INFO-root-36300::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1764857472.json.
+2025-12-04 11:11:12,989-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-04 11:11:18,139-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convênios'...
+2025-12-04 11:11:18,267-INFO-root-36300::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 11:11:18,267-INFO-root-36300::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-04 11:11:18,268-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:18,447-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:19,042-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:19,426-DEBUG-root-36300::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-04 11:11:19,428-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 13.6%
+2025-12-04 11:11:19,429-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 86.6%
+2025-12-04 11:11:19,429-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 13.39%
+2025-12-04 11:11:19,995-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:20,464-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:20,711-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:20,822-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:21,024-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:21,025-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:11:21,028-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:11:22,124-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:11:22,125-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:11:22,126-DEBUG-root-36300::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 11:11:22,127-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 16.6%
+2025-12-04 11:11:22,146-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 86.9%
+2025-12-04 11:11:22,148-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 13.08%
+2025-12-04 11:11:22,155-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convenios - INCLUIR'...
+2025-12-04 11:11:22,396-INFO-root-36300::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 11:11:22,397-DEBUG-root-36300::webapp_internal::SetFocus|6011:: Setting focus on element ZD_DESCONV.
+2025-12-04 11:11:22,726-DEBUG-root-36300::base::click|192:: Click Type: ClickType.SELENIUM
+2025-12-04 11:11:22,793-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:23,055-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:23,056-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:23,235-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:23,370-INFO-root-36300::webapp_internal::input_value|2941:: Looking for element: ZD_DESCONV
+2025-12-04 11:11:23,582-INFO-root-36300::webapp_internal::input_value|2951:: Element: ZD_DESCONV Found!
+2025-12-04 11:11:23,582-INFO-root-36300::webapp_internal::input_value|2953:: Filling element: ZD_DESCONV
+2025-12-04 11:11:23,625-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value:                                                             
+2025-12-04 11:11:23,677-DEBUG-root-36300::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 11:11:23,952-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:24,196-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:24,558-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: TESTE INCLUSAO 01                                           
+2025-12-04 11:11:24,559-INFO-root-36300::webapp_internal::input_value|3059:: Current field value: TESTE INCLUSAO 01
+2025-12-04 11:11:24,594-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:24,832-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:24,854-INFO-root-36300::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 11:11:24,855-DEBUG-root-36300::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 11:11:26,860-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:27,056-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:27,094-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:27,308-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:27,308-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:11:28,360-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:11:28,361-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:11:28,362-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:28,622-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:28,622-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:28,745-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:28,878-INFO-root-36300::webapp_internal::input_value|2941:: Looking for element: ZD_TPMOV
+2025-12-04 11:11:29,078-INFO-root-36300::webapp_internal::input_value|2951:: Element: ZD_TPMOV Found!
+2025-12-04 11:11:29,078-INFO-root-36300::webapp_internal::input_value|2953:: Filling element: ZD_TPMOV
+2025-12-04 11:11:30,277-INFO-root-36300::base::select_combo|871:: Selected value for combo is: 1 - Titular
+2025-12-04 11:11:30,347-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:30,530-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:30,530-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:30,641-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:30,729-INFO-root-36300::webapp_internal::input_value|2941:: Looking for element: ZD_TPALTSA
+2025-12-04 11:11:30,916-INFO-root-36300::webapp_internal::input_value|2951:: Element: ZD_TPALTSA Found!
+2025-12-04 11:11:30,917-INFO-root-36300::webapp_internal::input_value|2953:: Filling element: ZD_TPALTSA
+2025-12-04 11:11:30,946-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value:    
+2025-12-04 11:11:30,984-DEBUG-root-36300::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 11:11:31,243-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:31,457-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:31,786-DEBUG-root-36300::webapp_internal::get_web_value|3232:: Current value: 003
+2025-12-04 11:11:31,787-INFO-root-36300::webapp_internal::input_value|3059:: Current field value: 003
+2025-12-04 11:11:31,798-INFO-root-36300::webapp_internal::WaitShow|4980:: Waiting show text 'Histórico'...
+2025-12-04 11:11:34,039-INFO-root-36300::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 11:11:34,040-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:34,297-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:34,297-INFO-root-36300::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 11:11:34,298-DEBUG-root-36300::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 11:11:34,298-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:34,440-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:34,773-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:35,000-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:35,000-INFO-root-36300::webapp_internal::LoadGrid|6298:: Filling grid field: Data Inicio
+2025-12-04 11:11:35,000-DEBUG-root-36300::webapp_internal::fill_grid|6399:: Grid loading...
+2025-12-04 11:11:35,169-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:11:35,242-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:11:40,709-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:11:40,992-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:41,132-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:41,318-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:41,645-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 04/11/2025
+2025-12-04 11:11:41,944-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:42,088-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:47,446-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:47,576-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:47,601-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:47,750-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:47,750-DEBUG-root-36300::webapp_internal::send_action|10480:: Trying to send action
+2025-12-04 11:11:48,788-DEBUG-root-36300::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-04 11:11:48,788-DEBUG-root-36300::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-04 11:11:48,789-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:48,915-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:48,915-INFO-root-36300::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 11:11:48,915-DEBUG-root-36300::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 11:11:48,915-DEBUG-root-36300::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-04 11:11:48,989-DEBUG-root-36300::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:49,226-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:49,359-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:49,360-INFO-root-36300::webapp_internal::LoadGrid|6298:: Filling grid field: Vlr Titular
+2025-12-04 11:11:49,360-DEBUG-root-36300::webapp_internal::fill_grid|6399:: Grid loading...
+2025-12-04 11:11:49,472-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:11:49,507-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:11:54,922-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:11:55,201-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:55,360-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:55,566-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:55,777-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:11:55,951-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:11:56,246-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:11:56,374-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:11:56,527-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:11:56,800-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:11:56,836-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:02,241-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:02,524-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:02,661-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:02,850-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:03,010-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:03,188-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:03,492-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:03,635-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:03,846-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:04,152-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:04,191-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:09,533-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:09,817-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:09,973-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:10,166-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:10,331-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:10,512-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:10,795-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:10,936-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:11,097-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:11,394-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:11,427-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:16,757-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:17,040-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:17,177-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:17,401-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:17,561-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:17,751-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:18,051-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:18,178-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:18,331-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:18,610-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:18,644-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:24,066-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:24,360-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:24,515-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:24,698-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:24,866-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:25,060-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:25,360-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:25,484-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:25,636-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:25,911-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:25,949-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:31,384-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:31,665-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:31,816-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:32,015-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:32,176-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:32,358-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:32,661-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:32,806-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:32,962-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:33,260-DEBUG-root-36300::webapp_internal::fill_grid|6466:: Column found!
+2025-12-04 11:12:33,297-DEBUG-root-36300::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-04 11:12:38,635-DEBUG-root-36300::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-04 11:12:38,926-DEBUG-root-36300::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 11:12:39,067-DEBUG-root-36300::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 11:12:39,257-DEBUG-root-36300::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-04 11:12:39,439-DEBUG-root-36300::base::click|192:: Click Type: ClickType.JS
+2025-12-04 11:12:39,615-DEBUG-root-36300::webapp_internal::fill_grid|6577:: Sending keys: 256
+2025-12-04 11:12:39,751-ERROR-root-36300::webapp_internal::fill_grid|6675:: fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6581, in fill_grid
+    ActionChains(self.driver).move_to_element(selenium_input()).send_keys(user_value).perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+2025-12-04 11:12:39,803-WARNING-root-36300::webapp_internal::log_error|8143:: Warning log_error fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+2025-12-04 11:12:39,803-DEBUG-root-36300::webapp_internal::log_error|8146:: ***System Info*** in log_error():
+2025-12-04 11:12:39,804-DEBUG-root-36300::psutil_info::system_info|5:: CPU USAGE: 10.8%
+2025-12-04 11:12:39,806-DEBUG-root-36300::psutil_info::system_info|6:: MEMORY USAGE: 86.7%
+2025-12-04 11:12:39,806-DEBUG-root-36300::psutil_info::system_info|7:: MEMORY AVAILABLE: 13.34%
+2025-12-04 11:12:39,867-ERROR-root-36300::webapp_internal::log_error|8181:: Warning Log Error Close Message: Failed to decode response from marionette
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6581, in fill_grid
+    ActionChains(self.driver).move_to_element(selenium_input()).send_keys(user_value).perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8179, in log_error
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+2025-12-04 11:12:39,869-ERROR-root-36300::webapp_internal::SetKey|5901:: False is not true : Convenio - fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6581, in fill_grid
+    ActionChains(self.driver).move_to_element(selenium_input()).send_keys(user_value).perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 5861, in SetKey
+    self.LoadGrid()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6301, in LoadGrid
+    self.fill_grid(field, x3_dictionaries, initial_layer, duplicate_fields)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6676, in fill_grid
+    self.log_error(f'fill grid error: {str(e)}')
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8206, in log_error
+    self.assertTrue(False, log_message)
+  File "C:\Users\97137227104\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 727, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true : Convenio - fill grid error: Message: BrowsingContext does no longer exist
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:782:5
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:392:21
+dispatchEvent@chrome://remote/content/marionette/driver.sys.mjs:167:44
+pointerMove@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2563:11
+performPointerMoveStep@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1636:31
+dispatch/<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:1603:20
+moveOverTime/transitions<@chrome://remote/content/shared/webdriver/Actions.sys.mjs:2343:9
+ssi_onQuitApplicationGranted@resource:///modules/sessionstore/SessionStore.sys.mjs:2822:19
+ssi_observe@resource:///modules/sessionstore/SessionStore.sys.mjs:1543:14
+
+2025-12-04 11:12:39,873-DEBUG-root-36300::webapp_internal::SetFocus|6011:: Setting focus on element ZD_DESCONV.
+2025-12-04 11:12:39,878-ERROR-root-36300::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-04 11:12:39,884-ERROR-root-36300::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-04 11:12:40,196-ERROR-root-36300::webapp_internal::TearDown|9654:: Warning tearDown Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 9652, in TearDown
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+

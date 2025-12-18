@@ -1,0 +1,514 @@
+2025-12-04 07:40:28,164-DEBUG-root-41344::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251204074028158.log'
+2025-12-04 07:40:28,164-INFO-root-41344::base::Start|1183:: TIR Version: 2.4.3
+2025-12-04 07:40:28,164-INFO-root-41344::base::Start|1184:: Python Version: 3.12.10
+2025-12-04 07:40:28,164-INFO-root-41344::base::Start|1185:: Starting the browser
+2025-12-04 07:40:35,649-INFO-root-41344::base::get_url|1294:: Page is ready!
+2025-12-04 07:40:35,653-INFO-root-41344::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-04 07:40:35,653-INFO-root-41344::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-04 07:40:35,720-INFO-root-41344::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-04 07:40:35,721-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 20.0%
+2025-12-04 07:40:35,722-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.0%
+2025-12-04 07:40:35,722-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 10.05%
+2025-12-04 07:40:35,729-INFO-root-41344::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-04 07:40:35,757-INFO-root-41344::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-04 07:40:35,758-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:40:35,827-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:40:36,375-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:36,465-DEBUG-root-41344::webapp_internal::try_send_keys|7989:: Trying to send keys to element using technique 0
+2025-12-04 07:40:37,353-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-04 07:40:37,353-INFO-root-41344::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-04 07:40:37,354-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:40:37,380-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:40:37,548-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:37,553-DEBUG-root-41344::webapp_internal::try_send_keys|7989:: Trying to send keys to element using technique 0
+2025-12-04 07:40:37,865-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-04 07:40:37,886-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:37,896-DEBUG-root-41344::webapp_internal::user_screen|519:: Filling user screen
+2025-12-04 07:40:43,772-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:40:43,821-DEBUG-root-41344::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 07:40:43,970-INFO-root-41344::webapp_internal::user_screen|561:: Filling User
+2025-12-04 07:40:43,990-DEBUG-root-41344::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 07:40:44,162-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-04 07:40:44,193-INFO-root-41344::webapp_internal::user_screen|621:: Filling Password
+2025-12-04 07:40:44,217-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:44,283-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-12-04 07:40:44,283-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:44,311-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:44,330-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:44,355-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:44,391-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:44,417-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:44,417-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:40:44,423-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:45,469-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:40:45,469-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:40:47,836-DEBUG-root-41344::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 07:40:47,892-INFO-root-41344::webapp_internal::filling_date|885:: Filling Date: "04/11/2025"
+2025-12-04 07:40:47,892-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:47,933-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:47,935-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:47,956-DEBUG-root-41344::webapp_internal::try_send_keys|7989:: Trying to send keys to element using technique 1
+2025-12-04 07:40:48,033-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 04/11/2025
+2025-12-04 07:40:49,121-INFO-root-41344::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-04 07:40:49,121-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:49,156-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:49,159-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:49,210-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-04 07:40:50,282-INFO-root-41344::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-04 07:40:50,282-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:50,317-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:50,320-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:50,359-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-04 07:40:51,479-INFO-root-41344::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-04 07:40:51,479-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:51,522-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:51,526-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:51,591-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-04 07:40:52,606-DEBUG-root-41344::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 07:40:53,643-DEBUG-root-41344::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 07:40:54,752-INFO-root-41344::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-04 07:40:54,753-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:54,785-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:54,788-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:55,798-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:56,807-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:57,816-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:58,823-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:59,830-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:00,839-DEBUG-root-41344::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-04 07:41:00,888-DEBUG-root-41344::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 07:41:01,936-DEBUG-root-41344::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 07:41:01,936-DEBUG-root-41344::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 07:41:02,507-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:02,578-DEBUG-root-41344::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 07:41:03,645-DEBUG-root-41344::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 07:41:03,645-DEBUG-root-41344::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 07:41:03,765-INFO-root-41344::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-04 07:41:03,766-INFO-root-41344::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-04 07:41:03,775-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:03,817-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:03,980-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-04 07:41:03,981-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:04,044-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:04,406-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:04,747-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:04,814-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:07,111-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-04 07:41:07,112-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:07,180-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:07,585-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:07,947-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:08,014-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:10,643-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:10,714-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:10,809-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:10,857-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:11,030-INFO-root-41344::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-04 07:41:11,031-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:11,103-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:11,287-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:11,370-DEBUG-root-41344::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-04 07:41:11,371-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 10.0%
+2025-12-04 07:41:11,372-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 89.8%
+2025-12-04 07:41:11,372-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 10.24%
+2025-12-04 07:41:11,549-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:11,654-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:11,727-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:11,753-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:11,854-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:11,855-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:41:11,858-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:12,890-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:41:12,890-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:41:12,891-DEBUG-root-41344::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 07:41:12,891-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 13.9%
+2025-12-04 07:41:12,891-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.0%
+2025-12-04 07:41:12,892-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.95%
+2025-12-04 07:41:12,892-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:12,979-INFO-root-41344::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Especificos > Tipo de Convenio
+2025-12-04 07:41:12,989-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:13,028-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:13,187-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-04 07:41:13,187-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:13,253-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:13,663-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:14,024-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:14,086-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:16,390-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Especificos"
+2025-12-04 07:41:16,390-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:16,518-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:17,440-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:18,222-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:18,315-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:20,612-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Tipo de Convenio"
+2025-12-04 07:41:20,612-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:20,723-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:22,487-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:24,195-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:24,341-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:28,865-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:28,996-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:29,107-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-04 07:41:34,456-DEBUG-root-41344::log::checks_empty_line|221:: Checking empty default log info
+2025-12-04 07:41:34,458-DEBUG-root-41344::log::generate_log|503:: Json log_data: {'cLogDtExec': '04/12/2025 07:41:34', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 1, 'nLogCtsNok': 0, 'nLogCtsSeg': 66.42, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': '', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251204', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'bd923e', 'nLogCtsTot': 1, 'cLogDtExea': '04/12/2025', 'cLogHrExea': '07:41:34', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 1.107}
+2025-12-04 07:41:34,458-INFO-root-41344::log::send_log_with_retries|515:: Saving log locally.
+2025-12-04 07:41:34,458-INFO-root-41344::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-04 07:41:34,459-INFO-root-41344::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1764844894.json.
+2025-12-04 07:41:34,460-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-04 07:41:39,712-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convênios'...
+2025-12-04 07:41:39,778-INFO-root-41344::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 07:41:39,779-INFO-root-41344::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-04 07:41:39,779-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:39,891-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:40,321-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:40,585-DEBUG-root-41344::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-04 07:41:40,586-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 12.3%
+2025-12-04 07:41:40,586-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.1%
+2025-12-04 07:41:40,587-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.92%
+2025-12-04 07:41:40,947-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:41,269-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:41,373-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:41,404-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:41,511-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:41,512-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:41:41,516-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:42,569-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:41:42,569-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:41:42,570-DEBUG-root-41344::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 07:41:42,570-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 7.4%
+2025-12-04 07:41:42,570-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.2%
+2025-12-04 07:41:42,571-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.78%
+2025-12-04 07:41:42,571-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convenios - INCLUIR'...
+2025-12-04 07:41:42,702-INFO-root-41344::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 07:41:42,702-DEBUG-root-41344::webapp_internal::SetFocus|6011:: Setting focus on element ZD_DESCONV.
+2025-12-04 07:41:42,870-DEBUG-root-41344::base::click|192:: Click Type: ClickType.SELENIUM
+2025-12-04 07:41:42,932-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:43,072-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:43,072-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:43,145-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:43,218-INFO-root-41344::webapp_internal::input_value|2941:: Looking for element: ZD_DESCONV
+2025-12-04 07:41:43,328-INFO-root-41344::webapp_internal::input_value|2951:: Element: ZD_DESCONV Found!
+2025-12-04 07:41:43,328-INFO-root-41344::webapp_internal::input_value|2953:: Filling element: ZD_DESCONV
+2025-12-04 07:41:43,353-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value:                                                             
+2025-12-04 07:41:43,388-DEBUG-root-41344::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 07:41:43,636-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:43,757-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:44,085-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: TESTE INCLUSAO 01                                           
+2025-12-04 07:41:44,085-INFO-root-41344::webapp_internal::input_value|3059:: Current field value: TESTE INCLUSAO 01
+2025-12-04 07:41:44,108-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:44,238-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:44,238-INFO-root-41344::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 07:41:44,238-DEBUG-root-41344::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 07:41:46,242-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:46,392-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:46,417-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:46,576-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:46,576-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:41:47,617-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:41:47,617-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:41:47,617-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:47,745-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:47,745-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:47,823-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:47,885-INFO-root-41344::webapp_internal::input_value|2941:: Looking for element: ZD_TPMOV
+2025-12-04 07:41:47,994-INFO-root-41344::webapp_internal::input_value|2951:: Element: ZD_TPMOV Found!
+2025-12-04 07:41:47,994-INFO-root-41344::webapp_internal::input_value|2953:: Filling element: ZD_TPMOV
+2025-12-04 07:41:49,193-INFO-root-41344::base::select_combo|871:: Selected value for combo is: 1 - Titular
+2025-12-04 07:41:49,241-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:49,363-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:49,364-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:49,439-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:49,499-INFO-root-41344::webapp_internal::input_value|2941:: Looking for element: ZD_TPALTSA
+2025-12-04 07:41:49,607-INFO-root-41344::webapp_internal::input_value|2951:: Element: ZD_TPALTSA Found!
+2025-12-04 07:41:49,607-INFO-root-41344::webapp_internal::input_value|2953:: Filling element: ZD_TPALTSA
+2025-12-04 07:41:49,634-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value:    
+2025-12-04 07:41:49,668-DEBUG-root-41344::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 07:41:49,929-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:50,060-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:50,377-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 003
+2025-12-04 07:41:50,379-INFO-root-41344::webapp_internal::input_value|3059:: Current field value: 003
+2025-12-04 07:41:50,390-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Histórico'...
+2025-12-04 07:41:52,152-INFO-root-41344::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 07:41:52,152-DEBUG-root-41344::webapp_internal::SetFocus|6011:: Setting focus on element Vlr Dependen.
+2025-12-04 07:43:52,552-WARNING-root-41344::webapp_internal::log_error|8156:: Warning log_error Label: 'vlr dependen'' wasn't found.
+2025-12-04 07:43:52,552-DEBUG-root-41344::webapp_internal::log_error|8159:: ***System Info*** in log_error():
+2025-12-04 07:43:52,554-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 14.8%
+2025-12-04 07:43:52,554-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 91.2%
+2025-12-04 07:43:52,554-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 8.77%
+2025-12-04 07:43:54,028-ERROR-root-41344::webapp_internal::TearDown|9667:: Warning tearDown Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 9665, in TearDown
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-04 07:40:28,164-DEBUG-root-41344::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251204074028158.log'
+2025-12-04 07:40:28,164-INFO-root-41344::base::Start|1183:: TIR Version: 2.4.3
+2025-12-04 07:40:28,164-INFO-root-41344::base::Start|1184:: Python Version: 3.12.10
+2025-12-04 07:40:28,164-INFO-root-41344::base::Start|1185:: Starting the browser
+2025-12-04 07:40:35,649-INFO-root-41344::base::get_url|1294:: Page is ready!
+2025-12-04 07:40:35,653-INFO-root-41344::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-04 07:40:35,653-INFO-root-41344::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-04 07:40:35,720-INFO-root-41344::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-04 07:40:35,721-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 20.0%
+2025-12-04 07:40:35,722-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.0%
+2025-12-04 07:40:35,722-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 10.05%
+2025-12-04 07:40:35,729-INFO-root-41344::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-04 07:40:35,757-INFO-root-41344::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-04 07:40:35,758-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:40:35,827-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:40:36,375-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:36,465-DEBUG-root-41344::webapp_internal::try_send_keys|7989:: Trying to send keys to element using technique 0
+2025-12-04 07:40:37,353-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-04 07:40:37,353-INFO-root-41344::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-04 07:40:37,354-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:40:37,380-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:40:37,548-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:37,553-DEBUG-root-41344::webapp_internal::try_send_keys|7989:: Trying to send keys to element using technique 0
+2025-12-04 07:40:37,865-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-04 07:40:37,886-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:37,896-DEBUG-root-41344::webapp_internal::user_screen|519:: Filling user screen
+2025-12-04 07:40:43,772-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:40:43,821-DEBUG-root-41344::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 07:40:43,970-INFO-root-41344::webapp_internal::user_screen|561:: Filling User
+2025-12-04 07:40:43,990-DEBUG-root-41344::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 07:40:44,162-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-04 07:40:44,193-INFO-root-41344::webapp_internal::user_screen|621:: Filling Password
+2025-12-04 07:40:44,217-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:44,283-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-12-04 07:40:44,283-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:44,311-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:44,330-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:44,355-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:44,391-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:44,417-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:44,417-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:40:44,423-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:45,469-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:40:45,469-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:40:47,836-DEBUG-root-41344::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-04 07:40:47,892-INFO-root-41344::webapp_internal::filling_date|885:: Filling Date: "04/11/2025"
+2025-12-04 07:40:47,892-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:47,933-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:47,935-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:47,956-DEBUG-root-41344::webapp_internal::try_send_keys|7989:: Trying to send keys to element using technique 1
+2025-12-04 07:40:48,033-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 04/11/2025
+2025-12-04 07:40:49,121-INFO-root-41344::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-04 07:40:49,121-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:49,156-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:49,159-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:49,210-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-04 07:40:50,282-INFO-root-41344::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-04 07:40:50,282-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:50,317-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:50,320-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:50,359-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-04 07:40:51,479-INFO-root-41344::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-04 07:40:51,479-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:51,522-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:51,526-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:51,591-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-04 07:40:52,606-DEBUG-root-41344::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 07:40:53,643-DEBUG-root-41344::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 07:40:54,752-INFO-root-41344::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-04 07:40:54,753-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:40:54,785-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-04 07:40:54,788-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:55,798-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:56,807-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:57,816-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:58,823-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:40:59,830-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:00,839-DEBUG-root-41344::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-04 07:41:00,888-DEBUG-root-41344::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 07:41:01,936-DEBUG-root-41344::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 07:41:01,936-DEBUG-root-41344::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 07:41:02,507-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:02,578-DEBUG-root-41344::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-04 07:41:03,645-DEBUG-root-41344::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-04 07:41:03,645-DEBUG-root-41344::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-04 07:41:03,765-INFO-root-41344::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-04 07:41:03,766-INFO-root-41344::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-04 07:41:03,775-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:03,817-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:03,980-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-04 07:41:03,981-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:04,044-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:04,406-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:04,747-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:04,814-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:07,111-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-04 07:41:07,112-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:07,180-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:07,585-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:07,947-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:08,014-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:10,643-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:10,714-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:10,809-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:10,857-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:11,030-INFO-root-41344::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-04 07:41:11,031-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:11,103-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:11,287-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:11,370-DEBUG-root-41344::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-04 07:41:11,371-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 10.0%
+2025-12-04 07:41:11,372-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 89.8%
+2025-12-04 07:41:11,372-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 10.24%
+2025-12-04 07:41:11,549-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:11,654-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:11,727-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:11,753-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:11,854-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:11,855-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:41:11,858-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:12,890-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:41:12,890-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:41:12,891-DEBUG-root-41344::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 07:41:12,891-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 13.9%
+2025-12-04 07:41:12,891-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.0%
+2025-12-04 07:41:12,892-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.95%
+2025-12-04 07:41:12,892-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:12,979-INFO-root-41344::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Especificos > Tipo de Convenio
+2025-12-04 07:41:12,989-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:13,028-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:13,187-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-04 07:41:13,187-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:13,253-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:13,663-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:14,024-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:14,086-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:16,390-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Especificos"
+2025-12-04 07:41:16,390-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:16,518-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:17,440-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:18,222-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:18,315-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:20,612-INFO-root-41344::webapp_internal::SetLateralMenu|4203:: Menu item: "Tipo de Convenio"
+2025-12-04 07:41:20,612-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:20,723-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:22,487-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:24,195-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:24,341-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:28,865-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:28,996-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:29,107-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-04 07:41:34,456-DEBUG-root-41344::log::checks_empty_line|221:: Checking empty default log info
+2025-12-04 07:41:34,458-DEBUG-root-41344::log::generate_log|503:: Json log_data: {'cLogDtExec': '04/12/2025 07:41:34', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 1, 'nLogCtsNok': 0, 'nLogCtsSeg': 66.42, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': '', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251204', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'bd923e', 'nLogCtsTot': 1, 'cLogDtExea': '04/12/2025', 'cLogHrExea': '07:41:34', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 1.107}
+2025-12-04 07:41:34,458-INFO-root-41344::log::send_log_with_retries|515:: Saving log locally.
+2025-12-04 07:41:34,458-INFO-root-41344::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-04 07:41:34,459-INFO-root-41344::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1764844894.json.
+2025-12-04 07:41:34,460-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-04 07:41:39,712-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convênios'...
+2025-12-04 07:41:39,778-INFO-root-41344::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 07:41:39,779-INFO-root-41344::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-04 07:41:39,779-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:39,891-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:40,321-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:40,585-DEBUG-root-41344::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-04 07:41:40,586-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 12.3%
+2025-12-04 07:41:40,586-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.1%
+2025-12-04 07:41:40,587-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.92%
+2025-12-04 07:41:40,947-DEBUG-root-41344::webapp_internal::wait_element_timeout|7739:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:41,269-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:41,373-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:41,404-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:41,511-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:41,512-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:41:41,516-DEBUG-root-41344::base::click|192:: Click Type: ClickType.JS
+2025-12-04 07:41:42,569-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:41:42,569-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:41:42,570-DEBUG-root-41344::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-04 07:41:42,570-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 7.4%
+2025-12-04 07:41:42,570-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 90.2%
+2025-12-04 07:41:42,571-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.78%
+2025-12-04 07:41:42,571-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Tipos de Convenios - INCLUIR'...
+2025-12-04 07:41:42,702-INFO-root-41344::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 07:41:42,702-DEBUG-root-41344::webapp_internal::SetFocus|6011:: Setting focus on element ZD_DESCONV.
+2025-12-04 07:41:42,870-DEBUG-root-41344::base::click|192:: Click Type: ClickType.SELENIUM
+2025-12-04 07:41:42,932-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:43,072-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:43,072-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:43,145-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:43,218-INFO-root-41344::webapp_internal::input_value|2941:: Looking for element: ZD_DESCONV
+2025-12-04 07:41:43,328-INFO-root-41344::webapp_internal::input_value|2951:: Element: ZD_DESCONV Found!
+2025-12-04 07:41:43,328-INFO-root-41344::webapp_internal::input_value|2953:: Filling element: ZD_DESCONV
+2025-12-04 07:41:43,353-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value:                                                             
+2025-12-04 07:41:43,388-DEBUG-root-41344::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 07:41:43,636-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:43,757-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:44,085-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: TESTE INCLUSAO 01                                           
+2025-12-04 07:41:44,085-INFO-root-41344::webapp_internal::input_value|3059:: Current field value: TESTE INCLUSAO 01
+2025-12-04 07:41:44,108-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:44,238-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:44,238-INFO-root-41344::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-04 07:41:44,238-DEBUG-root-41344::webapp_internal::SetKey|5857:: Trying press key
+2025-12-04 07:41:46,242-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:46,392-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:46,417-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:46,576-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:46,576-DEBUG-root-41344::webapp_internal::send_action|10493:: Trying to send action
+2025-12-04 07:41:47,617-DEBUG-root-41344::webapp_internal::send_action|10535:: send_action method result = True
+2025-12-04 07:41:47,617-DEBUG-root-41344::webapp_internal::send_action|10536:: send_action selenium status: False
+2025-12-04 07:41:47,617-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:47,745-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:47,745-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:47,823-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:47,885-INFO-root-41344::webapp_internal::input_value|2941:: Looking for element: ZD_TPMOV
+2025-12-04 07:41:47,994-INFO-root-41344::webapp_internal::input_value|2951:: Element: ZD_TPMOV Found!
+2025-12-04 07:41:47,994-INFO-root-41344::webapp_internal::input_value|2953:: Filling element: ZD_TPMOV
+2025-12-04 07:41:49,193-INFO-root-41344::base::select_combo|871:: Selected value for combo is: 1 - Titular
+2025-12-04 07:41:49,241-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:49,363-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:49,364-DEBUG-root-41344::webapp_internal::wait_element|7636:: Waiting for element
+2025-12-04 07:41:49,439-DEBUG-root-41344::webapp_internal::wait_element|7666:: Element found! Waiting for element to be displayed.
+2025-12-04 07:41:49,499-INFO-root-41344::webapp_internal::input_value|2941:: Looking for element: ZD_TPALTSA
+2025-12-04 07:41:49,607-INFO-root-41344::webapp_internal::input_value|2951:: Element: ZD_TPALTSA Found!
+2025-12-04 07:41:49,607-INFO-root-41344::webapp_internal::input_value|2953:: Filling element: ZD_TPALTSA
+2025-12-04 07:41:49,634-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value:    
+2025-12-04 07:41:49,668-DEBUG-root-41344::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-04 07:41:49,929-DEBUG-root-41344::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-04 07:41:50,060-DEBUG-root-41344::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-04 07:41:50,377-DEBUG-root-41344::webapp_internal::get_web_value|3232:: Current value: 003
+2025-12-04 07:41:50,379-INFO-root-41344::webapp_internal::input_value|3059:: Current field value: 003
+2025-12-04 07:41:50,390-INFO-root-41344::webapp_internal::WaitShow|4980:: Waiting show text 'Histórico'...
+2025-12-04 07:41:52,152-INFO-root-41344::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-04 07:41:52,152-DEBUG-root-41344::webapp_internal::SetFocus|6011:: Setting focus on element Vlr Dependen.
+2025-12-04 07:43:52,552-WARNING-root-41344::webapp_internal::log_error|8156:: Warning log_error Label: 'vlr dependen'' wasn't found.
+2025-12-04 07:43:52,552-DEBUG-root-41344::webapp_internal::log_error|8159:: ***System Info*** in log_error():
+2025-12-04 07:43:52,554-DEBUG-root-41344::psutil_info::system_info|5:: CPU USAGE: 14.8%
+2025-12-04 07:43:52,554-DEBUG-root-41344::psutil_info::system_info|6:: MEMORY USAGE: 91.2%
+2025-12-04 07:43:52,554-DEBUG-root-41344::psutil_info::system_info|7:: MEMORY AVAILABLE: 8.77%
+2025-12-04 07:43:54,028-ERROR-root-41344::webapp_internal::TearDown|9667:: Warning tearDown Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 9665, in TearDown
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+

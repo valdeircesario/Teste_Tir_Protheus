@@ -1,0 +1,196 @@
+2025-12-05 12:46:09,298-DEBUG-root-15140::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251205124609280.log'
+2025-12-05 12:46:09,298-INFO-root-15140::base::Start|1183:: TIR Version: 2.4.3
+2025-12-05 12:46:09,298-INFO-root-15140::base::Start|1184:: Python Version: 3.12.10
+2025-12-05 12:46:09,298-INFO-root-15140::base::Start|1185:: Starting the browser
+2025-12-05 12:46:16,625-INFO-root-15140::base::get_url|1294:: Page is ready!
+2025-12-05 12:46:16,695-INFO-root-15140::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-05 12:46:16,695-INFO-root-15140::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-05 12:46:17,069-INFO-root-15140::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-05 12:46:17,069-DEBUG-root-15140::psutil_info::system_info|5:: CPU USAGE: 16.0%
+2025-12-05 12:46:17,070-DEBUG-root-15140::psutil_info::system_info|6:: MEMORY USAGE: 90.9%
+2025-12-05 12:46:17,070-DEBUG-root-15140::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.07%
+2025-12-05 12:46:17,097-INFO-root-15140::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-05 12:46:17,362-INFO-root-15140::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-05 12:46:17,363-DEBUG-root-15140::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:46:17,394-DEBUG-root-15140::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:46:17,574-DEBUG-root-15140::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:46:17,577-DEBUG-root-15140::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-05 12:46:17,896-DEBUG-root-15140::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-05 12:46:17,896-INFO-root-15140::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-05 12:46:17,896-DEBUG-root-15140::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:46:18,338-ERROR-root-15140::webapp_internal::Setup|320:: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:472:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:581:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:38:4
+dispatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 511, in get_current_DOM
+    soup = BeautifulSoup(self.driver.page_source,"html.parser")
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:472:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:581:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:38:4
+dispatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 286, in Setup
+    self.program_screen(initial_program=initial_program, environment=server_environment, poui=self.config.poui_login)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 427, in program_screen
+    self.filling_server_environment(environment)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 465, in filling_server_environment
+    self.fill_select_element(term=input_environment, user_value=environment)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 469, in fill_select_element
+    self.wait_element(term=term, scrap_type=enum.ScrapType.CSS_SELECTOR, main_container="body")
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7626, in wait_element
+    while (not self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview, second_term) and time.time() < endtime):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4079, in element_exists
+    self.search_for_errors()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3905, in search_for_errors
+    soup = self.get_current_DOM()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:472:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:581:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:38:4
+dispatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2025-12-05 12:46:18,416-INFO-root-15140::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Gestao de Viagens > Solicitações
+2025-12-05 12:46:09,298-DEBUG-root-15140::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251205124609280.log'
+2025-12-05 12:46:09,298-INFO-root-15140::base::Start|1183:: TIR Version: 2.4.3
+2025-12-05 12:46:09,298-INFO-root-15140::base::Start|1184:: Python Version: 3.12.10
+2025-12-05 12:46:09,298-INFO-root-15140::base::Start|1185:: Starting the browser
+2025-12-05 12:46:16,625-INFO-root-15140::base::get_url|1294:: Page is ready!
+2025-12-05 12:46:16,695-INFO-root-15140::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-05 12:46:16,695-INFO-root-15140::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-05 12:46:17,069-INFO-root-15140::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-05 12:46:17,069-DEBUG-root-15140::psutil_info::system_info|5:: CPU USAGE: 16.0%
+2025-12-05 12:46:17,070-DEBUG-root-15140::psutil_info::system_info|6:: MEMORY USAGE: 90.9%
+2025-12-05 12:46:17,070-DEBUG-root-15140::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.07%
+2025-12-05 12:46:17,097-INFO-root-15140::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-05 12:46:17,362-INFO-root-15140::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-05 12:46:17,363-DEBUG-root-15140::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:46:17,394-DEBUG-root-15140::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:46:17,574-DEBUG-root-15140::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:46:17,577-DEBUG-root-15140::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-05 12:46:17,896-DEBUG-root-15140::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-05 12:46:17,896-INFO-root-15140::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-05 12:46:17,896-DEBUG-root-15140::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:46:18,338-ERROR-root-15140::webapp_internal::Setup|320:: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:472:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:581:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:38:4
+dispatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 511, in get_current_DOM
+    soup = BeautifulSoup(self.driver.page_source,"html.parser")
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:472:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:581:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:38:4
+dispatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 286, in Setup
+    self.program_screen(initial_program=initial_program, environment=server_environment, poui=self.config.poui_login)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 427, in program_screen
+    self.filling_server_environment(environment)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 465, in filling_server_environment
+    self.fill_select_element(term=input_environment, user_value=environment)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 469, in fill_select_element
+    self.wait_element(term=term, scrap_type=enum.ScrapType.CSS_SELECTOR, main_container="body")
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7626, in wait_element
+    while (not self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview, second_term) and time.time() < endtime):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4079, in element_exists
+    self.search_for_errors()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3905, in search_for_errors
+    soup = self.get_current_DOM()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:472:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:581:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:38:4
+dispatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2025-12-05 12:46:18,416-INFO-root-15140::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Gestao de Viagens > Solicitações

@@ -1,0 +1,305 @@
+2025-12-16 11:31:19,098-DEBUG-root-15040::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251216113119077.log'
+2025-12-16 11:31:19,098-INFO-root-15040::base::Start|1183:: TIR Version: 2.4.3
+2025-12-16 11:31:19,098-INFO-root-15040::base::Start|1184:: Python Version: 3.12.10
+2025-12-16 11:31:19,099-INFO-root-15040::base::Start|1185:: Starting the browser
+2025-12-16 11:31:26,191-INFO-root-15040::base::get_url|1294:: Page is ready!
+2025-12-16 11:31:26,193-INFO-root-15040::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-16 11:31:26,193-INFO-root-15040::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-16 11:31:26,310-INFO-root-15040::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-16 11:31:26,311-DEBUG-root-15040::psutil_info::system_info|5:: CPU USAGE: 17.0%
+2025-12-16 11:31:26,312-DEBUG-root-15040::psutil_info::system_info|6:: MEMORY USAGE: 84.0%
+2025-12-16 11:31:26,312-DEBUG-root-15040::psutil_info::system_info|7:: MEMORY AVAILABLE: 16.02%
+2025-12-16 11:31:26,322-INFO-root-15040::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-16 11:31:26,356-INFO-root-15040::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-16 11:31:26,357-DEBUG-root-15040::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:31:26,432-DEBUG-root-15040::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:31:27,106-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:27,111-DEBUG-root-15040::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-16 11:31:27,431-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-16 11:31:27,433-INFO-root-15040::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-16 11:31:27,433-DEBUG-root-15040::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:31:27,458-DEBUG-root-15040::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:31:27,627-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:27,631-DEBUG-root-15040::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-16 11:31:27,961-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-16 11:31:27,985-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:27,995-DEBUG-root-15040::webapp_internal::user_screen|519:: Filling user screen
+2025-12-16 11:31:34,536-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:31:34,589-DEBUG-root-15040::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-16 11:31:34,738-INFO-root-15040::webapp_internal::user_screen|561:: Filling User
+2025-12-16 11:31:34,761-DEBUG-root-15040::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-16 11:31:34,952-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-16 11:31:34,974-INFO-root-15040::webapp_internal::user_screen|621:: Filling Password
+2025-12-16 11:31:34,994-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:35,059-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: Deire20191817+
+2025-12-16 11:31:35,059-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:35,088-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:35,109-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:35,138-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:35,171-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:35,198-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:35,198-DEBUG-root-15040::webapp_internal::send_action|10480:: Trying to send action
+2025-12-16 11:31:35,205-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:36,245-DEBUG-root-15040::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-16 11:31:36,245-DEBUG-root-15040::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-16 11:31:38,567-DEBUG-root-15040::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-16 11:31:38,625-INFO-root-15040::webapp_internal::filling_date|885:: Filling Date: "17/09/2025"
+2025-12-16 11:31:38,626-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:38,663-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:38,666-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:38,695-DEBUG-root-15040::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-16 11:31:38,788-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: 17/09/2025
+2025-12-16 11:31:39,879-INFO-root-15040::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-16 11:31:39,879-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:39,911-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:39,915-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:39,969-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-16 11:31:41,034-INFO-root-15040::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-16 11:31:41,034-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:41,067-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:41,070-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:41,122-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-16 11:31:42,205-INFO-root-15040::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-16 11:31:42,206-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:42,240-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:42,242-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:42,305-DEBUG-root-15040::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-16 11:31:43,313-DEBUG-root-15040::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-16 11:31:44,349-DEBUG-root-15040::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-16 11:31:45,465-INFO-root-15040::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-16 11:31:45,465-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:45,505-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-16 11:31:45,509-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:46,519-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:47,528-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:48,538-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:49,545-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:50,554-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:51,561-DEBUG-root-15040::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-16 11:31:51,610-DEBUG-root-15040::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-16 11:31:52,654-DEBUG-root-15040::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-16 11:31:52,655-DEBUG-root-15040::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-16 11:31:53,224-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:31:53,295-DEBUG-root-15040::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-16 11:31:54,349-DEBUG-root-15040::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-16 11:31:54,349-DEBUG-root-15040::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-16 11:31:54,489-INFO-root-15040::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-16 11:31:54,489-INFO-root-15040::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-16 11:31:54,499-DEBUG-root-15040::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:31:54,536-DEBUG-root-15040::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:31:54,698-INFO-root-15040::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-16 11:31:54,699-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:54,786-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:31:55,133-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:31:55,449-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:55,515-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:31:57,818-INFO-root-15040::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-16 11:31:57,819-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:57,880-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:31:58,280-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:31:58,638-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:31:58,701-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:01,310-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:01,385-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:01,457-DEBUG-root-15040::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:32:01,499-DEBUG-root-15040::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:32:01,668-INFO-root-15040::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-16 11:32:01,668-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:01,738-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:01,934-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:32:02,035-DEBUG-root-15040::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-16 11:32:02,035-DEBUG-root-15040::psutil_info::system_info|5:: CPU USAGE: 9.7%
+2025-12-16 11:32:02,036-DEBUG-root-15040::psutil_info::system_info|6:: MEMORY USAGE: 84.7%
+2025-12-16 11:32:02,036-DEBUG-root-15040::psutil_info::system_info|7:: MEMORY AVAILABLE: 15.32%
+2025-12-16 11:32:02,233-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:32:02,354-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:02,422-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:02,446-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:02,520-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:02,521-DEBUG-root-15040::webapp_internal::send_action|10480:: Trying to send action
+2025-12-16 11:32:02,523-DEBUG-root-15040::base::click|192:: Click Type: ClickType.JS
+2025-12-16 11:32:03,553-DEBUG-root-15040::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-16 11:32:03,554-DEBUG-root-15040::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-16 11:32:03,554-DEBUG-root-15040::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-16 11:32:03,554-DEBUG-root-15040::psutil_info::system_info|5:: CPU USAGE: 11.8%
+2025-12-16 11:32:03,554-DEBUG-root-15040::psutil_info::system_info|6:: MEMORY USAGE: 84.9%
+2025-12-16 11:32:03,555-DEBUG-root-15040::psutil_info::system_info|7:: MEMORY AVAILABLE: 15.13%
+2025-12-16 11:32:03,555-DEBUG-root-15040::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:32:03,640-INFO-root-15040::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Miscelanea > Spool
+2025-12-16 11:32:03,649-DEBUG-root-15040::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-16 11:32:03,684-DEBUG-root-15040::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-16 11:32:03,855-INFO-root-15040::webapp_internal::SetLateralMenu|4203:: Menu item: "Miscelanea"
+2025-12-16 11:32:03,855-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:03,917-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:04,320-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:32:04,676-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:04,737-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:07,030-INFO-root-15040::webapp_internal::SetLateralMenu|4203:: Menu item: "Spool"
+2025-12-16 11:32:07,030-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:07,161-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:08,467-DEBUG-root-15040::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-16 11:32:09,669-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:09,770-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:13,951-DEBUG-root-15040::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-16 11:32:14,044-DEBUG-root-15040::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-16 11:32:14,146-INFO-root-15040::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-16 11:32:19,308-DEBUG-root-15040::log::checks_empty_line|221:: Checking empty default log info
+2025-12-16 11:32:19,311-DEBUG-root-15040::log::generate_log|503:: Json log_data: {'cLogDtExec': '16/12/2025 11:32:19', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 1, 'nLogCtsNok': 0, 'nLogCtsSeg': 60.55, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': '', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251216', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': '4ba63f', 'nLogCtsTot': 1, 'cLogDtExea': '16/12/2025', 'cLogHrExea': '11:32:19', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 1.0091666666666665}
+2025-12-16 11:32:19,311-INFO-root-15040::log::send_log_with_retries|515:: Saving log locally.
+2025-12-16 11:32:19,311-INFO-root-15040::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-16 11:32:19,313-INFO-root-15040::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1765895539.json.
+2025-12-16 11:32:19,313-INFO-root-15040::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-16 11:32:24,443-INFO-root-15040::webapp_internal::WaitShow|4980:: Waiting show text 'Arquivo'...
+2025-12-16 11:34:15,644-ERROR-root-15040::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-16 11:34:16,148-ERROR-root-15040::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-16 11:34:16,652-ERROR-root-15040::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-16 11:34:17,156-ERROR-root-15040::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-16 11:34:17,659-ERROR-root-15040::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+

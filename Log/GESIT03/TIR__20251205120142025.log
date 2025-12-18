@@ -1,0 +1,1740 @@
+2025-12-05 12:01:42,031-DEBUG-root-32192::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251205120142025.log'
+2025-12-05 12:01:42,031-INFO-root-32192::base::Start|1183:: TIR Version: 2.4.3
+2025-12-05 12:01:42,031-INFO-root-32192::base::Start|1184:: Python Version: 3.12.10
+2025-12-05 12:01:42,031-INFO-root-32192::base::Start|1185:: Starting the browser
+2025-12-05 12:01:49,131-INFO-root-32192::base::get_url|1294:: Page is ready!
+2025-12-05 12:01:49,194-INFO-root-32192::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-05 12:01:49,194-INFO-root-32192::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-05 12:01:49,317-INFO-root-32192::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-05 12:01:49,318-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 17.5%
+2025-12-05 12:01:49,318-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.1%
+2025-12-05 12:01:49,318-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.92%
+2025-12-05 12:01:49,327-INFO-root-32192::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-05 12:01:49,390-INFO-root-32192::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-05 12:01:49,391-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:01:49,419-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:01:49,581-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:49,585-DEBUG-root-32192::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-05 12:01:50,505-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-05 12:01:50,506-INFO-root-32192::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-05 12:01:50,506-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:01:50,528-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:01:50,682-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:50,688-DEBUG-root-32192::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-05 12:01:51,203-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-05 12:01:51,225-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:51,238-DEBUG-root-32192::webapp_internal::user_screen|519:: Filling user screen
+2025-12-05 12:01:57,816-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:01:57,866-DEBUG-root-32192::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-05 12:01:57,991-INFO-root-32192::webapp_internal::user_screen|561:: Filling User
+2025-12-05 12:01:58,019-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:01:58,199-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-05 12:01:58,220-INFO-root-32192::webapp_internal::user_screen|621:: Filling Password
+2025-12-05 12:01:58,242-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:58,319-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-12-05 12:01:58,320-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:01:58,348-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:01:58,381-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:01:58,415-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:01:58,454-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:01:58,479-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:01:58,479-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:01:58,487-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:59,527-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:01:59,527-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-05 12:02:02,006-DEBUG-root-32192::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-05 12:02:02,056-INFO-root-32192::webapp_internal::filling_date|885:: Filling Date: "05/12/2025"
+2025-12-05 12:02:02,056-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:02,089-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:02,092-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:02,113-DEBUG-root-32192::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-05 12:02:02,182-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 05/12/2025
+2025-12-05 12:02:03,265-INFO-root-32192::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-05 12:02:03,265-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:03,297-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:03,300-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:03,359-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-05 12:02:04,418-INFO-root-32192::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-05 12:02:04,418-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:04,449-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:04,452-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:04,510-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-05 12:02:05,589-INFO-root-32192::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-05 12:02:05,589-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:05,623-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:05,625-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:05,677-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-05 12:02:06,684-DEBUG-root-32192::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-05 12:02:07,718-DEBUG-root-32192::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-05 12:02:08,816-INFO-root-32192::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-05 12:02:08,816-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:08,849-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:08,852-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:09,861-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:10,868-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:11,877-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:12,884-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:13,892-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:14,899-DEBUG-root-32192::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-05 12:02:14,947-DEBUG-root-32192::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-05 12:02:15,987-DEBUG-root-32192::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-05 12:02:15,987-DEBUG-root-32192::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-05 12:02:16,539-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:16,591-DEBUG-root-32192::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-05 12:02:17,637-DEBUG-root-32192::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-05 12:02:17,637-DEBUG-root-32192::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-05 12:02:17,735-INFO-root-32192::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-05 12:02:17,735-INFO-root-32192::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-05 12:02:17,766-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:17,821-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:17,989-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-05 12:02:17,990-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:18,048-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:18,629-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:18,942-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:19,037-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:21,329-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-05 12:02:21,330-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:21,403-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:21,809-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:22,148-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:22,211-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:24,830-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:24,897-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:24,964-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:25,005-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:25,172-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-05 12:02:25,172-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:25,242-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:25,418-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:25,492-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-05 12:02:25,492-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 8.2%
+2025-12-05 12:02:25,493-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.4%
+2025-12-05 12:02:25,493-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.59%
+2025-12-05 12:02:25,656-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:25,759-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:25,829-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:25,847-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:25,918-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:25,918-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:02:25,920-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:26,950-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:02:26,951-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-05 12:02:26,951-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:02:26,951-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 6.6%
+2025-12-05 12:02:26,951-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.5%
+2025-12-05 12:02:26,952-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.46%
+2025-12-05 12:02:26,952-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:27,029-INFO-root-32192::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Gestao de Viagens > Solicitações
+2025-12-05 12:02:27,038-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:27,073-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:27,232-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-05 12:02:27,232-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:27,299-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:27,697-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:28,064-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:28,125-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:30,417-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Gestao de Viagens"
+2025-12-05 12:02:30,418-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:30,510-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:31,249-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:31,931-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:32,022-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:34,323-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Solicitações"
+2025-12-05 12:02:34,323-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:34,400-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:35,285-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:36,117-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:36,192-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:39,668-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:39,740-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:39,815-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-05 12:02:45,628-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-05 12:02:50,661-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Solicitação de Viagens/Treinamento'...
+2025-12-05 12:02:50,712-INFO-root-32192::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-05 12:02:50,712-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-05 12:02:50,712-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:50,800-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:51,168-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:51,432-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-05 12:02:51,432-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 8.6%
+2025-12-05 12:02:51,432-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.7%
+2025-12-05 12:02:51,433-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.34%
+2025-12-05 12:02:51,787-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:52,168-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:52,259-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:52,279-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:52,372-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:52,372-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:02:52,374-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:53,618-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:02:53,619-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: True
+2025-12-05 12:02:53,619-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:02:53,619-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 9.7%
+2025-12-05 12:02:53,620-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.2%
+2025-12-05 12:02:53,620-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.77%
+2025-12-05 12:02:53,821-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:53,910-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:53,911-INFO-root-32192::webapp_internal::SearchBrowse|2003:: Searching: 02DF0001
+2025-12-05 12:02:54,062-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:54,144-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:54,239-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:54,247-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:54,343-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:54,344-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:54,356-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:55,425-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:55,522-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:55,522-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:55,532-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:56,596-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:56,701-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:56,701-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:56,713-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:57,794-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:57,889-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:57,889-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:57,899-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:58,963-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:59,060-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:59,060-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:59,072-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:00,131-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:00,239-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:00,240-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:03:00,249-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:01,314-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:01,411-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:01,412-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:03:01,423-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:02,508-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:02,640-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:02,642-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:02,648-WARNING-root-32192::base::double_click|280:: Warning double_click method Exception: Message: Element <button class="button-image" type="button"> is not clickable at point (1258,360) because another element <wa-button id="COMP6023" class="dict-tbutton focus"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:354:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-05 12:03:02,959-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on OK
+2025-12-05 12:03:02,960-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:03,078-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:03,374-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:03,560-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:OK
+2025-12-05 12:03:03,560-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 6.7%
+2025-12-05 12:03:03,561-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.2%
+2025-12-05 12:03:03,561-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.79%
+2025-12-05 12:03:03,834-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:04,060-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:04,157-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:04,180-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:04,277-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:04,277-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:03:04,279-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:06,757-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:03:06,757-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: True
+2025-12-05 12:03:06,757-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:03:06,758-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 9.7%
+2025-12-05 12:03:06,758-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.5%
+2025-12-05 12:03:06,758-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.46%
+2025-12-05 12:03:06,959-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Solicitacoes de Viagens - INCLUIR'...
+2025-12-05 12:03:07,176-INFO-root-32192::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-05 12:03:07,176-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:07,312-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:07,313-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:07,397-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:07,468-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_DESCRI
+2025-12-05 12:03:07,664-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_DESCRI Found!
+2025-12-05 12:03:07,664-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_DESCRI
+2025-12-05 12:03:07,691-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:                                                   
+2025-12-05 12:03:07,726-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:07,984-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:08,123-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:08,483-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: USO PARA TESTE AUTOMATIZADO                       
+2025-12-05 12:03:08,483-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: USO PARA TESTE AUTOMATIZADO
+2025-12-05 12:03:08,514-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:08,655-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:08,655-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:08,740-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:08,812-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_DTINI
+2025-12-05 12:03:08,991-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_DTINI Found!
+2025-12-05 12:03:08,992-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_DTINI
+2025-12-05 12:03:09,059-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:   /  /    
+2025-12-05 12:03:09,106-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:09,368-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:09,508-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:09,848-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 20/12/2025
+2025-12-05 12:03:09,848-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: 20122025
+2025-12-05 12:03:09,861-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:10,005-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:10,007-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:10,131-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:10,199-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_DTFIM
+2025-12-05 12:03:10,359-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_DTFIM Found!
+2025-12-05 12:03:10,359-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_DTFIM
+2025-12-05 12:03:10,434-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:   /  /    
+2025-12-05 12:03:10,480-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:10,743-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:10,881-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:11,226-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 27/12/2025
+2025-12-05 12:03:11,227-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: 27122025
+2025-12-05 12:03:12,237-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:12,375-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:12,375-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:12,459-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:12,531-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_CC
+2025-12-05 12:03:12,685-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_CC Found!
+2025-12-05 12:03:12,685-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_CC
+2025-12-05 12:03:12,711-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:          
+2025-12-05 12:03:12,747-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:12,995-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:13,135-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:13,447-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 000000677
+2025-12-05 12:03:13,447-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: 000000677
+2025-12-05 12:03:13,460-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:13,612-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:13,613-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:13,695-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:13,767-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_TIPO
+2025-12-05 12:03:13,932-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_TIPO Found!
+2025-12-05 12:03:13,932-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_TIPO
+2025-12-05 12:03:15,110-INFO-root-32192::base::select_combo|871:: Selected value for combo is: 1 - Servico
+2025-12-05 12:03:15,155-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:15,293-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:15,293-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:15,390-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:15,512-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_OBS
+2025-12-05 12:03:15,718-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_OBS Found!
+2025-12-05 12:03:15,718-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_OBS
+2025-12-05 12:03:15,751-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 
+2025-12-05 12:03:15,784-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:16,052-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:16,195-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:16,565-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: TESTE DE SOLICITAÇÃO DE VIAGEM
+2025-12-05 12:03:16,565-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: TESTE DE SOLICITAÇÃO DE VIAGEM
+2025-12-05 12:03:16,585-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:16,762-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:16,762-INFO-root-32192::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-05 12:03:16,762-DEBUG-root-32192::webapp_internal::SetKey|5857:: Trying press key
+2025-12-05 12:03:16,897-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:17,029-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:17,073-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:17,226-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:17,226-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:03:18,266-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:03:18,266-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-05 12:03:18,266-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:18,401-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:18,681-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:18,857-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:18,858-INFO-root-32192::webapp_internal::LoadGrid|6298:: Filling grid field: Favorecido
+2025-12-05 12:03:18,858-DEBUG-root-32192::webapp_internal::fill_grid|6399:: Grid loading...
+2025-12-05 12:03:19,048-DEBUG-root-32192::webapp_internal::fill_grid|6466:: Column found!
+2025-12-05 12:03:19,091-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:19,393-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:19,395-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:19,680-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:19,682-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:19,975-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:19,978-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:20,267-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:20,269-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:20,531-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:20,533-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:20,829-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:20,830-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,119-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,123-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,385-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,389-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,682-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,684-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,978-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,980-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:22,269-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:22,273-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:22,564-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:22,565-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:22,861-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:22,863-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:23,157-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:23,159-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:23,450-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:23,452-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:23,746-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:23,748-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,040-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,042-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,332-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,334-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,629-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,631-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,924-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,926-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:25,190-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:25,193-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:25,483-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:25,489-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:25,789-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:25,792-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,074-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,076-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,365-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,368-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,664-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,665-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,960-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,963-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:27,252-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:27,257-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:27,547-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:27,549-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:27,845-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:27,847-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:28,140-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:28,143-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:28,435-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:28,441-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:28,729-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:28,732-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,025-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,028-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,323-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,325-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,614-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,615-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,912-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,914-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:30,198-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:30,200-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:30,498-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:30,501-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:30,784-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:30,786-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,079-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,081-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,373-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,375-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,668-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,672-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,963-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,965-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:32,264-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:32,266-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:32,557-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:32,559-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:32,825-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:32,828-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,118-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,123-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,390-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,392-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,652-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,655-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,917-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,923-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:34,194-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:34,197-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:34,484-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:34,490-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:34,779-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:34,781-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,062-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,064-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,357-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,359-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,626-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,628-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,923-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,925-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:36,215-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:36,219-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:36,513-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:36,515-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:36,807-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:36,810-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,099-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,101-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,398-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,399-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,695-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,697-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,990-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,993-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:38,279-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:38,281-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:38,564-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:38,565-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:38,859-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:38,861-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:39,152-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:39,157-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:39,445-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:39,448-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:39,742-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:39,744-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,032-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,034-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,329-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,331-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,623-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,625-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,913-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,915-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:41,210-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:41,212-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:41,500-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:41,502-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:41,796-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:41,798-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,090-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,092-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,381-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,383-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,680-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,682-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,973-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,976-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:43,267-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:43,269-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:43,562-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:43,564-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:43,828-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:43,829-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,124-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,127-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,415-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,417-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,713-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,715-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,979-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,981-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:45,267-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:45,273-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:45,562-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:45,564-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:45,857-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:45,859-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:46,147-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:46,149-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:46,447-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:46,449-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:46,735-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:46,740-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,031-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,033-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,327-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,329-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,617-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,623-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,912-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,914-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:48,207-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:48,209-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:48,474-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:48,477-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:48,763-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:48,765-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,062-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,064-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,355-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,359-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,648-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,650-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,945-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,948-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:50,213-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:50,214-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:50,507-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:50,509-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:50,800-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:50,802-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,098-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,101-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,384-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,390-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,677-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,679-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,965-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,968-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:52,263-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:52,265-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:52,551-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:52,557-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:52,845-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:52,847-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,113-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,115-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,408-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,409-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,697-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,699-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,995-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,997-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:54,260-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:54,262-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:54,557-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:54,558-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:54,847-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:54,849-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,114-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,117-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,409-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,411-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,700-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,707-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,998-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,999-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:56,293-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:56,295-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:56,581-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:56,583-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:56,862-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:56,864-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:57,142-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:57,144-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:57,440-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:57,442-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:57,735-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:57,740-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,030-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,032-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,326-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,329-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,617-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,623-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,912-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,914-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:59,210-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:59,212-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:04:04,573-DEBUG-root-32192::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-05 12:04:04,863-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:04:05,019-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:04:05,208-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:04:05,572-DEBUG-root-32192::webapp_internal::fill_grid|6577:: Sending keys: 227884
+2025-12-05 12:04:05,885-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:04:06,032-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:04:06,207-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:04:06,535-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on Transporte
+2025-12-05 12:04:06,535-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:04:06,729-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:04:17,198-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Transporte
+2025-12-05 12:04:17,198-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 8.8%
+2025-12-05 12:04:17,199-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 88.7%
+2025-12-05 12:04:17,200-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.33%
+2025-12-05 12:05:56,704-ERROR-root-32192::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,878-ERROR-root-32192::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,882-ERROR-root-32192::webapp_internal::SetButton|4680:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4491, in SetButton
+    soup = self.get_current_container()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8993, in get_current_container
+    soup = self.get_current_DOM()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,883-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:05:56,884-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 14.3%
+2025-12-05 12:05:56,884-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 82.5%
+2025-12-05 12:05:56,885-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 17.46%
+2025-12-05 12:05:56,885-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:05:56,887-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:05:56,888-INFO-root-32192::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-05 12:05:56,888-DEBUG-root-32192::webapp_internal::SetKey|5857:: Trying press key
+2025-12-05 12:05:56,888-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:05:56,891-WARNING-root-32192::webapp_internal::log_error|8143:: Warning log_error SetKey - Screen is not load: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,891-DEBUG-root-32192::webapp_internal::log_error|8146:: ***System Info*** in log_error():
+2025-12-05 12:05:56,892-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 42.1%
+2025-12-05 12:05:56,893-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 82.5%
+2025-12-05 12:05:56,893-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 17.49%
+2025-12-05 12:05:56,913-DEBUG-root-32192::log::take_screenshot_log|612:: take_screenshot_log in:2025-12-05 12:05:56.913193
+
+2025-12-05 12:05:56,915-ERROR-root-32192::log::take_screenshot_log|629:: Warning Log Error save_screenshot exception Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 5861, in SetKey
+    self.LoadGrid()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6284, in LoadGrid
+    self.wait_element(term=selector, scrap_type=enum.ScrapType.CSS_SELECTOR)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7626, in wait_element
+    while (not self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview, second_term) and time.time() < endtime):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4073, in element_exists
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\log.py", line 626, in take_screenshot_log
+    driver.save_screenshot(str(path))
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 822, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 798, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:57,925-DEBUG-root-32192::log::checks_empty_line|221:: Checking empty default log info
+2025-12-05 12:05:57,928-DEBUG-root-32192::log::generate_log|503:: Json log_data: {'cLogDtExec': '05/12/2025 12:05:57', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 0, 'nLogCtsNok': 1, 'nLogCtsSeg': 254.98, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': 'Viagem - SetKey - Screen is not load: Message: Tried to run command without establishing a connection', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251205', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'dba9c1', 'nLogCtsTot': 1, 'cLogDtExea': '05/12/2025', 'cLogHrExea': '12:05:57', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 4.249666666666666}
+2025-12-05 12:05:57,928-INFO-root-32192::log::send_log_with_retries|515:: Saving log locally.
+2025-12-05 12:05:57,928-INFO-root-32192::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-05 12:05:57,929-INFO-root-32192::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1764947157.json.
+2025-12-05 12:05:57,933-ERROR-root-32192::webapp_internal::log_error|8181:: Warning Log Error Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 5861, in SetKey
+    self.LoadGrid()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6284, in LoadGrid
+    self.wait_element(term=selector, scrap_type=enum.ScrapType.CSS_SELECTOR)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7626, in wait_element
+    while (not self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview, second_term) and time.time() < endtime):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4073, in element_exists
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8179, in log_error
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:58,437-ERROR-root-32192::webapp_internal::TearDown|9654:: Warning tearDown Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 9652, in TearDown
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:01:42,031-DEBUG-root-32192::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251205120142025.log'
+2025-12-05 12:01:42,031-INFO-root-32192::base::Start|1183:: TIR Version: 2.4.3
+2025-12-05 12:01:42,031-INFO-root-32192::base::Start|1184:: Python Version: 3.12.10
+2025-12-05 12:01:42,031-INFO-root-32192::base::Start|1185:: Starting the browser
+2025-12-05 12:01:49,131-INFO-root-32192::base::get_url|1294:: Page is ready!
+2025-12-05 12:01:49,194-INFO-root-32192::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-05 12:01:49,194-INFO-root-32192::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-05 12:01:49,317-INFO-root-32192::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-05 12:01:49,318-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 17.5%
+2025-12-05 12:01:49,318-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.1%
+2025-12-05 12:01:49,318-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.92%
+2025-12-05 12:01:49,327-INFO-root-32192::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-05 12:01:49,390-INFO-root-32192::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-05 12:01:49,391-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:01:49,419-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:01:49,581-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:49,585-DEBUG-root-32192::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-05 12:01:50,505-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-05 12:01:50,506-INFO-root-32192::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-05 12:01:50,506-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:01:50,528-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:01:50,682-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:50,688-DEBUG-root-32192::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-05 12:01:51,203-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-05 12:01:51,225-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:51,238-DEBUG-root-32192::webapp_internal::user_screen|519:: Filling user screen
+2025-12-05 12:01:57,816-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:01:57,866-DEBUG-root-32192::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-05 12:01:57,991-INFO-root-32192::webapp_internal::user_screen|561:: Filling User
+2025-12-05 12:01:58,019-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:01:58,199-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-05 12:01:58,220-INFO-root-32192::webapp_internal::user_screen|621:: Filling Password
+2025-12-05 12:01:58,242-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:58,319-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-12-05 12:01:58,320-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:01:58,348-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:01:58,381-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:01:58,415-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:01:58,454-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:01:58,479-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:01:58,479-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:01:58,487-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:01:59,527-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:01:59,527-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-05 12:02:02,006-DEBUG-root-32192::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-05 12:02:02,056-INFO-root-32192::webapp_internal::filling_date|885:: Filling Date: "05/12/2025"
+2025-12-05 12:02:02,056-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:02,089-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:02,092-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:02,113-DEBUG-root-32192::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-05 12:02:02,182-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 05/12/2025
+2025-12-05 12:02:03,265-INFO-root-32192::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-05 12:02:03,265-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:03,297-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:03,300-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:03,359-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-05 12:02:04,418-INFO-root-32192::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-05 12:02:04,418-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:04,449-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:04,452-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:04,510-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-05 12:02:05,589-INFO-root-32192::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-05 12:02:05,589-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:05,623-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:05,625-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:05,677-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-05 12:02:06,684-DEBUG-root-32192::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-05 12:02:07,718-DEBUG-root-32192::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-05 12:02:08,816-INFO-root-32192::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-05 12:02:08,816-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:08,849-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:02:08,852-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:09,861-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:10,868-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:11,877-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:12,884-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:13,892-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:14,899-DEBUG-root-32192::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-05 12:02:14,947-DEBUG-root-32192::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-05 12:02:15,987-DEBUG-root-32192::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-05 12:02:15,987-DEBUG-root-32192::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-05 12:02:16,539-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:16,591-DEBUG-root-32192::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-05 12:02:17,637-DEBUG-root-32192::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-05 12:02:17,637-DEBUG-root-32192::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-05 12:02:17,735-INFO-root-32192::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-05 12:02:17,735-INFO-root-32192::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-05 12:02:17,766-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:17,821-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:17,989-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-05 12:02:17,990-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:18,048-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:18,629-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:18,942-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:19,037-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:21,329-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-05 12:02:21,330-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:21,403-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:21,809-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:22,148-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:22,211-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:24,830-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:24,897-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:24,964-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:25,005-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:25,172-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-05 12:02:25,172-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:25,242-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:25,418-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:25,492-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-05 12:02:25,492-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 8.2%
+2025-12-05 12:02:25,493-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.4%
+2025-12-05 12:02:25,493-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.59%
+2025-12-05 12:02:25,656-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:25,759-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:25,829-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:25,847-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:25,918-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:25,918-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:02:25,920-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:26,950-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:02:26,951-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-05 12:02:26,951-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:02:26,951-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 6.6%
+2025-12-05 12:02:26,951-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.5%
+2025-12-05 12:02:26,952-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.46%
+2025-12-05 12:02:26,952-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:27,029-INFO-root-32192::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Gestao de Viagens > Solicitações
+2025-12-05 12:02:27,038-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:02:27,073-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:27,232-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-05 12:02:27,232-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:27,299-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:27,697-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:28,064-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:28,125-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:30,417-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Gestao de Viagens"
+2025-12-05 12:02:30,418-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:30,510-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:31,249-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:31,931-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:32,022-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:34,323-INFO-root-32192::webapp_internal::SetLateralMenu|4203:: Menu item: "Solicitações"
+2025-12-05 12:02:34,323-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:34,400-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:35,285-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:36,117-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:36,192-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:39,668-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:39,740-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:39,815-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-05 12:02:45,628-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-05 12:02:50,661-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Solicitação de Viagens/Treinamento'...
+2025-12-05 12:02:50,712-INFO-root-32192::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-05 12:02:50,712-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-05 12:02:50,712-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:50,800-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:51,168-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:51,432-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-05 12:02:51,432-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 8.6%
+2025-12-05 12:02:51,432-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.7%
+2025-12-05 12:02:51,433-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.34%
+2025-12-05 12:02:51,787-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:52,168-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:52,259-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:52,279-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:52,372-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:52,372-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:02:52,374-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:53,618-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:02:53,619-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: True
+2025-12-05 12:02:53,619-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:02:53,619-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 9.7%
+2025-12-05 12:02:53,620-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.2%
+2025-12-05 12:02:53,620-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.77%
+2025-12-05 12:02:53,821-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:53,910-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:53,911-INFO-root-32192::webapp_internal::SearchBrowse|2003:: Searching: 02DF0001
+2025-12-05 12:02:54,062-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:02:54,144-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:54,239-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:54,247-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:54,343-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:54,344-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:54,356-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:55,425-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:55,522-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:55,522-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:55,532-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:56,596-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:56,701-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:56,701-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:56,713-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:57,794-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:57,889-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:57,889-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:57,899-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:02:58,963-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:02:59,060-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:02:59,060-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:02:59,072-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:00,131-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:00,239-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:00,240-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:03:00,249-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:01,314-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:01,411-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:01,412-INFO-root-32192::webapp_internal::fill_search_browse|2399:: Filling: 02DF0001
+2025-12-05 12:03:01,423-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:02,508-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:02,640-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:02,642-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:02,648-WARNING-root-32192::base::double_click|280:: Warning double_click method Exception: Message: Element <button class="button-image" type="button"> is not clickable at point (1258,360) because another element <wa-button id="COMP6023" class="dict-tbutton focus"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:354:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-05 12:03:02,959-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on OK
+2025-12-05 12:03:02,960-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:03,078-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:03,374-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:03,560-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:OK
+2025-12-05 12:03:03,560-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 6.7%
+2025-12-05 12:03:03,561-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.2%
+2025-12-05 12:03:03,561-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.79%
+2025-12-05 12:03:03,834-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:04,060-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:04,157-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:04,180-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:04,277-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:04,277-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:03:04,279-DEBUG-root-32192::base::click|192:: Click Type: ClickType.JS
+2025-12-05 12:03:06,757-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:03:06,757-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: True
+2025-12-05 12:03:06,757-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:03:06,758-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 9.7%
+2025-12-05 12:03:06,758-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 90.5%
+2025-12-05 12:03:06,758-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 9.46%
+2025-12-05 12:03:06,959-INFO-root-32192::webapp_internal::WaitShow|4980:: Waiting show text 'Solicitacoes de Viagens - INCLUIR'...
+2025-12-05 12:03:07,176-INFO-root-32192::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-05 12:03:07,176-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:07,312-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:07,313-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:07,397-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:07,468-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_DESCRI
+2025-12-05 12:03:07,664-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_DESCRI Found!
+2025-12-05 12:03:07,664-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_DESCRI
+2025-12-05 12:03:07,691-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:                                                   
+2025-12-05 12:03:07,726-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:07,984-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:08,123-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:08,483-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: USO PARA TESTE AUTOMATIZADO                       
+2025-12-05 12:03:08,483-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: USO PARA TESTE AUTOMATIZADO
+2025-12-05 12:03:08,514-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:08,655-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:08,655-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:08,740-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:08,812-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_DTINI
+2025-12-05 12:03:08,991-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_DTINI Found!
+2025-12-05 12:03:08,992-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_DTINI
+2025-12-05 12:03:09,059-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:   /  /    
+2025-12-05 12:03:09,106-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:09,368-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:09,508-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:09,848-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 20/12/2025
+2025-12-05 12:03:09,848-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: 20122025
+2025-12-05 12:03:09,861-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:10,005-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:10,007-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:10,131-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:10,199-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_DTFIM
+2025-12-05 12:03:10,359-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_DTFIM Found!
+2025-12-05 12:03:10,359-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_DTFIM
+2025-12-05 12:03:10,434-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:   /  /    
+2025-12-05 12:03:10,480-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:10,743-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:10,881-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:11,226-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 27/12/2025
+2025-12-05 12:03:11,227-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: 27122025
+2025-12-05 12:03:12,237-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:12,375-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:12,375-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:12,459-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:12,531-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_CC
+2025-12-05 12:03:12,685-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_CC Found!
+2025-12-05 12:03:12,685-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_CC
+2025-12-05 12:03:12,711-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value:          
+2025-12-05 12:03:12,747-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:12,995-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:13,135-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:13,447-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 000000677
+2025-12-05 12:03:13,447-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: 000000677
+2025-12-05 12:03:13,460-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:13,612-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:13,613-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:13,695-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:13,767-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_TIPO
+2025-12-05 12:03:13,932-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_TIPO Found!
+2025-12-05 12:03:13,932-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_TIPO
+2025-12-05 12:03:15,110-INFO-root-32192::base::select_combo|871:: Selected value for combo is: 1 - Servico
+2025-12-05 12:03:15,155-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:15,293-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:15,293-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:15,390-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:15,512-INFO-root-32192::webapp_internal::input_value|2941:: Looking for element: ZV3_OBS
+2025-12-05 12:03:15,718-INFO-root-32192::webapp_internal::input_value|2951:: Element: ZV3_OBS Found!
+2025-12-05 12:03:15,718-INFO-root-32192::webapp_internal::input_value|2953:: Filling element: ZV3_OBS
+2025-12-05 12:03:15,751-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: 
+2025-12-05 12:03:15,784-DEBUG-root-32192::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-05 12:03:16,052-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:16,195-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:16,565-DEBUG-root-32192::webapp_internal::get_web_value|3232:: Current value: TESTE DE SOLICITAÇÃO DE VIAGEM
+2025-12-05 12:03:16,565-INFO-root-32192::webapp_internal::input_value|3059:: Current field value: TESTE DE SOLICITAÇÃO DE VIAGEM
+2025-12-05 12:03:16,585-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:16,762-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:16,762-INFO-root-32192::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-05 12:03:16,762-DEBUG-root-32192::webapp_internal::SetKey|5857:: Trying press key
+2025-12-05 12:03:16,897-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:17,029-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:17,073-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:17,226-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:17,226-DEBUG-root-32192::webapp_internal::send_action|10480:: Trying to send action
+2025-12-05 12:03:18,266-DEBUG-root-32192::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-05 12:03:18,266-DEBUG-root-32192::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-05 12:03:18,266-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:03:18,401-DEBUG-root-32192::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-05 12:03:18,681-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:03:18,857-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:03:18,858-INFO-root-32192::webapp_internal::LoadGrid|6298:: Filling grid field: Favorecido
+2025-12-05 12:03:18,858-DEBUG-root-32192::webapp_internal::fill_grid|6399:: Grid loading...
+2025-12-05 12:03:19,048-DEBUG-root-32192::webapp_internal::fill_grid|6466:: Column found!
+2025-12-05 12:03:19,091-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:19,393-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:19,395-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:19,680-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:19,682-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:19,975-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:19,978-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:20,267-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:20,269-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:20,531-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:20,533-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:20,829-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:20,830-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,119-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,123-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,385-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,389-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,682-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,684-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:21,978-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:21,980-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:22,269-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:22,273-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:22,564-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:22,565-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:22,861-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:22,863-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:23,157-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:23,159-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:23,450-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:23,452-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:23,746-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:23,748-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,040-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,042-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,332-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,334-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,629-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,631-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:24,924-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:24,926-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:25,190-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:25,193-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:25,483-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:25,489-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:25,789-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:25,792-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,074-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,076-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,365-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,368-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,664-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,665-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:26,960-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:26,963-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:27,252-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:27,257-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:27,547-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:27,549-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:27,845-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:27,847-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:28,140-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:28,143-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:28,435-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:28,441-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:28,729-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:28,732-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,025-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,028-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,323-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,325-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,614-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,615-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:29,912-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:29,914-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:30,198-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:30,200-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:30,498-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:30,501-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:30,784-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:30,786-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,079-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,081-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,373-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,375-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,668-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,672-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:31,963-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:31,965-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:32,264-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:32,266-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:32,557-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:32,559-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:32,825-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:32,828-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,118-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,123-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,390-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,392-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,652-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,655-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:33,917-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:33,923-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:34,194-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:34,197-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:34,484-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:34,490-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:34,779-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:34,781-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,062-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,064-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,357-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,359-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,626-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,628-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:35,923-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:35,925-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:36,215-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:36,219-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:36,513-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:36,515-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:36,807-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:36,810-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,099-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,101-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,398-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,399-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,695-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,697-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:37,990-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:37,993-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:38,279-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:38,281-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:38,564-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:38,565-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:38,859-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:38,861-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:39,152-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:39,157-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:39,445-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:39,448-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:39,742-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:39,744-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,032-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,034-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,329-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,331-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,623-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,625-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:40,913-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:40,915-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:41,210-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:41,212-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:41,500-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:41,502-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:41,796-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:41,798-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,090-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,092-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,381-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,383-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,680-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,682-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:42,973-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:42,976-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:43,267-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:43,269-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:43,562-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:43,564-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:43,828-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:43,829-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,124-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,127-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,415-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,417-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,713-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,715-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:44,979-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:44,981-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:45,267-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:45,273-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:45,562-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:45,564-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:45,857-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:45,859-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:46,147-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:46,149-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:46,447-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:46,449-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:46,735-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:46,740-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,031-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,033-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,327-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,329-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,617-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,623-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:47,912-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:47,914-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:48,207-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:48,209-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:48,474-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:48,477-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:48,763-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:48,765-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,062-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,064-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,355-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,359-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,648-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,650-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:49,945-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:49,948-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:50,213-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:50,214-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:50,507-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:50,509-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:50,800-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:50,802-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,098-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,101-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,384-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,390-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,677-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,679-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:51,965-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:51,968-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:52,263-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:52,265-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:52,551-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:52,557-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:52,845-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:52,847-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,113-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,115-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,408-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,409-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,697-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,699-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:53,995-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:53,997-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:54,260-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:54,262-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:54,557-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:54,558-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:54,847-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:54,849-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,114-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,117-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,409-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,411-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,700-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,707-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:55,998-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:55,999-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:56,293-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:56,295-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:56,581-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:56,583-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:56,862-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:56,864-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:57,142-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:57,144-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:57,440-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:57,442-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:57,735-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:57,740-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,030-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,032-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,326-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,329-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,617-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,623-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:58,912-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:58,914-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:03:59,210-DEBUG-root-32192::webapp_internal::fill_grid|6486:: Trying to select cell in grid!
+2025-12-05 12:03:59,212-DEBUG-root-32192::base::click|192:: Click Type: ClickType.ACTIONCHAINS
+2025-12-05 12:04:04,573-DEBUG-root-32192::webapp_internal::fill_grid|6498:: Trying open cell in grid!
+2025-12-05 12:04:04,863-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:04:05,019-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:04:05,208-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:04:05,572-DEBUG-root-32192::webapp_internal::fill_grid|6577:: Sending keys: 227884
+2025-12-05 12:04:05,885-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:04:06,032-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:04:06,207-DEBUG-root-32192::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-05 12:04:06,535-INFO-root-32192::webapp_internal::SetButton|4444:: Clicking on Transporte
+2025-12-05 12:04:06,535-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:04:06,729-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-05 12:04:17,198-DEBUG-root-32192::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Transporte
+2025-12-05 12:04:17,198-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 8.8%
+2025-12-05 12:04:17,199-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 88.7%
+2025-12-05 12:04:17,200-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 11.33%
+2025-12-05 12:05:56,704-ERROR-root-32192::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,878-ERROR-root-32192::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,882-ERROR-root-32192::webapp_internal::SetButton|4680:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4491, in SetButton
+    soup = self.get_current_container()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8993, in get_current_container
+    soup = self.get_current_DOM()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,883-DEBUG-root-32192::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-05 12:05:56,884-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 14.3%
+2025-12-05 12:05:56,884-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 82.5%
+2025-12-05 12:05:56,885-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 17.46%
+2025-12-05 12:05:56,885-DEBUG-root-32192::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-05 12:05:56,887-DEBUG-root-32192::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-05 12:05:56,888-INFO-root-32192::webapp_internal::SetKey|5822:: Key pressed: TAB
+2025-12-05 12:05:56,888-DEBUG-root-32192::webapp_internal::SetKey|5857:: Trying press key
+2025-12-05 12:05:56,888-DEBUG-root-32192::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-05 12:05:56,891-WARNING-root-32192::webapp_internal::log_error|8143:: Warning log_error SetKey - Screen is not load: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:56,891-DEBUG-root-32192::webapp_internal::log_error|8146:: ***System Info*** in log_error():
+2025-12-05 12:05:56,892-DEBUG-root-32192::psutil_info::system_info|5:: CPU USAGE: 42.1%
+2025-12-05 12:05:56,893-DEBUG-root-32192::psutil_info::system_info|6:: MEMORY USAGE: 82.5%
+2025-12-05 12:05:56,893-DEBUG-root-32192::psutil_info::system_info|7:: MEMORY AVAILABLE: 17.49%
+2025-12-05 12:05:56,913-DEBUG-root-32192::log::take_screenshot_log|612:: take_screenshot_log in:2025-12-05 12:05:56.913193
+
+2025-12-05 12:05:56,915-ERROR-root-32192::log::take_screenshot_log|629:: Warning Log Error save_screenshot exception Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 5861, in SetKey
+    self.LoadGrid()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6284, in LoadGrid
+    self.wait_element(term=selector, scrap_type=enum.ScrapType.CSS_SELECTOR)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7626, in wait_element
+    while (not self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview, second_term) and time.time() < endtime):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4073, in element_exists
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\log.py", line 626, in take_screenshot_log
+    driver.save_screenshot(str(path))
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 822, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 798, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:57,925-DEBUG-root-32192::log::checks_empty_line|221:: Checking empty default log info
+2025-12-05 12:05:57,928-DEBUG-root-32192::log::generate_log|503:: Json log_data: {'cLogDtExec': '05/12/2025 12:05:57', 'cLogNomUsr': '97137227104', 'cLogNomEst': 'GESIT03', 'cLogProgra': None, 'cLogDtProg': '', 'cLogHrProg': '', 'nLogCtsOk': 0, 'nLogCtsNok': 1, 'nLogCtsSeg': 254.98, 'cLogVersao': '12', 'cLogReleas': '12.1.2410', 'nLogCtsErr': 'Viagem - SetKey - Screen is not load: Message: Tried to run command without establishing a connection', 'cLogBancod': 'ORACLE', 'cLogIdenti': '', 'cLogIdExec': '20251205', 'cLogPais': 'BRA', 'cLogTool': 'TIR', 'cLogSequen': 'dba9c1', 'nLogCtsTot': 1, 'cLogDtExea': '05/12/2025', 'cLogHrExea': '12:05:57', 'cLogArea': 'Desenvolvimento', 'cLogMnExec': 4.249666666666666}
+2025-12-05 12:05:57,928-INFO-root-32192::log::send_log_with_retries|515:: Saving log locally.
+2025-12-05 12:05:57,928-INFO-root-32192::log::save_log_locally|548:: [FwSendLog]: Não foi possível enviar o log após todas as tentativas.
+2025-12-05 12:05:57,929-INFO-root-32192::log::save_log_locally|555:: [FwSendLog]: Log salvo localmente em C:\TIR_TESTE\1764947157.json.
+2025-12-05 12:05:57,933-ERROR-root-32192::webapp_internal::log_error|8181:: Warning Log Error Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 5861, in SetKey
+    self.LoadGrid()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 6284, in LoadGrid
+    self.wait_element(term=selector, scrap_type=enum.ScrapType.CSS_SELECTOR)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 7626, in wait_element
+    while (not self.element_exists(term, scrap_type, position, optional_term, main_container, check_error, twebview, second_term) and time.time() < endtime):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 4073, in element_exists
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 8179, in log_error
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-05 12:05:58,437-ERROR-root-32192::webapp_internal::TearDown|9654:: Warning tearDown Close Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 9652, in TearDown
+    self.driver.close()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in close
+    self.execute(Command.CLOSE)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+

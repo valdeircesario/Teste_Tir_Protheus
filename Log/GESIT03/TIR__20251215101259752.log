@@ -1,0 +1,624 @@
+2025-12-15 10:12:59,776-DEBUG-root-1860::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251215101259752.log'
+2025-12-15 10:12:59,777-INFO-root-1860::base::Start|1183:: TIR Version: 2.4.3
+2025-12-15 10:12:59,777-INFO-root-1860::base::Start|1184:: Python Version: 3.12.10
+2025-12-15 10:12:59,778-INFO-root-1860::base::Start|1185:: Starting the browser
+2025-12-15 10:13:08,745-INFO-root-1860::base::get_url|1294:: Page is ready!
+2025-12-15 10:13:08,778-INFO-root-1860::base::Start|1256:: Browser maximized to 1936x1048
+2025-12-15 10:13:08,779-INFO-root-1860::base::Start|1258:: Screen size is different from default used in headless mode
+2025-12-15 10:13:09,108-INFO-root-1860::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-12-15 10:13:09,109-DEBUG-root-1860::psutil_info::system_info|5:: CPU USAGE: 17.9%
+2025-12-15 10:13:09,119-DEBUG-root-1860::psutil_info::system_info|6:: MEMORY USAGE: 95.2%
+2025-12-15 10:13:09,120-DEBUG-root-1860::psutil_info::system_info|7:: MEMORY AVAILABLE: 4.83%
+2025-12-15 10:13:09,148-INFO-root-1860::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-12-15 10:13:09,223-INFO-root-1860::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-12-15 10:13:09,223-DEBUG-root-1860::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 10:13:09,289-DEBUG-root-1860::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:09,468-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:09,479-DEBUG-root-1860::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-15 10:13:09,932-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-12-15 10:13:09,933-INFO-root-1860::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-12-15 10:13:09,933-DEBUG-root-1860::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 10:13:10,006-DEBUG-root-1860::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:10,526-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:10,607-DEBUG-root-1860::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-12-15 10:13:11,260-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-12-15 10:13:11,297-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:11,330-DEBUG-root-1860::webapp_internal::user_screen|519:: Filling user screen
+2025-12-15 10:13:17,695-DEBUG-root-1860::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-15 10:13:17,760-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:17,818-DEBUG-root-1860::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-15 10:13:17,998-INFO-root-1860::webapp_internal::user_screen|561:: Filling User
+2025-12-15 10:13:18,033-DEBUG-root-1860::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-12-15 10:13:18,235-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-12-15 10:13:18,269-INFO-root-1860::webapp_internal::user_screen|621:: Filling Password
+2025-12-15 10:13:18,295-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:18,382-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: Deire20191817+
+2025-12-15 10:13:18,383-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:18,424-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:18,451-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:18,495-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:18,551-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:18,591-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:18,591-DEBUG-root-1860::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 10:13:18,600-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:19,652-DEBUG-root-1860::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 10:13:19,652-DEBUG-root-1860::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 10:13:22,996-DEBUG-root-1860::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-12-15 10:13:23,077-INFO-root-1860::webapp_internal::filling_date|885:: Filling Date: "15/12/2025"
+2025-12-15 10:13:23,077-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:23,131-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:23,134-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:23,165-DEBUG-root-1860::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-12-15 10:13:23,301-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: 15/12/2025
+2025-12-15 10:13:24,397-INFO-root-1860::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-12-15 10:13:24,397-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:24,433-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:24,436-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:24,495-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: 02
+2025-12-15 10:13:25,563-INFO-root-1860::webapp_internal::filling_branch|1047:: Filling Branch: "02DF0001"
+2025-12-15 10:13:25,563-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:25,597-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:25,601-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:25,656-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: 02DF0001
+2025-12-15 10:13:26,787-INFO-root-1860::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-12-15 10:13:26,787-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:26,833-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:26,836-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:26,927-DEBUG-root-1860::webapp_internal::get_web_value|3232:: Current value: 07
+2025-12-15 10:13:27,936-DEBUG-root-1860::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-15 10:13:28,970-DEBUG-root-1860::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-15 10:13:30,085-INFO-root-1860::webapp_internal::environment_screen|796:: Clicking on Button
+2025-12-15 10:13:30,085-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:30,124-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-12-15 10:13:30,127-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:31,142-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:32,151-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:33,159-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:34,168-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:35,180-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:36,188-DEBUG-root-1860::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-12-15 10:13:36,241-DEBUG-root-1860::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-15 10:13:37,281-DEBUG-root-1860::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-15 10:13:37,281-DEBUG-root-1860::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-15 10:13:37,839-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:37,904-DEBUG-root-1860::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-12-15 10:13:38,996-DEBUG-root-1860::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-12-15 10:13:38,997-DEBUG-root-1860::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-12-15 10:13:39,098-INFO-root-1860::webapp_internal::set_log_info|1623:: Getting log info
+2025-12-15 10:13:39,098-INFO-root-1860::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Ajuda > Sobre
+2025-12-15 10:13:39,127-DEBUG-root-1860::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 10:13:39,163-DEBUG-root-1860::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:39,340-INFO-root-1860::webapp_internal::SetLateralMenu|4203:: Menu item: "Ajuda"
+2025-12-15 10:13:39,340-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:39,404-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:39,753-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:40,029-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:40,093-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:42,366-INFO-root-1860::webapp_internal::SetLateralMenu|4203:: Menu item: "Sobre"
+2025-12-15 10:13:42,366-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:42,431-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:42,837-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:43,182-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:43,244-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:45,864-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:45,936-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:46,003-DEBUG-root-1860::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 10:13:46,045-DEBUG-root-1860::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:46,215-INFO-root-1860::webapp_internal::SetButton|4444:: Clicking on Fechar
+2025-12-15 10:13:46,215-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:46,285-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:46,463-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:46,532-DEBUG-root-1860::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Fechar
+2025-12-15 10:13:46,532-DEBUG-root-1860::psutil_info::system_info|5:: CPU USAGE: 12.9%
+2025-12-15 10:13:46,532-DEBUG-root-1860::psutil_info::system_info|6:: MEMORY USAGE: 92.4%
+2025-12-15 10:13:46,533-DEBUG-root-1860::psutil_info::system_info|7:: MEMORY AVAILABLE: 7.59%
+2025-12-15 10:13:46,716-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:46,818-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:46,886-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:46,903-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:46,974-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:46,975-DEBUG-root-1860::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 10:13:46,977-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:13:48,007-DEBUG-root-1860::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 10:13:48,007-DEBUG-root-1860::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-12-15 10:13:48,008-DEBUG-root-1860::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-15 10:13:48,008-DEBUG-root-1860::psutil_info::system_info|5:: CPU USAGE: 7.3%
+2025-12-15 10:13:48,008-DEBUG-root-1860::psutil_info::system_info|6:: MEMORY USAGE: 92.4%
+2025-12-15 10:13:48,009-DEBUG-root-1860::psutil_info::system_info|7:: MEMORY AVAILABLE: 7.62%
+2025-12-15 10:13:48,009-DEBUG-root-1860::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 10:13:48,095-INFO-root-1860::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Gestao de Viagens > Solicitações
+2025-12-15 10:13:48,105-DEBUG-root-1860::webapp_internal::wait_element|7623:: Waiting for element
+2025-12-15 10:13:48,140-DEBUG-root-1860::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:48,297-INFO-root-1860::webapp_internal::SetLateralMenu|4203:: Menu item: "Atualizações"
+2025-12-15 10:13:48,297-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:48,360-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:48,753-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:49,099-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:49,159-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:51,458-INFO-root-1860::webapp_internal::SetLateralMenu|4203:: Menu item: "Gestao de Viagens"
+2025-12-15 10:13:51,460-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:51,591-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:52,312-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:53,019-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:53,112-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:55,406-INFO-root-1860::webapp_internal::SetLateralMenu|4203:: Menu item: "Solicitações"
+2025-12-15 10:13:55,406-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:55,482-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:13:56,306-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:13:57,098-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:13:57,178-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:14:00,641-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:14:00,716-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:14:00,792-INFO-root-1860::webapp_internal::WaitShow|4980:: Waiting show text 'Este ambiente utiliza base de Homologação.'...
+2025-12-15 10:14:05,931-INFO-root-1860::webapp_internal::WaitShow|4980:: Waiting show text 'Moedas'...
+2025-12-15 10:14:11,330-INFO-root-1860::webapp_internal::WaitShow|4980:: Waiting show text 'Solicitação de Viagens/Treinamento'...
+2025-12-15 10:14:11,384-INFO-root-1860::webapp_internal::WaitShow|4996:: Text found! 
+2025-12-15 10:14:11,385-INFO-root-1860::webapp_internal::SetButton|4444:: Clicking on Incluir
+2025-12-15 10:14:11,385-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:14:11,477-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:14:11,910-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:14:12,198-DEBUG-root-1860::webapp_internal::SetButton|4481:: ***System Info*** Before Clicking on button:Incluir
+2025-12-15 10:14:12,198-DEBUG-root-1860::psutil_info::system_info|5:: CPU USAGE: 10.9%
+2025-12-15 10:14:12,198-DEBUG-root-1860::psutil_info::system_info|6:: MEMORY USAGE: 92.6%
+2025-12-15 10:14:12,199-DEBUG-root-1860::psutil_info::system_info|7:: MEMORY AVAILABLE: 7.35%
+2025-12-15 10:14:12,568-DEBUG-root-1860::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-12-15 10:14:12,892-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:14:12,982-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:14:13,003-DEBUG-root-1860::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-12-15 10:14:13,097-DEBUG-root-1860::webapp_internal::wait_blocker|2469:: Blocker status: False
+2025-12-15 10:14:13,097-DEBUG-root-1860::webapp_internal::send_action|10480:: Trying to send action
+2025-12-15 10:14:13,098-DEBUG-root-1860::base::click|192:: Click Type: ClickType.JS
+2025-12-15 10:14:14,334-DEBUG-root-1860::webapp_internal::send_action|10522:: send_action method result = True
+2025-12-15 10:14:14,334-DEBUG-root-1860::webapp_internal::send_action|10523:: send_action selenium status: True
+2025-12-15 10:14:14,334-DEBUG-root-1860::webapp_internal::SetButton|4683:: ***System Info*** After Clicking on button:
+2025-12-15 10:14:14,335-DEBUG-root-1860::psutil_info::system_info|5:: CPU USAGE: 10.1%
+2025-12-15 10:14:14,335-DEBUG-root-1860::psutil_info::system_info|6:: MEMORY USAGE: 92.8%
+2025-12-15 10:14:14,335-DEBUG-root-1860::psutil_info::system_info|7:: MEMORY AVAILABLE: 7.19%
+2025-12-15 10:14:14,336-INFO-root-1860::webapp_internal::WaitShow|4980:: Waiting show text 'Modelo de Dados do Cadastro Centro de Custo vs Orçamento - INCLUIR'...
+2025-12-15 10:17:09,277-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:09,834-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:10,337-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:10,841-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:11,344-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:11,847-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:12,351-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:12,854-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:13,358-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:13,861-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:14,364-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:14,867-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:15,371-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:15,875-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-12-15 10:17:16,378-ERROR-root-1860::webapp_internal::web_scrap|3782:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 3719, in web_scrap
+    soup = self.get_current_DOM(twebview=twebview)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+

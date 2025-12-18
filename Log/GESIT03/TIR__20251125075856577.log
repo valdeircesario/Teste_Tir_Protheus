@@ -1,0 +1,434 @@
+2025-11-25 07:58:56,582-DEBUG-root-27868::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251125075856577.log'
+2025-11-25 07:58:56,582-INFO-root-27868::base::Start|1183:: TIR Version: 2.4.3
+2025-11-25 07:58:56,583-INFO-root-27868::base::Start|1184:: Python Version: 3.12.10
+2025-11-25 07:58:56,583-INFO-root-27868::base::Start|1185:: Starting the browser
+2025-11-25 07:59:03,781-INFO-root-27868::base::get_url|1294:: Page is ready!
+2025-11-25 07:59:03,789-INFO-root-27868::base::Start|1256:: Browser maximized to 1936x1048
+2025-11-25 07:59:03,789-INFO-root-27868::base::Start|1258:: Screen size is different from default used in headless mode
+2025-11-25 07:59:03,897-INFO-root-27868::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-11-25 07:59:03,897-DEBUG-root-27868::psutil_info::system_info|5:: CPU USAGE: 15.8%
+2025-11-25 07:59:03,898-DEBUG-root-27868::psutil_info::system_info|6:: MEMORY USAGE: 85.2%
+2025-11-25 07:59:03,898-DEBUG-root-27868::psutil_info::system_info|7:: MEMORY AVAILABLE: 14.77%
+2025-11-25 07:59:03,911-INFO-root-27868::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-11-25 07:59:03,981-INFO-root-27868::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-11-25 07:59:03,981-DEBUG-root-27868::webapp_internal::wait_element|7623:: Waiting for element
+2025-11-25 07:59:04,014-DEBUG-root-27868::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-11-25 07:59:04,179-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:04,183-DEBUG-root-27868::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-11-25 07:59:04,948-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-11-25 07:59:04,948-INFO-root-27868::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-11-25 07:59:04,948-DEBUG-root-27868::webapp_internal::wait_element|7623:: Waiting for element
+2025-11-25 07:59:04,976-DEBUG-root-27868::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-11-25 07:59:05,166-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:05,171-DEBUG-root-27868::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-11-25 07:59:05,528-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-11-25 07:59:05,550-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:05,562-DEBUG-root-27868::webapp_internal::user_screen|519:: Filling user screen
+2025-11-25 07:59:11,712-DEBUG-root-27868::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-11-25 07:59:11,774-DEBUG-root-27868::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-11-25 07:59:11,926-INFO-root-27868::webapp_internal::user_screen|561:: Filling User
+2025-11-25 07:59:11,947-DEBUG-root-27868::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-11-25 07:59:12,124-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-11-25 07:59:12,147-INFO-root-27868::webapp_internal::user_screen|621:: Filling Password
+2025-11-25 07:59:12,173-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:12,256-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-11-25 07:59:12,256-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:12,288-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:12,308-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:12,335-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:12,365-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:12,391-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:12,391-DEBUG-root-27868::webapp_internal::send_action|10480:: Trying to send action
+2025-11-25 07:59:12,398-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:13,439-DEBUG-root-27868::webapp_internal::send_action|10522:: send_action method result = True
+2025-11-25 07:59:13,439-DEBUG-root-27868::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-11-25 07:59:15,847-DEBUG-root-27868::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-11-25 07:59:15,890-INFO-root-27868::webapp_internal::filling_date|885:: Filling Date: "25/11/2025"
+2025-11-25 07:59:15,890-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:15,922-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:15,925-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:15,944-DEBUG-root-27868::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-11-25 07:59:16,021-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 25/11/2025
+2025-11-25 07:59:17,104-INFO-root-27868::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-11-25 07:59:17,104-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:17,136-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:17,139-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:17,187-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 02
+2025-11-25 07:59:18,248-INFO-root-27868::webapp_internal::filling_branch|1047:: Filling Branch: "02DF001"
+2025-11-25 07:59:18,249-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:18,278-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:18,280-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:18,337-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 02DF001
+2025-11-25 07:59:19,411-INFO-root-27868::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-11-25 07:59:19,411-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:19,446-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:19,448-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:19,500-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 07
+2025-11-25 07:59:20,509-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:21,540-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:22,638-INFO-root-27868::webapp_internal::environment_screen|796:: Clicking on Button
+2025-11-25 07:59:22,638-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:22,671-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:22,673-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:23,681-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:24,691-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:25,699-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:26,707-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:27,714-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:28,719-DEBUG-root-27868::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-11-25 07:59:28,757-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:29,788-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:29,789-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:29,867-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:30,896-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:30,897-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:30,969-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:32,000-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:32,001-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:32,103-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:33,145-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:33,145-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:33,251-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:34,291-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:34,291-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:34,382-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:35,412-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:35,413-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:35,492-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:36,529-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:36,529-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:36,631-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:37,664-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:37,664-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:37,742-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:38,770-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:38,770-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:38,848-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:39,879-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:39,879-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:39,959-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:40,988-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:40,988-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:41,064-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:42,095-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:42,095-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:42,174-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:43,209-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:43,209-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:43,286-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:44,315-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:44,315-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:44,393-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:45,429-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:45,430-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:45,506-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:46,538-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:46,538-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:46,614-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:47,649-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:47,649-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:47,761-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:48,791-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:48,791-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:48,873-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:49,906-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:49,906-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:49,992-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:51,025-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:51,025-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:51,109-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:52,155-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:52,155-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:52,298-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:53,330-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:53,331-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:53,428-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:54,469-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:54,469-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:54,594-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:55,628-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:55,629-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:55,722-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:56,753-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:56,753-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:56,829-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:57,861-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:57,861-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:57,939-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:58,973-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:58,973-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:59,049-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:00,102-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:00,103-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:00,214-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:01,246-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:01,246-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:01,323-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:02,354-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:02,354-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:02,437-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:03,511-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:03,512-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:03,638-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:04,671-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:04,671-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:04,756-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:06,242-ERROR-root-27868::webapp_internal::Setup|320:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 308, in Setup
+    self.close_screen_before_menu()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 375, in close_screen_before_menu
+    self.close_warning_screen()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 1494, in close_warning_screen
+    soup = self.get_current_DOM()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-11-25 08:00:06,243-INFO-root-27868::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Beneficios > Planos de Saúde > Planos Saúde Ativos
+2025-11-25 07:58:56,582-DEBUG-root-27868::logging_config::logger|189:: Log file created: 'Log\GESIT03\TIR__20251125075856577.log'
+2025-11-25 07:58:56,582-INFO-root-27868::base::Start|1183:: TIR Version: 2.4.3
+2025-11-25 07:58:56,583-INFO-root-27868::base::Start|1184:: Python Version: 3.12.10
+2025-11-25 07:58:56,583-INFO-root-27868::base::Start|1185:: Starting the browser
+2025-11-25 07:59:03,781-INFO-root-27868::base::get_url|1294:: Page is ready!
+2025-11-25 07:59:03,789-INFO-root-27868::base::Start|1256:: Browser maximized to 1936x1048
+2025-11-25 07:59:03,789-INFO-root-27868::base::Start|1258:: Screen size is different from default used in headless mode
+2025-11-25 07:59:03,897-INFO-root-27868::webapp_internal::Setup|247:: ***System Info*** in Setup():
+2025-11-25 07:59:03,897-DEBUG-root-27868::psutil_info::system_info|5:: CPU USAGE: 15.8%
+2025-11-25 07:59:03,898-DEBUG-root-27868::psutil_info::system_info|6:: MEMORY USAGE: 85.2%
+2025-11-25 07:59:03,898-DEBUG-root-27868::psutil_info::system_info|7:: MEMORY AVAILABLE: 14.77%
+2025-11-25 07:59:03,911-INFO-root-27868::base::webapp_shadowroot|1394:: Webapp: 10.1.6-RC4
+2025-11-25 07:59:03,981-INFO-root-27868::webapp_internal::filling_initial_program|449:: Filling Initial Program: "SIGAMDI"
+2025-11-25 07:59:03,981-DEBUG-root-27868::webapp_internal::wait_element|7623:: Waiting for element
+2025-11-25 07:59:04,014-DEBUG-root-27868::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-11-25 07:59:04,179-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:04,183-DEBUG-root-27868::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-11-25 07:59:04,948-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: SIGAMDI
+2025-11-25 07:59:04,948-INFO-root-27868::webapp_internal::filling_server_environment|463:: Filling Server Environment: "POUPEX_TST"
+2025-11-25 07:59:04,948-DEBUG-root-27868::webapp_internal::wait_element|7623:: Waiting for element
+2025-11-25 07:59:04,976-DEBUG-root-27868::webapp_internal::wait_element|7653:: Element found! Waiting for element to be displayed.
+2025-11-25 07:59:05,166-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:05,171-DEBUG-root-27868::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 0
+2025-11-25 07:59:05,528-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: POUPEX_TST
+2025-11-25 07:59:05,550-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:05,562-DEBUG-root-27868::webapp_internal::user_screen|519:: Filling user screen
+2025-11-25 07:59:11,712-DEBUG-root-27868::webapp_internal::wait_element_timeout|7726:: Element found! Waiting for element to be displayed.
+2025-11-25 07:59:11,774-DEBUG-root-27868::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-11-25 07:59:11,926-INFO-root-27868::webapp_internal::user_screen|561:: Filling User
+2025-11-25 07:59:11,947-DEBUG-root-27868::base::double_click|259:: Click Type: ClickType.SELENIUM
+2025-11-25 07:59:12,124-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 97137227104
+2025-11-25 07:59:12,147-INFO-root-27868::webapp_internal::user_screen|621:: Filling Password
+2025-11-25 07:59:12,173-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:12,256-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: Val20221080080094+
+2025-11-25 07:59:12,256-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:12,288-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:12,308-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:12,335-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:12,365-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:12,391-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:12,391-DEBUG-root-27868::webapp_internal::send_action|10480:: Trying to send action
+2025-11-25 07:59:12,398-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:13,439-DEBUG-root-27868::webapp_internal::send_action|10522:: send_action method result = True
+2025-11-25 07:59:13,439-DEBUG-root-27868::webapp_internal::send_action|10523:: send_action selenium status: False
+2025-11-25 07:59:15,847-DEBUG-root-27868::base::scroll_to_element|759:: ********Warining scroll_to_element exception: Message: TypeError: can't access property "scrollIntoView", arguments[0] is null
+Stacktrace:
+@https://qasrverp:10020/webapp/:2:7
+@https://qasrverp:10020/webapp/:3:8
+*********
+2025-11-25 07:59:15,890-INFO-root-27868::webapp_internal::filling_date|885:: Filling Date: "25/11/2025"
+2025-11-25 07:59:15,890-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:15,922-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:15,925-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:15,944-DEBUG-root-27868::webapp_internal::try_send_keys|7976:: Trying to send keys to element using technique 1
+2025-11-25 07:59:16,021-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 25/11/2025
+2025-11-25 07:59:17,104-INFO-root-27868::webapp_internal::filling_group|955:: Filling Group: "02"
+2025-11-25 07:59:17,104-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:17,136-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:17,139-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:17,187-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 02
+2025-11-25 07:59:18,248-INFO-root-27868::webapp_internal::filling_branch|1047:: Filling Branch: "02DF001"
+2025-11-25 07:59:18,249-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:18,278-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:18,280-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:18,337-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 02DF001
+2025-11-25 07:59:19,411-INFO-root-27868::webapp_internal::filling_environment|1113:: Filling Environment: "07"
+2025-11-25 07:59:19,411-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:19,446-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:19,448-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:19,500-DEBUG-root-27868::webapp_internal::get_web_value|3232:: Current value: 07
+2025-11-25 07:59:20,509-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:21,540-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:22,638-INFO-root-27868::webapp_internal::environment_screen|796:: Clicking on Button
+2025-11-25 07:59:22,638-DEBUG-root-27868::webapp_internal::wait_blocker|2444:: Waiting blocker to continue...
+2025-11-25 07:59:22,671-DEBUG-root-27868::webapp_internal::wait_blocker|2469:: Blocker status: None
+2025-11-25 07:59:22,673-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:23,681-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:24,691-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:25,699-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:26,707-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:27,714-DEBUG-root-27868::base::click|192:: Click Type: ClickType.JS
+2025-11-25 07:59:28,719-DEBUG-root-27868::webapp_internal::close_screen_before_menu|368:: Closing screen before the menu
+2025-11-25 07:59:28,757-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:29,788-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:29,789-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:29,867-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:30,896-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:30,897-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:30,969-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:32,000-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:32,001-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:32,103-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:33,145-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:33,145-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:33,251-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:34,291-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:34,291-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:34,382-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:35,412-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:35,413-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:35,492-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:36,529-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:36,529-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:36,631-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:37,664-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:37,664-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:37,742-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:38,770-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:38,770-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:38,848-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:39,879-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:39,879-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:39,959-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:40,988-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:40,988-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:41,064-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:42,095-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:42,095-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:42,174-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:43,209-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:43,209-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:43,286-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:44,315-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:44,315-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:44,393-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:45,429-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:45,430-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:45,506-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:46,538-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:46,538-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:46,614-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:47,649-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:47,649-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:47,761-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:48,791-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:48,791-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:48,873-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:49,906-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:49,906-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:49,992-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:51,025-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:51,025-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:51,109-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:52,155-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:52,155-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:52,298-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:53,330-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:53,331-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:53,428-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:54,469-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:54,469-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:54,594-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:55,628-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:55,629-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:55,722-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:56,753-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:56,753-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:56,829-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:57,861-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:57,861-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:57,939-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 07:59:58,973-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 07:59:58,973-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 07:59:59,049-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:00,102-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:00,103-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:00,214-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:01,246-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:01,246-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:01,323-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:02,354-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:02,354-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:02,437-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:03,511-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:03,512-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:03,638-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:04,671-DEBUG-root-27868::webapp_internal::check_screen_element|1291:: Checking screen element: "Atenção": False
+2025-11-25 08:00:04,671-DEBUG-root-27868::webapp_internal::close_coin_screen|1424:: Closing coin screen!
+2025-11-25 08:00:04,756-DEBUG-root-27868::webapp_internal::close_warning_screen|1489:: Closing warning screen!
+2025-11-25 08:00:06,242-ERROR-root-27868::webapp_internal::Setup|320:: Message: Tried to run command without establishing a connection
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 501, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 308, in Setup
+    self.close_screen_before_menu()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 375, in close_screen_before_menu
+    self.close_warning_screen()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\webapp_internal.py", line 1494, in close_warning_screen
+    soup = self.get_current_DOM()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TIR_TESTE\venv\Lib\site-packages\tir\technologies\core\base.py", line 538, in get_current_DOM
+    self.driver.switch_to.default_content()
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 69, in default_content
+    self._driver.execute(Command.SWITCH_TO_FRAME, {"id": None})
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\TIR_TESTE\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+2025-11-25 08:00:06,243-INFO-root-27868::webapp_internal::SetLateralMenu|4184:: Navigating lateral menu: Atualizações > Beneficios > Planos de Saúde > Planos Saúde Ativos
