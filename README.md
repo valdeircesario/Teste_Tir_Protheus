@@ -1,13 +1,14 @@
-# Teste TIR Protheus
+# Projeto de Automação de Testes TIR - Protheus
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
 [![TIR Framework](https://img.shields.io/badge/TIR-2.4.3-green.svg)](https://totvs.github.io/tir/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Este projeto contém um ambiente de desenvolvimento completo para testes automatizados usando o framework TIR (Totvs Interface Robot) para aplicações Protheus Webapp. O TIR é uma ferramenta poderosa para automação de testes funcionais em sistemas Totvs Protheus.
+Este é um projeto pessoal de desenvolvimento e demonstração de automação de testes funcionais para aplicações Totvs Protheus Webapp, utilizando o framework TIR (Totvs Interface Robot). O objetivo é apresentar habilidades em automação de testes, desenvolvimento de scripts de teste e configuração de ambientes de teste.
 
 ## 📋 Sumário
 
+- [Sobre o Projeto](#sobre-o-projeto)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação e Setup](#instalação-e-setup)
 - [Estrutura do Projeto](#estrutura-do-projeto)
@@ -16,8 +17,21 @@ Este projeto contém um ambiente de desenvolvimento completo para testes automat
 - [Logs e Debug](#logs-e-debug)
 - [Comandos Úteis](#comandos-úteis)
 - [Troubleshooting](#troubleshooting)
-- [Contribuição](#contribuição)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Licença](#licença)
+
+## 🎯 Sobre o Projeto
+
+Este projeto demonstra a implementação de testes automatizados para sistemas Protheus, cobrindo:
+
+- ✅ **Setup completo** de ambiente de desenvolvimento
+- ✅ **Testes funcionais** com operações CRUD
+- ✅ **Interação com grids** e formulários web
+- ✅ **Captura de valores dinâmicos** gerados pelo sistema
+- ✅ **Relatórios de execução** e logs detalhados
+- ✅ **Configuração flexível** para diferentes ambientes
+
+Ideal para portfólio de desenvolvedor, apresentações técnicas ou como base para projetos de automação de testes.
 
 ## 🔧 Pré-requisitos
 
@@ -40,6 +54,11 @@ Antes de começar, certifique-se de ter os seguintes softwares instalados:
   git --version
   ```
 
+### 3. Acesso a Ambiente Protheus
+- Ambiente de teste Protheus Webapp acessível
+- Credenciais válidas para o ambiente
+- Conexão de rede estável
+
 ## 🚀 Instalação e Setup
 
 ### Passo 1: Obter o Projeto
@@ -52,13 +71,13 @@ cd Teste_Tir_Protheus
 
 **Opção B: Download Manual**
 - Baixe o arquivo ZIP do repositório
-- Extraia para uma pasta (ex: `C:\TIR_TESTE`)
+- Extraia para uma pasta local
 
 ### Passo 2: Criar Ambiente Virtual
 
 Abra o PowerShell como Administrador e navegue até a pasta do projeto:
 ```powershell
-cd C:\TIR_TESTE
+cd C:\caminho\para\projeto
 ```
 
 Execute o script de setup incluído:
@@ -90,12 +109,12 @@ Edite o `config.json` com suas configurações específicas (veja [Configuraçã
 ## 📁 Estrutura do Projeto
 
 ```
-C:\TIR_TESTE\
+projeto-tir\
 ├── venv\                    # Ambiente virtual Python
 ├── tests\                   # Arquivos de teste automatizados
-│   ├── test_pxgpea24.py    # Teste básico de exemplo
-│   ├── test_PXGPEM04.py    # Teste CRUD com operações em grid
-│   ├── test_PXFINA11.py    # Teste de solicitação de viagem
+│   ├── test_basico.py      # Teste básico de exemplo
+│   ├── test_crud.py        # Teste CRUD com operações em grid
+│   ├── test_formulario.py  # Teste de formulários dinâmicos
 │   └── ...                 # Outros testes
 ├── config.json             # Configuração TIR (personalizada)
 ├── config.template.json    # Template de configuração
@@ -103,7 +122,6 @@ C:\TIR_TESTE\
 ├── .vscode\                # Configurações do VSCode
 │   └── settings.json       # Configuração do interpretador Python
 ├── Log\                    # Logs de execução dos testes
-│   └── GESIT03\           # Pasta específica do ambiente
 ├── screenshot\             # Capturas de tela dos testes
 └── README.md               # Este arquivo de documentação
 ```
@@ -118,7 +136,7 @@ Antes de executar qualquer teste, ative o ambiente virtual:
 
 ### Executar Teste Específico
 ```powershell
-python -m pytest tests/test_pxgpea24.py -v
+python -m pytest tests/test_basico.py -v
 ```
 
 ### Executar Todos os Testes
@@ -128,7 +146,7 @@ python -m pytest tests/ -v
 
 ### Executar Teste Individual (sem pytest)
 ```powershell
-python tests/test_PXGPEM04.py
+python tests/test_crud.py
 ```
 
 ### Com Relatórios Detalhados
@@ -144,10 +162,10 @@ O arquivo `config.json` contém todas as configurações necessárias para o TIR
 
 ```json
 {
-  "Url": "https://qasrverp:10020/webapp/",
+  "Url": "https://ambiente-teste.com.br/webapp/",
   "Browser": "Firefox",
-  "Environment": "POUPEX_TST",
-  "User": "97137227104",
+  "Environment": "TESTE",
+  "User": "usuario_teste",
   "Password": "sua_senha_aqui",
   "Language": "pt-br",
   "TimeOut": 120,
@@ -155,7 +173,7 @@ O arquivo `config.json` contém todas as configurações necessárias para o TIR
   "Headless": false,
   "POUILogin": true,
   "ChromeDriverAutoInstall": true,
-  "LogFolder": "Log/GESIT03/"
+  "LogFolder": "Log/"
 }
 ```
 
@@ -175,12 +193,12 @@ O arquivo `config.json` contém todas as configurações necessárias para o TIR
 ## 📊 Logs e Debug
 
 ### Localização dos Logs
-- **Pasta principal**: `Log/GESIT03/`
-- **Arquivos**: `TIR__YYYYMMDDHHMMSS.log`
+- **Pasta principal**: `Log/`
+- **Arquivos**: `TIR_YYYYMMDDHHMMSS.log`
 - **Debug habilitado**: Configure `DebugLog: true` no `config.json`
 
 ### Dicas de Debug
-1. Verifique os logs do TIR em `Log/GESIT03/`
+1. Verifique os logs do TIR em `Log/`
 2. Habilite `DebugLog: true` para mais detalhes
 3. Verifique os logs do navegador (F12 > Console)
 4. Use screenshots em `screenshot/` para análise visual
@@ -220,7 +238,7 @@ python -c "import selenium; print('Selenium OK')"
 python -m pip cache purge
 
 # Limpar logs antigos
-Remove-Item Log\GESIT03\*.log -Force
+Remove-Item Log\*.log -Force
 ```
 
 ## 🔍 Troubleshooting
@@ -251,42 +269,29 @@ Remove-Item Log\GESIT03\*.log -Force
 
 ### Problema: Grid não avança nas células
 **Este é um problema conhecido do TIR**:
-- Verifique se o DOM da página mudou (atualizações do Protheus)
-- Consulte logs em `Log/GESIT03/` para detalhes
-- Pode requerer ajustes no código do TIR (não recomendado modificar diretamente)
+- Verifique se o DOM da página mudou (atualizações do sistema)
+- Consulte logs em `Log/` para detalhes
+- Pode requerer ajustes no código do TIR
 
 ### Problema: Erro de WebDriver
 **Solução**:
 - Configure `ChromeDriverAutoInstall: true` no `config.json`
 - Ou baixe manualmente o chromedriver compatível
 
-## 🤝 Contribuição
+## 🛠️ Tecnologias Utilizadas
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### Diretrizes de Contribuição
-- Mantenha os testes atualizados
-- Siga as convenções de código Python (PEP 8)
-- Documente novas funcionalidades
-- Teste em múltiplos ambientes quando possível
+- **Python 3.12**: Linguagem de programação principal
+- **TIR Framework**: Framework de automação para Protheus
+- **Selenium WebDriver**: Base para automação web
+- **Pytest**: Framework de testes
+- **Firefox/Chrome**: Navegadores para execução dos testes
+- **PowerShell**: Scripts de automação do ambiente
+- **VSCode**: Ambiente de desenvolvimento
 
 ## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 📞 Suporte
-
-Para suporte técnico:
-1. Verifique os logs em `Log/GESIT03/`
-2. Execute testes com `DebugLog: true`
-3. Copie mensagens de erro completas
-4. Consulte a documentação oficial do TIR: [https://totvs.github.io/tir/](https://totvs.github.io/tir/)
-5. Abra uma issue no repositório para problemas específicos
-
 ---
 
-**Desenvolvido para facilitar o setup e desenvolvimento com TIR Framework** 🚀
+**Projeto pessoal desenvolvido para demonstrar habilidades em automação de testes com TIR Framework** 🚀
