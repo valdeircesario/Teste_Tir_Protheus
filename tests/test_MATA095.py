@@ -12,7 +12,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 # .\venv\Scripts\python.exe -m pytest tests/test_PXFINA11_03.py -s
 
-class PXFINA11_03(unittest.TestCase):
+class MATA095(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -112,6 +112,6 @@ class PXFINA11_03(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(PXFINA11_03('test_Adicionando_Aprovadores_na_Solicitação_de_Viagem'))
+    suite.addTest(MATA095('test_Cadastro_de_aprovadores_Viagem'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
