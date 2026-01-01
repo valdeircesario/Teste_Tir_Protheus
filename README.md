@@ -134,7 +134,9 @@ def test_incluir_funcionario(self):
 
 <!-- Adicione aqui screenshots do teste em execução -->
 ![](screenshot/centroCusto.png)
+---
 ![](screenshot/CentroCusto03.png)
+---
 ![](screenshot/CentroCusto01.png)
 
 ---
@@ -158,8 +160,12 @@ def test_incluir_funcionario(self):
 **🖼️ Demonstração Visual:**
 
 ![](screenshot/centroCusto.png)
+
+---
 ![](screenshot/CentroCusto01.png)
+---
 ![](screenshot/CentroCusto02.png)
+---
 ![](screenshot/CentroCusto03.png)
 
 
@@ -170,6 +176,7 @@ def test_incluir_funcionario(self):
   <source src="screenshot/VIDEOS/2026-01-01 18-43-09.mp4" type="video/mp4">
   Seu navegador não suporta a tag de vídeo.
 </video>
+---
 
 
 
