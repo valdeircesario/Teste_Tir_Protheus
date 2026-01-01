@@ -21,7 +21,7 @@ if (-not (Test-Path .\venv\Scripts\python.exe)) {
     exit 1
 }
 
-Write-Host "4) Instalando tir_framework no venv (pode demorar)",
+Write-Host "4) Instalando tir_framework no venv (pode demorar)"
 & .\venv\Scripts\python.exe -m pip install tir_framework --no-cache-dir --force-reinstall --upgrade
 
 Write-Host "Setup concluído. Ative o venv com: .\venv\Scripts\Activate.ps1" -ForegroundColor Green
