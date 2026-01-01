@@ -1,18 +1,35 @@
-# 🤖 Laboratório de Automação TIR — Protheus Testing Framework
+<div align="center">
+
+# 🤖 Laboratório de Automação TIR
+## Protheus Testing Framework
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![TIR Framework](https://img.shields.io/badge/TIR-2.4.3-00ADD8.svg?style=for-the-badge&logo=robot&logoColor=white)](https://totvs.github.io/tir/)
 [![Selenium](https://img.shields.io/badge/Selenium-WebDriver-43B02A.svg?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev/)
 [![Pytest](https://img.shields.io/badge/Pytest-Testing-0A9EDC.svg?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-FFD700.svg?style=for-the-badge)](LICENSE)
 
-> **Um ambiente completo de estudos e experimentação com automação de testes para Totvs Protheus usando TIR Framework**
+### 🎯 *Um ambiente completo de estudos e experimentação com automação de testes para Totvs Protheus*
+
+[📖 Documentação](#-sobre-o-projeto) • 
+[🚀 Quick Start](#-quick-start--clone-e-configure) • 
+[🧪 Casos de Teste](#-casos-de-teste-desenvolvidos) • 
+[🎬 Demonstrações](#-demonstrações-visuais) • 
+[🤝 Contribuir](#-como-contribuir)
+
+</div>
 
 ---
 
 ## 📖 Sobre o Projeto
 
-Este repositório foi criado como um **laboratório de aprendizado prático** para quem deseja dominar automação de testes no ecossistema Totvs Protheus. Aqui você encontrará casos de teste reais, exemplos comentados e uma estrutura profissional para desenvolver suas habilidades em:
+<table>
+<tr>
+<td width="60%">
+
+Este repositório foi criado como um **laboratório de aprendizado prático** para quem deseja dominar automação de testes no ecossistema Totvs Protheus. 
+
+### 🎓 O que você vai aprender?
 
 - 🎯 **Automação de Testes** com TIR (Totvs Interface Robot)
 - 🧠 **Lógica de Programação** aplicada a cenários reais
@@ -20,59 +37,109 @@ Este repositório foi criado como um **laboratório de aprendizado prático** pa
 - 📊 **Geração de Relatórios** e evidências de teste
 - 🐛 **Debug e Troubleshooting** de aplicações web complexas
 
-### 🎓 Por que este projeto existe?
+</td>
+<td width="40%">
 
-O **TIR Framework** é uma poderosa ferramenta desenvolvida pela Totvs para automação de testes em suas aplicações, mas dominar seus recursos requer prática. Este repositório oferece:
+```python
+# Exemplo de teste TIR
+def test_protheus():
+    oHelper = Webapp()
+    oHelper.Setup(
+        "SIGAGPE", 
+        "01/01/2024"
+    )
+    oHelper.Program("GPEA010")
+    oHelper.SetButton("Incluir")
+    oHelper.SetValue(
+        "RA_MAT", 
+        "000001"
+    )
+    oHelper.AssertTrue()
+```
 
-- ✅ Casos de teste **reais e funcionais** prontos para execução
-- ✅ Exemplos **progressivos** do básico ao avançado
-- ✅ **Documentação inline** explicando cada decisão técnica
-- ✅ Estrutura de projeto **profissional** com boas práticas
-- ✅ Geração automática de **logs, screenshots e relatórios HTML**
+</td>
+</tr>
+</table>
+
+### 💡 Por que este projeto existe?
+
+<div align="center">
+
+| ✅ Casos de teste **reais e funcionais** | ✅ Exemplos **progressivos** |
+|:---:|:---:|
+| **✅ Documentação inline** completa | **✅ Estrutura profissional** |
+| ✅ Geração automática de **logs e relatórios** | ✅ **Screenshots** de evidências |
+
+</div>
 
 ---
 
 ## 🚀 Quick Start — Clone e Configure
 
-### Pré-requisitos
+### 📋 Pré-requisitos
 
-- **Python 3.12+** instalado
-- **PowerShell** (para scripts de setup no Windows)
-- Acesso a uma instância **Totvs Protheus Webapp**
-- **Git** para clonar o repositório
+<div align="center">
 
-### Passo a Passo
+| Ferramenta | Versão | Status |
+|:---:|:---:|:---:|
+| 🐍 **Python** | 3.12+ | Obrigatório |
+| 💻 **PowerShell** | 5.1+ | Windows |
+| 🌐 **Protheus Webapp** | Qualquer | Acesso necessário |
+| 📦 **Git** | Última | Recomendado |
+
+</div>
+
+### ⚡ Instalação Rápida
 
 ```powershell
-# 1. Clone o repositório
+# 1️⃣ Clone o repositório
 git clone https://github.com/valdeircesario/Teste_Tir_Protheus.git
 cd Teste_Tir_Protheus
 
-# 2. Execute o script de configuração automática (Windows)
+# 2️⃣ Execute o setup automático
 .\setup.ps1
 
-# 3. Ative o ambiente virtual
+# 3️⃣ Ative o ambiente virtual
 .\venv\Scripts\Activate.ps1
 
-# 4. Configure suas credenciais
+# 4️⃣ Configure suas credenciais
 Copy-Item config.template.json config.json
-# Edite config.json com os dados do seu ambiente Protheus
+notepad config.json  # Edite com seus dados
 ```
 
-### Estrutura do `config.json`
+<details>
+<summary>📝 <strong>Clique para ver exemplo de config.json</strong></summary>
 
 ```json
 {
-  "url": "http://seu-servidor:porta/",
+  "url": "http://seu-servidor:8080/",
   "initial_program": "SIGAGPE",
-  "user": "seu_usuario",
-  "password": "sua_senha",
+  "user": "admin",
+  "password": "sua_senha_aqui",
   "browser": "firefox",
   "DebugLog": true,
   "LogFolder": "Log",
   "ScreenshotFolder": "screenshot"
 }
 ```
+
+</details>
+
+---
+
+## 🎬 Demonstrações Visuais
+
+### 🎥 Automação em Ação
+
+<div align="center">
+
+https://github.com/valdeircesario/Teste_Tir_Protheus/assets/screenshot/VIDEOS/2026-01-01%2018-43-09.mp4
+
+*🎬 Vídeo demonstrativo: Execução completa de teste automatizado no Protheus*
+
+</div>
+
+> 💡 **Dica:** O vídeo mostra a automação completa desde o login até a validação final dos dados cadastrados.
 
 ---
 
@@ -81,244 +148,381 @@ Copy-Item config.template.json config.json
 ### 📁 Estrutura Organizada por Módulos
 
 ```
-tests/
-├── Pessoal/              # Módulo de Gestão de Pessoal
-│   ├── test_GPEA010.py   # Cadastro de Funcionários
-│   ├── test_CTBA030.py   # Centro de Custo
-│   ├── test_PX*.py       # Folha de Pagamento e Benefícios
-│   └── ...
-├── Financeiro/           # Testes do módulo financeiro (em breve)
-└── test_tir_example.py   # Teste básico de validação
+📦 tests/
+┣ 📂 Pessoal/
+┃ ┣ 📄 test_GPEA010.py      # 👤 Cadastro de Funcionários
+┃ ┣ 📄 test_CTBA030.py      # 💼 Centro de Custo
+┃ ┣ 📄 test_PX*.py          # 💰 Folha de Pagamento
+┃ ┗ 📄 ...
+┣ 📂 Financeiro/            # 💵 Em desenvolvimento
+┗ 📄 test_tir_example.py    # ✅ Validação básica
 ```
 
 ---
 
-### 🎯 Casos de Teste Principais
+### 🎯 Casos de Teste Detalhados
 
-#### 1️⃣ `test_GPEA010.py` — Cadastro de Funcionário (Complexo)
+<div align="center">
 
-**Objetivo:** Validar o fluxo completo de inclusão de um novo funcionário no sistema.
+## 💼 Teste: Centro de Custo (CTBA030)
 
-**Cenário de Teste:**
-- Navegação para rotina GPEA010
-- Preenchimento de múltiplas abas (Dados Pessoais, Admissão, Endereço, etc.)
-- Validação de campos obrigatórios
-- Confirmação de gravação
-- Verificação de dados cadastrados
+</div>
 
-**Conceitos Aplicados:**
-- Manipulação de formulários complexos
-- Navegação entre abas (SetTabEDAPaper)
-- Tratamento de campos obrigatórios
-- Assertions e validações customizadas
+#### 📊 Objetivo do Teste
+
+Automatizar o fluxo completo de **inclusão, validação e consulta** de centros de custo no sistema Protheus, garantindo integridade dos dados cadastrados.
+
+#### 🎬 Demonstração em Imagens
+
+<div align="center">
+
+### 1️⃣ Tela Principal - Centro de Custo
+
+![Tela Inicial Centro de Custo](screenshot/centroCusto.png)
+
+*Interface principal da rotina CTBA030 - Cadastro de Centro de Custo*
+
+---
+
+### 2️⃣ Inclusão de Novo Registro
+
+![Formulário de Inclusão](screenshot/CentroCusto01.png)
+
+*Preenchimento automático dos campos através do TIR Framework*
+
+---
+
+### 3️⃣ Validação de Dados
+
+![Validação de Campos](screenshot/CentroCusto02.png)
+
+*Verificação automática dos dados inseridos e validações de negócio*
+
+---
+
+### 4️⃣ Confirmação de Sucesso
+
+![Registro Salvo](screenshot/CentroCusto03.png)
+
+*Confirmação de gravação e consulta do registro criado*
+
+</div>
+
+#### 📝 Fluxo do Teste
+
+```mermaid
+graph LR
+    A[🚀 Iniciar] --> B[🔐 Login]
+    B --> C[📂 Abrir CTBA030]
+    C --> D[➕ Incluir]
+    D --> E[✍️ Preencher Campos]
+    E --> F[💾 Salvar]
+    F --> G[✅ Validar]
+    G --> H[🔍 Consultar]
+    H --> I[🎉 Finalizar]
+    
+    style A fill:#4CAF50,color:#fff
+    style I fill:#2196F3,color:#fff
+    style G fill:#FF9800,color:#fff
+```
+
+#### 💻 Código do Teste
+
+```python
+def test_incluir_centro_custo(self):
+    """
+    Teste: Inclusão de Centro de Custo
+    
+    Cenário:
+        1. Acessa rotina CTBA030
+        2. Clica em "Incluir"
+        3. Preenche código e descrição
+        4. Salva o registro
+        5. Valida gravação
+        6. Consulta registro criado
+    """
+    # Acessa a rotina
+    self.oHelper.Program("CTBA030")
+    self.oHelper.WaitShow("Centro de Custo")
+    
+    # Inicia inclusão
+    self.oHelper.SetButton("Incluir")
+    
+    # Preenche campos obrigatórios
+    self.oHelper.SetValue("CTT_CUSTO", "001001")
+    self.oHelper.SetValue("CTT_DESC01", "CENTRO TESTE AUTOMATIZADO")
+    self.oHelper.SetValue("CTT_CLASSE", "2")  # Analítico
+    
+    # Salva e valida
+    self.oHelper.SetButton("Salvar")
+    self.oHelper.AssertTrue()
+    
+    # Consulta registro
+    self.oHelper.SetButton("Pesquisar")
+    self.oHelper.SetValue("CTT_CUSTO", "001001")
+    
+    # Valida dados gravados
+    desc = self.oHelper.GetValue("CTT_DESC01")
+    assert desc == "CENTRO TESTE AUTOMATIZADO"
+```
+
+#### 🎓 Conceitos Aplicados
+
+<table>
+<tr>
+<td width="50%">
+
+**Técnicas de Automação:**
+- ✅ Navegação por rotinas
+- ✅ Manipulação de formulários
+- ✅ Validação de campos
+- ✅ Assertions customizadas
+- ✅ Screenshots de evidência
+
+</td>
+<td width="50%">
+
+**Boas Práticas:**
+- ✅ Espera por elementos
+- ✅ Tratamento de erros
+- ✅ Logging detalhado
+- ✅ Código limpo e documentado
+- ✅ Reutilização de métodos
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## 👤 Teste: Cadastro de Funcionário (GPEA010)
+
+</div>
+
+#### 📊 Objetivo do Teste
+
+Validar o **fluxo completo de inclusão** de um novo funcionário no sistema, incluindo navegação entre múltiplas abas, preenchimento de dados pessoais, admissionais e validações de integridade.
+
+#### 🎯 Cenário de Teste
 
 ```python
 # Exemplo de código (snippet)
 def test_incluir_funcionario(self):
+    """
+    Teste Complexo: Cadastro Completo de Funcionário
+    
+    Cobertura:
+        - Dados Pessoais (aba 1)
+        - Dados Admissionais (aba 2)
+        - Endereço (aba 3)
+        - Complementos (aba 4)
+        - Validações de campos obrigatórios
+    """
     self.oHelper.Program("GPEA010")
     self.oHelper.SetButton("Incluir")
     
-    # Aba 1: Dados Principais
+    # 1️⃣ Aba: Dados Principais
     self.oHelper.SetValue("RA_MAT", "000001")
-    self.oHelper.SetValue("RA_NOME", "TESTE AUTOMATIZADO")
+    self.oHelper.SetValue("RA_NOME", "TESTE AUTOMATIZADO TIR")
+    self.oHelper.SetValue("RA_CPF", "12345678901")
     
-    # Navegação entre abas
-    self.oHelper.SetTabEDAPaper("Complementos", 2)
+    # 2️⃣ Navegação entre abas
+    self.oHelper.SetTabEDAPaper("Dados Admissionais", 2)
+    self.oHelper.SetValue("RA_ADMISSA", "01/01/2024")
+    self.oHelper.SetValue("RA_CARGO", "DESENVOLVEDOR")
+    
+    # 3️⃣ Aba: Complementos
+    self.oHelper.SetTabEDAPaper("Complementos", 3)
     self.oHelper.SetValue("RA_DEPTO", "001")
+    self.oHelper.SetValue("RA_CC", "001001")
     
+    # 4️⃣ Salvar e validar
     self.oHelper.SetButton("Salvar")
     self.oHelper.AssertTrue()
+    
+    # 5️⃣ Captura evidência
+    self.oHelper.Screenshot("funcionario_cadastrado")
 ```
 
-**🖼️ Demonstração Visual:**
+#### 💡 Conceitos Avançados
 
-<!-- Adicione aqui screenshots do teste em execução -->
-![](screenshot/centroCusto.png)
----
-![](screenshot/CentroCusto03.png)
----
-![](screenshot/CentroCusto01.png)
-
----
-
-#### 2️⃣ `test_CTBA030.py` — Centro de Custo
-
-**Objetivo:** Automatizar a inclusão e validação de centros de custo.
-
-**Fluxo de Teste:**
-1. Acesso à rotina CTBA030
-2. Inclusão de novo centro de custo
-3. Preenchimento de código e descrição
-4. Validação de persistência dos dados
-5. Consulta do registro criado
-
-**Técnicas Demonstradas:**
-- Uso de `SetValue()` para campos alfanuméricos
-- Validação com `GetValue()` e comparação
-- Ciclo completo: Incluir → Salvar → Consultar
-
-**🖼️ Demonstração Visual:**
-
-![](screenshot/centroCusto.png)
-
----
-![](screenshot/CentroCusto01.png)
----
-![](screenshot/CentroCusto02.png)
----
-![](screenshot/CentroCusto03.png)
-
-
----
-### Videos de demostração
-
-<video controls poster="screenshot/preview.png" width="640" loop muted playsinline>
-  <source src="screenshot/VIDEOS/2026-01-01 18-43-09.mp4" type="video/mp4">
-  Seu navegador não suporta a tag de vídeo.
-</video>
----
-
-
-
-#### 3️⃣ `test_PX*.py` — Rotinas de Folha de Pagamento
-
-**Família de Testes:** Diversos scripts cobrindo:
-- Cálculo de folha
-- Benefícios e descontos
-- Integrações com módulos externos
-- Relatórios gerenciais
-
-**Habilidades Desenvolvidas:**
-- Testes de integração entre módulos
-- Validação de cálculos complexos
-- Manipulação de grids e tabelas
-- Exportação e validação de relatórios
+- 🔄 **Navegação entre abas** com `SetTabEDAPaper()`
+- 🔍 **Validações em múltiplas camadas**
+- 📸 **Evidências automáticas** com screenshots
+- 🧩 **Formulários complexos** com dependências
+- ⚠️ **Tratamento de campos obrigatórios**
 
 ---
 
-#### 4️⃣ `test_tir_example.py` — Validação de Ambiente
+<div align="center">
 
-**Propósito:** Teste "hello world" para garantir que a configuração está correta.
+## ✅ Teste: Validação de Ambiente (test_tir_example.py)
 
-**O que valida:**
-- Conexão com Protheus
-- Carregamento do framework TIR
-- Abertura de rotina básica
-- Captura de screenshot
+</div>
+
+#### 🎯 Propósito
+
+Teste **"Hello World"** para garantir que o ambiente está configurado corretamente e o TIR está funcional.
 
 ```python
 def test_ambiente_configurado():
-    """Valida que o TIR está funcionando corretamente"""
+    """
+    Teste Básico: Validação de Ambiente
+    
+    Valida:
+        ✅ Conexão com Protheus
+        ✅ Carregamento do TIR Framework
+        ✅ Abertura de rotina simples
+        ✅ Captura de screenshot
+    """
     oHelper = Webapp()
     oHelper.Setup("SIGAGPE", "01/01/2024", "01", "01")
     oHelper.Program("GPEA010")
-    oHelper.Screenshot("teste_conexao")
+    oHelper.Screenshot("teste_conexao_ok")
     oHelper.TearDown()
+    
+    print("✅ Ambiente configurado com sucesso!")
 ```
 
 ---
 
 ## 🛠️ Stack Tecnológico
 
+<div align="center">
+
 ### Core Framework
-- **TIR Framework 2.4.3** — Biblioteca de automação Totvs
-- **Python 3.12+** — Linguagem de programação
-- **Selenium WebDriver** — Automação de navegadores
+
+| Tecnologia | Versão | Descrição |
+|:---:|:---:|:---|
+| ![TIR](https://img.shields.io/badge/TIR-2.4.3-00ADD8?style=flat-square) | `2.4.3` | Framework de automação Totvs |
+| ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python) | `3.12+` | Linguagem de programação |
+| ![Selenium](https://img.shields.io/badge/Selenium-Latest-43B02A?style=flat-square&logo=selenium) | `Latest` | Automação de navegadores |
 
 ### Testing & Reporting
-- **Pytest** — Framework de testes moderno
-- **pytest-html** — Geração de relatórios HTML
-- **pytest-xdist** — Execução paralela (opcional)
+
+| Ferramenta | Função |
+|:---:|:---|
+| ![Pytest](https://img.shields.io/badge/Pytest-Latest-0A9EDC?style=flat-square&logo=pytest) | Framework de testes moderno |
+| ![HTML](https://img.shields.io/badge/pytest--html-Latest-E34F26?style=flat-square&logo=html5) | Geração de relatórios HTML |
+| ![XDist](https://img.shields.io/badge/pytest--xdist-Latest-666?style=flat-square) | Execução paralela (opcional) |
 
 ### Browsers Suportados
-- 🦊 **Firefox** (recomendado)
-- 🌐 **Chrome** / Chromium
-- 🌊 **Edge** (experimental)
 
-### Ferramentas de Desenvolvimento
-- **VS Code** com extensões Python
-- **Git** para controle de versão
-- **PowerShell** para automação de setup
+🦊 **Firefox** (recomendado) • 🌐 **Chrome/Chromium** • 🌊 **Edge** (experimental)
+
+</div>
 
 ---
 
 ## 📊 Logs, Debug e Relatórios
 
-### Sistema de Logging Detalhado
+### 📝 Sistema de Logging Detalhado
 
-Todos os testes geram logs estruturados em `Log/`:
+<table>
+<tr>
+<td width="50%">
+
+**Estrutura de Logs:**
 
 ```
-Log/
-├── webapp_log_YYYYMMDD_HHMMSS.log
-├── selenium_grid.log
-└── execution_summary.txt
+📁 Log/
+├── 📄 webapp_log_20240101_123045.log
+├── 📄 selenium_grid.log
+└── 📄 execution_summary.txt
 ```
 
-**Níveis de log configuráveis:**
-- `DebugLog: true` — Logs verbosos com cada ação
-- `DebugLog: false` — Apenas erros e warnings
+</td>
+<td width="50%">
 
-### Screenshots Automáticos
+**Configuração:**
 
-Capturas de tela são salvas em `screenshot/`:
-- ✅ **Em caso de sucesso:** screenshots opcionais
-- ❌ **Em caso de falha:** screenshots automáticos no momento do erro
+```json
+{
+  "DebugLog": true,  // Logs verbosos
+  "LogFolder": "Log",
+  "ScreenshotFolder": "screenshot"
+}
+```
 
-### Relatórios HTML Profissionais
+</td>
+</tr>
+</table>
 
-Execute com geração de relatório:
+### 📸 Screenshots Automáticos
+
+<div align="center">
+
+| Situação | Comportamento | Localização |
+|:---:|:---|:---:|
+| ✅ **Sucesso** | Screenshots opcionais | `screenshot/` |
+| ❌ **Falha** | Captura automática no erro | `screenshot/` |
+| 🎯 **Customizado** | Via `oHelper.Screenshot()` | `screenshot/` |
+
+</div>
+
+### 📈 Relatórios HTML Profissionais
 
 ```powershell
+# Gerar relatório completo
 pytest tests/ --html=report.html --self-contained-html
 ```
 
-**O relatório inclui:**
-- ✅ Taxa de sucesso/falha
-- ⏱️ Tempo de execução por teste
-- 📸 Screenshots embarcados
-- 📋 Logs de erro detalhados
+<details>
+<summary>📊 <strong>O que contém o relatório?</strong></summary>
+
+- ✅ Taxa de sucesso/falha por teste
+- ⏱️ Tempo de execução detalhado
+- 📸 Screenshots embarcados inline
+- 📋 Logs de erro com stack trace
 - 📈 Gráficos de performance
+- 🏷️ Tags e categorias de testes
 
-**🖼️ Exemplo de Relatório:**
-
-![Relatório HTML](screenshot/report_html_example.png)
+</details>
 
 ---
 
 ## 🎮 Comandos de Execução
 
-### Executar Teste Individual
+### 🚀 Executar Teste Individual
 
 ```powershell
-# Com output detalhado
+# Output detalhado no terminal
 python -m pytest tests/Pessoal/test_GPEA010.py -v -s
 
-# Com relatório HTML
+# Com relatório HTML embutido
 python -m pytest tests/Pessoal/test_GPEA010.py -v --html=report_GPEA010.html --self-contained-html
 ```
 
-### Executar Suite Completa
+### 📦 Executar Suite Completa
 
 ```powershell
-# Todos os testes do diretório Pessoal
+# Módulo específico
 pytest tests/Pessoal/ -v --html=report_pessoal.html --self-contained-html
 
-# Toda a suite de testes
+# Toda a suite
 pytest tests/ -v --html=report_completo.html --self-contained-html
 ```
 
-### Executar com Filtros
+### 🔍 Executar com Filtros
 
 ```powershell
-# Apenas testes que contêm "GPEA" no nome
+# Apenas testes que contêm "GPEA"
 pytest tests/ -k "GPEA" -v
 
-# Executar testes em paralelo (requer pytest-xdist)
+# Executar em paralelo (4 workers)
 pytest tests/ -n 4 -v
+
+# Por marcadores (tags)
+pytest tests/ -m "funcionario" -v
 ```
 
-### Debug Mode
+### 🐛 Debug Mode
+
+<table>
+<tr>
+<td width="50%">
 
 ```powershell
 # Parar no primeiro erro
@@ -326,154 +530,308 @@ pytest tests/ -x -v
 
 # Mostrar prints em tempo real
 pytest tests/ -s -v
+```
 
+</td>
+<td width="50%">
+
+```powershell
 # Modo super verboso
 pytest tests/ -vv -s --tb=long
+
+# Reexecutar apenas falhas
+pytest tests/ --lf -v
 ```
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🎓 Aprenda Praticando
 
-### Para Iniciantes
+<div align="center">
 
-1. Comece com `test_tir_example.py` para entender a estrutura básica
-2. Estude `test_CTBA030.py` para aprender manipulação de formulários simples
-3. Analise os comentários inline em cada teste
-4. Execute os testes passo a passo com `-s` para ver o que acontece
+### 🌱 Iniciante → 🌿 Intermediário → 🌳 Avançado
 
-### Para Intermediários
+</div>
 
-1. Customize `test_GPEA010.py` para seu ambiente
-2. Crie novos casos de teste baseados nos exemplos
-3. Experimente com diferentes assertions e validações
-4. Implemente tratamento de erros customizado
+<table>
+<tr>
+<td width="33%">
 
-### Para Avançados
+### 🌱 Iniciante
 
-1. Implemente Page Object Pattern
-2. Crie fixtures customizadas no pytest
-3. Integre com CI/CD (Jenkins, GitLab CI, GitHub Actions)
-4. Desenvolva relatórios customizados
+1. ✅ `test_tir_example.py`  
+   *Estrutura básica*
+
+2. ✅ `test_CTBA030.py`  
+   *Formulários simples*
+
+3. ✅ Analise comentários inline
+
+4. ✅ Execute com `-s` para debug
+
+</td>
+<td width="33%">
+
+### 🌿 Intermediário
+
+1. ✅ Customize `test_GPEA010.py`
+
+2. ✅ Crie novos casos de teste
+
+3. ✅ Experimente assertions
+
+4. ✅ Implemente tratamento de erros
+
+</td>
+<td width="34%">
+
+### 🌳 Avançado
+
+1. ✅ Page Object Pattern
+
+2. ✅ Fixtures customizadas
+
+3. ✅ Integração CI/CD
+
+4. ✅ Relatórios customizados
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Problemas Comuns
+<details>
+<summary>❌ <strong>"WebDriver not found"</strong></summary>
 
-**1. "WebDriver not found"**
 ```powershell
-# Reinstale o selenium e geckodriver
+# Solução: Reinstalar selenium e driver
 pip install --upgrade selenium
-# Firefox: geckodriver deve estar no PATH
+
+# Firefox: Baixe geckodriver em https://github.com/mozilla/geckodriver/releases
+# Adicione ao PATH do sistema
 ```
 
-**2. "Connection refused to Protheus"**
-- Verifique se o Protheus está rodando
-- Confirme URL e porta no `config.json`
-- Teste acesso manual no navegador
+</details>
 
-**3. "Element not found"**
-- Aumente timeouts no TIR
-- Verifique se a rotina foi carregada completamente
-- Use `oHelper.WaitShow()` antes de interagir
+<details>
+<summary>❌ <strong>"Connection refused to Protheus"</strong></summary>
 
-**4. "Screenshot folder not found"**
+**Checklist de validação:**
+- ✅ Protheus está rodando?
+- ✅ URL e porta corretas no `config.json`?
+- ✅ Consegue acessar manualmente no navegador?
+- ✅ Firewall bloqueando a porta?
+
+</details>
+
+<details>
+<summary>❌ <strong>"Element not found"</strong></summary>
+
+```python
+# Solução: Aumentar timeout
+self.oHelper.SetTimeout(30)  # 30 segundos
+
+# Aguardar elemento específico
+self.oHelper.WaitShow("Nome do Campo")
+
+# Capturar screenshot para análise
+self.oHelper.Screenshot("debug_elemento_nao_encontrado")
+```
+
+</details>
+
+<details>
+<summary>❌ <strong>"Screenshot folder not found"</strong></summary>
+
 ```powershell
-# Crie os diretórios manualmente
+# Criar diretórios manualmente
 mkdir Log, screenshot
+
+# Ou via Python
+python -c "import os; os.makedirs('Log', exist_ok=True); os.makedirs('screenshot', exist_ok=True)"
 ```
+
+</details>
 
 ---
 
 ## 🤝 Como Contribuir
 
-Contribuições são extremamente bem-vindas! Este é um projeto educacional e colaborativo.
+<div align="center">
 
-### Formas de Contribuir
+### 💪 Contribuições são extremamente bem-vindas!
 
-- 🐛 **Reportar bugs** ou comportamentos inesperados
-- 📝 **Melhorar documentação** e comentários
-- ✨ **Adicionar novos casos de teste**
-- 🎨 **Incluir screenshots** e evidências visuais
-- 🔧 **Otimizar código** existente
+Este é um projeto **educacional** e **colaborativo**
 
-### Processo de Contribuição
+</div>
 
-1. **Fork** este repositório
-2. Crie uma **branch** descritiva:
-   ```bash
-   git checkout -b feature/novo-teste-financeiro
-   ```
-3. Faça commits **pequenos e claros**:
-   ```bash
-   git commit -m "Adiciona teste para rotina FINA040"
-   ```
-4. **Push** para seu fork:
-   ```bash
-   git push origin feature/novo-teste-financeiro
-   ```
-5. Abra um **Pull Request** com:
-   - Descrição do que foi feito
-   - Screenshots (se aplicável)
-   - Logs de execução bem-sucedida
+### 🎯 Formas de Contribuir
 
-### Diretrizes de Código
+<table>
+<tr>
+<td width="50%">
 
-- ✅ Siga PEP 8 (formatação Python)
-- ✅ Adicione docstrings em funções
-- ✅ Comente lógicas complexas
-- ✅ Inclua assertions claras
-- ✅ Teste localmente antes do PR
+**📝 Documentação:**
+- Melhorar README
+- Adicionar comentários em código
+- Criar tutoriais
+- Traduzir documentação
+
+</td>
+<td width="50%">
+
+**💻 Código:**
+- Novos casos de teste
+- Correção de bugs
+- Otimização de performance
+- Novos recursos TIR
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**🎨 Visual:**
+- Screenshots de testes
+- Vídeos demonstrativos
+- Diagramas de fluxo
+- Melhorias de UI
+
+</td>
+<td width="50%">
+
+**🐛 Quality Assurance:**
+- Reportar bugs
+- Sugerir melhorias
+- Revisar Pull Requests
+- Testar em ambientes diferentes
+
+</td>
+</tr>
+</table>
+
+### 🔄 Processo de Contribuição
+
+```bash
+# 1. Fork este repositório
+# 2. Clone seu fork
+git clone https://github.com/SEU_USUARIO/Teste_Tir_Protheus.git
+
+# 3. Crie uma branch descritiva
+git checkout -b feature/novo-teste-financeiro
+
+# 4. Faça suas alterações e commit
+git add .
+git commit -m "✨ Adiciona teste para rotina FINA040"
+
+# 5. Push para seu fork
+git push origin feature/novo-teste-financeiro
+
+# 6. Abra um Pull Request
+```
+
+### ✅ Diretrizes de Código
+
+- 📐 Siga **PEP 8** (formatação Python)
+- 📚 Adicione **docstrings** em funções
+- 💬 Comente **lógicas complexas**
+- ✅ Inclua **assertions claras**
+- 🧪 **Teste localmente** antes do PR
+- 📸 Adicione **screenshots** quando relevante
 
 ---
 
 ## 📚 Recursos Adicionais
 
-### Documentação Oficial
+<div align="center">
 
-- [TIR Framework — GitHub](https://github.com/totvs/tir)
-- [TIR Framework — Documentação](https://totvs.github.io/tir/)
-- [Pytest — Docs Oficiais](https://docs.pytest.org/)
-- [Selenium Python — Docs](https://selenium-python.readthedocs.io/)
+### 📖 Documentação Oficial
 
-### Tutoriais e Artigos
+| Recurso | Link |
+|:---:|:---|
+| 🤖 **TIR Framework** | [GitHub](https://github.com/totvs/tir) • [Docs](https://totvs.github.io/tir/) |
+| 🧪 **Pytest** | [Documentação Oficial](https://docs.pytest.org/) |
+| 🌐 **Selenium** | [Python Docs](https://selenium-python.readthedocs.io/) |
+| 📘 **Totvs TDN** | [Portal TDN](https://tdn.totvs.com/display/framework/TIR) |
 
-- [Introdução ao TIR (Totvs)](https://tdn.totvs.com/display/framework/TIR)
-- [Automação de Testes com Selenium](https://realpython.com/modern-web-automation-with-python-and-selenium/)
-- [Boas Práticas em Test Automation](https://testautomationu.applitools.com/)
+### 🎓 Tutoriais Recomendados
+
+- 📝 [Introdução ao TIR (Totvs)](https://tdn.totvs.com/display/framework/TIR)
+- 🐍 [Automação com Python e Selenium](https://realpython.com/modern-web-automation-with-python-and-selenium/)
+- 🎯 [Boas Práticas em Test Automation](https://testautomationu.applitools.com/)
+- 🧪 [Pytest: Guia Completo](https://pytest-with-eric.com/)
+
+</div>
 
 ---
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a **MIT License** — veja o arquivo [LICENSE](LICENSE) para detalhes.
+<div align="center">
 
-**Em resumo:** Você pode usar, copiar, modificar e distribuir este código livremente, desde que mantenha o aviso de copyright original.
+Este projeto está licenciado sob a **MIT License**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+**Você pode:** Usar • Copiar • Modificar • Distribuir • Uso comercial
+
+**Condição:** Manter o aviso de copyright original
+
+</div>
 
 ---
 
 ## 🌟 Agradecimentos
 
-- **Totvs** pelo desenvolvimento do TIR Framework
-- Comunidade **Python Brasil** pelo suporte
-- Todos os **contribuidores** deste repositório
+<div align="center">
+
+### 💙 Um agradecimento especial para:
+
+**[Totvs](https://www.totvs.com/)** pelo desenvolvimento do TIR Framework  
+**[Comunidade Python Brasil](https://python.org.br/)** pelo suporte contínuo  
+**Todos os [contribuidores](https://github.com/valdeircesario/Teste_Tir_Protheus/graphs/contributors)** deste repositório
+
+</div>
 
 ---
 
 ## 📬 Contato e Suporte
 
-- 💼 **LinkedIn:** [Valdeir Cesário](https://linkedin.com/in/valdeircesario)
-- 🐙 **GitHub:** [@valdeircesario](https://github.com/valdeircesario)
-- 📧 **Issues:** Use a aba [Issues](https://github.com/valdeircesario/Teste_Tir_Protheus/issues) para reportar problemas
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Valdeir_Cesário-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/valdeircesario)
+[![GitHub](https://img.shields.io/badge/GitHub-@valdeircesario-181717?style=for-the-badge&logo=github)](https://github.com/valdeircesario)
+[![Email](https://img.shields.io/badge/Issues-Reportar_Bug-FF6B6B?style=for-the-badge&logo=github)](https://github.com/valdeircesario/Teste_Tir_Protheus/issues)
+
+### 💬 Tem dúvidas? Precisa de ajuda?
+
+Use a aba **[Issues](https://github.com/valdeircesario/Teste_Tir_Protheus/issues)** para reportar problemas ou fazer perguntas
+
+</div>
 
 ---
 
 <div align="center">
 
-**⭐ Se este projeto foi útil para você, considere dar uma estrela no GitHub! ⭐**
+## ⭐ Se este projeto foi útil para você, considere dar uma estrela! ⭐
 
-Made with ❤️ and ☕ by [Valdeir Cesário](https://github.com/valdeircesario)
+### 📈 Status do Projeto
+
+![GitHub stars](https://img.shields.io/github/stars/valdeircesario/Teste_Tir_Protheus?style=social)
+![GitHub forks](https://img.shields.io/github/forks/valdeircesario/Teste_Tir_Protheus?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/valdeircesario/Teste_Tir_Protheus?style=social)
+
+---
+
+**Made with ❤️ and ☕ by [Valdeir Cesário](https://github.com/valdeircesario)**
+
+*Transformando código em conhecimento, um teste por vez* 🚀
 
 </div>
