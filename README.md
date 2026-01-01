@@ -133,9 +133,9 @@ def test_incluir_funcionario(self):
 **🖼️ Demonstração Visual:**
 
 <!-- Adicione aqui screenshots do teste em execução -->
-![Tela inicial GPEA010](screenshot/gpea010_inicio.png)
-![Preenchimento de formulário](screenshot/gpea010_preenchimento.png)
-![Confirmação de sucesso](screenshot/gpea010_sucesso.png)
+![](screenshot/centroCusto.png)
+![](screenshot/CentroCusto03.png)
+![](screenshot/CentroCusto01.png)
 
 ---
 
@@ -157,15 +157,19 @@ def test_incluir_funcionario(self):
 
 **🖼️ Demonstração Visual:**
 
-![Centro de Custo - Validação](screenshot/VIDEOS/2026-01-01%2018-43-09.mp4)
-![Centro de Custo - Validação](screenshot/CentroCusto02.png)
-![Centro de Custo - Validação](screenshot/CentroCusto03.png)
+![](screenshot/centroCusto.png)
+![](screenshot/CentroCusto01.png)
+![](screenshot/CentroCusto02.png)
+![](screenshot/CentroCusto03.png)
 
 
 ---
 ### Videos de demostração
 
-![Centro de Custo - Inclusão](screenshot/centroCusto.png)
+<video controls poster="screenshot/preview.png" width="640" loop muted playsinline>
+  <source src="screenshot/VIDEOS/2026-01-01 18-43-09.mp4" type="video/mp4">
+  Seu navegador não suporta a tag de vídeo.
+</video>
 
 
 
