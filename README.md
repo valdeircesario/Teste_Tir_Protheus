@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 Laboratório de Automação TIR
+# 🤖 Projeto de Automação TIR
 ## Protheus Testing Framework
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
