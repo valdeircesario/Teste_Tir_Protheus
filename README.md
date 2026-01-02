@@ -155,8 +155,9 @@ https://github.com/valdeircesario/Teste_Tir_Protheus/assets/screenshot/VIDEOS/20
 ┃ ┣ 📄 test_GPEA370.py      # 💰 Cadastro de Cargos
 ┃ ┗ 📄 test_CTBA030.py      # 💰 Cadastro de Centro de Custos
 ┣ 📂  Compras/              
-┃ ┣ 📄 test_AGRA045.py      # 💼 Cadastro de Amazem
-┃ ┣ 📄 test_MATA010.py      # 💼 Cadastro de produtos
+┃ ┣ 📄 test_AGRA045.py      # 🏭 Cadastro de Amazem
+┃ ┣ 📄 test_MATA010.py      # 🧷 Cadastro de produtos 
+┃ ┣ 📄 test_MATA020.py      # 🚚 Cadastro de fornecedores
 ┗ 📄 test_tir_example.py    # ✅ Validação básica
 ```
 
