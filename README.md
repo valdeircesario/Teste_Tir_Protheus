@@ -27,9 +27,9 @@
 <tr>
 <td width="60%">
 
-Este repositório foi criado como um **laboratório de aprendizado prático** para quem deseja dominar automação de testes no ecossistema Totvs Protheus. 
+Este repositório foi criado como um **laboratório de aprendizado prático** Na elaboração de casos de testes e automação, em rotinas, no intuito de aprender e ganhar conecimentos, tanto nas rotinas tanto na pratica, aprendendo a liguagem Paython e o framework tir, mais o Robot em automação de testes no ecossistema Totvs Protheus. 
 
-### 🎓 O que você vai aprender?
+### 🎓 O que foi aprendido durante esse laboratorio?
 
 - 🎯 **Automação de Testes** com TIR (Totvs Interface Robot)
 - 🧠 **Lógica de Programação** aplicada a cenários reais
@@ -82,7 +82,7 @@ def test_protheus():
 
 | Ferramenta | Versão | Status |
 |:---:|:---:|:---:|
-| 🐍 **Python** | 3.12+ | Obrigatório |
+| 🐍 **Python** | 3.12 | Obrigatório |
 | 💻 **PowerShell** | 5.1+ | Windows |
 | 🌐 **Protheus Webapp** | Qualquer | Acesso necessário |
 | 📦 **Git** | Última | Recomendado |
@@ -148,12 +148,12 @@ https://github.com/valdeircesario/Teste_Tir_Protheus/assets/screenshot/VIDEOS/20
 ### 📁 Estrutura Organizada por Módulos
 
 ```
-📦 tests/
+📦 test/
 ┣ 📂 Pessoal/
 ┃ ┣ 📄 test_GPEA010.py      # 👤 Cadastro de Funcionários
 ┃ ┣ 📄 test_CTBA030.py      # 💼 Centro de Custo
-┃ ┣ 📄 test_PX*.py          # 💰 Folha de Pagamento
-┃ ┗ 📄 ...
+┃ ┣ 📄 test_GPEA370.py      # 💰 Cadastro de Cargos
+┃ ┗ 📄 test_CTBA030.py      # 💰 Cadastro de Centro de Custos
 ┣ 📂 Financeiro/            # 💵 Em desenvolvimento
 ┗ 📄 test_tir_example.py    # ✅ Validação básica
 ```
@@ -242,28 +242,37 @@ def test_incluir_centro_custo(self):
         6. Consulta registro criado
     """
     # Acessa a rotina
-    self.oHelper.Program("CTBA030")
+    cls.oHelper.SetLateralMenu("Atualizações > Cadastros > Centro de Custos")
     self.oHelper.WaitShow("Centro de Custo")
     
     # Inicia inclusão
     self.oHelper.SetButton("Incluir")
     
     # Preenche campos obrigatórios
-    self.oHelper.SetValue("CTT_CUSTO", "001001")
-    self.oHelper.SetValue("CTT_DESC01", "CENTRO TESTE AUTOMATIZADO")
-    self.oHelper.SetValue("CTT_CLASSE", "2")  # Analítico
+    self.oHelper.SetValue("CTT_CUSTO", self.CentroCusto)
+    self.oHelper.SetValue("CTT_DESC01", self.Descricao)
+    self.oHelper.Screenshot("CentroCusto.png")
+    self.oHelper.SetKey("TAB") 
+
+        
     
     # Salva e valida
     self.oHelper.SetButton("Salvar")
     self.oHelper.AssertTrue()
     
     # Consulta registro
-    self.oHelper.SetButton("Pesquisar")
-    self.oHelper.SetValue("CTT_CUSTO", "001001")
+    self.oHelper.WaitShow("Centro de Custo - VISUALIZAR")
+    self.oHelper.CheckResult("CTT_CUSTO", self.CentroCusto)
+    self.oHelper.CheckResult("CTT_DESC01", self.Descricao)
+    self.oHelper.Screenshot("CentroCusto02.png")
     
     # Valida dados gravados
-    desc = self.oHelper.GetValue("CTT_DESC01")
-    assert desc == "CENTRO TESTE AUTOMATIZADO"
+    self.oHelper.WaitShow("Cadastro C Custo")
+    self.oHelper.Screenshot("CentroCusto03.png")
+
+    self.oHelper.AssertTrue()
+    print("🎯 test_de_incluir_Centro_de_Custo")
+    print("✅ Teste finalizado com sucesso")
 ```
 
 #### 🎓 Conceitos Aplicados
@@ -320,23 +329,38 @@ def test_incluir_funcionario(self):
         - Complementos (aba 4)
         - Validações de campos obrigatórios
     """
-    self.oHelper.Program("GPEA010")
+    cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Funcionários")
     self.oHelper.SetButton("Incluir")
     
     # 1️⃣ Aba: Dados Principais
-    self.oHelper.SetValue("RA_MAT", "000001")
-    self.oHelper.SetValue("RA_NOME", "TESTE AUTOMATIZADO TIR")
-    self.oHelper.SetValue("RA_CPF", "12345678901")
+    self.oHelper.SetValue("RA_NOME", self.Nome, check_value = False)
+    self.oHelper.SetValue("RA_MAE", self.Mãe, check_value = False)
+    self.oHelper.SetValue("RA_PAI", self.Pai)
+    self.oHelper.SetValue("Sexo", self.Sexo)
+    self.oHelper.SetValue("Raca/Cor", "2 - Branca")
+    self.oHelper.SetValue("RA_NASC", self.Nacimento)
+    self.oHelper.SetValue("RA_ESTCIVI", self.EstadoCivil)
+    self.oHelper.SetValue("RA_CPAISOR", "01058")
+    self.oHelper.SetValue("RA_NACIONA", "10")
+    self.oHelper.SetValue("RA_NATURAL", "DF")
+    self.oHelper.SetValue("RA_CODMUNN", "00108")
+    self.oHelper.SetValue("RA_APELIDO", self.Apelido)
+    self.oHelper.SetValue("RA_GRINRAI", "55")
+    self.oHelper.SetValue("RA_EMAIL", self.Email)
     
     # 2️⃣ Navegação entre abas
-    self.oHelper.SetTabEDAPaper("Dados Admissionais", 2)
-    self.oHelper.SetValue("RA_ADMISSA", "01/01/2024")
-    self.oHelper.SetValue("RA_CARGO", "DESENVOLVEDOR")
+    self.oHelper.ClickFolder("Funcionais")
+    self.oHelper.ClickFolder("No.documentos")
+    self.oHelper.ClickFolder("Beneficios")
+    self.oHelper.ClickFolder("Relógio Registrador")
+    self.oHelper.ClickFolder("Outras Informacoes")
+
     
     # 3️⃣ Aba: Complementos
-    self.oHelper.SetTabEDAPaper("Complementos", 3)
-    self.oHelper.SetValue("RA_DEPTO", "001")
-    self.oHelper.SetValue("RA_CC", "001001")
+    self.oHelper.ClickFolder("Cargos e Salarios")
+    self.oHelper.ClickFolder("Endereço")
+    self.oHelper.ClickFolder("Adicionais")
+    self.oHelper.ClickFolder("Outros")
     
     # 4️⃣ Salvar e validar
     self.oHelper.SetButton("Salvar")
@@ -410,7 +434,7 @@ def test_ambiente_configurado():
 
 ### Browsers Suportados
 
-🦊 **Firefox** (recomendado) • 🌐 **Chrome/Chromium** • 🌊 **Edge** (experimental)
+🦊 **Firefox** (recomendado) • 🌐 **Chrome/Chromium** • 🌊 **Edge** (Não Funcional)
 
 </div>
 
@@ -549,8 +573,6 @@ pytest tests/ --lf -v
 
 ---
 
-## 🎓 Aprenda Praticando
-
 <div align="center">
 
 ### 🌱 Iniciante → 🌿 Intermediário → 🌳 Avançado
@@ -668,74 +690,10 @@ python -c "import os; os.makedirs('Log', exist_ok=True); os.makedirs('screenshot
 
 ### 💪 Contribuições são extremamente bem-vindas!
 
-Este é um projeto **educacional** e **colaborativo**
+Este é um projeto de **estudo** e **aprendizado**
 
 </div>
 
-### 🎯 Formas de Contribuir
-
-<table>
-<tr>
-<td width="50%">
-
-**📝 Documentação:**
-- Melhorar README
-- Adicionar comentários em código
-- Criar tutoriais
-- Traduzir documentação
-
-</td>
-<td width="50%">
-
-**💻 Código:**
-- Novos casos de teste
-- Correção de bugs
-- Otimização de performance
-- Novos recursos TIR
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**🎨 Visual:**
-- Screenshots de testes
-- Vídeos demonstrativos
-- Diagramas de fluxo
-- Melhorias de UI
-
-</td>
-<td width="50%">
-
-**🐛 Quality Assurance:**
-- Reportar bugs
-- Sugerir melhorias
-- Revisar Pull Requests
-- Testar em ambientes diferentes
-
-</td>
-</tr>
-</table>
-
-### 🔄 Processo de Contribuição
-
-```bash
-# 1. Fork este repositório
-# 2. Clone seu fork
-git clone https://github.com/SEU_USUARIO/Teste_Tir_Protheus.git
-
-# 3. Crie uma branch descritiva
-git checkout -b feature/novo-teste-financeiro
-
-# 4. Faça suas alterações e commit
-git add .
-git commit -m "✨ Adiciona teste para rotina FINA040"
-
-# 5. Push para seu fork
-git push origin feature/novo-teste-financeiro
-
-# 6. Abra um Pull Request
-```
 
 ### ✅ Diretrizes de Código
 

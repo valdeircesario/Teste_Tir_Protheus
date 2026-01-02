@@ -3,17 +3,25 @@ from os import getcwd
 import unittest
 from datetime import datetime
 from time import sleep
-
- #.\venv\Scripts\Activate.ps1; python -m pytest tests/Pessoal/test_CSAA100.py -q -rP
-
 DateSystem = datetime.today().strftime('%d/%m/%Y')
+
+#.\venv\Scripts\python.exe -m pytest tests/Pessoal/test_CSAA100.py -v -s --html=report_CSAA100.html --self-contained-html
+#------------------------------------------
+#-- Teste CSAA100 - Cadastro de Departamentos
+#------------------------------------------
+
+
+
 
 class CSAA100(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
        
-        cls.Descrição = 'FMCRO'
+        cls.Descrição = 'GESTÃO DE PESSOAS'
+        cls.CentroCusto = '003'
+        cls.DepartamentoSuper = '000000002'
+        cls.Responsavel = '000012'
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
@@ -35,12 +43,34 @@ class CSAA100(unittest.TestCase):
         sleep(1)
         self.oHelper.WaitShow("Departamento - INCLUIR")
         self.oHelper.SetValue("QB_DESCRIC", self.Descrição)
+        self.oHelper.SetValue("QB_CC", self.CentroCusto)
+        self.oHelper.SetValue("QB_DEPSUP", self.DepartamentoSuper)
+        self.oHelper.SetValue("QB_MATRESP", self.Responsavel)
+
         self.oHelper.SetButton("Salvar")
+        sleep(1)
         self.oHelper.SetButton("Cancelar")
+        sleep(1)
         self.oHelper.WaitShow("Departamento")
 
-        
-        self.assertTrue(True, "Teste finalizado com sucesso")
+        #-------------------------
+        # Visualização da inclusão
+        #-------------------------
+        self.oHelper.SetButton("Visualizar")
+        self.oHelper.WaitShow("Departamento - VISUALIZAR")
+        self.oHelper.CheckResult("QB_DESCRIC", self.Descrição)
+        self.oHelper.CheckResult("QB_CC", self.CentroCusto)
+        self.oHelper.CheckResult("QB_DEPSUP", self.DepartamentoSuper)
+        self.oHelper.CheckResult("QB_MATRESP", self.Responsavel)
+
+        self.oHelper.SetButton("Confirmar")
+        sleep(1)
+
+        self.oHelper.WaitShow("Departamento")
+
+        self.oHelper.AssertTrue()
+        print("🎯 test_de_incluir_departamento")
+        print("✅ Teste finalizado com sucesso")
 
     @classmethod
     def tearDownClass(cls):

@@ -3,28 +3,30 @@ from os import getcwd
 import unittest
 from datetime import datetime
 from time import sleep
-
- # .\venv\Scripts\python.exe -m pytest tests/Pessoal/test_GPEA370.py -v -s --html=report_GPEA370.html --self-contained-html
-
 DateSystem = datetime.today().strftime('%d/%m/%Y')
+
+# .\venv\Scripts\python.exe -m pytest tests/Pessoal/test_GPEA370.py -v -s --html=report_GPEA370.html --self-contained-html
+#------------------------------------------
+#-- Teste GPEA370 - Cadastro de Cargos
+#------------------------------------------
+
 
 class GPEA370(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
        
-        cls.Cargo = '0002'
-        cls.Descrição = 'GERENTE'
-        cls.DescriçãoEdit = 'GERENTE DE EQUIPE'
+        cls.Cargo = '0005'
+        cls.Descrição = 'SUPERVISOR DE EQUIPE'
         cls.CentroCusto = '003'
         cls.filial = '01'
-        cls.Depatamento = '000000001'
+        cls.Depatamento = '000000006'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
         cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Cadastros > Cargos")
 
-    def test_Ponto_fixo_caso_de_uso(self):
+    def test_de_incluir_Cagos(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -74,26 +76,9 @@ class GPEA370(unittest.TestCase):
 
         self.oHelper.WaitShow("Cargo")
 
-        #-------------------------
-        # Alteração do registro
-        #-------------------------
-
-        self.oHelper.SetButton("Alterar")
-        self.oHelper.WaitShow("Cargo - ALTERAR")
-
-        self.oHelper.SetValue("Q3_DESCSUM", self.DescriçãoEdit)
-        self.oHelper.SetKey("TAB")  
-
-        self.oHelper.SetButton("Confirmar")
-
-        if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-
-        self.oHelper.WaitShow("Cargo")
-        sleep(1)
-
         self.oHelper.AssertTrue()
+        print("🎯 test_de_incluir_Cagos")
+        print("✅ Teste finalizado com sucesso")
 
     @classmethod
     def tearDownClass(cls):

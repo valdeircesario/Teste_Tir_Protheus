@@ -3,10 +3,13 @@ from os import getcwd
 import unittest
 from datetime import datetime
 from time import sleep
-
- # .\venv\Scripts\python.exe -m pytest tests/Pessoal/test_GPEA010.py -v -s --html=report_GPEA010.html --self-contained-html
-
 DateSystem = datetime.today().strftime('%d/%m/%Y')
+
+# .\venv\Scripts\python.exe -m pytest tests/Pessoal/test_GPEA010.py -v -s --html=report_GPEA010.html --self-contained-html
+#------------------------------------------
+#-- Teste GPEA010 - Cadastro de Funcionários
+#------------------------------------------
+
 
 class GPEA010(unittest.TestCase):
     @classmethod
@@ -221,7 +224,9 @@ class GPEA010(unittest.TestCase):
         sleep(1.5)
        
         
-        self.assertTrue(True, "Teste finalizado com sucesso")
+        self.oHelper.AssertTrue()
+        print("🎯 test_de_incluir_Funcionario")
+        print("✅ Teste finalizado com sucesso")
 
     @classmethod
     def tearDownClass(cls):

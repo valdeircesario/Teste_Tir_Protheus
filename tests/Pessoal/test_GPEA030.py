@@ -3,25 +3,29 @@ from os import getcwd
 import unittest
 from datetime import datetime
 from time import sleep
+DateSystem = datetime.today().strftime('%d/%m/%Y')
 
  # .\venv\Scripts\python.exe -m pytest tests/Pessoal/test_GPEA030.py -v -s --html=report_GPEA030.html --self-contained-html
+#------------------------------------------
+#-- Teste GPEA030 - Cadastro de Funções
+#------------------------------------------
 
-DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class GPEA030(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
        
-        cls.Funcao = '00014'
-        cls.Descrição = 'AUDITOR INTERN0'
+        cls.Funcao = '00015'
+        cls.Descrição = 'SUPORTE TÉCNICO'
+        cls.Cargo = 'SUPERVISOR DE TI'
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
         cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Cadastros > Funções")
 
-    def test_Ponto_fixo_caso_de_uso(self):
+    def test_de_incluir_Funções(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -37,6 +41,7 @@ class GPEA030(unittest.TestCase):
         self.oHelper.WaitShow("Funções - INCLUIR")
         self.oHelper.SetValue("RJ_FUNCAO", self.Funcao)
         self.oHelper.SetValue("RJ_DESC", self.Descrição)
+        self.oHelper.SetValue("RJ_CARGO", self.Cargo)
         self.oHelper.SetKey("TAB") 
 
         self.oHelper.SetButton("Confirmar")
@@ -57,6 +62,7 @@ class GPEA030(unittest.TestCase):
         self.oHelper.WaitShow("Funções - VISUALIZAR")
         self.oHelper.CheckResult("RJ_FUNCAO", self.Funcao)
         self.oHelper.CheckResult("RJ_DESC", self.Descrição)
+        self.oHelper.CheckResult("RJ_CARGO", self.Cargo)
         self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Cadastro de Funções")
 
@@ -64,6 +70,8 @@ class GPEA030(unittest.TestCase):
 
 
         self.oHelper.AssertTrue()
+        print("🎯 test_de_incluir_Funções")
+        print("✅ Teste finalizado com sucesso")
 
     @classmethod
     def tearDownClass(cls):
