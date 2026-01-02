@@ -5,7 +5,7 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
- # .\venv\Scripts\python.exe -m pytest tests/Pessoal/test_CTBA030.py -v -s --html=report_CTBA030.html --self-contained-html
+ # .\venv\Scripts\python.exe -m pytest tests/Modulo_07/test_CTBA030.py -v -s --html=report_CTBA030.html --self-contained-html
 #------------------------------------------
 #-- Teste CTBA030 - Cadastro de Centro de Custos
 #------------------------------------------

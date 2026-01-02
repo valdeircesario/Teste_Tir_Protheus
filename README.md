@@ -149,12 +149,14 @@ https://github.com/valdeircesario/Teste_Tir_Protheus/assets/screenshot/VIDEOS/20
 
 ```
 📦 test/
-┣ 📂 Pessoal/
+┣ 📂 Gestão de Pessoal/
 ┃ ┣ 📄 test_GPEA010.py      # 👤 Cadastro de Funcionários
 ┃ ┣ 📄 test_CTBA030.py      # 💼 Centro de Custo
 ┃ ┣ 📄 test_GPEA370.py      # 💰 Cadastro de Cargos
 ┃ ┗ 📄 test_CTBA030.py      # 💰 Cadastro de Centro de Custos
-┣ 📂 Financeiro/            # 💵 Em desenvolvimento
+┣ 📂  Compras/              
+┃ ┣ 📄 test_AGRA045.py      # 💼 Cadastro de Amazem
+┃ ┣ 📄 test_MATA010.py      # 💼 Cadastro de produtos
 ┗ 📄 test_tir_example.py    # ✅ Validação básica
 ```
 
@@ -402,7 +404,7 @@ def test_ambiente_configurado():
         ✅ Captura de screenshot
     """
     oHelper = Webapp()
-    oHelper.Setup("SIGAGPE", "01/01/2024", "01", "01")
+    oHelper.Setup("SIGAMDI", "01/01/2025", "01", "01")
     oHelper.Program("GPEA010")
     oHelper.Screenshot("teste_conexao_ok")
     oHelper.TearDown()
@@ -513,17 +515,17 @@ pytest tests/ --html=report.html --self-contained-html
 
 ```powershell
 # Output detalhado no terminal
-python -m pytest tests/Pessoal/test_GPEA010.py -v -s
+python -m pytest tests/Modulo_07/test_GPEA010.py -v -s
 
 # Com relatório HTML embutido
-python -m pytest tests/Pessoal/test_GPEA010.py -v --html=report_GPEA010.html --self-contained-html
+python -m pytest tests/Modulo_07/test_GPEA010.py -v --html=report_GPEA010.html --self-contained-html
 ```
 
 ### 📦 Executar Suite Completa
 
 ```powershell
 # Módulo específico
-pytest tests/Pessoal/ -v --html=report_pessoal.html --self-contained-html
+pytest tests/Modulo_07/ -v --html=report_pessoal.html --self-contained-html
 
 # Toda a suite
 pytest tests/ -v --html=report_completo.html --self-contained-html
