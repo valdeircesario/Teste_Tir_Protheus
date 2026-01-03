@@ -5,7 +5,8 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#.\venv\Scripts\python.exe -m pytest tests/Modulo_07/test_CSAA100.py -v -s --html=report_CSAA100.html --self-contained-html
+## python -m pytest tests/Modulo_02/test_CSAA100.py -v -s --html=reports/report_CSAA100.html --self-contained-html
+
 #------------------------------------------
 #-- Teste CSAA100 - Cadastro de Departamentos
 #------------------------------------------
@@ -69,8 +70,11 @@ class CSAA100(unittest.TestCase):
         self.oHelper.WaitShow("Departamento")
 
         self.oHelper.AssertTrue()
-        print("🎯 test_de_incluir_departamento")
-        print("✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_incluir_departamento")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
 
     @classmethod
     def tearDownClass(cls):

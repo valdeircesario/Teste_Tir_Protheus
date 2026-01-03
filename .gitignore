@@ -1,2 +1,17 @@
 venv/
 .venv/
+
+reports/
+report_*.html
+
+
+# Logs
+logs/
+*.log
+
+config.json
+
+# Python cache
+__pycache__/
+.pytest_cache/
+*.pyc

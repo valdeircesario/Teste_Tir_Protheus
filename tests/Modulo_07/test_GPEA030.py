@@ -5,7 +5,8 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
- # .\venv\Scripts\python.exe -m pytest tests/Modulo_07/test_GPEA030.py -v -s --html=report_GPEA030.html --self-contained-html
+ # # python -m pytest tests/Modulo_02/test_GPEA030.py -v -s --html=reports/report_GPEA030.html --self-contained-html
+
 #------------------------------------------
 #-- Teste GPEA030 - Cadastro de Funções
 #------------------------------------------
@@ -70,8 +71,12 @@ class GPEA030(unittest.TestCase):
 
 
         self.oHelper.AssertTrue()
-        print("🎯 test_de_incluir_Funções")
-        print("✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_incluir_Funções")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
+
 
     @classmethod
     def tearDownClass(cls):

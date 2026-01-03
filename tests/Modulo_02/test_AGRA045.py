@@ -5,7 +5,8 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#.\venv\Scripts\python.exe -m pytest tests/Modulo_02/test_AGRA045.py -v -s --html=report_AGRA045.html --self-contained-html
+
+# python -m pytest tests/Modulo_02/test_AGRA045.py -v -s --html=reports/report_AGRA045.html --self-contained-html
 #------------------------------------------
 #-- Teste AGRA045 - Cadastro de local de estoque
 #------------------------------------------
@@ -18,8 +19,8 @@ class AGRA045(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Codigo = '02'
-        cls.Descrição = 'ALMOCHARIFADO '
+        cls.Codigo = '03'
+        cls.Descrição = 'EXTERNO'
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
@@ -67,8 +68,10 @@ class AGRA045(unittest.TestCase):
         sleep(0.5)
 
         self.oHelper.AssertTrue()
-        print("🎯 test_de_incluir_local_de_estoque")
-        print("✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_incluir_local_de_estoque")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
     def tearDownClass(cls):
