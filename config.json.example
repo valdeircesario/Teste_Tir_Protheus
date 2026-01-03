@@ -1,0 +1,13 @@
+{
+    "Url": "http://localhost:4321/",
+    "Browser": "Firefox",
+    "Environment": "ENVIRONMENT",
+    "Language": "pt-br",
+    "User": "your_user",
+    "Password": "your_password",
+    "DebugLog": true,
+    "TimeOut": 120,
+    "Headless": false,
+    "POUILogin": true,
+    "ChromeDriverAutoInstall": true
+}

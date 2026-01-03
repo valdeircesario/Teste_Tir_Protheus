@@ -122,7 +122,50 @@ notepad config.json  # Edite com seus dados
   "ScreenshotFolder": "screenshot"
 }
 ```
+---
 
+## 🔒 Segurança e `.gitignore` (recomendado)
+
+Este repositório contém arquivos gerados e configurações locais que **não** devem ser comprometidos no controle de versão (ex.: senhas, relatórios, logs, ambientes virtuais). Abaixo estão os passos recomendados para aplicar um `.gitignore` seguro sem deletar arquivos locais:
+
+1. Criei um arquivo `.gitignore` com entradas comuns para Python e TIR (ambientes virtuais, `__pycache__`, `Log/`, `screenshot/`, `report_*.html`, etc.).
+2. Também adicionei `config.json.example` (modelo sem credenciais). Nunca suba arquivos com credenciais reais; mantenha `config.json` no seu `.gitignore` e use o `config.json.example` como referência.
+
+### Script seguro (PowerShell)
+
+Criei um script que executa os comandos Git para mover as alterações para uma branch segura e desalocar do Git arquivos gerados (preservando-os localmente). Execute localmente no PowerShell (na raiz do repositório):
+
+```powershell
+# 1) Crie uma branch de trabalho
+git checkout -b chore/add-gitignore
+
+# 2) Configure o .gitignore e o arquivo de exemplo (já foram adicionados no repositório)
+git add .gitignore config.json.example
+git commit -m "chore: add .gitignore and config.json.example"
+
+# 3) Remove do rastreamento arquivos gerados (será mantidos localmente)
+# observe que esses comandos são -–ignore-unmatch para não falhar se algum padrão não existir
+git rm --cached -r --ignore-unmatch .venv venv __pycache__ Log screenshot report_*.html .pytest_cache pytest_run.log
+git rm --cached --ignore-unmatch config.json
+
+# 4) Commit das remoções do controle
+git commit -m "chore: untrack generated and sensitive files"
+
+# 5) Por fim, volte para sua branch principal (opcional)
+# git checkout main
+```
+
+> ⚠️ Se `config.json` já foi comitado em commits anteriores e contém segredos, é preciso reescrever o histórico (ex.: usar `git filter-repo` ou BFG). Isso é destrutivo e exige coordenação com colaboradores — peça ajuda se quiser que eu guie esse processo.
+
+---
+
+### ✅ O que eu já fiz aqui
+
+- Adicionei `.gitignore` com padrões recomendados
+- Criei `config.json.example` sem credenciais
+- Adicionei um script (em `scripts/untrack_generated_files.ps1`) para automatizar os passos acima localmente
+
+Se quiser, eu posso: 1) adicionar instruções no `README.md` para executar os testes após a limpeza, e 2) criar um PR com as alterações — me diga como prefere seguir.
 </details>
 
 ---
@@ -153,11 +196,13 @@ https://github.com/valdeircesario/Teste_Tir_Protheus/assets/screenshot/VIDEOS/20
 ┃ ┣ 📄 test_GPEA010.py      # 👤 Cadastro de Funcionários
 ┃ ┣ 📄 test_CTBA030.py      # 💼 Centro de Custo
 ┃ ┣ 📄 test_GPEA370.py      # 💰 Cadastro de Cargos
-┃ ┗ 📄 test_CTBA030.py      # 💰 Cadastro de Centro de Custos
+┃ ┗ 📄 test_CTBA030.py      # 🏬 Cadastro de Centro de Custos
 ┣ 📂  Compras/              
 ┃ ┣ 📄 test_AGRA045.py      # 🏭 Cadastro de Amazem
-┃ ┣ 📄 test_MATA010.py      # 🧷 Cadastro de produtos 
-┃ ┣ 📄 test_MATA020.py      # 🚚 Cadastro de fornecedores
+┃ ┣ 📄 test_MATA010.py      # 🪑 Cadastro de Produtos 
+┃ ┣ 📄 test_MATA020.py      # 🚛 Cadastro de Fornecedores
+┃ ┣ 📄 test_MATA110.py      # 🛒 Solicitação de Compras
+┃ ┣ 📄 test_MATA360.py      # 💲 Cadastro Tipo Pagamento
 ┗ 📄 test_tir_example.py    # ✅ Validação básica
 ```
 

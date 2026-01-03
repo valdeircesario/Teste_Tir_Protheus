@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Pytest
+.pytest_cache/
+pytest_run.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# Logs and reports
+*.log
+Log/
+report_*.html
+report_*.htm
+reports/
+
+# Selenium / Web artifacts
+screenshot/
+screenshot/VIDEOS/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env / Secrets
+.env
+config.json
+
+# Others
+*.sqlite3
+*.db
+
+# Byte-compiled / cache
+*.egg-info/
+*.eggs/
+*.whl
+
+# Distribution / packaging
+dist/
+build/
+
+# Windows
+Thumbs.db
+
+# Personal files
+*.backup
+
+# End of file
