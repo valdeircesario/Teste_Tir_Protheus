@@ -86,8 +86,11 @@ class MATA360(unittest.TestCase):
         self.oHelper.WaitShow("Condiçäo de Pagamento:") """
 
         self.oHelper.AssertTrue()
-        print("🎯 test_de_incluir_condições_de_pagamento")
-        print("✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X🎯 test_de_incluir_condições_de_pagamento")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
 
     @classmethod
     def tearDownClass(cls):

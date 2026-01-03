@@ -18,9 +18,9 @@ class MATA110(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Produto = '000000000000001'
-        cls.Quantidade = '15'
-        cls.Observacao = "TESTE"
+        cls.Produto = '000000000000002'
+        cls.Quantidade = '11'
+        cls.Observacao = "TESTE DE SOLICITAÇÃO DE COMPRAS"
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
@@ -64,7 +64,7 @@ class MATA110(unittest.TestCase):
         self.oHelper.SetButton("Visualizar")
         sleep(0.5)
         self.oHelper.WaitShow("Solicitaçäo de Compras")
-        self.oHelper.Screenshot("Solicitação_Compra.png")
+        self.oHelper.Screenshot("Solicitação_Compra01.png")
         sleep(0.5)
         self.oHelper.SetButton("Confirmar")
         sleep(0.5)
