@@ -15,7 +15,7 @@ class GPEA180(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
-        self.mat = '208201' 
+        self.mat = '212632' 
         self.Log = 'GPEA180'
         self.CC_destino = '000000677'  # DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
         #self.CC_destino = '000000678'  # DP_destino = 000000865,000000871,000000872,000000878,000000887,000000888,000000889,000000890,000000891,000000895
@@ -84,7 +84,7 @@ class GPEA180(unittest.TestCase):
         sleep(0.5)
             
             
-        if self.oHelper.IfExists("Deseja enviar e-mail dessa Transferência?"):
+        if self.oHelper.IfExists("DDeseja enviar e-mail dessa Transferência?"):
             self.oHelper.SetButton('Sim')
             self.oHelper.AssertTrue()
         else:

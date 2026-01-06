@@ -14,12 +14,12 @@ from time import sleep
 class GPEA180(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02CE0043'
-        self.mat = '215313' #sempre usar matricula diferentes,218843, 21998X,226919,220546,228253,210176,21032X
-        self.CC_destino = '000000677'  # DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
+        self.filial = '02DF0001'
+        self.mat = '301068' #sempre usar matricula diferentes,218843, 21998X,226919,220546,228253,210176,21032X
+        self.CC_destino = '000000261'  # DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
         #self.CC_destino = '000000678'  # DP_destino = 000000865,000000871,000000872,000000878,000000887,000000888,000000889,000000890,000000891,000000895
-        self.DP_destino = '000000877' 
-        self.Fl_destino = '02DF0001'
+        self.DP_destino = '000000261' 
+        self.Fl_destino = '02SP0036'
         self.dataref = (datetime.today()-timedelta(days=90)).strftime("%d/%m/%Y")
         self.Periodo_Para = (datetime.today()+timedelta(days=-90)).strftime("%Y%m")
         self.Nro_Pagto_Para = '01'
@@ -99,8 +99,7 @@ class GPEA180(unittest.TestCase):
         if self.oHelper.IfExists("Transferências - TRANSFERIR"):
             self.oHelper.SetValue("Periodo Para",self.Periodo_Para,grid=True, grid_number=1)
             self.oHelper.SetValue("Nro. Pagto Para",self.Nro_Pagto_Para,grid=True, grid_number=1)
-            self.oHelper.SetValue("Periodo Para",self.Periodo_Para,grid=True, grid_number=2)
-            self.oHelper.SetValue("Nro. Pagto Para",self.Nro_Pagto_Para,grid=True, grid_number=2)
+            self.oHelper.LoadGrid()
             self.oHelper.SetButton('Confirmar')  
             self.oHelper.AssertTrue()
         else:
@@ -143,24 +142,14 @@ class GPEA180(unittest.TestCase):
         
         
         
-        if self.oHelper.IfExists("Help: ATENÇÃO"):
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
+        
+        self.oHelper.SetButton('Fechar')
+        
+        self.oHelper.SetButton('Fechar')
+         
             
     
         
-        if self.oHelper.IfExists("Help: ATENÇÃO"):
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-            
-            
-            
-            self.oHelper.SetButton('Fechar')
         
     
         if self.oHelper.IfExists("Deseja enviar e-mail dessa Transferência?"):
