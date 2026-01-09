@@ -7,7 +7,7 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# .\venv\Scripts\python.exe -m pytest tests/test_Roteiros.py -s
+# .\venv\Scripts\python.exe -m pytest tests/Outros/test_Roteiros.py -s
 
 #------------------------
 # CALCULO DE ROTEIROS VTR
@@ -91,7 +91,6 @@ class ROTEIRO(unittest.TestCase):
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
             self.oHelper.Screenshot("roteiroVTR.png")
-            #self.oHelper.ClickCheckBox("Em Disco",double_click=True)
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:

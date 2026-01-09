@@ -10,7 +10,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # ADICIONANDO APROVADOR PARA SOLICITAÇÃO DE VIAGEM
 #---------------------------------------------------
 
-# .\venv\Scripts\python.exe -m pytest tests/test_PXFINA11_03.py -s
+#cd Testes-Protheus; & .\venv\Scripts\Activate.ps1; pytest TESTS/SIGAGPE/MATA095/test_MATA095.py
 
 class MATA095(unittest.TestCase):
 
@@ -25,7 +25,7 @@ class MATA095(unittest.TestCase):
         cls.oHelper.Setup('SIGAMDI', DateSystem, '02', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Gestao de Viagens > Controle de Alcada (5) > Aprovadores")
 
-    def test_Cadastro_Orcamento_Viagem(self):
+    def test_Cadastro_Orcamento_Viagem_CRUD(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -35,6 +35,7 @@ class MATA095(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
 
         self.oHelper.WaitShow("Cadastro de Aprovadores")
+        self.oHelper.Screenshot("MATA095_01.png")
         
         #------------------------
         # INCLUIR APROVADOR
@@ -42,6 +43,7 @@ class MATA095(unittest.TestCase):
         self.oHelper.SetButton("Incluir")
         sleep(0.2)
         self.oHelper.WaitShow("Aprovadores - INCLUIR")
+        self.oHelper.Screenshot("MATA095_02.png")
         
         self.oHelper.SetValue("AK_USER", self.Usuario,check_value=False)
         self.oHelper.SetValue("AK_APROSUP", self.Aprovador,check_value=False)
@@ -50,10 +52,12 @@ class MATA095(unittest.TestCase):
         
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro inserido com sucesso.")
+        self.oHelper.Screenshot("MATA095_03.png")
         self.oHelper.SetButton("Fechar")
         sleep(0.9)
         
         self.oHelper.WaitShow("Cadastro de Aprovadores")
+        self.oHelper.Screenshot("MATA095_04.png")
         
         #-------------------
         # VISUALIZAR APROVADOR 
@@ -62,11 +66,13 @@ class MATA095(unittest.TestCase):
         self.oHelper.SetButton("Visualizar")
         sleep(0.9)
         self.oHelper.WaitShow("Aprovadores - VISUALIZAR")
+        self.oHelper.Screenshot("MATA095_05.png")
         self.oHelper.CheckResult("AK_USER",self.Usuario)
         self.oHelper.CheckResult("AK_APROSUP",self.Aprovador)
         self.oHelper.SetButton("Fechar")
         sleep(0.9)
         self.oHelper.WaitShow("Cadastro de Aprovadores")
+        self.oHelper.Screenshot("MATA095_06.png")
         
         #-------------------
         # EDITAR APROVADOR
@@ -74,11 +80,13 @@ class MATA095(unittest.TestCase):
         
         self.oHelper.SetButton("Alterar")
         sleep(0.9)
-        self.oHelper.WaitShow("Aprovadores - ALTERAR")
+        self.oHelper.WaitShow("Aprovadores - ALTERAR") 
         self.oHelper.SetValue("AK_LIMITE",'8888888',check_value=False)
+        self.oHelper.Screenshot("MATA095_07.png")
         self.oHelper.SetButton("Confirmar")
         
         if self.oHelper.IfExists("Atencao!"):
+            self.oHelper.Screenshot("MATA095_08.png")
             self.oHelper.WaitShow("O limite do aprovador foi alterado.")
             self.oHelper.SetButton("Confirma")
             self.oHelper.AssertTrue()
@@ -87,9 +95,11 @@ class MATA095(unittest.TestCase):
             
             
         self.oHelper.WaitShow("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("MATA095_09.png")
         self.oHelper.SetButton("Fechar")
         sleep(0.9)
         self.oHelper.WaitShow("Cadastro de Aprovadores")
+        self.oHelper.Screenshot("MATA095_10.png")
         
         #-------------------
         # EXCLUIR APROVADOR
@@ -97,13 +107,19 @@ class MATA095(unittest.TestCase):
         self.oHelper.SetButton("Outras Ações","Excluir")
         sleep(0.9)
         self.oHelper.WaitShow("Tem certeza que deseja excluir o item abaixo?")
+        self.oHelper.Screenshot("MATA095_11.png")
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro excluído com sucesso.")
+        self.oHelper.Screenshot("MATA095_12.png")
         self.oHelper.SetButton("Fechar")
         sleep(0.9)
         self.oHelper.WaitShow("Cadastro de Aprovadores") 
              
         self.oHelper.AssertTrue()
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_cadastro_de_aprovadores_de_viagem_CRUD")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
 
     @classmethod
@@ -112,6 +128,6 @@ class MATA095(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(MATA095('test_Cadastro_de_aprovadores_Viagem'))
+    suite.addTest(MATA095('test_Cadastro_de_aprovadores_Viagem_CRUD'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

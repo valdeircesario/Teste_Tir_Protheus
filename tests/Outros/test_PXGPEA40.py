@@ -10,8 +10,6 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # ADICIONANDO ORCAMENTO DE VIAGEM POR UTA
 #---------------------------------------------------
 
-# .\venv\Scripts\python.exe -m pytest tests/test_PXGPEA40.py -s
-
 class PXGPEA40(unittest.TestCase):
 
     @classmethod
@@ -39,12 +37,14 @@ class PXGPEA40(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
 
         self.oHelper.WaitShow("Centro de Custo vs Orçamento")
+        self.oHelper.Screenshot("PXGPEA40_01.png")
         
         #------------------------
         #INCLUIR
         #------------------------
         self.oHelper.SetButton("Incluir")
         self.oHelper.WaitShow("Modelo de Dados do Cadastro Centro de Custo vs Orçamento - INCLUIR")
+        self.oHelper.Screenshot("PXGPEA40_02.png")
         self.oHelper.SetValue("Z91_ANO", self.Ano)
         self.oHelper.SetValue("Z91_TIPO", self.Tipo) 
         self.oHelper.SetFocus("Z91_CONTAB")
@@ -53,15 +53,18 @@ class PXGPEA40(unittest.TestCase):
         self.oHelper.SetKey("TAB", grid=True)   
         self.oHelper.SetFocus("Centro de Custo vs Valor")
         self.oHelper.WaitShow("Centro de Custo vs Valor")  
-        self.oHelper.SetValue("Valor", self.Valor, grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Valor", self.Valor,          grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Motivo", self.Motivo, grid=True, grid_number=1)
+        self.oHelper.SetValue("Motivo", self.Motivo,        grid=True, grid_number=1)
         self.oHelper.SetKey("TAB", grid=True)     
         self.oHelper.LoadGrid()
+        self.oHelper.Screenshot("PXGPEA40_03.png")
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro inserido com sucesso.")
+        self.oHelper.Screenshot("PXGPEA40_04.png")
         self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Centro de Custo vs Orçamento")
+        self.oHelper.Screenshot("PXGPEA40_05.png")
         sleep(0.2)
             
         #------------------------
@@ -70,6 +73,7 @@ class PXGPEA40(unittest.TestCase):
         
         self.oHelper.SetButton("Outras Ações","Visualizar")
         self.oHelper.WaitShow("odelo de Dados do Cadastro Centro de Custo vs Orçamento - VISUALIZAR")
+        self.oHelper.Screenshot("PXGPEA40_06.png")
         self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Centro de Custo vs Orçamento")
         sleep(0.2)  
@@ -77,17 +81,21 @@ class PXGPEA40(unittest.TestCase):
         #------------------------
         # EDITAR
         #------------------------
-        self.oHelper.SetButton("Alterar")  
-        self.oHelper.SetValue("Valor", self.Valor01, grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetButton("Alterar") 
+        self.oHelper.Screenshot("PXGPEA40_07.png") 
+        self.oHelper.SetValue("Valor", self.Valor01,        grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Motivo", self.Motivo01, grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Motivo", self.Motivo01,      grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)     
-        self.oHelper.LoadGrid()  
+        self.oHelper.LoadGrid() 
+        self.oHelper.Screenshot("PXGPEA40_08.png") 
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("PXGPEA40_09.png")
         self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Centro de Custo vs Orçamento")
         sleep(0.2) 
+        self.oHelper.Screenshot("PXGPEA40_10.png")
         
         #------------------------
         #  EXCLUIR
@@ -95,11 +103,18 @@ class PXGPEA40(unittest.TestCase):
         
         self.oHelper.SetButton("Outras Ações", "Excluir")
         self.oHelper.WaitShow("Tem certeza que deseja excluir o item abaixo?")
+        self.oHelper.Screenshot("PXGPEA40_11.png")
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro excluído com sucesso.")
+        self.oHelper.Screenshot("PXGPEA40_11.png")
         self.oHelper.SetButton("Fechar")
        
         self.oHelper.AssertTrue()
+        print("/")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_Cadastro_Orcamento_Viagem")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
     def tearDownClass(cls):

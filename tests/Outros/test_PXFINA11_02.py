@@ -10,8 +10,6 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # ADICIONANDO SOLICITAÇÃO DE VIAGEM, PARA ENVIAR PARA APROVAÇÃO
 #---------------------------------------------------
 
-# .\venv\Scripts\python.exe -m pytest tests/test_PXFINA11_01.py -s
-
 class PXFINA11_01(unittest.TestCase):
 
     @classmethod
@@ -49,9 +47,10 @@ class PXFINA11_01(unittest.TestCase):
         sleep(0.2)
         self.oHelper.WaitShow("Gerenciador de Filtros")
         self.oHelper.ClickCheckBox("Solicitação em Aberto",1)
+        self.oHelper.Screenshot("PXFINA11_02_01.png")
         self.oHelper.SetButton("Aplicar filtros selecionados")
-        sleep(0.6)
-        
+        sleep(0.6) 
+        self.oHelper.Screenshot("PXFINA11_02_02.png") 
         
         #-------------------
         # ANULAR SOLICITAÇÃO
@@ -62,17 +61,24 @@ class PXFINA11_01(unittest.TestCase):
         
         
         if self.oHelper.IfExists("Atenção!"):
+            self.oHelper.Screenshot("PXFINA11_02_03.png")
             self.oHelper.WaitShow("Anulação dessa solicitação é irreversível. Deseja continuar?")
             self.oHelper.SetButton('Sim')
             self.oHelper.AssertTrue()
             
         if self.oHelper.IfExists("doCancelar"):
+            self.oHelper.Screenshot("PXFINA11_02_04.png")
             self.oHelper.WaitShow("Anulação realizada com sucesso!")
             self.oHelper.SetButton('Fechar')
             self.oHelper.AssertTrue()
         
              
         self.oHelper.AssertTrue()
+        
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_cadastro_de_solicitacao_de_viagem_para_aprovacao")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
 
     @classmethod
