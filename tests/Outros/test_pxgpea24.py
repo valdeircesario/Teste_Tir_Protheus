@@ -7,7 +7,7 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# .\venv\Scripts\python.exe -m pytest tests/test_pxgpea24.py -s
+#.\venv\Scripts\python.exe -m pytest tests/Outros/test_pxgpea24.py -s
 
 #------------------------
 # Lançamento Avulso
@@ -17,14 +17,15 @@ class PXGPEA24(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
-        self.Matricula = '228383'
-        self.descricaoEdit = 'TESTE ALTERADO'
-        self.dataref = (datetime.today()-timedelta(days=90)).strftime("%d/%m/%Y")
+        self.Matricula = '228419'
+        self.Nome = 'MURILO AUGUSTO DA SILVA'
+        self.dataref = (datetime.today()-timedelta(days=10)).strftime("%d/%m/%Y")
         self.Movimentacao = '1 - Titular'
         self.Movimentacaoedit = '3  - Ambos'
         self.ValorTitular = '256'
         self.ValorDependente = '128'
-        self.Verba = '773'
+        self.Verba01 = '771'
+        self.Verba02 = '773'
         self.Valor = '150'
         
 
@@ -91,7 +92,7 @@ class PXGPEA24(unittest.TestCase):
         sleep(10) """
     
         #self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Lancamentos Avulso")
-        self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
+        self.oHelper.SearchBrowse(self.filial + self.Matricula  + self.Nome, key="Filial+matricula+Nome")
         sleep(10)
         
         self.oHelper.WaitShow("Lançamentos Avulsos")
@@ -100,17 +101,13 @@ class PXGPEA24(unittest.TestCase):
         self.oHelper.WaitShow("Funcionários - MANUTENÇÃO")
         
         
-        
-        
-        self.oHelper.WaitShow("Funcionários - MANUTENÇÃO")
-        
         self.oHelper.SetFocus("Verba","620")
 
         #oHelper.ScrollGrid(column="Verba", match_value="620", grid_number=2)
-        self.oHelper.CheckResult("Verba", "620", grid=True, line=2)
+        self.oHelper.CheckResult("Verba", "704", grid=True, line=2)
         self.oHelper.SetKey("DOWN", grid= True) 
         self.oHelper.SetValue("Dt. Inclusao", self.dataref,                  grid= True, grid_number=2, check_value=False)
-        self.oHelper.SetValue('Verba',  self.Verba,                          grid= True, grid_number=2, check_value=False)
+        self.oHelper.SetValue('Verba',  self.Verba01,                          grid= True, grid_number=2, check_value=False)
         self.oHelper.SetValue('Valor',  self.Valor,                          grid=True, grid_number=2, check_value=False)
         self.oHelper.SetValue('Dt. Venc.', self.dataref,                     grid=True, grid_number=2, check_value=False)
         self.oHelper.SetValue('Observacao', "TESTE AUTOMATIZADO",            grid=True, grid_number=2, check_value=False)

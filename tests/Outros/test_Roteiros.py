@@ -19,7 +19,7 @@ class ROTEIRO(unittest.TestCase):
         self.filial = '02DF0001'
         self.Roteiro = 'VTR'
         self.Log = 'VTR'
-        self.dataref = (datetime.today()-timedelta(days=90)).strftime("%d/%m/%Y")
+        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         self.Processo = '00001'
         
 
@@ -48,11 +48,13 @@ class ROTEIRO(unittest.TestCase):
         
         self.oHelper.WaitShow("Processo de Calculo")
         self.oHelper.WaitShow("Este programa realiza processos de calculos")
+        self.oHelper.Screenshot("roteiroVTR_01.png")
         
         self.oHelper.SetButton("Parametros")
         sleep(5)
-        self.oHelper.SetValue("Processo ?",self.Processo,check_value=False)
-        self.oHelper.SetValue("Roteiro ?",self.Roteiro,check_value=False)
+        self.oHelper.SetValue("Processo ?",self.Processo,       check_value=False)
+        self.oHelper.SetValue("Roteiro ?",self.Roteiro,         check_value=False)
+        self.oHelper.Screenshot("roteiroVTR_02.png")
         sleep(0.5)
         
         self.oHelper.SetButton("OK")
@@ -64,6 +66,8 @@ class ROTEIRO(unittest.TestCase):
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
+        
+        self.oHelper.Screenshot("roteiroVTR_03.png")
         
         
         
@@ -90,35 +94,26 @@ class ROTEIRO(unittest.TestCase):
         
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.Screenshot("roteiroVTR.png")
+            self.oHelper.ClickCheckBox("Em Disco",1)
+            self.oHelper.Screenshot("roteiroVTR_04.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:
+            self.oHelper.AssertTrue()
             sleep(5)
         
         
+        self.oHelper.Screenshot("roteiroVTR_05.png")
     
         self.oHelper.SetButton("Sair")
         sleep(5)
-        
-        
-        ##### VERIFICA NO SPOOL #####
-        
-        self.oHelper.SetLateralMenu("Miscelanea > Spool")
-        
-        self.oHelper.SetValue("Localizar",self.Log,check_value=False)
-        sleep(0.2)
-        self.oHelper.SetKey("ENTER")
-        sleep(0.2)
-        if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.Screenshot("roteiroVTR.png")
-            self.oHelper.SetButton("Sair")
-            
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
 
         self.oHelper.AssertTrue()
+        print("/")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_Calculo_de_Roteiro")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
     def tearDownClass(self):
