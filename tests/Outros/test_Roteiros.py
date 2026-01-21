@@ -87,14 +87,14 @@ class ROTEIRO(unittest.TestCase):
         else:
             self.oHelper.AssertTrue()
             
-        sleep(2)  
+        sleep(30)  
         
         self.oHelper.WaitShow("Log de Ocorrencias no Processo de Calculo")
 
         
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.ClickCheckBox("Em Disco",1)
+            self.oHelper.SetButton("Em Disco")
             self.oHelper.Screenshot("roteiroVTR_04.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()

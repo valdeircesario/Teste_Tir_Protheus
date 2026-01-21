@@ -21,8 +21,10 @@ class PXFINA11(unittest.TestCase):
         cls.Descrição = 'USO PARA TESTE AUTOMATIZADO'
         cls.DescriçãoEdt = 'USO PARA TESTE AUTOMATIZADO EDIÇÃO'
         cls.UTA = '000000677'
-        cls.ValorPrev = '4500'
-        cls.ValorReal = '5500'
+        cls.ClasseValor = '0001.2'
+        cls.ItemContabil = '0001'
+        cls.ValorPrev = '450'
+        cls.ValorReal = '500'
         cls.Motivo = 'USO PARA TESTE AUTOMATIZADO'
         cls.Tipo = '1 - Servico'
         cls.Favorecido = '227884'
@@ -65,11 +67,14 @@ class PXFINA11(unittest.TestCase):
         
         self.oHelper.SetValue("ZV3_DESCRI", self.Descrição)
         self.oHelper.SetValue("ZV3_DTINI", self.dataref_inicio)
+        self.oHelper.SetValue("ZV3_CLVL",self.ClasseValor)
         self.oHelper.SetValue("ZV3_DTFIM", self.dataref_fim)  
         sleep(1) 
         self.oHelper.Screenshot("PXFINA11_03.png")
 
         self.oHelper.SetValue("ZV3_CC", self.UTA)
+        self.oHelper.SetValue("ZV3_ITCONT",self.ItemContabil)
+        
         self.oHelper.SetValue("ZV3_TIPO", self.Tipo)  
         self.oHelper.SetValue("ZV3_OBS","TESTE DE SOLICITAÇÃO DE VIAGEM", check_value =False)
         self.oHelper.SetKey("TAB", grid=True)  
@@ -92,6 +97,8 @@ class PXFINA11(unittest.TestCase):
         self.oHelper.SetValue("Chegada", self.dataref_inicio,       grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
         self.oHelper.SetValue("Hora Chegada", "12:00",              grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetKey("TAB", grid=True)
+        self.oHelper.SetValue("Vl Previsto", self.ValorPrev,        grid=True, grid_number=1, check_value=False)
         self.oHelper.LoadGrid()
         self.oHelper.Screenshot("PXFINA11_06.png")
         sleep(0.5)

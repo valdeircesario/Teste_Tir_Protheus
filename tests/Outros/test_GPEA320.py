@@ -7,7 +7,7 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# .\venv\Scripts\python.exe -m pytest tests/Outros/test_GPEA320.py -s
+#  .\venv\Scripts\python.exe -m pytest .\TESTS\SIGAGPE\GPEA320\test_GPEA320.py 
 
 #------------------------
 # CALCULO E RESCISÃO
@@ -70,10 +70,10 @@ class GPEA320(unittest.TestCase):
         self.oHelper.Screenshot("GPEA320_04.png")
         
         self.oHelper.SetValue("RG_TIPORES",self.TipoRes,       check_value=False)
+        self.oHelper.SetValue("RG_DATAHOM",self.dataref,         check_value=False)
         self.oHelper.SetValue("RG_DTGERAR",self.dataref,         check_value=False)
         self.oHelper.SetValue("RG_DTAVISO",self.dataref,         check_value=False)
         self.oHelper.SetKey("TAB")
-        self.oHelper.SetValue("RG_DATAHOM",self.dataref,         check_value=False)
         self.oHelper.Screenshot("GPEA320_05.png")
         sleep(0.5)
         
@@ -93,9 +93,9 @@ class GPEA320(unittest.TestCase):
         sleep(6)
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.ClickCheckBox("Em Disco")
+            self.oHelper.SetButton("Em Disco")
             self.oHelper.Screenshot("GPEA320_09.png")
-            self.oHelper.SetButton("OK")
+            self.oHelper.SetButton("Cancelar")
             sleep(1)
             self.oHelper.Screenshot("GPEA320_10.png")
             self.oHelper.SetButton("Sair")
@@ -103,7 +103,6 @@ class GPEA320(unittest.TestCase):
         else:
             self.oHelper.AssertTrue()
             sleep(5)
-        self.oHelper.Screenshot("GPEA320_10.png")
         sleep(2)
         
         self.oHelper.WaitShow("Rescisões - INCLUIR")
