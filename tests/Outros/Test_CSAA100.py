@@ -55,31 +55,36 @@ class CSAA100(unittest.TestCase):
         #----------------
         # teste de incluir novo deparatamento
         #----------------
-        self.oHelper.WaitShow("Departamento")   
+        self.oHelper.WaitShow("Departamento")
+        self.oHelper.Screenshot("CSAA100_01.png")   
         self.oHelper.SetButton("Incluir")
         sleep(1)
         
         self.oHelper.WaitShow("Departamento - INCLUIR")
+        self.oHelper.Screenshot("CSAA100_02.png")
         
-        self.oHelper.SetValue("QB_FILRESP",self.filial,check_value=False)
+        self.oHelper.SetValue("QB_FILRESP",self.filial,         check_value=False)
         self.oHelper.SetValue("QB_CC",self.CentoCusto)
-        self.oHelper.SetValue("QB_FILRESP",self.filial)
-        self.oHelper.SetValue("QB_MATRESP",self.MatriculaResp)
+        #self.oHelper.SetValue("QB_FILRESP",self.filial)
+        self.oHelper.SetValue("QB_MATRESP",self.MatriculaResp,  check_value=False)
         self.oHelper.SetValue("QB_DEPSUP",self.DepartSuper)
         self.oHelper.SetValue("QB_XDESCRI",self.DescricaoAD)
         self.oHelper.SetValue("QB_XDTINI",DateSystem)
         self.oHelper.SetValue("QB_XVAGAS",self.Dotacao)
-        self.oHelper.SetValue("QB_TIPO",self.Tipo)
+        self.oHelper.SetValue("QB_XTIPO",self.Tipo,              check_value=False)
+        self.oHelper.Screenshot("CSAA100_02.png")
         
         self.oHelper.SetButton("Salvar")
         
         if self.oHelper.IfExists("Retorno - Ifractal"):
+            self.oHelper.Screenshot("CSAA100_03.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         if self.oHelper.IfExists("Integração funcionários x Departamento realizada com sucesso!"):
+            self.oHelper.Screenshot("CSAA100_04.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
@@ -87,7 +92,9 @@ class CSAA100(unittest.TestCase):
         
         sleep(1)
         
+        
         self.oHelper.SetButton("Cancelar")
+        self.oHelper.Screenshot("CSAA100_05.png")
         
         sleep(0.5)
         self.oHelper.WaitShow("Departamento")
@@ -99,18 +106,20 @@ class CSAA100(unittest.TestCase):
         self.oHelper.SetButton("Visualizar")
         sleep(0.5)
         self.oHelper.WaitShow("Departamento - VISUALIZAR")
+        self.oHelper.Screenshot("CSAA100_06.png")
         
-        self.oHelper.CheckResult("QB_FILRESP",self.filial,check_value=False)
-        self.oHelper.CheckResult("QB_CC",self.CentoCusto)
-        self.oHelper.CheckResult("QB_FILRESP",self.filial)
-        self.oHelper.CheckResult("QB_MATRESP",self.MatriculaResp)
-        self.oHelper.CheckResult("QB_DEPSUP",self.DepartSuper)
-        self.oHelper.CheckResult("QB_XDESCRI",self.DescricaoAD)
-        self.oHelper.CheckResult("QB_XDTINI",DateSystem)
-        self.oHelper.CheckResult("QB_XVAGAS",self.Dotacao)
-        self.oHelper.CheckResult("QB_TIPO",self.Tipo)
+        self.oHelper.CheckResult("QB_FILRESP",      self.filial)
+        self.oHelper.CheckResult("QB_CC",           self.CentoCusto)
+        self.oHelper.CheckResult("QB_FILRESP",      self.filial)
+        self.oHelper.CheckResult("QB_MATRESP",      self.MatriculaResp)
+        self.oHelper.CheckResult("QB_DEPSUP",       self.DepartSuper)
+        self.oHelper.CheckResult("QB_XDESCRI",      self.DescricaoAD)
+        self.oHelper.CheckResult("QB_XDTINI",       DateSystem)
+        self.oHelper.CheckResult("QB_XVAGAS",       self.Dotacao)
+        self.oHelper.CheckResult("QB_TIPO",         self.Tipo)
         
         self.oHelper.SetButton("Confirmar")
+        self.oHelper.Screenshot("CSAA100_07.png")
         sleep(0.5)
         self.oHelper.WaitShow("Departamento")
         
@@ -121,17 +130,20 @@ class CSAA100(unittest.TestCase):
         self.oHelper.SetButton("Alterar")
         sleep(0.5)
         self.oHelper.WaitShow("Departamento - ALTERAR")
-        self.oHelper.SetValue("QB_XDESCRI",self.DescricaoADEdt)
-        self.oHelper.SetValue("QB_DESCRIC", self.DescricaoEdt)
+        self.oHelper.Screenshot("CSAA100_08.png")
+        self.oHelper.SetValue("QB_XDESCRI",     self.DescricaoADEdt)
+        self.oHelper.SetValue("QB_DESCRIC",     self.DescricaoEdt)
         self.oHelper.SetButton("Salvar")
         
         if self.oHelper.IfExists("Retorno - Ifractal"):
+            self.oHelper.Screenshot("CSAA100_09.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         if self.oHelper.IfExists("Integração funcionários x Departamento realizada com sucesso!"):
+            self.oHelper.Screenshot("CSAA100_10.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
@@ -140,6 +152,7 @@ class CSAA100(unittest.TestCase):
         sleep(1)
         
         self.oHelper.WaitShow("Departamento")
+        self.oHelper.Screenshot("CSAA100_11.png")
         
         #-------------------------------
         # exclusão de departamento , não esta excluindo
@@ -149,17 +162,21 @@ class CSAA100(unittest.TestCase):
         
         sleep(0.5)
         self.oHelper.WaitShow("Departamento - EXCLUIR")
+        self.oHelper.Screenshot("CSAA100_12.png")
+        
         
         self.oHelper.SetButton("Confirmar")
         sleep(0.1)
         
         if self.oHelper.IfExists("Retorno - Ifractal"):
+            self.oHelper.Screenshot("CSAA100_13.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         if self.oHelper.IfExists("Integração funcionários x Departamento realizada com sucesso!"):
+            self.oHelper.Screenshot("CSAA100_14.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
@@ -168,6 +185,7 @@ class CSAA100(unittest.TestCase):
         if self.oHelper.IfExists("Departamento - EXCLUIR - Log de verificaçäo de exclusäo"):
             self.oHelper.WaitShow("O sistema irá efetuar a verificaçäo para ver se o registro selecionado para exclusäo está sendo utilizado. A verificaçäo pode ser demorada.")
             self.oHelper.WaitShow("Confirma a exclusäo?")
+            self.oHelper.Screenshot("CSAA100_15.png")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
@@ -175,6 +193,7 @@ class CSAA100(unittest.TestCase):
             
         if self.oHelper.IfExists("Departamento - EXCLUIR - Log de verificaçäo de exclusäo"):
             self.oHelper.WaitShow("Deseja gerar Log?")
+            self.oHelper.Screenshot("CSAA100_16.png")
             self.oHelper.SetButton("Não")
             self.oHelper.AssertTrue()
         else:
@@ -182,12 +201,14 @@ class CSAA100(unittest.TestCase):
             
         if self.oHelper.IfExists("Departamento - EXCLUIR - Log de verificaçäo de exclusäo"):
             self.oHelper.WaitShow("Demonstrar o Log Sinteticamente ?")
+            self.oHelper.Screenshot("CSAA100_17.png")
             self.oHelper.SetButton("Não")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         if self.oHelper.IfExists("Log de verificaçäo de exclusäo"):
+            self.oHelper.Screenshot("CSAA100_18.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:
@@ -198,8 +219,11 @@ class CSAA100(unittest.TestCase):
             
         if self.oHelper.IfExists("Departamento - EXCLUIR - Log de verificaçäo de exclusäo"):
             self.oHelper.WaitShow("A chave a ser excluida está sendo utilizada. Até que as referências a ela sejam eliminadas a mesma näo pode ser excluida.")
+            self.oHelper.Screenshot("CSAA100_19.png")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
+            
+            print("------------------------------------------------")
             print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
             print("X 🎯 test_de_incluir_departamento")
             print("X ✅ Teste finalizado com sucesso")
