@@ -5,7 +5,7 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
- # # python -m pytest tests/Modulo_02/test_CTBA030.py -v -s --html=reports/report_CTBA030.html --self-contained-html
+ # # python -m pytest tests/Modulo_07/test_CTBA030.py -v -s --html=reports/report_CTBA030.html --self-contained-html
 
 #------------------------------------------
 #-- Teste CTBA030 - Cadastro de Centro de Custos
@@ -17,8 +17,8 @@ class CTBA030(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.CentroCusto = '011'# SEMPRE USAR 3 DIGITOS
-        cls.Descricao = 'GEREM'# SEMPRE RENOMEAR
+        cls.CentroCusto = '012'# SEMPRE USAR 3 DIGITOS
+        cls.Descricao = 'PEGES'# SEMPRE RENOMEAR
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
