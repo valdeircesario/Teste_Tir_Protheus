@@ -1,10 +1,11 @@
+
 {
-    "Url": "https://qasrverp:10020/webapp/",
+    "Url": "http://localhost:4321/",
     "Browser": "Firefox",
-    "Environment": "POUPEX_TST",
+    "Environment": "ENVIRONMENT",
     "Language": "pt-br",
-    "User": "97137227104",
-    "Password": "Val20221080080094+",
+    "User": "admin",
+    "Password": "Val201918+",
     "DebugLog": true,
     "TimeOut": 120,
     "Headless": false,

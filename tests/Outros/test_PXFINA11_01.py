@@ -10,7 +10,6 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # ADICIONANDO SOLICITAÇÃO DE VIAGEM, PARA ENVIAR PARA APROVAÇÃO
 #---------------------------------------------------
 
-# .\venv\Scripts\python.exe -m pytest tests/test_PXFINA11_01.py -s
 
 class PXFINA11_01(unittest.TestCase):
 
@@ -41,6 +40,7 @@ class PXFINA11_01(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
 
         self.oHelper.WaitShow("Solicitação de Viagens/Treinamento")
+        self.oHelper.Screenshot("PXFINA11_01.png")
         
         #------------------------
         # CRIA UMA NOVA SOLICITAÇÃO PARA ENVIAR PARA APROVAÇÃO
@@ -49,10 +49,9 @@ class PXFINA11_01(unittest.TestCase):
         sleep(0.2)
         self.oHelper.SearchBrowse(self.filial)
         self.oHelper.SetButton("OK")
-        sleep(0.2)
-        
-        
+        sleep(0.2) 
         self.oHelper.WaitShow("Solicitacoes de Viagens - INCLUIR")
+        self.oHelper.Screenshot("PXFINA11_01_02.png")
         
         #----------
         # Capturar o código da solicitação gerado automaticamente
@@ -60,65 +59,64 @@ class PXFINA11_01(unittest.TestCase):
         
         self.codigo_solicitacao = self.oHelper.GetValue("Codigo")
         print(f"Código da solicitação criada: {self.codigo_solicitacao}")
-        #----------
-        
+         
         self.oHelper.SetValue("ZV3_DESCRI", self.Descrição)
         self.oHelper.SetValue("ZV3_DTINI", self.dataref_inicio)
         self.oHelper.SetValue("ZV3_DTFIM", self.dataref_fim)
-        
         sleep(1) 
-
         self.oHelper.SetValue("ZV3_CC", self.UTA)
         self.oHelper.SetValue("ZV3_TIPO", self.Tipo)  
         self.oHelper.SetValue("ZV3_OBS","TESTE DE SOLICITAÇÃO DE VIAGEM", check_value =False)
-        self.oHelper.SetKey("TAB", grid=True) 
-        
-        
-          
-        self.oHelper.SetValue('Favorecido',  '227884',    grid=True,     grid_number=1)
+        self.oHelper.SetKey("TAB", grid=True)    
+        self.oHelper.SetValue('Favorecido',  '227884',              grid=True,     grid_number=1)
         self.oHelper.LoadGrid()
+        self.oHelper.Screenshot("PXFINA11_01_03.png")
         
         
         self.oHelper.ClickFolder("Transporte")
+        self.oHelper.Screenshot("PXFINA11_01_04.png")
         
-        self.oHelper.SetValue("Tipo","1 - Aereo", grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Tipo","1 - Aereo",                   grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True) 
-        self.oHelper.SetValue("Partida", self.dataref_inicio, grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Partida", self.dataref_inicio,       grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Hora Partida", "08:00", grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Hora Partida", "08:00",              grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Origem", "DF00108", grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Origem", "DF00108",                  grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Destino", "GO08707", grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Destino", "GO08707",                 grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Chegada", self.dataref_inicio, grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Chegada", self.dataref_inicio,       grid=True, grid_number=1, check_value=False)
         self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Hora Chegada", "12:00", grid=True, grid_number=1, check_value=False)
+        self.oHelper.SetValue("Hora Chegada", "12:00",              grid=True, grid_number=1, check_value=False)
         self.oHelper.LoadGrid()
+        self.oHelper.Screenshot("PXFINA11_01_05.png")
         sleep(0.5)
         
         
-        
+        self.oHelper.ClickFolder("Treinamento") 
     
         self.oHelper.SetButton("Confirmar")
         
         if self.oHelper.IfExists("Valores de treinamento e/ou servico ultrapassam o limite orcado-Atenção-PXFINA11X"):
+            self.oHelper.Screenshot("PXFINA11_01_06.png")
             self.oHelper.CheckResult('Valor do orçamento', 'R$ 0,00')
             self.oHelper.SetButton('Fechar')
         
         if self.oHelper.IfExists("Help: FWMODELPOS"):
+            self.oHelper.Screenshot("PXFINA11_01_07.png")
             self.oHelper.WaitShow('Problema: Modelo invalido')
             self.oHelper.SetButton('Fechar')
             
         if self.oHelper.IfExists("Registro inserido com sucesso."):
+            self.oHelper.Screenshot("PXFINA11_01_08.png")
             self.oHelper.SetButton('Fechar')
        
         self.oHelper.WaitShow("Solicitação de Viagens/Treinamento") 
+        self.oHelper.Screenshot("PXFINA11_01_09.png")
         
         sleep(0.5)
-        
-        #self.oHelper.SearchBrowse(self.filial+self.codigo_solicitacao)
-        
+         
         #-------------------
         # ENVIO PARA APROVAÇÃO
         #-------------------   
@@ -128,20 +126,26 @@ class PXFINA11_01(unittest.TestCase):
         
         
         if self.oHelper.IfExists("ZA1MAIL"):
+            self.oHelper.Screenshot("PXFINA11_01_10.png")
             
             self.oHelper.SetButton('Fechar')
             self.oHelper.AssertTrue()
             
-        if self.oHelper.IfExists("ZA1MAIL"):
-            
+        if self.oHelper.IfExists("ZA1MAIL"): 
             self.oHelper.SetButton('Fechar')
             self.oHelper.AssertTrue()
         
         if self.oHelper.IfExists("MTALCDOC"):
             self.oHelper.WaitShow("Aprovação enviada com sucesso!")
+            self.oHelper.Screenshot("PXFINA11_01_11.png")
             self.oHelper.SetButton('Fechar')
              
         self.oHelper.AssertTrue()
+        
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_cadastro_de_solicitacao_de_viagem_para_aprovacao")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
 
     @classmethod

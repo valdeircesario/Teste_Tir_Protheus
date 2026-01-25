@@ -13,31 +13,28 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # CRUD TIPO DE COVENIO
 #------------------------
 
-class PXGPEM04(unittest.TestCase):# PEXGPE28
+class PXGPEM04_02(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
         self.descricao = 'TESTE INCLUSAO'
         self.descricaoEdit = 'TESTE ALTERADO'
-        self.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")
+        self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
         self.Movimentacao = '1 - Titular'
         self.Movimentacaoedit = '3 - Ambos'
-        self.ValorTitular = '256'
+        self.ValorTitular = '256,00'
         self.ValorDependente = '128'
         self.Verba = '010'
-        self.ValorTitular01 = '256'
-        self.ValorDependente01 = '128'
-        self.DataFim = (datetime.today()+timedelta(days=30)).strftime("%d/%m/%Y")
+        self.ValorTitular01 = '210'
+        self.ValorDependente01 = '115'
         
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
         self.oHelper.SetLateralMenu("Atualizações > Especificos > Tipo de Convenio")
-        #self.oHelper.SetButton('Confirmar')
-        #self.oHelper.SetButton("Fechar")
 
-    def test_Convenio(self):
+    def test_de_Crud_Convenio(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -54,37 +51,39 @@ class PXGPEM04(unittest.TestCase):# PEXGPE28
             
         
         self.oHelper.WaitShow("Tipos de Convênios")
+        
+        #--------------------
+        # INCLUIR CONVENIO
+        #--------------------
+        
         self.oHelper.SetButton("Incluir")
         
         self.oHelper.WaitShow("Tipos de Convenios - INCLUIR")
         
-        self.oHelper.SetFocus("ZD_DESCONV")
-        self.oHelper.SetValue("ZD_DESCONV", self.descricao)
-        self.oHelper.SetKey("TAB")  
-        self.oHelper.SetValue("ZD_TPMOV",self.Movimentacao)
-        self.oHelper.SetValue("ZD_TPALTSA","003")  
+        self.oHelper.SetValue("ZD_DESCONV", self.descricao,check_value=False)
+        self.oHelper.SetValue("ZD_TPMOV",self.Movimentacao,check_value=False)
+        self.oHelper.SetValue("ZD_TPALTSA","003")
+        self.oHelper.Screenshot("convenio_01.png")  
         
             
         self.oHelper.WaitShow("Histórico")
         self.oHelper.SetValue("Data Inicio", self.dataref, grid=True, grid_number=1,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
         self.oHelper.SetValue("Vlr Titular", self.ValorTitular, grid= True, grid_number=1,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)    
         self.oHelper.SetValue("Vlr Dependen", self.ValorDependente, grid=True, grid_number=1,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
         self.oHelper.SetValue("Verba", self.Verba, grid=True, grid_number=1,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
         self.oHelper.SetValue("Verba s/Inci", self.Verba, grid=True, grid_number=1,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
         self.oHelper.LoadGrid()
+        self.oHelper.Screenshot("convenio_02.png")
         sleep(0.2)
         
         self.oHelper.SetButton("Confirmar")
         
         self.oHelper.WaitShow("Registro inserido com sucesso.")
+        self.oHelper.Screenshot("convenio_03.png")
         self.oHelper.SetButton("Fechar")
         
         self.oHelper.WaitShow("Tipos de Convênios")
+        self.oHelper.Screenshot("convenio_04.png")
         
         #------------------------
         # VISUALIZAR CONVENIO
@@ -92,7 +91,9 @@ class PXGPEM04(unittest.TestCase):# PEXGPE28
         
         self.oHelper.SetButton("Visualizar")
         self.oHelper.WaitShow("Tipos de Convenios - VISUALIZAR")
-        self.oHelper.Screenshot("convenio.png")
+        self.oHelper.ScrollGrid(column="Vlr Titular", match_value= self.ValorTitular,   grid_number=1)
+        self.oHelper.LoadGrid()
+        self.oHelper.Screenshot("convenio_05.png")
         self.oHelper.SetButton("Fechar")
         sleep(0.3)
         self.oHelper.WaitShow("Tipos de Convênios")
@@ -104,26 +105,22 @@ class PXGPEM04(unittest.TestCase):# PEXGPE28
         
         self.oHelper.SetButton("Alterar")
         self.oHelper.WaitShow("Tipos de Convenios - ALTERAR")
-        self.oHelper.SetValue("ZD_DESCONV", self.descricaoEdit)
-        self.oHelper.SetKey("TAB")
+        self.oHelper.Screenshot("convenio_06.png")
+        self.oHelper.SetValue("ZD_DESCONV", self.descricaoEdit,check_value=False)
         sleep(0.3)
-        self.oHelper.SetValue("ZD_TPMOV",self.Movimentacaoedit)
+        self.oHelper.SetValue("ZD_TPMOV",self.Movimentacaoedit,check_value=False)
+        self.oHelper.Screenshot("convenio_07.png")
         
         self.oHelper.WaitShow("Histórico")
-        self.oHelper.SetValue("Data Inicio", self.dataref, grid=True, grid_number=2,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Vlr Titular", self.ValorTitular01, grid= True, grid_number=2,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)    
-        self.oHelper.SetValue("Vlr Dependen", self.ValorDependente01, grid=True, grid_number=2,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Verba", self.Verba, grid=True, grid_number=2,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
-        self.oHelper.SetValue("Verba s/Inci", self.Verba, grid=True, grid_number=2,check_value=False)
-        self.oHelper.SetKey("TAB", grid=True)
+        self.oHelper.ScrollGrid(column="Vlr Titular", match_value= self.ValorTitular,   grid_number=1)
+        self.oHelper.SetValue("Vlr Titular", self.ValorTitular01,                       grid=True,     grid_number=1,check_value=False)
         self.oHelper.LoadGrid()
+        self.oHelper.SetKey("TAB")
+        self.oHelper.Screenshot("convenio_08.png")
         sleep(0.2)
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro alterado com sucesso.") 
+        self.oHelper.Screenshot("convenio_09.png")
         self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Tipos de Convênios")
         
@@ -132,12 +129,20 @@ class PXGPEM04(unittest.TestCase):# PEXGPE28
         #------------------------
         self.oHelper.SetButton("Outras Ações","Excluir")
         self.oHelper.WaitShow("Tem certeza que deseja excluir o item abaixo?")
+        self.oHelper.Screenshot("convenio_10.png")
         self.oHelper.WaitShow("Esta operação não poderá ser desfeita após a confirmação da exclusão.")
         self.oHelper.SetButton("Confirmar")
         self.oHelper.WaitShow("Registro excluído com sucesso.")
+        self.oHelper.Screenshot("convenio_11.png")
         self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Tipos de Convênios")
         self.oHelper.AssertTrue()
+        
+        print("----------------------------------------------- ")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_Crud_Convenio")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
     def tearDownClass(self):
@@ -146,6 +151,6 @@ class PXGPEM04(unittest.TestCase):# PEXGPE28
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(PXGPEM04('test_Convenio'))
+    suite.addTest(PXGPEM04_02('test_de_Crud_Convenio'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

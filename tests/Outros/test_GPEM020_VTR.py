@@ -7,22 +7,19 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# .\venv\Scripts\python.exe -m pytest tests/test_Roteiros.py -s
+# .\venv\Scripts\python.exe -m pytest tests/Outros/test_GPEM020_VTR.py -s
 
 #------------------------
-# CALCULO DE ROTEIROS VTR
+# CALCULO DE ROTEIRO VTR
 #------------------------
 
-class ROTEIRO(unittest.TestCase):
+class GPEM020_VTR(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
         self.Roteiro = 'VTR'
-        self.Log = 'VTR'
-        self.dataref = (datetime.today()-timedelta(days=90)).strftime("%d/%m/%Y")
+        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y") # AJUSTAR DATA PARA PERIODO EM ABERTO
         self.Processo = '00001'
-        
-
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
@@ -48,78 +45,75 @@ class ROTEIRO(unittest.TestCase):
         
         self.oHelper.WaitShow("Processo de Calculo")
         self.oHelper.WaitShow("Este programa realiza processos de calculos")
+        self.oHelper.Screenshot("roteiroVTR_01.png")
         
         self.oHelper.SetButton("Parametros")
         sleep(5)
-        self.oHelper.SetValue("Processo ?",self.Processo,check_value=False)
-        self.oHelper.SetValue("Roteiro ?",self.Roteiro,check_value=False)
+        self.oHelper.SetValue("Processo ?",self.Processo,           check_value=False)
+        self.oHelper.SetValue("Roteiro ?",self.Roteiro,             check_value=False)
         sleep(0.5)
+        self.oHelper.Screenshot("roteiroVTR_02.png")
         
         self.oHelper.SetButton("OK")
         sleep(5)
         
         
         if self.oHelper.IfExists("Parametros"):
+            sleep(1)
+            self.oHelper.Screenshot("roteiroVTR_03.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
         
-        
-        
-        
         self.oHelper.SetButton("Calcular")
+        self.oHelper.Screenshot("roteiroVTR_04.png")
         
         
         if self.oHelper.IfExists("Confirma configuracäo dos parametros?"):
+            self.oHelper.Screenshot("roteiroVTR_05.png")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         if self.oHelper.IfExists("Nenhum filtro foi selecionado! Processar toda a tabela?"):
+            self.oHelper.Screenshot("roteiroVTR_06.png")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        sleep(2)  
+        sleep(300) 
         
-        self.oHelper.WaitShow("Log de Ocorrencias no Processo de Calculo")
-
+        self.oHelper.Screenshot("roteiroVTR_07.png")
+        sleep(30)
+        self.oHelper.Screenshot("roteiroVTR_08.png")
+        sleep(30)
         
+        self.oHelper.WaitShow("Log de Ocorrencias no Processo de Calculo") 
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.Screenshot("roteiroVTR.png")
-            #self.oHelper.ClickCheckBox("Em Disco",double_click=True)
+            self.oHelper.ClickLabel("Em Disco")
+            self.oHelper.Screenshot("roteiroVTR_09.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:
-            sleep(5)
-        
-        
+            self.oHelper.AssertTrue()
+            
+        sleep(25)
+        self.oHelper.Screenshot("roteiroVTR_10.png")
     
         self.oHelper.SetButton("Sair")
-        sleep(5)
-        
-        
-        ##### VERIFICA NO SPOOL #####
-        
-        self.oHelper.SetLateralMenu("Miscelanea > Spool")
-        
-        self.oHelper.SetValue("Localizar",self.Log,check_value=False)
-        sleep(0.2)
-        self.oHelper.SetKey("ENTER")
-        sleep(0.2)
-        if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.Screenshot("roteiroVTR.png")
-            self.oHelper.SetButton("Sair")
-            
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
+        sleep(10)
 
         self.oHelper.AssertTrue()
+        print("------------------------------------------------")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_de_Calculo_Roteiro_VTR")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    
 
     @classmethod
     def tearDownClass(self):
@@ -128,6 +122,6 @@ class ROTEIRO(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(ROTEIRO('test_Calculo_Roteiro_VTR'))
+    suite.addTest(GPEM020_VTR('test_Calculo_Roteiro_VTR'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

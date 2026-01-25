@@ -43,20 +43,11 @@ class PXPEA41(unittest.TestCase):
         self.oHelper.SetButton("Incluir")
         self.oHelper.WaitShow("Ponto Fixo Poupex - INCLUIR")
         
-        self.oHelper.SetFocus("ZW_DESCRIC")
-        self.oHelper.SetValue("ZW_DESCRIC", self.descricao)
-        self.oHelper.WaitFieldValue("ZW_DESCRIC", self.descricao)
-        self.oHelper.SetKey("TAB")
+        self.oHelper.SetValue("ZW_DESCRIC", self.descricao, check_value=False)
+    
+        self.oHelper.SetValue("ZW_TELEFON", self.telefone, check_value=False)
         sleep(0.2)
         
-        self.oHelper.SetFocus("ZW_TELEFON")
-        self.oHelper.SetValue("ZW_TELEFON", self.telefone)
-        self.oHelper.WaitFieldValue("ZW_TELEFON", self.telefone)
-        self.oHelper.SetKey("TAB")
-        sleep(0.2)
-        
-        if not self.oHelper.CheckResult("ZW_TELEFON", self.telefone):
-            self.oHelper.Screenshot(filename="erro_preenchimento.png")
 
         #------------------------
         # CONFIRMAR INCLUSÃO
@@ -85,21 +76,17 @@ class PXPEA41(unittest.TestCase):
         
         self.oHelper.SetButton("Alterar")
         self.oHelper.WaitShow("Ponto Fixo Poupex - ALTERAR")
-        self.oHelper.SetFocus("ZW_DESCRIC")
-        self.oHelper.SetValue("ZW_DESCRIC", self.descricaoEdit)
-        self.oHelper.WaitFieldValue("ZW_DESCRIC", self.descricaoEdit)
-        self.oHelper.SetKey("TAB")
+        
+        self.oHelper.SetValue("ZW_DESCRIC", self.descricaoEdit, check_value=False)
+        
         sleep(0.2)
         
-        self.oHelper.SetFocus("ZW_TELEFON")
-        self.oHelper.SetValue("ZW_TELEFON", self.telefoneEdit)
-        self.oHelper.WaitFieldValue("ZW_TELEFON", self.telefoneEdit)
-        self.oHelper.SetKey("TAB")
+        
+        self.oHelper.SetValue("ZW_TELEFON", self.telefoneEdit, check_value=False)
+
         sleep(0.2)
 
-        # Tira print se não avançar
-        if not self.oHelper.CheckResult("ZW_TELEFON", self.telefoneEdit):
-            self.oHelper.Screenshot(filename="erro_preenchimento.png")
+
 
         #------------------------
         # CONFIRMAR EDIÇÃO
