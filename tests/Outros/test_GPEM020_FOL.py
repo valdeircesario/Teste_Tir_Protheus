@@ -60,51 +60,46 @@ class GPEM020_FOL(unittest.TestCase):
         sleep(5)
         
         
-        if self.oHelper.IfExists("Parametros"):
-            sleep(1)
-            self.oHelper.Screenshot("RoteiroFOL_03.png")
-            self.oHelper.SetButton("OK")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-        
+        self.oHelper.SetButton('Filtro Rapido')
+        self.oHelper.SetValue("Campos:","Matricula")
+        self.oHelper.SetValue("Expressão:","228383")
+        self.oHelper.SetButton("Adiciona")
+        self.oHelper.Screenshot("roteiroVTR_03.png")
+        sleep(0.5)
+        self.oHelper.SetButton("OK")
+        sleep(1) 
         self.oHelper.SetButton("Calcular")
-        self.oHelper.Screenshot("RoteiroFOL_04.png")
+        sleep(1)
+        self.oHelper.Screenshot("roteiroVTR_04.png")
         
         
-        if self.oHelper.IfExists("Confirma configuracäo dos parametros?"):
-            self.oHelper.Screenshot("RoteiroFOL_05.png")
+        if self.oHelper.IfExists("Atencão"):
+            self.oHelper.WaitShow("Confirma configuracäo dos parametros?")
+            self.oHelper.Screenshot("roteiroVTR_05.png")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        if self.oHelper.IfExists("Nenhum filtro foi selecionado! Processar toda a tabela?"):
-            self.oHelper.Screenshot("RoteiroFOL_06.png")
-            self.oHelper.SetButton("Sim")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        sleep(300) 
+        sleep(20)
         
-        self.oHelper.Screenshot("RoteiroFOL_07.png")
-        sleep(300)
-        self.oHelper.Screenshot("RoteiroFOL_08.png")
-        sleep(300)
+        self.oHelper.Screenshot("roteiroVTR_06.png")
+        sleep(30)
+        self.oHelper.Screenshot("roteiroVTR_07.png")
+        sleep(30)
         
         self.oHelper.WaitShow("Log de Ocorrencias no Processo de Calculo") 
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
             self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("RoteiroFOL_09.png")
+            self.oHelper.Screenshot("roteiroVTR_08.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        sleep(45)
-        self.oHelper.Screenshot("RoteiroFOL_10.png")
+        sleep(25)
+        self.oHelper.Screenshot("roteiroVTR_09.png")
     
         self.oHelper.SetButton("Sair")
         sleep(10)

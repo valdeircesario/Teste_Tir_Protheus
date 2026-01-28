@@ -13,7 +13,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # CRUD TIPO DE COVENIO
 #------------------------
 
-class PXGPEM04_02(unittest.TestCase):
+class PEXGPE28(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
@@ -151,6 +151,6 @@ class PXGPEM04_02(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(PXGPEM04_02('test_de_Crud_Convenio'))
+    suite.addTest(PEXGPE28('test_de_Crud_Convenio'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
