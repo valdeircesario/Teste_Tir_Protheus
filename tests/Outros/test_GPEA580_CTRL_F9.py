@@ -1,0 +1,137 @@
+from pytest import mark
+import unittest
+from time import sleep
+from os import getcwd
+from datetime import datetime, timedelta
+DateSystem = datetime.today().strftime('%d/%m/%Y')
+
+#  .\venv\Scripts\python.exe -m pytest .\TESTS\SIGAGPE\PXGPEA24\test_PXGPEA24_02.py -s
+
+#----------------------------------------------------------------
+# LANÇAMENTO AVULSO PARA FUNCIONARIO, CALCULAR / LANÇAR /CALCULAR
+#----------------------------------------------------------------
+
+class GPEA580_CTRL_F9(unittest.TestCase):
+    @classmethod
+    def setUpClass(self):
+        from tir.technologies.core.base import By
+        from tir import Webapp
+                                                                        
+        self.filial = '02DF0001'
+        self.Matricula = '228419'
+        self.Nome = 'MURILO AUGUSTO DA SILVA'
+        self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
+        self.dataVenv = (datetime.today()-timedelta(days= 0)).strftime("%d/%m/%Y")
+        self.Movimentacao = '1 - Titular'
+        self.Movimentacaoedit = '3  - Ambos'
+        self.ValorTitular = '256'
+        self.ValorDependente = '128'
+        self.Verba01 = '771'
+        self.Verba02 = '773'
+        self.Valor = '150'
+        
+
+        configfile = getcwd() + '\\config.json'
+        self.oHelper = Webapp(configfile)
+        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        
+        self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
+        
+
+    def test_Calculo_folha_CTRL_F9(self):
+
+        if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
+            self.oHelper.SetButton('Fechar')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+
+        if self.oHelper.IfExists("Moedas"):
+            self.oHelper.CheckResult('Dolar', '0,0000')
+            self.oHelper.SetButton('Confirmar')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+            
+        #------------------------------------
+        # CALCULAR FOLHA ANTES DO LANÇAMENTO
+        #------------------------------------
+            
+        self.oHelper.WaitShow("Lançamentos por Período")
+        self.oHelper.Screenshot("ctrlF9_01.png")  
+        self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
+        self.oHelper.ScrollGrid(column="Matricula", match_value= self.Matricula,          grid_number=1)
+        self.oHelper.Screenshot("ctrlF9_06.png")
+        self.oHelper.LoadGrid()
+        sleep(0.3)
+        self.oHelper.Screenshot("ctrlF9_02.png")
+        sleep(5)
+         
+        #------------------
+        # CALCULAR FOLHA CTRL+F9
+        #------------------
+        
+        self.oHelper.SetKey("CTRL","F9")#key="CTRL", additional_key="A"
+        
+        if self.oHelper.IfExists("Deseja processar o contracheques do funcionario(a):"):
+            self.oHelper.Screenshot("ctrlF9_03.png")
+            self.oHelper.SetButton('Sim')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+        
+        self.oHelper.SetButton("Sim")
+        
+        
+        
+        self.oHelper.WaitShow("Processando")
+        sleep(3)
+        self.oHelper.Screenshot("ctrlF9_04.png.png")
+        sleep(20) 
+        self.oHelper.SetButton("OK")
+        
+        #---------------------
+        # CONSULTAR CALCULO 
+        #---------------------
+        
+        self.oHelper.SetButton('Alterar')   
+        sleep(5)
+        
+        self.oHelper.WaitShow("Lançamentos por Funcionário")  
+            
+        self.oHelper.Screenshot("ctrlF9_05.png")
+        sleep(5)
+        
+        self.oHelper.SetKey("F7")
+        sleep(1)
+        self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "120",          grid_number=1)
+        self.oHelper.Screenshot("ctrlF9_06.png")
+        self.oHelper.LoadGrid()
+        sleep(1)
+        self.oHelper.SetButton('Confirmar') 
+        sleep(0.5)
+        
+        self.oHelper.SetButton("Salvar")
+        sleep(2)
+        
+        self.oHelper.AssertTrue()
+       
+     
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test_Calculo_folha_CTRL_F9")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        
+        
+            
+
+    @classmethod
+    def tearDownClass(self):
+        self.oHelper.TearDown()
+
+
+if __name__ == '__main__':
+    suite = unittest.TestSuite()
+    suite.addTest(GPEA580_CTRL_F9('test_Calculo_folha_CTRL_F9'))
+    runner = unittest.TextTestRunner(verbosity=2)
+    runner.run(suite)
