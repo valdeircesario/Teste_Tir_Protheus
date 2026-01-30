@@ -60,33 +60,32 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         self.oHelper.WaitShow("Lançamentos por Período")
         self.oHelper.Screenshot("ctrlF9_01.png")  
         self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
-        self.oHelper.ScrollGrid(column="Matricula", match_value= self.Matricula,          grid_number=1)
+        sleep(0.5)
+        #self.oHelper.SetButton("Alterar")
+        #sleep(1)
+        #self.oHelper.WaitShow("Lançamentos por Funcionário")
         self.oHelper.Screenshot("ctrlF9_06.png")
-        self.oHelper.LoadGrid()
-        sleep(0.3)
-        self.oHelper.Screenshot("ctrlF9_02.png")
-        sleep(5)
+        #sleep(0.5)
          
         #------------------
         # CALCULAR FOLHA CTRL+F9
         #------------------
         
-        self.oHelper.SetKey("CTRL","F9")#key="CTRL", additional_key="A"
+        self.oHelper.SetKey(key="SHFIT", additional_key="F9")#key="CTRL", additional_key="F9"
         
         if self.oHelper.IfExists("Deseja processar o contracheques do funcionario(a):"):
-            self.oHelper.Screenshot("ctrlF9_03.png")
+            self.oHelper.Screenshot("ctrlF9_08.png")
             self.oHelper.SetButton('Sim')
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
+            
+        self.oHelper.Screenshot("ctrlF9_10.png.png")
         
-        self.oHelper.SetButton("Sim")
+        self.oHelper.SetButton("Sim")  
         
-        
-        
-        self.oHelper.WaitShow("Processando")
-        sleep(3)
-        self.oHelper.Screenshot("ctrlF9_04.png.png")
+        sleep(30)
+        self.oHelper.Screenshot("ctrlF9_11.png.png")
         sleep(20) 
         self.oHelper.SetButton("OK")
         
@@ -99,13 +98,13 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         
         self.oHelper.WaitShow("Lançamentos por Funcionário")  
             
-        self.oHelper.Screenshot("ctrlF9_05.png")
+        self.oHelper.Screenshot("ctrlF9_12.png")
         sleep(5)
         
         self.oHelper.SetKey("F7")
         sleep(1)
         self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "120",          grid_number=1)
-        self.oHelper.Screenshot("ctrlF9_06.png")
+        self.oHelper.Screenshot("ctrlF9_13.png")
         self.oHelper.LoadGrid()
         sleep(1)
         self.oHelper.SetButton('Confirmar') 
