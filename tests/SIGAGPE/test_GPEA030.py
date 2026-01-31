@@ -5,7 +5,7 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
- # # python -m pytest tests/Modulo_02/test_GPEA030.py -v -s --html=reports/report_GPEA030.html --self-contained-html
+ # # python -m pytest tests/SIGAGPE/test_GPEA030.py -v -s --html=reports/report_GPEA030.html --self-contained-html
 
 #------------------------------------------
 #-- Teste GPEA030 - Cadastro de Funções
@@ -17,9 +17,10 @@ class GPEA030(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Funcao = '00015'
-        cls.Descrição = 'SUPORTE TÉCNICO'
-        cls.Cargo = 'SUPERVISOR DE TI'
+        cls.Funcao = '00016'
+        cls.Descrição = 'TESTE DE FUNCAO'
+        cls.DescricaoEdit = 'ASSITEMTE SENIOR '
+        cls.Cargo = '0005'
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
@@ -36,23 +37,30 @@ class GPEA030(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
 
         self.oHelper.WaitShow("Cadastro de Funções")
+        self.oHelper.Screenshot("Funcao/001")
         
         self.oHelper.SetButton("Incluir")
         sleep(1)
         self.oHelper.WaitShow("Funções - INCLUIR")
+        self.oHelper.Screenshot("Funcao/002")
         self.oHelper.SetValue("RJ_FUNCAO", self.Funcao)
         self.oHelper.SetValue("RJ_DESC", self.Descrição)
+        self.oHelper.SetValue("RJ_CODCBO", "1234")
         self.oHelper.SetValue("RJ_CARGO", self.Cargo)
-        self.oHelper.SetKey("TAB") 
+        self.oHelper.SetValue("RJ_ADDATA", DateSystem)
+        self.oHelper.SetKey("TAB")
+        self.oHelper.Screenshot("Funcao/003") 
 
         self.oHelper.SetButton("Confirmar")
 
         if self.oHelper.IfExists("Registro inserido com sucesso."):
+            self.oHelper.Screenshot("Funcao/004")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
             
         
         self.oHelper.WaitShow("Cadastro de Funções")
+        self.oHelper.Screenshot("Funcao/005")
 
         self.oHelper.SetButton("Visualizar")
 
@@ -61,14 +69,35 @@ class GPEA030(unittest.TestCase):
         #-------------------------
 
         self.oHelper.WaitShow("Funções - VISUALIZAR")
+        self.oHelper.Screenshot("Funcao/006")
         self.oHelper.CheckResult("RJ_FUNCAO", self.Funcao)
         self.oHelper.CheckResult("RJ_DESC", self.Descrição)
         self.oHelper.CheckResult("RJ_CARGO", self.Cargo)
         self.oHelper.SetButton("Fechar")
+        self.oHelper.Screenshot("Funcao/007")
         self.oHelper.WaitShow("Cadastro de Funções")
 
+        #-------------------------
+        # Edição do registro
+        #-------------------------
+        self.oHelper.SetButton("Alterar")
+        sleep(1)
+        self.oHelper.WaitShow("Funções - ALTERAR")
+        self.oHelper.Screenshot("Funcao/008")
+        self.oHelper.SetValue("RJ_DESC", self.DescricaoEdit)
+        self.oHelper.Screenshot("Funcao/009")
+        self.oHelper.SetButton("Confirmar")
+        sleep(1)
 
+        if self.oHelper.IfExists("Registro alterado com sucesso."):
+            self.oHelper.Screenshot("Funcao/010")
+            self.oHelper.SetButton("Fechar")
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
 
+        self.oHelper.WaitShow("Cadastro de Funções")
+        self.oHelper.Screenshot("Funcao/011")
 
         self.oHelper.AssertTrue()
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")

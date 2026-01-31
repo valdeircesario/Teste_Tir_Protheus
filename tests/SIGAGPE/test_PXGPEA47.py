@@ -5,7 +5,7 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# python -m pytest tests/Outros/test_PXGPEA47.py -v -s --html=reports/report_PXGPEA47.html --self-contained-html
+# python -m pytest tests/Modulo_07/test_PXGPEA47.py -v -s --html=reports/report_PXGPEA47.html --self-contained-html
 
 #----------------------------------------------------------------
 # CRUD COMPLETO DO JOVEM APRENDIZ
@@ -17,7 +17,7 @@ class PXGPEA47(unittest.TestCase):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.CPF = '54214723023'# CPF VÁLIDO PARA TESTE--53676339002,81348268069,17228013018,54749361097,49013796079,48437793009
         self.Nome = 'TESTE JOVEM APRENDIZ'
         self.NomeEdit = 'EDIÇÃO JOVEM APRENDIZ'
@@ -27,7 +27,7 @@ class PXGPEA47(unittest.TestCase):
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Especificos > Jovem Aprendiz")
         
