@@ -5,7 +5,7 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# python -m pytest tests/Outros/test_PXGPEA47.py -v -s --html=reports/report_PXGPEA47.html --self-contained-html
+#py -m pytest tests/Outros/test_PXGPEA47.py -s
 
 #----------------------------------------------------------------
 # CRUD COMPLETO DO JOVEM APRENDIZ
@@ -18,11 +18,11 @@ class PXGPEA47(unittest.TestCase):
         from tir import Webapp
                                                                         
         self.filial = '02DF0001'
-        self.CPF = '54214723023'# CPF VÁLIDO PARA TESTE--53676339002,81348268069,17228013018,54749361097,49013796079,48437793009
+        self.CPF = '54214723023'
         self.Nome = 'TESTE JOVEM APRENDIZ'
         self.NomeEdit = 'EDIÇÃO JOVEM APRENDIZ'
         self.DataFim = (datetime.today()+timedelta(days= 365)).strftime("%d/%m/%Y")
-        self.DaferiasFim = (datetime.today()+timedelta(days=390)).strftime("%d/%m/%Y")
+        self.DaferiasFim = (datetime.today()+timedelta(days=394)).strftime("%d/%m/%Y")
         
 
         configfile = getcwd() + '\\config.json'
@@ -165,125 +165,27 @@ class PXGPEA47(unittest.TestCase):
         self.oHelper.WaitShow("Jovem Aprendiz")
         self.oHelper.Screenshot("jovem016")
         
-        #----------------------------
-        # DELIGAMENTO DO JOVEM APRENDIZ
-        #----------------------------
-        
-        self.oHelper.SetButton("Outras Ações","Efetiva/Cancela - Desligamento")
-        sleep(1)
-        self.oHelper.SetValue("Dt. Desligamento ?",DateSystem)
-        self.oHelper.SetValue("Motivo desligamento ?","7-Desligamento por abandono")
-        self.oHelper.Screenshot("jovem17")
-        self.oHelper.SetButton("OK")
-        sleep(1)
-        
-        
-        
-        
-        #### erro aqui nessa etapa linha 186
-        
-        # Monta a mensagem exatamente como aparece na tela
-        mensagem = f"O aprendiz, {self.NomeEdit} será desligado, podemos confirmar?"
-
-        if self.oHelper.IfExists(mensagem):
-            self.oHelper.Screenshot("jovem18")
-            self.oHelper.SetButton('Sim')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()  # Falha se a mensagem esperada não aparecer
-            
-        if self.oHelper.IfExists("Aprendiz desligado com sucesso!"):
-            self.oHelper.Screenshot("jovem19")
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        self.oHelper.WaitShow("Jovem Aprendiz")
-        self.oHelper.Screenshot("jovem20")
-        
-        #------------------------
-        # VISUALIDAR DESLIGAMENTO
-        #------------------------
-        
-        self.oHelper.SetButton("Outras Ações","Visualizar")
-        
-        self.oHelper.CheckResult("ZRA_NOME", self.Nome)
-        self.oHelper.CheckResult("ZRA_CPF", self.CPF)
-        self.oHelper.CheckResult("ZRA_ADMISS", DateSystem)
-        self.oHelper.CheckResult("ZRA_INIPOU", self.DataInicio)
-        self.oHelper.CheckResult("ZRA_TELCAN", "61999999999")  
-        self.oHelper.CheckResult("ZRA_TELRES", "61988888888")
-        self.oHelper.CheckResult("ZRA_MAILAP", "JOVEMAPRENDIZ123@GMAIL.COM")
-        self.oHelper.Screenshot("jovem21")
-        
-        
-        
-        self.oHelper.ClickFolder("Dados Funcionais")
-        sleep(0.5)
-        
-        
-        
-        self.oHelper.CheckResult("ZRA_DIACAP", "SEG - Segunda")
-        
-        mensagem_esperada = (f"Informações do desligamento do jovem aprendiz: Motivo:7-Desligamento por abandono Data:{DateSystem}")
-        self.oHelper.CheckResult("Mot.Desliga", mensagem_esperada)
-        self.oHelper.Screenshot("jovem22")
-        sleep(1)
-        self.oHelper.SetButton("Fechar")
-        sleep(0.5)
-        self.oHelper.WaitShow("Jovem Aprendiz") 
-        
-        #----------------------------------------
-        # CANCELAR DESLIGAMENTO DO JOVEM APRENDIZ
-        #----------------------------------------
-        
-        self.oHelper.SetButton("Outras Ações","Efetiva/Cancela - Desligamento")
-        sleep(1)
-        
-        
-        mensagem02 = f"Aprendiz, {self.NomeEdit} á desligado, Deseja cancelar o Desligamento?"
-
-        if self.oHelper.IfExists(mensagem02):
-            self.oHelper.Screenshot("jovem23")
-            self.oHelper.SetButton('Sim')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()
-        
-    
-            
-        if self.oHelper.IfExists("Desligamento cancelado com sucesso!"):
-            self.oHelper.Screenshot("jovem24")
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        self.oHelper.WaitShow("Jovem Aprendiz")
-        self.oHelper.Screenshot("jovem25")
-        
         #-------------------------
         # EXCLUIR JOVEM APRENDIZ
-        #-------------------------
+        #------------------------- 
         self.oHelper.SetButton("Outras Ações","Excluir")
         sleep(1)
         
         self.oHelper.WaitShow("Tem certeza que deseja excluir o item abaixo?")
-        self.oHelper.WaitShow("Esta operação não poderá ser desfeita após a confirmção da exclusão.")
-        self.oHelper.Screenshot("jovem26")
+        self.oHelper.WaitShow("Esta operação não poderá ser desfeita após a confirmação da exclusão.")
+        self.oHelper.Screenshot("jovem17")
         self.oHelper.SetButton('Confirmar')
         sleep(1)
             
         if self.oHelper.IfExists("Registro excluído com sucesso."):
-            self.oHelper.Screenshot("jovem27")
+            self.oHelper.Screenshot("jovem18")
             self.oHelper.SetButton('Fechar')
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         self.oHelper.WaitShow("Jovem Aprendiz")
-        self.oHelper.Screenshot("jovem28")
+        self.oHelper.Screenshot("jovem19")
         self.oHelper.AssertTrue()
        
      

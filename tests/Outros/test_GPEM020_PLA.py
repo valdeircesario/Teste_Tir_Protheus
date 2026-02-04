@@ -6,18 +6,19 @@ from time import sleep
 from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
-# py-m pytest tests/Outros/test_GPEM020_FOL.py -s
+
+# .\venv\Scripts\python.exe -m pytest tests/Outros/test_GPEM020_PLA.py -s
 
 #------------------------
-# CALCULO DE ROTEIRO FOL
+# CALCULO DE ROTEIRO PLA
 #------------------------
 
-class GPEM020_FOL(unittest.TestCase):
+class GPEM020_PLA(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
-        self.Roteiro = 'FOL'
-        self.dataref = (datetime.today()-timedelta(days=10)).strftime("%d/%m/%Y")
+        self.Roteiro = 'PLA'
+        self.dataref = (datetime.today()-timedelta(days=10)).strftime("%d/%m/%Y") # AJUSTAR DATA PARA PERIODO EM ABERTO
         self.Processo = '00001'
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
@@ -26,7 +27,7 @@ class GPEM020_FOL(unittest.TestCase):
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Por Roteiros")
         
        
-    def test_Calculo_Roteiro_FOL(self):
+    def test_Calculo_Roteiro_PLA(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -44,54 +45,65 @@ class GPEM020_FOL(unittest.TestCase):
         
         self.oHelper.WaitShow("Processo de Calculo")
         self.oHelper.WaitShow("Este programa realiza processos de calculos")
-        self.oHelper.Screenshot("RoteiroFOL_01.png")
+        self.oHelper.Screenshot("roteiroPLA_01.png")
         
         self.oHelper.SetButton("Parametros")
         sleep(5)
         self.oHelper.SetValue("Processo ?",self.Processo,           check_value=False)
         self.oHelper.SetValue("Roteiro ?",self.Roteiro,             check_value=False)
         sleep(0.5)
-        self.oHelper.Screenshot("RoteiroFOL_02.png")
+        self.oHelper.Screenshot("roteiroPLA_02.png")
         
         self.oHelper.SetButton("OK")
-        sleep(5) 
-        self.oHelper.SetButton('Filtro Rapido')
-        self.oHelper.SetValue("Campos:","Matricula",               check_value=False)
-        self.oHelper.SetValue("Expressäo:","228383")
-        self.oHelper.SetButton("Adiciona")
+        sleep(5)
         
-        self.oHelper.Screenshot("roteiroVTR_03.png")
-        sleep(1)
-        self.oHelper.SetButton("OK")
-        sleep(1) 
-        self.oHelper.SetButton("Calcular")
-        sleep(1)
-        self.oHelper.Screenshot("roteiroVTR_04.png") 
+        if self.oHelper.IfExists("Parametros"):
+            sleep(1)
+            self.oHelper.SetValue("Fornecedor do Plano ?","001")
+            self.oHelper.SetValue("Código do Plano ?","01;01;")
+            self.oHelper.Screenshot("roteiroPLA_03.png")
+            self.oHelper.SetButton("OK")
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+        
+        self.oHelper.SetButton("Cal")
+        self.oHelper.Screenshot("roteiroPLA_04.png")
+        
         
         if self.oHelper.IfExists("Confirma configuracäo dos parametros?"):
-            self.oHelper.Screenshot("roteiroVTR_05.png")
+            self.oHelper.Screenshot("roteiroPLA_05.png")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        sleep(20)
-        self.oHelper.Screenshot("roteiroVTR_06.png")
-        sleep(30)
-        self.oHelper.Screenshot("roteiroVTR_07.png")
-        sleep(30)
+        if self.oHelper.IfExists("Nenhum filtro foi selecionado! Processar toda a tabela?"):
+            self.oHelper.Screenshot("roteiroPLA_06.png")
+            self.oHelper.SetButton("Sim")
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+            
+        sleep(180) 
         
+        self.oHelper.Screenshot("roteiroPLA_07.png")
+        sleep(180)
+        self.oHelper.Screenshot("roteiroPLA_08.png")
+        sleep(290)
+        
+        self.oHelper.WaitShow("Log de Ocorrencias no Processo de Calculo") 
         
         if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
             self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("roteiroVTR_08.png")
+            self.oHelper.Screenshot("roteiroPLA_09.png")
             self.oHelper.SetButton("OK")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
         sleep(25)
-        self.oHelper.Screenshot("roteiroVTR_09.png")
+        self.oHelper.Screenshot("roteiroPLA_10.png")
     
         self.oHelper.SetButton("Sair")
         sleep(10)
@@ -99,7 +111,7 @@ class GPEM020_FOL(unittest.TestCase):
         self.oHelper.AssertTrue()
         print("------------------------------------------------")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_de_Calculo_Roteiro_FOL")
+        print("X 🎯 test_de_Calculo_Roteiro_PLA")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
     
@@ -111,6 +123,6 @@ class GPEM020_FOL(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEM020_FOL('test_Calculo_Roteiro_FOL'))
+    suite.addTest(GPEM020_PLA('test_Calculo_Roteiro_PLA'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

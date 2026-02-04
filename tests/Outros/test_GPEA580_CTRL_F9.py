@@ -5,7 +5,7 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#  .\venv\Scripts\python.exe -m pytest .\TESTS\SIGAGPE\PXGPEA24\test_PXGPEA24_02.py -s
+
 
 #----------------------------------------------------------------
 # LANÇAMENTO AVULSO PARA FUNCIONARIO, CALCULAR / LANÇAR /CALCULAR
@@ -20,17 +20,8 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         self.filial = '02DF0001'
         self.Matricula = '228419'
         self.Nome = 'MURILO AUGUSTO DA SILVA'
-        self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
-        self.dataVenv = (datetime.today()-timedelta(days= 0)).strftime("%d/%m/%Y")
-        self.Movimentacao = '1 - Titular'
-        self.Movimentacaoedit = '3  - Ambos'
-        self.ValorTitular = '256'
-        self.ValorDependente = '128'
-        self.Verba01 = '771'
-        self.Verba02 = '773'
-        self.Valor = '150'
+        self.dataref = (datetime.today()-timedelta(days=15)).strftime("%d/%m/%Y")
         
-
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
@@ -61,17 +52,14 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         self.oHelper.Screenshot("ctrlF9_01.png")  
         self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
         sleep(0.5)
-        #self.oHelper.SetButton("Alterar")
-        #sleep(1)
-        #self.oHelper.WaitShow("Lançamentos por Funcionário")
         self.oHelper.Screenshot("ctrlF9_06.png")
-        #sleep(0.5)
+        sleep(1)
          
         #------------------
         # CALCULAR FOLHA CTRL+F9
         #------------------
-        
-        self.oHelper.SetKey(key="SHFIT", additional_key="F9")#key="CTRL", additional_key="F9"
+        # ERRO AO PASSARR O CTRL F9 O BROWSER NAO ESTA RECONHECENDO O COMANDO
+        self.oHelper.SetKey(key="CTRL", additional_key="F9")
         
         if self.oHelper.IfExists("Deseja processar o contracheques do funcionario(a):"):
             self.oHelper.Screenshot("ctrlF9_08.png")
