@@ -10,5 +10,15 @@
     "TimeOut": 120,
     "Headless": false,
     "POUILogin": true,
-    "ChromeDriverAutoInstall": true
+
+
+
+    "ChromeDriverAutoInstall": true,
+    "SSLChromeInstallDisable": true,
+
+    "LogInfoConfig": true,
+    "Release": "12.1.2410",
+    "TopDataBase": "12.1",
+    "Lib": "12.1",
+    "Build": "2410"
 }
