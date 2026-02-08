@@ -8,14 +8,18 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 #----------------------------------------------------------------
 # LANÇAMENTO DE VALE TRANSPORTE E CALCULO NA FOLHA E VALIDAÇÃO
 #----------------------------------------------------------------
+#python -m pytest tests/Outros/test_GPEA133.py -v -s
 
+#python -m pytest tests/Outros/test_GPEA133.py -v -s --html=reports/report_GPEA133.html --self-contained-html
+#python tests/Outros/test_GPEA133.py
+#python -m unittest tests.Outros.test_GPEA133.GPEA133.test_lancamento_vale_transporte_e_claculo_folha -v
 class GPEA133(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.Matricula = '222557'
         self.Nome = 'VANDERLI CESARIO DA SILVA'
         self.Roteiro = "VTR"
@@ -26,7 +30,7 @@ class GPEA133(unittest.TestCase):
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")
         
@@ -128,13 +132,10 @@ class GPEA133(unittest.TestCase):
             sleep(1)
         else:
             self.oHelper.AssertTrue()
-            
-        if self.oHelper.IfExists("Nenhum roteiro selecionado."):
-            self.oHelper.Screenshot("vale_transporte_08_1")
-            self.oHelper.SetButton('Fechar')
-            sleep(1)
-        else:
-            self.oHelper.AssertTrue()
+
+
+        self.oHelper.CheckHelp(text="Nenhum roteiro selecionado.", button="Fechar")
+        sleep(1)
             
         sleep(5)
         
@@ -167,7 +168,18 @@ class GPEA133(unittest.TestCase):
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
-        
+
+
+        self.oHelper.SetButton("Filtro Rapido")
+        self.oHelper.SetValue("Campos:","Matricula")
+        self.oHelper.SetValue("Expressäo:","222557")
+        self.oHelper.Screenshot("roteiroVTR_03.png")
+        self.oHelper.SetButton("Adiciona")
+        sleep(1)
+        self.oHelper.SetButton("OK")
+        sleep(1)
+
+
         self.oHelper.SetButton("Calcular")
         self.oHelper.Screenshot("roteiroVTR_04.png")
         
@@ -208,48 +220,63 @@ class GPEA133(unittest.TestCase):
     
         self.oHelper.SetButton("Sair")
         sleep(10)
+
+        #------------------------------------------
+        # CANCELAR INTEGRAÇÃO PARA CALCULAR A FOLHA
+        #--------------------------------------------
+
+
+        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
         
-            
-            
-            
-            
-            
+        #self.oHelper.Screenshot("vale_transporte_07")
+        
+        sleep(2)
+        self.oHelper.SetValue("Processo","00001")
+        sleep(1)
+        self.oHelper.ScrollGrid(column="Roteiro", match_value = self.Roteiro)
+        self.oHelper.ClickBox("Roteiro", "VTR")
+        sleep(2)
+        self.oHelper.Screenshot("vale_transporte_08")
+        
         self.oHelper.SetButton('Integrar')
-        self.oHelper.WaitShow('Integrações Com a Folha de Pagamento')
-        if self.oHelper.IfExists("Integração de Beneficios"):
-                self.oHelper.SetButton('Ok')
-        else:
-            self.oHelper.AssertTrue()
-            self.oHelper.Screenshot("vale_transporte_09")
-            sleep(300)
-            self.oHelper.Screenshot("vale_transporte_01")
-            
-            
-            self.oHelper.AssertTrue()
-            
-            
-            
-            ##
-            
-            self.oHelper.SetButton('Cancelar Integração')
-            
-            if self.oHelper.IfExists("Integrações Com a Folha de Pagamento"):
-                self.oHelper.Screenshot("vale_transporte_08_1")
-                self.oHelper.SetButton('Executar')
-                sleep(1)
-            else:
-                self.oHelper.SetButton('Integrar')
-                self.oHelper.WaitShow('Integrações Com a Folha de Pagamento')
+        
+        if self.oHelper.IfExists("Integrações Com a Folha de Pagamento"):
+            self.oHelper.Screenshot("vale_transporte_08_1")
+            self.oHelper.SetButton('Executar')
             if self.oHelper.IfExists("Integração de Beneficios"):
                 self.oHelper.SetButton('Ok')
-            else:
-                self.oHelper.AssertTrue()
-            self.oHelper.Screenshot("vale_transporte_09")
-            sleep(300)
-            self.oHelper.Screenshot("vale_transporte_01")
-            
-            
+                sleep(200)
+        else:
             self.oHelper.AssertTrue()
+
+        sleep(200)
+
+        #--------------------------------------------------
+        # CALCULAR FOLHA E VALIDAR INCLUSÃO DO VTR NA FOLHA
+        #---------------------------------------------------
+
+        self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
+        sleep(10)
+        self.oHelper.Screenshot("vale_transporte_08_1")
+        
+        self.oHelper.SearchBrowse(self.filial + self.Matricula + self.Nome, key="Filial+matricula+Nome")
+        sleep(1)
+        self.oHelper.Screenshot("vale_transporte_08_1")
+        self.oHelper.SetButton("Alterar")
+        sleep(1)
+        self.oHelper.WaitShow("Lançamentos por Funcionário")
+        self.oHelper.Screenshot("vale_transporte_08_1")
+        self.oHelper.SetKey("F6")
+        sleep(1)
+        self.oHelper.SetButton('x')
+        
+        
+
+        
+        
+
+
+       
             
             
         

@@ -1,0 +1,1 @@
+# troca de turno de trabalho do funcionario  atualizações > Ponto Eletronico > Turnos de Trabalho

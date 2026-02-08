@@ -8,7 +8,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
  # # python -m pytest tests/Modulo_07/test_CTBA030.py -v -s --html=reports/report_CTBA030.html --self-contained-html
 
 #------------------------------------------
-#-- Teste CTBA030 - Cadastro de Centro de Custos
+#-- Teste CTBA030 - Cadastro de Centro de Custos # python -m pytest tests/Outros/test_GPEA133.py -v -s
 #------------------------------------------
 
 
