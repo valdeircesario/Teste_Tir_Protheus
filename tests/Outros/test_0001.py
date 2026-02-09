@@ -16,12 +16,12 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # CALCULO DE ROTEIRO VTR
 #------------------------
 
-class GPEA643(unittest.TestCase):
+class GPEM020_VTR(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
-        self.Matricula = '228348'
-        self.Nome = 'PLINIO JOSE DE SOUZA'
+        self.Matricula = '222557'
+        self.Nome = 'VANDERLI CESARIO DA SILVA'
         self.Roteiro = "VTR"
         self.Processo = '00001'
         self.Verba = '620'
@@ -168,10 +168,10 @@ class GPEA643(unittest.TestCase):
         #----------------------------------------------
         # GARANTE A INTEGRAÇÃO DO SISTEMA PARA CALCULAR FOLHA
         #-------------------------------------------------------
-                
-        """ self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
         
-        self.oHelper.Screenshot("integração_01")
+        #self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
+        
+        """ self.oHelper.Screenshot("integração_01")
         
         sleep(2)
         self.oHelper.SetValue("Processo","00001")
@@ -191,19 +191,14 @@ class GPEA643(unittest.TestCase):
             sleep(100)
             self.oHelper.Screenshot('ntegração_04')
             sleep(100)
-            self.oHelper.Screenshot('ntegração_05')
-            sleep(100)
         else:
             self.oHelper.AssertTrue()
             
-        self.oHelper.Screenshot('ntegração_06')
+        self.oHelper.Screenshot('ntegração_05')
 
         sleep(20)
-        self.oHelper.AssertTrue() """ 
-        
-        #-------------------------------------------
-        # CALCULAR FOLHA PARA VALIDAR A INCLUSÃO DO VTR
-        #--------------------------------------------
+        self.oHelper.SetButton('x')
+        self.oHelper.AssertTrue() """
         
         
         #-------------------------------------------
@@ -213,7 +208,7 @@ class GPEA643(unittest.TestCase):
         
         self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
         sleep(10)
-        self.oHelper.Screenshot("Calculo_folha_vtr_01")
+        self.oHelper.Screenshot("VTR/Calcular_folha_01")
         
         self.oHelper.SearchBrowse(self.filial + self.Matricula + self.Nome, key="Filial+matricula+Nome")
         sleep(1)
@@ -221,18 +216,36 @@ class GPEA643(unittest.TestCase):
         self.oHelper.SetButton("Alterar")
         sleep(1)
         self.oHelper.WaitShow("Lançamentos por Funcionário")
+        self.oHelper.ScrollGrid(column="Cod Verba", match_value = self.Verba,         grid_number=1)
         self.oHelper.Screenshot("Calculo_folha_vtr_03")
+        self.oHelper.LoadGrid()
         self.oHelper.SetKey("F6")
         sleep(30)
         self.oHelper.Screenshot("Calculo_folha_vtr_04")
         self.oHelper.SetButton('OK')
         sleep(5)
-        self.oHelper.Screenshot("Calculo_folha_vtr_05")
         self.oHelper.SetKey("F7")
         sleep(5)
-        self.oHelper.ScrollGrid(column="Cod Verba", match_value = self.Verba,         grid_number=1)
-        self.oHelper.AssertTrue() 
+        self.oHelper.ScrollGrid(column="Codigo Verba", match_value = self.Verba,         grid_number=1)
+        self.oHelper.Screenshot("Calculo_folha_vtr_05")
+        self.oHelper.LoadGrid()
+        self.oHelper.SetButton('Confirmar')
+        sleep(5)
+        self.oHelper.SetButton('Salvar')
+        sleep(1)
+        self.oHelper.AssertTrue()
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        
 
+        self.oHelper.AssertTrue()
         print("------------------------------------------------")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         print("X 🎯 test_teste")
@@ -247,6 +260,6 @@ class GPEA643(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA643('test_teste'))
+    suite.addTest(GPEM020_VTR('test_teste'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
