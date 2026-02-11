@@ -8,11 +8,19 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 #----------------------------------------------------------------
 # LANÇAMENTO DE VALE TRANSPORTE E CALCULO NA FOLHA E VALIDAÇÃO
 #----------------------------------------------------------------
+
+# OBSERVAÇÃO >>> DEVE EXECUTAR ESSE TESTE SEMPRE COM UM FUNCIONARIO QUE NÃO POSSUA VTR NA FOLHA.
+
+# ESTE TESTE TEM POR OBJETIVO FAZER UM LANÇAMENTO DE VTR PARA UM FUNCIONARIO, 
+# FAZER O CALCULO POR ROTEIRO PARA LANÇAR O VTR NA FOLHA, E CONSUSTAR A FOLHA PARA VERIFICAR O LANÇAMENTO DO VTR.
+
+
+
+# ROTINAS > GPEA133 / CTBA211 / CALCULO POR ROTEIRO VTR     
+
 #python -m pytest tests/Outros/test_GPEA133.py -v -s
 
-#python -m pytest tests/Outros/test_GPEA133.py -v -s --html=reports/report_GPEA133.html --self-contained-html
-#python tests/Outros/test_GPEA133.py
-#python -m unittest tests.Outros.test_GPEA133.GPEA133.test_lancamento_vale_transporte_e_claculo_folha -v
+
 class GPEA133(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -20,20 +28,22 @@ class GPEA133(unittest.TestCase):
         from tir import Webapp
                                                                         
         self.filial = '02DF0001'
-        self.Matricula = '228368'
-        self.Nome = 'GABRIEL MOREIRA DA SILVA DE FARIA'
+        self.Matricula = '208201'
+        self.Nome = 'MARCELO CORREA'
         self.Roteiro = "VTR"
         self.Processo = '00001'
         self.Verba = '620'
         
         
-        self.dataref = (datetime.today()-timedelta(days=15)).strftime("%d/%m/%Y")
+        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
                 
-        self.oHelper.SetLateralMenu("Atualizações > Beneficios > Vt / Vr / Va > Atualização")
+        
+        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")# self.oHelper.Program("GPEM009")
+         
         #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.
 
         
@@ -52,6 +62,46 @@ class GPEA133(unittest.TestCase):
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
+            
+            
+            
+        #-------------------------------------------------------------
+        # VALIDAR INTEGRAÇÃO DO SISTEMA PARA GERAR CALCULO ROTEIRO VRT ROTINA CTBA211
+        #-------------------------------------------------------------
+        sleep(5)
+        
+        self.oHelper.SetValue("Processo","00001")
+
+        self.oHelper.Screenshot("VTR/Cancelar_Integração_01")
+        self.oHelper.SetButton("Outras Ações","Apenas Integrados")
+        sleep(3)
+        self.oHelper.Screenshot("VTR/Cancelar_Integração_02")
+        
+        self.oHelper.SetButton("Cancelar Integração")
+        
+        if self.oHelper.IfExists("Integrações Com a Folha de Pagamento"):
+            self.oHelper.SetButton("Executar")
+            self.oHelper.Screenshot("VTR/Cancelar_Integração_03")
+            sleep(30)
+            self.oHelper.Screenshot("VTR/Cancelar_Integração_04")
+            sleep(30)
+            self.oHelper.Screenshot("VTR/Cancelar_Integração_05")
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+        
+        self.oHelper.Screenshot("VTR/Cancelar_Integração_06")
+
+        if self.oHelper.IfExists("Nenhum roteiro selecionado."):
+            self.oHelper.CheckHelp(text="Nenhum roteiro selecionado.", button="Fechar")
+        sleep(1)
+        self.oHelper.SetButton("x")
+        
+        #----------------------------------------------------------------
+        # FAZ O LANÇAMENTO DO VTR PARA UM FUNCIONARIO, QUE NÃO POSSUA VTR
+        #-----------------------------------------------------------------
+        
+        self.oHelper.SetLateralMenu("Atualizações > Beneficios > Vt / Vr / Va > Atualização")
             
             
         self.oHelper.WaitShow("Atualização Vales")
@@ -103,41 +153,9 @@ class GPEA133(unittest.TestCase):
         
         self.oHelper.WaitShow('Funcionários - VISUALIZAR')
         self.oHelper.Screenshot("VTR/Incluindo_VTR_06")
-        self.oHelper.SetButton('Fechar')
-        sleep(10)
-        
-        
-        #-------------------------------------------------------------
-        # VALIDAR INTEGRAÇÃO DO SISTEMA PARA GERAR CALCULO ROTEIRO VRT ROTINA CTBA211
-        #-------------------------------------------------------------
-        
-        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")
-        
-        self.oHelper.SetValue("Processo","00001")
-
-        self.oHelper.Screenshot("VTR/Cancelar_Integração_01")
-        self.oHelper.SetButton("Outras Ações","Apenas Integrados")
-        sleep(3)
-        self.oHelper.Screenshot("VTR/Cancelar_Integração_02")
-        
-        self.oHelper.SetButton("Cancelar Integração")
-        
-        if self.oHelper.IfExists("Integrações Com a Folha de Pagamento"):
-            self.oHelper.SetButton("Executar")
-            self.oHelper.Screenshot("VTR/Cancelar_Integração_03")
-            sleep(90)
-            self.oHelper.Screenshot("VTR/Cancelar_Integração_04")
-            sleep(90)
-            self.oHelper.Screenshot("VTR/Cancelar_Integração_05")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-        
-        self.oHelper.Screenshot("VTR/Cancelar_Integração_06")
-
-        self.oHelper.CheckHelp(text="Nenhum roteiro selecionado.", button="Fechar")
-        sleep(1)
-        self.oHelper.SetButton("x")
+        self.oHelper.SetButton('Fechar')    
+        self.oHelper.WaitShow("Atualização Vales")
+        sleep(10) 
         
         
         #------------------------
@@ -225,7 +243,7 @@ class GPEA133(unittest.TestCase):
         # GARANTE A INTEGRAÇÃO DO SISTEMA PARA CALCULAR FOLHA
         #-------------------------------------------------------
                 
-        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
+        self.oHelper.Program("GPEM009")#self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
         
         self.oHelper.Screenshot("VTR/integração_01")
         
@@ -248,7 +266,7 @@ class GPEA133(unittest.TestCase):
             self.oHelper.Screenshot('VTR/integração_04')
             sleep(100)
             self.oHelper.Screenshot('VTR/integração_05')
-            sleep(50)
+            sleep(50)#Nenhum Funcionário Processado nessa Requisição
         else:
             self.oHelper.AssertTrue()
             
