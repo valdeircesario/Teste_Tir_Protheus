@@ -1,3 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.join(os.getcwd()))
+from selenium.webdriver.common.keys import Keys
+from tools.Selenium_commands import SeleniumCommands
 from pytest import mark
 import unittest
 from time import sleep
@@ -16,8 +20,8 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         from tir import Webapp
                                                                         
         self.filial = '02DF0001'
-        self.Matricula = '228383'
-        self.dataref = (datetime.today()-timedelta(days=15)).strftime("%d/%m/%Y")
+        self.Matricula = '227884'
+        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
@@ -62,11 +66,11 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         # CALCULAR FOLHA CTRL+F9
         #-----------------------
         
-        # ERRO AO PASSARR O CTRL F9, O BROWSER NÃO ESTA RECONHECENDO O COMANDO, ASSIM NÃO O EXECUTA.
-        # ASSIM NESSE TESTE ESPECIFICO E PRECISO O USUARIO PASSAR O CTRL + F9 MANUALMENTE PARA O TESTE DAR CONTINUIDADE
-        # LINHA ABAIXO SER EXECUTADA MANUALMENTE ATE SOLUCIONAR O PROBLEMA
+       
+
+        sc = SeleniumCommands(self.oHelper._Webapp__webapp.driver)
+        sc.send_key('body',Keys.CONTROL+Keys.F9)
         
-        self.oHelper.SetKey(key="CTRL",  additional_key="F9") #-------
    
         if self.oHelper.IfExists("Deseja processar o contracheques do funcionario(a):"):
             self.oHelper.Screenshot("ctrlF9_08.png")
@@ -75,11 +79,12 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         else:
             self.oHelper.AssertTrue()
             
-        self.oHelper.Screenshot("ctrlF9_10.png.png")
-        sleep(40)
-        self.oHelper.Screenshot("ctrlF9_11.png.png")
-        sleep(20) 
-        self.oHelper.SetButton("X")
+        self.oHelper.Screenshot("ctrlF9_10.png")
+        sleep(90)
+        self.oHelper.Screenshot("ctrlF9_11.png")
+        sleep(90) 
+        self.oHelper.SetButton('x')
+        sleep(2)
         
         #---------------------
         # CONSULTAR CALCULO 
@@ -92,7 +97,7 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         sleep(5) 
         self.oHelper.SetKey("F7")
         sleep(1)
-        self.oHelper.CheckResult(column="Codigo Verba", match_value= "120",          grid_number=1)
+        self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "120",          grid_number=1)
         self.oHelper.Screenshot("ctrlF9_13.png")
         self.oHelper.LoadGrid()
         sleep(1)
@@ -100,6 +105,7 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         sleep(0.5) 
         self.oHelper.SetButton("Salvar")
         sleep(2)
+        self.oHelper.WaitShow("Lançamentos por Período")
         self.oHelper.AssertTrue()
        
      

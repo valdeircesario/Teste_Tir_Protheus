@@ -28,8 +28,8 @@ class GPEA133(unittest.TestCase):
         from tir import Webapp
                                                                         
         self.filial = '02DF0001'
-        self.Matricula = '208201'
-        self.Nome = 'MARCELO CORREA'
+        self.Matricula = '222557'
+        self.Nome = 'VANDERLI CESARIO DA SILVA'
         self.Roteiro = "VTR"
         self.Processo = '00001'
         self.Verba = '620'
@@ -42,13 +42,15 @@ class GPEA133(unittest.TestCase):
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
                 
         
-        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")# self.oHelper.Program("GPEM009")
+        #self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")# self.oHelper.Program("GPEM009")
          
         #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.
 
         
 
-    def test_lancamento_vale_transporte_e_claculo_folha(self):
+    def test_01_garante_a_integração_da_folha(self):
+        
+        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -96,11 +98,18 @@ class GPEA133(unittest.TestCase):
             self.oHelper.CheckHelp(text="Nenhum roteiro selecionado.", button="Fechar")
         sleep(1)
         self.oHelper.SetButton("x")
+        self.oHelper.AssertTrue()
+        print("X 🎯 test_garante_a_integração_da_folha")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
         #----------------------------------------------------------------
         # FAZ O LANÇAMENTO DO VTR PARA UM FUNCIONARIO, QUE NÃO POSSUA VTR
         #-----------------------------------------------------------------
         
+        
+    def test_02_faz_lançamento_vale_transporte(self): 
+           
         self.oHelper.SetLateralMenu("Atualizações > Beneficios > Vt / Vr / Va > Atualização")
             
             
@@ -156,11 +165,19 @@ class GPEA133(unittest.TestCase):
         self.oHelper.SetButton('Fechar')    
         self.oHelper.WaitShow("Atualização Vales")
         sleep(10) 
+        self.oHelper.AssertTrue()
+        print("X 🎯 test_faz_lançamento_vale_transporte")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
         
         #------------------------
         # CALCULAR ROTEIRO VTR
         #-----------------------
+        
+        
+    def test_03_calcular_roteiro_vtr_para_funcionario(self):     
+        
         
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Por Roteiros")
         
@@ -237,12 +254,18 @@ class GPEA133(unittest.TestCase):
         self.oHelper.Screenshot("VTR/Calculo_roteiroVTR_10.png")
     
         self.oHelper.SetButton("Sair")
-        sleep(10) 
+        sleep(10)
+        self.oHelper.AssertTrue() 
+        print("X 🎯 test_calcular_roteiro_vtr_para_funcionario")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
         #----------------------------------------------
         # GARANTE A INTEGRAÇÃO DO SISTEMA PARA CALCULAR FOLHA
         #-------------------------------------------------------
-                
+        
+    def test_04_garante_integração_do_sistema(self): 
+                    
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
         
         self.oHelper.Screenshot("VTR/integração_01")
@@ -274,6 +297,11 @@ class GPEA133(unittest.TestCase):
 
         sleep(5)
         self.oHelper.SetButton('x')
+        
+        self.oHelper.AssertTrue()
+        print("X 🎯 test_garante_integração_do_sistema")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         # FAZER UM TRATAMENTO AQUI DE UMA MENSAGEM
         
 
@@ -281,6 +309,8 @@ class GPEA133(unittest.TestCase):
         # CALCULAR FOLHA PARA VALIDAR A INCLUSÃO DO VTR
         #--------------------------------------------
         
+        
+    def test_05_calcula_folha_e_validar_lançamento_vtr(self):    
         
         self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
         sleep(10)
