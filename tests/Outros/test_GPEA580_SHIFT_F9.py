@@ -9,11 +9,13 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#----------------------------------------------------------------
-# CALCULO FOLHA POR FUNCIONARIO COM PARAMETRO CTRL+F9
-#----------------------------------------------------------------
+#---------------------------------------------------
+# CALCULO  DE TODA A FOLHA COM PARAMETRO SHIFT+F9
+#----------------------------------------------------
 
-class GPEA580_CTRL_F9(unittest.TestCase):
+# ESSE PROCESSO E DEMORADO REQUER ACOMPANHAMENTO DO USUARIO PARA ACOMPANHAR O TIME MALT
+
+class GPEA580_SHIFT_F9(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         from tir.technologies.core.base import By
@@ -32,7 +34,7 @@ class GPEA580_CTRL_F9(unittest.TestCase):
 
         
 
-    def test_Calculo_folha_CTRL_F9(self):
+    def test_Calculo_folha_SHIFT_F9(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -49,66 +51,59 @@ class GPEA580_CTRL_F9(unittest.TestCase):
             
             
         self.oHelper.WaitShow("Lançamentos por Período")
-        self.oHelper.Screenshot("ctrlF9_01.png") 
-        
-        #------------------------------------
-        # PESQUISAR O FUNCIONARIO PARA O CALCULO
-        #------------------------------------ 
-        self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
-        sleep(0.5)
-        self.oHelper.Screenshot("ctrlF9_06.png")
-        sleep(1) 
-        self.oHelper.ScrollGrid(column="Matricula", match_value = self.Matricula, grid_number=1)
-        sleep
-        self.oHelper.Screenshot("ctrlF9_07.png")
+        self.oHelper.Screenshot("SHIFT+F9_01.png") 
         
         #-----------------------
-        # CALCULAR FOLHA CTRL+F9
+        # CALCULAR FOLHA SHIFT+F9
         #-----------------------
         
         sc = SeleniumCommands(self.oHelper._Webapp__webapp.driver)
-        sc.send_key('body',Keys.CONTROL+Keys.F9)
+        sc.send_key('body',Keys.SHIFT+Keys.F9)
         
    
-        if self.oHelper.IfExists("Deseja processar o contracheques do funcionario(a):"):
-            self.oHelper.Screenshot("ctrlF9_08.png")
+        if self.oHelper.IfExists("Deseja processar toda a Folha?"):
+            self.oHelper.Screenshot("SHIFT+F9_02.png")
             self.oHelper.SetButton('Sim')
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        self.oHelper.Screenshot("ctrlF9_10.png")
+            
+        self.oHelper.WaitHide("Processando")
+        self.oHelper.WaitShow("Calculando")
+        self.oHelper.Screenshot("SHIFT+F9_03.png")
         sleep(90)
-        self.oHelper.Screenshot("ctrlF9_11.png")
-        sleep(90) 
+        self.oHelper.Screenshot("SHIFT+F9_04.png")
         self.oHelper.SetButton('x')
-        sleep(2)
         
         #---------------------
         # CONSULTAR CALCULO 
         #---------------------
         
+        #------------------------------------
+        # PESQUISAR O FUNCIONARIO PARA O CALCULO
+        #------------------------------------ 
+        self.oHelper.WaitShow("Lançamentos por Período")
+        self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
+        self.oHelper.Screenshot("SHIFT+F9_05.png")
+        self.oHelper.ScrollGrid(column="Matricula", match_value = self.Matricula, grid_number=1)
+        self.oHelper.Screenshot("SHIFT+F9_06.png")
         self.oHelper.SetButton('Alterar')   
-        sleep(5) 
         self.oHelper.WaitShow("Lançamentos por Funcionário")        
-        self.oHelper.Screenshot("ctrlF9_12.png")
-        sleep(5) 
-        self.oHelper.SetKey("F7")
-        sleep(1)
+        self.oHelper.Screenshot("SHIFT+F9_07.png")
+        sc = SeleniumCommands(self.oHelper._Webapp__webapp.driver)
+        sc.send_key('body',Keys.F7)
         self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "120",          grid_number=1)
-        self.oHelper.Screenshot("ctrlF9_13.png")
+        self.oHelper.Screenshot("SHIFT+F9_08.png")
         self.oHelper.LoadGrid()
-        sleep(1)
         self.oHelper.SetButton('Confirmar') 
-        sleep(0.5) 
         self.oHelper.SetButton("Salvar")
-        sleep(2)
         self.oHelper.WaitShow("Lançamentos por Período")
         self.oHelper.AssertTrue()
        
      
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_Calculo_folha_CTRL_F9")
+        print("X 🎯 test_Calculo_folha_SHIFT_F9")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
@@ -122,6 +117,6 @@ class GPEA580_CTRL_F9(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA580_CTRL_F9('test_Calculo_folha_CTRL_F9'))
+    suite.addTest(GPEA580_SHIFT_F9('test_Calculo_folha_SHIFT_F9'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
