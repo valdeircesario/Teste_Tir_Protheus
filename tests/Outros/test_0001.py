@@ -1,45 +1,33 @@
-# gestão disciplinar  Atualizações > Controle Disciplinar > Gestão Disciplinarfrom tir.technologies.core.base import By
-
-#python -m pytest tests/Outros/test_GPEA643.py -v -s
-
+import re
 from tir import Webapp
 from pytest import mark
 import unittest
-from time import sleep
+import os
 from os import getcwd
+from datetime import date
 from datetime import datetime, timedelta
+from time import sleep
+
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# .\venv\Scripts\python.exe -m pytest tests/Outros/test_GPEM020_VTR.py -s
+# TRANSFERENCIA FUNCIONÁRIO PARA OUTRO DEPARTAMENTO /TRANSMITIR PARA O AD/ GERAÇÃO GLPI
+# ESTE TESTE E INTEGRADO COM A TRANSFERENCIA, ROINA > GPEA180 COM A ROTINA PXGPEA36
 
-#------------------------
-# CALCULO DE ROTEIRO VTR
-#------------------------
-
-class GPEM020_VTR(unittest.TestCase):
+class GPEA180_03(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
-        self.Matricula = '222557'
-        self.Nome = 'VANDERLI CESARIO DA SILVA'
-        self.Roteiro = "VTR"
-        self.Processo = '00001'
-        self.Verba = '620'
-        
-        
-        
-        self.dataref = (datetime.today()-timedelta(days=15)).strftime("%d/%m/%Y") # AJUSTAR DATA PARA PERIODO EM ABERTO ss
-        self.Processo = '00001'
+        self.mat = '228399' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
+        self.DP_destino = '000000879' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  >  DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
+        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
+    
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.SetLateralMenu("Atualizações > Especificos > Manutencao AD")
         
-        #self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Por Roteiros")
-        #self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")
-        self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
-        
-       
-    def test_teste(self):
+
+    def test_transferencia_funcionario_de_departamento_transmitir_AD_gerar_GLPI(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -54,203 +42,232 @@ class GPEM020_VTR(unittest.TestCase):
         else:
             self.oHelper.AssertTrue()
             
-            
-        #-----------------------------------
-        # GARANTE O CANCELAMENTO DA INTEGRAÇÃO
-        
-        """ self.oHelper.SetValue('Processo','00001')
-
-        self.oHelper.Screenshot("Cancela_integração_01")
-        self.oHelper.SetButton("Outras Ações","Apenas Integrados")
-        sleep(3)
-        self.oHelper.Screenshot("Cancela_integração_02")
-        
-        self.oHelper.SetButton('Cancelar Integração')
-        
-        if self.oHelper.IfExists("Integrações Com a Folha de Pagamento"):
-            self.oHelper.SetButton('Executar')
-            self.oHelper.Screenshot("Cancela_integração_03")
-            sleep(90)
-            self.oHelper.Screenshot("Cancela_integração_04")
-            sleep(90)
-            self.oHelper.Screenshot("Cancela_integração_05")
+        """ if self.oHelper.IfExists("Departamento possui centro de custo diferente do centro de custos do funcionário"):
+            self.oHelper.SetButton('Fechar')
+            self.oHelper.SetButton('Fechar')
             self.oHelper.AssertTrue()
         else:
+        
             self.oHelper.AssertTrue()
-        
-        self.oHelper.Screenshot("Cancela_integração_06")
-
-        self.oHelper.CheckHelp(text="Nenhum roteiro selecionado.", button="Fechar")
-        sleep(1) """
-        
-        #----------------------------------------------
-        # CALCULO POR ROTEIRO DO VTR
-        #---------------------------------
-        
-        
-        #self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Por Roteiros")
-        
-        """ self.oHelper.WaitShow("Processo de Calculo")
-        self.oHelper.WaitShow("Este programa realiza processos de calculos")
-        self.oHelper.Screenshot("roteiroVTR_01.png")
-        
-        self.oHelper.SetButton("Parametros")
-        sleep(5)
-        self.oHelper.SetValue("Processo ?",self.Processo,           check_value=False)
-        self.oHelper.SetValue("Roteiro ?",self.Roteiro,             check_value=False)
-        sleep(0.5)
-        self.oHelper.Screenshot("roteiroVTR_02.png")
-        
-        self.oHelper.SetButton("OK")
-        sleep(5)
-        
-        
-        if self.oHelper.IfExists("Parametros"):
-            sleep(1)
-            self.oHelper.Screenshot("roteiroVTR_03.png")
-            self.oHelper.SetButton("OK")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-
-
-        self.oHelper.SetButton("Filtro Rapido")
-        self.oHelper.SetValue("Campos:","Matricula")
-        self.oHelper.SetValue("Expressäo:","222557")
-        self.oHelper.Screenshot("roteiroVTR_03.png")
-        self.oHelper.SetButton("Adiciona")
-        sleep(1)
-        self.oHelper.SetButton("OK")
-        sleep(1)
-
-
-        self.oHelper.SetButton("Calcular")
-        self.oHelper.Screenshot("roteiroVTR_04.png")
-        
-        
-        if self.oHelper.IfExists("Confirma configuracäo dos parametros?"):
-            self.oHelper.Screenshot("roteiroVTR_05.png")
-            self.oHelper.SetButton("Sim")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        if self.oHelper.IfExists("Nenhum filtro foi selecionado! Processar toda a tabela?"):
-            self.oHelper.Screenshot("roteiroVTR_06.png")
-            self.oHelper.SetButton("Sim")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        sleep(30) 
-        
-        self.oHelper.Screenshot("roteiroVTR_07.png")
-        sleep(30)
-        self.oHelper.Screenshot("roteiroVTR_08.png")
-        sleep(30)
-        
-        self.oHelper.WaitShow("Log de Ocorrencias no Processo de Calculo") 
-        
-        if self.oHelper.IfExists("Log de Ocorrencias no Processo de Calculo"):
-            self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("roteiroVTR_09.png")
-            self.oHelper.SetButton("OK")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        sleep(25)
-        self.oHelper.Screenshot("roteiroVTR_10.png")
-    
-        self.oHelper.SetButton("Sair")
-        sleep(10) """
-        
-        #----------------------------------------------
-        # GARANTE A INTEGRAÇÃO DO SISTEMA PARA CALCULAR FOLHA
-        #-------------------------------------------------------
-        
-        #self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
-        
-        """ self.oHelper.Screenshot("integração_01")
-        
         sleep(2)
-        self.oHelper.SetValue("Processo","00001")
-        sleep(1)
-        self.oHelper.SetButton("Outras Ações","Inverter Seleção")
-        sleep(3)
-        self.oHelper.SetButton('Integrar')
+            
+        self.oHelper.WaitShow("Transferências")
+        self.oHelper.Screenshot("AD_GLPI_01.png")
+        self.oHelper.SetButton("Pesquisar")
+        self.oHelper.SetButton("Parâmetros")
+        self.oHelper.SetValue("Filial", self.filial)
+        self.oHelper.SetValue("Matricula", self.mat)
+        self.oHelper.SetButton("Ok")
+        self.oHelper.Screenshot("AD_GLPI_02.png")
+        self.oHelper.SetButton('Outras Ações', 'Transferir')
+        sleep(0.8)
         
+        self.oHelper.WaitShow('Transferências - TRANSFERIR')
+        self.oHelper.ClickBox("Matricula", self.mat,   grid_number=1)
+        self.oHelper.Screenshot("AD_GLPI_03.png")
+        self.oHelper.SetButton('Confirmar')
         
+        self.oHelper.WaitShow('Transferências - TRANSFERIR')
+        self.oHelper.Screenshot("AD_GLPI_04.png")
         
-        if self.oHelper.IfExists("Integrações Com a Folha de Pagamento"):
-            self.oHelper.Screenshot("ntegração_02")
-            self.oHelper.SetButton('Executar') 
-            self.oHelper.SetButton('Ok')
-            sleep(100)
-            self.oHelper.Screenshot('ntegração_03')
-            sleep(100)
-            self.oHelper.Screenshot('ntegração_04')
-            sleep(100)
+        self.Nome = self.oHelper.GetValue("Nome", grid=True, grid_number=1)
+        print(f" {self.Nome}")
+        
+        self.oHelper.SetValue("RA_DEPTO", self.DP_destino, grid=True, grid_number=2)
+        self.oHelper.LoadGrid()
+        self.oHelper.Screenshot("AD_GLPI_05.png")
+        self.oHelper.SetButton('Confirmar')
+          
+        if self.oHelper.IfExists("Confirma a Transferência ? "):
+            self.oHelper.Screenshot("AD_GLPI_06.png")
+            self.oHelper.SetButton('Sim')
+            self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        self.oHelper.Screenshot('ntegração_05')
-
-        sleep(20)
-        self.oHelper.SetButton('x')
-        self.oHelper.AssertTrue() """
+        sleep(0.5) 
         
+        if self.oHelper.IfExists("O funcionário é responsavel por um departamento, deseja desassociá-lo?"):
+            self.oHelper.Screenshot("AD_GLPI_06.1.png")
+            self.oHelper.SetButton('Sim')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+            
+        sleep(0.5)   
+        if self.oHelper.IfExists("Deseja enviar e-mail dessa Transferência?"):
+            self.oHelper.Screenshot("AD_GLPI_07.png")
+            self.oHelper.SetButton('Sim')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+            sleep(0.5)     
+            
+        if self.oHelper.IfExists("Deseja inserir a Data da Portaria?"):
+            self.oHelper.Screenshot("AD_GLPI_08.png")
+            self.oHelper.SetButton('Sim')
+            self.oHelper.SetValue("Data da Portaria", self.dataref)
+            self.oHelper.Screenshot("AD_GLPI_09.png")
+            self.oHelper.SetButton('Confirmar')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+            
+        sleep(0.9)
+        self.oHelper.Screenshot("AD_GLPI_10.png") 
         
-        #-------------------------------------------
-        # CALCULAR FOLHA PARA VALIDAR A INCLUSÃO DO VTR
-        #--------------------------------------------
+        if self.oHelper.IfExists("Retorno - Ifractal"):
+            self.oHelper.Screenshot("AD_GLPI_07.png")
+            self.oHelper.SetButton('Fechar')
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue() 
         
-        
-        self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
+        sleep(0.5)
+        self.oHelper.WaitShow("Log de Ocorrencias - Gestão de Pessoal - Versao 12")
+        if self.oHelper.IfExists("Log de Ocorrencias - Gestão de Pessoal - Versao 12"):
+            self.oHelper.ClickLabel("Em Disco")
+            self.oHelper.Screenshot("AD_GLPI_11.png")
+            self.oHelper.SetButton("OK")
+            self.oHelper.AssertTrue()
+        else:
+            self.oHelper.AssertTrue()
+        sleep(25)
+        self.oHelper.Screenshot("AD_GLPI_12.png")
+        self.oHelper.SetButton("Sair")
         sleep(10)
-        self.oHelper.Screenshot("VTR/Calcular_folha_01")
+        self.oHelper.SetButton("Cancelar")
+        self.oHelper.Screenshot("AD_GLPI_13.png")
         
-        self.oHelper.SearchBrowse(self.filial + self.Matricula + self.Nome, key="Filial+matricula+Nome")
+        sleep(10)
+        
+        #-------------------------
+        # ACESSO A ROTINA PXGPEA36
+        #--------------------------
+        
+        self.oHelper.SetLateralMenu("Atualizações > Especificos > Manutencao AD") """
+        
+        self.oHelper.WaitShow("Bloqueio e Desbloqueio AD") 
+        self.oHelper.Screenshot("AD_GLPI_14.png")
+        
+        #-------------------------------
+        # FILTAR O FUNCIONARIO PARA O AD
+        #--------------------------------
+        
+        self.oHelper.SetButton("Filtrar")
+        sleep(0.2)
+        self.oHelper.WaitShow("Gerenciador de Filtros")
+        self.oHelper.Screenshot("AD_GLPI_15.png")
+        self.oHelper.SetButton("Criar Filtro")
+        sleep(0.5)
+        self.oHelper.SetValue("Campo","Matricula",check_value=False)
+        self.oHelper.SetValue("Expressão",self.mat,check_value=False)
+        self.oHelper.SetButton('Adicionar')
+        self.oHelper.Screenshot("AD_GLPI_16.png")
         sleep(1)
-        self.oHelper.Screenshot("Calculo_folha_vtr_02")
+        self.oHelper.SetButton("Salvar")
+        filtro_texto = f"Matricula Igual a '{self.mat}'"
+        
+        self.oHelper.ClickCheckBox(filtro_texto,1)
+        self.oHelper.Screenshot("AD_GLPI_17.png")
+        self.oHelper.SetButton("Aplicar filtros selecionados")
+        sleep(2)
+        self.oHelper.Screenshot("AD_GLPI_18.png")
+        
+        self.oHelper.ScrollGrid(column="Data Inicial", match_value = self.dataref, grid_number=1)
+        self.oHelper.Screenshot("AD_GLPI_19.png")
+        
+        """ self.oHelper.SetButton("Alterar") 
+        self.oHelper.WaitShow("Bloqueio/Desbloqueio acesso ao AD - ALTERAR")
+        self.oHelper.Screenshot("AD_GLPI_20.png")
+        
+        self.oHelper.ScrollGrid(column="Data Final", match_value = self.dataref, grid_number=1)
+        
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+
+        self.oHelper.SetKey("ENTER", grid=True)
+        sleep(1)
+        self.oHelper.Screenshot("AD_GLPI_21.png")
+        self.oHelper.SetButton("Ok")
+        sleep(0.5)
+        self.oHelper.LoadGrid()
+        
+        self.oHelper.SetButton('Fechar')
+        self.oHelper.Screenshot("AD_GLPI_22.png") """
+        
+        
+        #---------------------
+        # TRANSMITIR PARA AD
+        #---------------------
+        
+        self.oHelper.SetButton("Outras Ações", "Transmitir")
+        
+        sleep(1) 
+        if self.oHelper.IfExists("Não haverá integração com AD, pois esse ambiente não é produção!"):
+            self.oHelper.Screenshot("AD_GLPI_23.png")
+            self.oHelper.SetButton('Fechar')
+        else:
+            self.oHelper.AssertTrue()
+        sleep(1)
+        
+        
+        if self.oHelper.IfExists("Item adicionado com sucesso:"):
+            self.oHelper.Screenshot("AD_GLPI_24.png")
+            self.oHelper.SetButton('Fechar')
+        else:
+            self.oHelper.AssertTrue()
+            
+        self.oHelper.Screenshot("AD_GLPI_25.png")
+    
+            
+        sleep(1) 
+        if self.oHelper.IfExists("Não haverá integração com AD, pois esse ambiente não é produção!"):
+            self.oHelper.Screenshot("AD_GLPI_26.png")
+            self.oHelper.SetButton('Fechar')
+        else:
+            self.oHelper.AssertTrue()
+        sleep(1)
+        self.oHelper.Screenshot("AD_GLPI_27.png")
+        
+        #---------------------------------------
+        # VALIDAR A TRANFERÊNCIA DO ADD E O GLPI
+        #---------------------------------------
+        
         self.oHelper.SetButton("Alterar")
+        
+        self.oHelper.WaitShow("Bloqueio/Desbloqueio acesso ao AD - ALTERAR")
+        self.oHelper.Screenshot("AD_GLPI_28.png")
+        
+        self.oHelper.ScrollGrid(column="Data Final", match_value = self.dataref, grid_number=1)
+        
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+        self.oHelper.SetKey("RIGHT",grid=True,step=0.1, wait_change=False)
+
+        self.oHelper.SetKey("ENTER", grid=True)   
         sleep(1)
-        self.oHelper.WaitShow("Lançamentos por Funcionário")
-        self.oHelper.ScrollGrid(column="Cod Verba", match_value = self.Verba,         grid_number=1)
-        self.oHelper.Screenshot("Calculo_folha_vtr_03")
-        self.oHelper.LoadGrid()
-        self.oHelper.SetKey("F6")
-        sleep(30)
-        self.oHelper.Screenshot("Calculo_folha_vtr_04")
-        self.oHelper.SetButton('OK')
-        sleep(5)
-        self.oHelper.SetKey("F7")
-        sleep(5)
-        self.oHelper.ScrollGrid(column="Codigo Verba", match_value = self.Verba,         grid_number=1)
-        self.oHelper.Screenshot("Calculo_folha_vtr_05")
-        self.oHelper.LoadGrid()
-        self.oHelper.SetButton('Confirmar')
-        sleep(5)
-        self.oHelper.SetButton('Salvar')
+        self.oHelper.Screenshot("AD_GLPI_29.png")  
+        self.oHelper.SetButton("OK")
         sleep(1)
-        self.oHelper.AssertTrue()
-        
-        
-        
-        
-        
-        
-        
-        
-       
-        
+        self.oHelper.SetButton("Fechar")
+        self.oHelper.WaitShow("Bloqueio e Desbloqueio AD")
 
         self.oHelper.AssertTrue()
+        
         print("------------------------------------------------")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_teste")
+        print("X 🎯 test_transferencia_funcionario_de_departamento_transmitir_AD_gerar_GLPI")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        
     
 
     @classmethod
@@ -260,6 +277,6 @@ class GPEM020_VTR(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEM020_VTR('test_teste'))
+    suite.addTest(0001('test_transferencia_funcionario_de_departamento_transmitir_AD_gerar_GLPI'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
