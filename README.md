@@ -534,6 +534,8 @@ python -m pytest tests/Modulo_07/test_GPEA010.py -v --html=report_GPEA010.html -
 ```powershell
 # Módulo específico
 pytest tests/Modulo_07/ -v --html=report_pessoal.html --self-contained-html
+pytest tests/Outros/test_test.py --html=report/test.html --self-contained-html
+pytest tests/Outros/test_test.py --html=report/test.html --self-contained-html
 
 # Toda a suite
 pytest tests/ -v --html=report_completo.html --self-contained-html
