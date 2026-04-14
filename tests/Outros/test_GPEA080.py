@@ -32,45 +32,56 @@ class GPEA080(unittest.TestCase):
 
         
         self.oHelper.WaitShow("Turnos de Trabalho") 
-        self.oHelper.Screenshot("AD_01.png")
+        self.oHelper.Screenshot("Turno_Trabalho_01")
         
         #-------------------------------
         # CRUD TURNO DE TRABALHO
         #--------------------------------
         
         self.oHelper.SetButton("Incluir")
+        self.oHelper.WaitShow("Turnos de Trabalho - INCLUIR")
+        self.oHelper.Screenshot("Turno_Trabalho_02")
         
-        self.oHelper.SetValue('R6_DESC', self.descricao)
-        
+        self.oHelper.SetValue('R6_DESC', self.descricao) 
         self.oHelper.ClickFolder('Informacoes Ponto')
-        
+        self.oHelper.Screenshot("Turno_Trabalho_03") 
         self.oHelper.SetValue('R6_DTPJOR',self.descricaoTipJorn)
         self.oHelper.SetValue('Tipo Jornada','9 - Demais tipos de jornada')
-        
+        self.oHelper.Screenshot("Turno_Trabalho_04") 
         self.oHelper.ClickFolder('Gerais')
         
         self.oHelper.SetButton('Salvar')
         self.oHelper.SetButton('Cancelar')
+        self.oHelper.WaitShow("Turnos de Trabalho") 
+        self.oHelper.Screenshot("Turno_Trabalho_05")
         
         #--------------------------
         # VISUALIZAR
         #--------------------------
         
         self.oHelper.SetButton('Visualizar')
-        
+        self.oHelper.WaitShow("Turnos de Trabalho - VISUALIZA")   
         self.oHelper.CheckResult('R6_DESC', self.descricao)
-        
-        
+        self.oHelper.Screenshot("Turno_Trabalho_06")
+        self.oHelper.ClickFolder('Informacoes Ponto')
+        self.oHelper.CheckResult('R6_DTPJOR',self.descricaoTipJorn)
+        self.oHelper.CheckResult('Tipo Jornada','9 - Demais tipos de jornada')
+        self.oHelper.Screenshot("Turno_Trabalho_07")
         self.oHelper.SetButton("Confirmar")
+        self.oHelper.WaitShow("Turnos de Trabalho")
         #------------------
         # ALTERAR
         #--------------------
         
         self.oHelper.SetButton("Alterar")
         
-        self.oHelper.SetValue('R6_DESC', self.descricaoEdit)  
-        
-        self.oHelper.SetButton('Salvar') 
+        self.oHelper.WaitShow("Turnos de Trabalho - ALTERAR")
+        self.oHelper.Screenshot("Turno_Trabalho_08")   
+        self.oHelper.SetValue('R6_DESC', self.descricaoEdit)
+        self.oHelper.Screenshot("Turno_Trabalho_09")    
+        self.oHelper.SetButton('Salvar')
+        self.oHelper.WaitShow("Turnos de Trabalho")
+        self.oHelper.Screenshot("Turno_Trabalho_10") 
         
         
         #------------------
@@ -80,16 +91,32 @@ class GPEA080(unittest.TestCase):
         
         self.oHelper.SetButton('Outras Ações','Excluir')
         
-        self.oHelper.WaitShow('Confirma a exclusäo do Turno?')
+        if self.oHelper.IfExists('Confirma a exclusäo do Turno?'):
+            self.oHelper.Screenshot("Turno_Trabalho_11") 
+            self.oHelper.SetButton('Sim')
+        else:
+            self.oHelper.Screenshot("erro_mensagem_exclusao") 
+            self.oHelper.AssertTrue()
+            
+        if self.oHelper.IfExists('Deseja gerar Log?'):
+            self.oHelper.Screenshot("Turno_Trabalho_13") 
+            self.oHelper.SetButton('Não')
+        else:
+            self.oHelper.Screenshot("erro_mensagem_log") 
+            self.oHelper.AssertTrue()
+         
         
-        self.oHelper.SetButton('Sim')
-        
-        self.oHelper.WaitShow("Deseja gerar Log?")
-        self.oHelper.SetButton('Não')
-        
+        self.oHelper.WaitShow("Turnos de Trabalho - EXCLUIR")
+        self.oHelper.Screenshot("Turno_Trabalho_14") 
         self.oHelper.SetButton('Confirmar')
+        self.oHelper.Screenshot("Turno_Trabalho_15")
         
         self.oHelper.AssertTrue()
+        print("")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print("X 🎯 test CRUD turno de trabalho")
+        print("X ✅ Teste finalizado com sucesso")
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
 
     @classmethod
