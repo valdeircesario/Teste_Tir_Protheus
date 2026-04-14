@@ -14,7 +14,7 @@ class PXGPEM89(unittest.TestCase):
         cls.filial = '02DF0001'
         cls.matricula = '205733'
         cls.processo = '00001'
-        cls.periodo = '202601'
+        cls.periodo = '012026'
         cls.nome = 'CLAUDIO GUEDES DA SILVA'
         
         cls.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
@@ -168,69 +168,17 @@ class PXGPEM89(unittest.TestCase):
         
         self.oHelper.SetButton('Cancelar')
         
+        self.oHelper.SetButton('Cancelar')
         
         
-        
-        
-        
-        #self.oHelper.ScrollGrid(column="Cod Verba", match_value= "D03",                 grid_number=1)
+        #self.oHelper.ScrollGrid(column="Cod Verba", match_value= "D23",                 grid_number=1)
         #self.oHelper.LoadGrid()
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-              
-        self.oHelper.SetButton("Outras Ações",'Parâmetros')
-        self.oHelper.Screenshot("Relatorio_verba_02") 
-        
-        self.oHelper.SetValue("Filial ?", self.filial, check_value=False)
-        
-        self.oHelper.SetValue("Matrícula ?", self.matricula, check_value=False)
-        
-        self.oHelper.SetValue("Situações ?", self.situacao, check_value=False)
-         
-        self.oHelper.SetButton('Confirmar')
-        
-        self.oHelper.SetValue("Categorias ?", 'M*****************', check_value=False)
-        self.oHelper.SetButton('Confirmar')
-        self.oHelper.SetKey('TAB')
-        
-        
-        self.oHelper.SetValue("Período ?", self.periodo)
-        self.oHelper.Screenshot("Relatorio_verba_03")    
-        self.oHelper.SetValue("Todas as Verbas ?", 'Sim', check_value=False)
-        self.oHelper.SetButton('Confirmar')  
-        self.oHelper.SetValue("Salário do Cadastro ?", 'Não', check_value=False) 
-        self.oHelper.SetValue("Lista Total Empresa ?", 'Sim', check_value=False) 
-        self.oHelper.SetValue("Imprimir Bases ?", 'Não', check_value=False) 
-        self.oHelper.SetButton('OK')
-        self.oHelper.Screenshot("Relatorio_verba_04")
-        self.oHelper.SetButton('Imprimir')   
-        sleep(8)
-        self.oHelper.Screenshot("Relatorio_verba_04")
-        
-        
-        
-        self.oHelper.SetButton('Sair')
-        sleep(5)
         self.oHelper.AssertTrue()
         
         print("------------------------------------------------")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_geracao_relatorio_verba")
+        print("X 🎯 test_reajuste_salarial_dissidio_acordo_coletivo")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
