@@ -41,9 +41,7 @@ class GPEA133(unittest.TestCase):
         logging.info("Iniciando setup do teste")
 
         cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
-        cls.oHelper.SetLateralMenu(
-            "Relatorios > Lançamentos > Por Periodo Vertical"
-        )
+        cls.oHelper.SetLateralMenu("Relatorios > Lançamentos > Por Periodo Vertical")
         cls.oHelper.SetButton('Confirmar')
 
         # Tratativas padrão de ambiente
