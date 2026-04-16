@@ -40,8 +40,8 @@ class GPEA133(unittest.TestCase):
 
         logging.info("Iniciando setup do teste")
 
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
-        cls.oHelper.SetLateralMenu("Relatorios > Lançamentos > Por Periodo Vertical")
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '02')
+        cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')
 
         # Tratativas padrão de ambiente
@@ -67,7 +67,7 @@ class GPEA133(unittest.TestCase):
         self.oHelper.Screenshot("Relatorio_verba_01")
 
         # Geração do relatório
-        self.oHelper.SetButton('Imprimir')
+        #self.oHelper.SetButton('Imprimir')
         sleep(8)  # aguarda renderização do relatório
 
         self.oHelper.Screenshot("Relatorio_verba_02")

@@ -10,10 +10,8 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 #  .\venv\Scripts\python.exe -m pytest tests/Outros/test_PXGPEM89.py -s
 
-# OBSERVAÇÃO:
-# O ACORDO COLETIVO S SEMPRE ACORDADO PARA O MES, 09 DE CADA ANO, SEMPRE QUE EXECUTAR ESSE TESTE PROCURAR USAR O PERIODO DO ACORDO 
-# SEMPRE OS PERIODOS DOS MESES: 11,12,01,02,03,04,05,06,07,08. E USAR O ACESSO AO CALCULO COM A DATA DO PERIODO EM ABERTO.
-class PXGPEM89(unittest.TestCase):
+# OBSERVAÇÃO
+class PGCA010(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.filial = '02DF0001'
@@ -25,8 +23,8 @@ class PXGPEM89(unittest.TestCase):
         cls.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
-        cls.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '02')
+        cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')
         
         if cls.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
@@ -37,12 +35,14 @@ class PXGPEM89(unittest.TestCase):
             cls.oHelper.SetButton('Confirmar')
         
 
-    def test_reajuste_salarial_dissidio_acordo_coletivo(self):
+    def test_novo_fluxo_compras(self):
         
-        #-----------------------------------
-        # GARANTE A INTEGRAÇÃO DOS ROTEIROS
-        #-----------------------------------
-     
+        #-------------------------------------------------
+        # SELECIONAR UMA SOLICITAÇÃO PARA GERAR A CONTAÇÃO
+        #-------------------------------------------------
+        sleep(5)
+        
+        self.oHelper.ClickIcon('Necessidade de Compra')
         self.oHelper.SetValue("Processo ?", self.processo, check_value=False) 
         self.oHelper.Screenshot("Dissidio_Acor_Coletivo_01")  
         self.oHelper.SetButton('Outras Ações','Inverter Seleção')
@@ -191,7 +191,7 @@ class PXGPEM89(unittest.TestCase):
         
         print("------------------------------------------------")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_reajuste_salarial_dissidio_acordo_coletivo")
+        print("X 🎯 test_novo_fluxo_compras")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
@@ -205,6 +205,6 @@ class PXGPEM89(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(PXGPEM89('test_reajuste_salarial_dissidio_acordo_coletivo'))
+    suite.addTest(PGCA010('test_novo_fluxo_compras'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
