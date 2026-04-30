@@ -16,8 +16,7 @@ class GPEA180_01(unittest.TestCase):
     def setUpClass(self):
         self.filial = '02DF0001'
         self.mat = '220120' 
-        self.CC_destino = '000000677'  # DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
-        #self.CC_destino = '000000678'  # DP_destino = 000000865,000000871,000000872,000000878,000000887,000000888,000000889,000000890,000000891,000000895
+        self.CC_destino = '000000677'
         self.DP_destino = '000000877' 
         self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")# AJUSTAR DADA PARA PERIODO EM ABERTO
         self.Periodo_Para = (datetime.today()+timedelta(days=-0)).strftime("%Y%m")# AJUSTAR DADA PARA PERIODO EM ABERTO

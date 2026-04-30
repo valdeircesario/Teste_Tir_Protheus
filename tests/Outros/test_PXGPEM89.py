@@ -78,7 +78,7 @@ class PXGPEM89(unittest.TestCase):
         # FAZ O LANÇAMENTO DE REAJUSTE SALARIAL PELO DISSÍDIO/ACORDO COLETIVO
         #--------------------------------------------------------------------
         
-        self.oHelper.SetLateralMenu("Atualizações > Especificos > Dissid.Retroativo Poupex")
+        self.oHelper.SetLateralMenu("Atualizações > Especificos > Dissid.Retroativo ")
         self.oHelper.SetButton('Confirmar')
         self.oHelper.WaitShow('Calculo Acordo Coletivo')
         
@@ -173,7 +173,7 @@ class PXGPEM89(unittest.TestCase):
         #---------------------------------------------
         # CANCELAR A INTEGRAÇÃO DO ACORDO COLETIVO
         #---------------------------------------------
-        self.oHelper.SetLateralMenu("Atualizações > Especificos > Dissid.Retroativo Poupex")
+        self.oHelper.SetLateralMenu("Atualizações > Especificos > Dissid.Retroativo ")
         self.oHelper.SetButton('Confirmar')
         sleep(5)
         self.oHelper.WaitShow('Calculo Acordo Coletivo')

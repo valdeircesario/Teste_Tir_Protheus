@@ -17,7 +17,7 @@ class GPEA180_03(unittest.TestCase):
     def setUpClass(self):
         self.filial = '02DF0001'
         self.mat = '227914' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
-        self.DP_destino = '000000876' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  >  DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
+        self.DP_destino = '000000876' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  > 
         self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
     
         configfile = getcwd() + '\\config.json'
@@ -74,7 +74,7 @@ class GPEA180_03(unittest.TestCase):
         self.oHelper.Screenshot("AD_GLPI_05.png")
         self.oHelper.SetButton('Confirmar')
           
-        if self.oHelper.IfExists("Confirma a Transferência ? "):#O funcionário é responsavel por um departamento, deseja desassociá-lo?
+        if self.oHelper.IfExists("Confirma a Transferência ? "):
             self.oHelper.Screenshot("AD_GLPI_06.png")
             self.oHelper.SetButton('Sim')
             self.oHelper.AssertTrue()

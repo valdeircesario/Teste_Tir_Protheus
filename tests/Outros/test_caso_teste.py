@@ -101,7 +101,7 @@ class CASO_DE_USO(unittest.TestCase):
         
         if self.oHelper.IfExists("Item adicionado com sucesso: Alteração UTA/EQUIPE do Funcionário"):
             self.oHelper.Screenshot("AD_10.png")
-            self.oHelper.WaitShow("Item adicionado com sucesso:")#Alteração UTA/EQUIPE do Funcionário WESLEY VALENTE LIMA (293696)
+            self.oHelper.WaitShow("Item adicionado com sucesso:")
             self.oHelper.Screenshot("Ponto_Fixo_02")
             self.oHelper.SetButton('Fechar')
         else:

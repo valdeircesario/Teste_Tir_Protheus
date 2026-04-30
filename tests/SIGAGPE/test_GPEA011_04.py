@@ -23,7 +23,7 @@ class GPEA011_04(unittest.TestCase):
         self.diaant = (datetime.today()+timedelta(days=-110)).strftime("%d/%m/%Y") # Ajustar a data para o periodo em aberto!!!!
         self.oHelper.Setup('SIGAMDI', self.diaant, '02', self.filial, '07')
         self.oHelper.Program('GPEA011')
-        #self.oHelper.SetButton('Confirmar')
+        self.oHelper.SetButton('Confirmar')
         #self.oHelper.SetButton("Fechar")
 
     def test_GPEA011_04(self):

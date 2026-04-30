@@ -67,9 +67,11 @@ class GPEA133(unittest.TestCase):
         
         
 
-    # Clica no ícone do carrinho
+    
+    
+    
         sc = SeleniumCommands(self.oHelper._Webapp__webapp.driver)
-        sc.click_by_xpath("//*[contains(@class, 'po-icon-cart')]")
+        sc.click_by_class_contains('po-icon-cart')
     
 
     

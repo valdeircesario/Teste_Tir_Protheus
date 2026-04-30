@@ -14,7 +14,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 #  .\venv\Scripts\python.exe -m pytest .\TESTS\Outros\test_fechamento_periodo_POUPEX.py -s
 
-class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
+class GPEM120(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.filial = '02DF0001'
@@ -30,12 +30,12 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
-        #self.oHelper.SetLateralMenu("Atualizações > Definições Cálculo > Períodos")
-        self.oHelper.SetLateralMenu("Miscelanea > Fechamentos > Período") 
+        self.oHelper.SetLateralMenu("Atualizações > Definições Cálculo > Períodos")
+        #self.oHelper.SetLateralMenu("Miscelanea > Fechamentos > Período") 
         self.oHelper.SetButton('Confirmar')
         
 
-    def test_fechamento_periodo_POUPEX(self):
+    def test_fechamento_periodo(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -65,7 +65,7 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         self.oHelper.ClickCheckBox(filtro_texto,1)
         self.oHelper.SetButton("Aplicar filtros selecionados")
         sleep(2)
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_01")
+        self.oHelper.Screenshot("Fechammento_periodo_01")
         self.oHelper.SetButton("Alterar")
         
         self.oHelper.WaitShow('Cadastro de Períodos - ALTERAR')
@@ -104,7 +104,7 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         self.oHelper.LoadGrid()
         
         self.oHelper.SetKey("DOWN",                                       grid=True)
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_02") 
+        self.oHelper.Screenshot("Fechammento_periodo_02") 
         
         self.oHelper.SetButton("Salvar")
         self.oHelper.SetButton('x') 
@@ -128,22 +128,22 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         #----------------------------------------
         # FECHAMENTO DOS AUTONOMOS PROCESSO 00004, PRIMEIRO
         #---------------------------------------- 
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_05")
+        self.oHelper.Screenshot("Fechammento_periodo_05")
         self.oHelper.SetValue('Processo','00004',check_value=False)
         self.oHelper.SetValue('Cod. Periodo',self.periodofercham,check_value=False)
         self.oHelper.SetValue('Roteiro Calc','AUT',check_value=False)        
         self.oHelper.ClickBox("Roteiro", "AUT",grid_number=1) 
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_06")
+        self.oHelper.Screenshot("Fechammento_periodo_06")
         
         self.oHelper.SetButton("Confirmar")
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_07")
+        self.oHelper.Screenshot("Fechammento_periodo_07")
         
         if self.oHelper.IfExists("Log de Ocorrencias no Fechamento de Periodo"):
             self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_08")
+            self.oHelper.Screenshot("Fechammento_periodo_08")
             self.oHelper.SetButton("OK")
             self.oHelper.WaitProcessing("Processando")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_09")
+            self.oHelper.Screenshot("Fechammento_periodo_09")
             self.oHelper.SetButton("Sair")  
             
         print("✅ FECHAMENTO DO PROCESSO 00004 FINALIZADO COM SUCESSO")
@@ -167,16 +167,16 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         self.oHelper.SetValue('Cod. Periodo',self.periodofercham,check_value=False)
         self.oHelper.SetValue('Roteiro Calc','AUT',check_value=False)        
         self.oHelper.ClickBox("Roteiro", "AUT",grid_number=1)
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_10")
+        self.oHelper.Screenshot("Fechammento_periodo_10")
         self.oHelper.SetButton("Confirmar")
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_11")
+        self.oHelper.Screenshot("Fechammento_periodo_11")
         
         if self.oHelper.IfExists("Log de Ocorrencias no Fechamento de Periodo"):
             self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_12")
+            self.oHelper.Screenshot("Fechammento_periodo_12")
             self.oHelper.SetButton("OK")
             self.oHelper.WaitProcessing("Processando")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_13")   
+            self.oHelper.Screenshot("Fechammento_periodo_13")   
             self.oHelper.SetButton("Sair")  
             
         print("✅ FECHAMENTO DO PROCESSO 00003 FINALIZADO COM SUCESSO")
@@ -206,19 +206,19 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         self.oHelper.ClickBox("Roteiro", "RES",grid_number=1)
         self.oHelper.ClickBox("Roteiro", "VAL",grid_number=1)
         self.oHelper.ClickBox("Roteiro", "VTR",grid_number=1)
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_14")
+        self.oHelper.Screenshot("Fechammento_periodo_14")
         self.oHelper.SetButton("Confirmar")
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_15")
+        self.oHelper.Screenshot("Fechammento_periodo_15")
         
-        sleep(100)
-        self.oHelper.WaitProcessing("Processando")##
+        sleep(20)
+        self.oHelper.WaitProcessing("Processando")
         
         if self.oHelper.IfExists("Log de Ocorrencias no Fechamento de Periodo"):
             self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_16")
+            self.oHelper.Screenshot("Fechammento_periodo_16")
             self.oHelper.SetButton("OK")
             self.oHelper.WaitProcessing("Processando")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_17")
+            self.oHelper.Screenshot("Fechammento_periodo_17")
             self.oHelper.SetButton("Sair")  
             
         print("✅ FECHAMENTO DO PROCESSO 00001 FINALIZADO COM SUCESSO")
@@ -241,20 +241,20 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
         self.oHelper.SetValue('Processo','00001',check_value=False)
         self.oHelper.SetValue('Cod. Periodo',self.periodofercham,check_value=False)
         self.oHelper.ClickBox("Roteiro", "FOL",grid_number=1)
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_18")
+        self.oHelper.Screenshot("Fechammento_periodo_18")
         self.oHelper.SetButton("Confirmar")
         sleep(10)
-        self.oHelper.WaitProcessing("Processando")##
-        self.oHelper.Screenshot("Fechammento_periodo_POUPEX_19")
+        self.oHelper.WaitProcessing("Processando")
+        self.oHelper.Screenshot("Fechammento_periodo_19")
         
         sleep(20)
         
         if self.oHelper.IfExists("Log de Ocorrencias no Fechamento de Periodo"):
             self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_20")
+            self.oHelper.Screenshot("Fechammento_periodo_20")
             self.oHelper.SetButton("OK")
             self.oHelper.WaitProcessing("Processando")
-            self.oHelper.Screenshot("Fechammento_periodo_POUPEX_21")
+            self.oHelper.Screenshot("Fechammento_periodo_21")
             self.oHelper.SetButton("Sair")  
             
         print("✅ FECHAMENTO DO PROCESSO 00001 FOLHA FINALIZADO COM SUCESSO") 
@@ -262,7 +262,7 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
        
         print("------------------------------------------------")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_fechamento_periodo_POUPEX")
+        print("X 🎯 test_fechamento_periodo")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
@@ -276,6 +276,6 @@ class FECHAMENTO_PERIODO_POUPEX(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(FECHAMENTO_PERIODO_POUPEX('test_fechamento_periodo_POUPEX'))
+    suite.addTest(GPEM120('test_fechamento_periodo'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
