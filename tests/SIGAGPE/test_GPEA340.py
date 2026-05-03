@@ -5,7 +5,7 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
- # # python -m pytest tests/Modulo_07/test_GPEA340.py -v -s --html=reports/report_GPEA340.html --self-contained-html
+ # # python -m pytest tests/SIGAGPE/test_GPEA340.py -v -s --html=reports/report_GPEA340.html --self-contained-html
 
 #------------------------------------------
 #-- Teste GPEA340 - Cadastro de Sindicato
@@ -17,9 +17,9 @@ class GPEA340(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Codigo = '04'
-        cls.Descrição = 'UNIÃO GERAL DOS TRABALHADORES'
-        cls.DescriçãoEdit = 'UNIÃO GERAL DOS TRABALHADORES UGT'
+        cls.Codigo = '08'
+        cls.Descrição = 'TESTE 02 SINDICATO DOS TRABALHADORES'
+        cls.DescriçãoEdit = 'SINDICATO DOS TRABALHADORES SDT'
         cls.Cnpj = '01450256000163'
         cls.Endereco ='AVENIDA BRASIL'
         cls.Numero ="21"
@@ -30,6 +30,7 @@ class GPEA340(unittest.TestCase):
         cls.oHelper = Webapp(configfile)
         cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Cadastros > Sindicatos")
+        cls.oHelper.SetButton('Confirmar')
 
     def test_de_Cadastro_sindicato_e_edição(self):
 
@@ -41,12 +42,12 @@ class GPEA340(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
 
         self.oHelper.WaitShow("Cadastro de Sindicatos")
-        self.oHelper.Screenshot('GPEA030_01')
+        self.oHelper.Screenshot("Sindicato001")
         
         self.oHelper.SetButton("Incluir")
         sleep(1)
         self.oHelper.WaitShow("Sindicatos - INCLUIR")
-        self.oHelper.Screenshot('GPEA030_02')
+        self.oHelper.Screenshot("Sindicato002")
         self.oHelper.SetValue("RCE_CODIGO", self.Codigo)
         self.oHelper.SetValue("RCE_DESCRI", self.Descrição)
         self.oHelper.SetValue("RCE_CGC", self.Cnpj)
@@ -57,25 +58,25 @@ class GPEA340(unittest.TestCase):
         self.oHelper.SetValue("RCE_BAIRRO", self.Bairro)
         self.oHelper.SetValue("RCE_CEP", '72800000')
         self.oHelper.SetValue("RCE_UF", 'DF')
-        self.oHelper.Screenshot('GPEA030_03')
+        self.oHelper.Screenshot("indicato003")
         self.oHelper.SetValue("RCE_CODMUN", '00108')
         self.oHelper.SetValue("RCE_DDD", '61')
         self.oHelper.SetValue("RCE_FONE", '994875124')
         self.oHelper.SetValue("RCE_EMAIL", 'TESTESINDICATO01@GMAIL.COM')
         self.oHelper.SetKey("TAB") 
-        self.oHelper.Screenshot('GPEA030_04')
+        self.oHelper.Screenshot("Sindicato004")
 
         self.oHelper.SetButton("Confirmar")
 
         if self.oHelper.IfExists("Atenção"):
-            self.oHelper.Screenshot('GPEA030_05')
+            self.oHelper.Screenshot("Sindicato005")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
         
         if self.oHelper.IfExists("Registro inserido com sucesso."):
-            self.oHelper.Screenshot('GPEA030_06')
+            self.oHelper.Screenshot("Sindicato006")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
@@ -85,7 +86,7 @@ class GPEA340(unittest.TestCase):
             
         
         self.oHelper.WaitShow("Cadastro de Sindicatos")
-        self.oHelper.Screenshot('GPEA030_06')
+        self.oHelper.Screenshot("Sindicato007")
 
         self.oHelper.SetButton("Visualizar")
         sleep(1)
@@ -95,7 +96,7 @@ class GPEA340(unittest.TestCase):
         #-------------------------
 
         self.oHelper.WaitShow("Sindicatos - VISUALIZAR")
-        self.oHelper.Screenshot('GPEA030_07')
+        self.oHelper.Screenshot("Sindicato008")
         self.oHelper.CheckResult("RCE_CODIGO", self.Codigo)
         self.oHelper.CheckResult("RCE_DESCRI", self.Descrição)
         self.oHelper.CheckResult("RCE_CGC", self.Cnpj)
@@ -107,10 +108,11 @@ class GPEA340(unittest.TestCase):
         self.oHelper.CheckResult("RCE_UF", 'DF')
         self.oHelper.CheckResult("RCE_CODMUN", '00108')
         self.oHelper.CheckResult("RCE_DDD", '61')
-        self.oHelper.Screenshot('GPEA030_08')
+        self.oHelper.Screenshot("SIindicato009")
         self.oHelper.SetButton("Fechar")
         sleep(1)
         self.oHelper.WaitShow("Cadastro de Sindicatos")
+        self.oHelper.Screenshot("Sindicato010")
 
         #-------------------
         # EDITAR SINDICATO
@@ -119,22 +121,22 @@ class GPEA340(unittest.TestCase):
         self.oHelper.SetButton("Alterar")
         sleep(1)
         self.oHelper.WaitShow("Sindicatos - ALTERAR")
-        self.oHelper.Screenshot('GPEA030_09')
+        self.oHelper.Screenshot("Sindicato011")
         self.oHelper.SetValue("RCE_DESCRI", self.DescriçãoEdit)
         self.oHelper.SetKey("TAB") 
-        self.oHelper.Screenshot('GPEA030_10')
+        self.oHelper.Screenshot("Sindicato012")
         self.oHelper.SetButton("Confirmar")
         sleep(1)
 
         if self.oHelper.IfExists("Atenção"):
-            self.oHelper.Screenshot('GPEA030_11')
+            self.oHelper.Screenshot("Sindicato013")
             self.oHelper.SetButton("Sim")
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
         
         if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.Screenshot('GPEA030_12')
+            self.oHelper.Screenshot("Sindicato014")
             self.oHelper.SetButton("Fechar")
             self.oHelper.AssertTrue()
         else:
