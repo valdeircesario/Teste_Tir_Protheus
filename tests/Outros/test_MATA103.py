@@ -18,7 +18,7 @@ class MATA103(unittest.TestCase):
         self.oHelper = Webapp(configfile)
         self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '02')
         self.oHelper.SetLateralMenu("Atualizações > Movimentos > Documento Entrada")
-        #self.oHelper.SetButton('Confirmar')
+        self.oHelper.SetButton('Confirmar')
 
     def test_MATA103(self):
 

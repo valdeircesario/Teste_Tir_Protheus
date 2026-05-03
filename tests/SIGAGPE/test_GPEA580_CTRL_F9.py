@@ -21,7 +21,7 @@ class GPEA580_CTRL_F9(unittest.TestCase):
                                                                         
         self.filial = '02DF0001'
         self.Matricula = '227884'
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
+        self.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)

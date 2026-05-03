@@ -16,8 +16,8 @@ class GPEA180_02(unittest.TestCase):
     def setUpClass(self):
         self.filial = '02DF0001'
         self.mat = '225742' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
-        self.DP_destino = '000000883' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  >  DP_destino = 000000866,000000868,000000869,000000870,000000876,000000877,000000879,000000880,000000881,000000882,000000883,000000884,000000885,000000886,000000894
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 877
+        self.DP_destino = '000000883' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  >  
+        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
     
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)

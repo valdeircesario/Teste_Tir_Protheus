@@ -527,6 +527,7 @@ python -m pytest tests/Modulo_07/test_GPEA010.py -v -s
 
 # Com relatório HTML embutido
 python -m pytest tests/Modulo_07/test_GPEA010.py -v --html=report_GPEA010.html --self-contained-html
+python -m pytest  tests/Outros/test_0001.py -v --html=report.html --self-contained-html
 ```
 
 ### 📦 Executar Suite Completa

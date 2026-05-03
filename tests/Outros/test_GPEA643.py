@@ -90,7 +90,7 @@ class GPEA643(unittest.TestCase):
         
         #self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Por Roteiros")
         
-        """ self.oHelper.WaitShow("Processo de Calculo")
+        self.oHelper.WaitShow("Processo de Calculo")
         self.oHelper.WaitShow("Este programa realiza processos de calculos")
         self.oHelper.Screenshot("roteiroVTR_01.png")
         
@@ -163,13 +163,13 @@ class GPEA643(unittest.TestCase):
         self.oHelper.Screenshot("roteiroVTR_10.png")
     
         self.oHelper.SetButton("Sair")
-        sleep(10) """
+        sleep(10)
         
         #----------------------------------------------
         # GARANTE A INTEGRAÇÃO DO SISTEMA PARA CALCULAR FOLHA
         #-------------------------------------------------------
                 
-        """ self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
+        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações") 
         
         self.oHelper.Screenshot("integração_01")
         
@@ -199,7 +199,7 @@ class GPEA643(unittest.TestCase):
         self.oHelper.Screenshot('ntegração_06')
 
         sleep(20)
-        self.oHelper.AssertTrue() """ 
+        self.oHelper.AssertTrue()
         
         #-------------------------------------------
         # CALCULAR FOLHA PARA VALIDAR A INCLUSÃO DO VTR
