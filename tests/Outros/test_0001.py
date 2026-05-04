@@ -10,19 +10,19 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class GPER102(unittest.TestCase):# 	GPER102
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.matricula = '227902'
-        self.situacao = ' ADFT*'
-        self.periodo = '202601'
+    def setUpClass(cls):
+        cls.filial = '02DF0001'
+        cls.matricula = '227902'
+        cls.situacao = ' ADFT*'
+        cls.periodo = '202601'
         
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
+        cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
     
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
-        self.oHelper.SetLateralMenu("Relatorios > Lançamentos > Por Periodo Vertical")
-        self.oHelper.SetButton('Confirmar')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.SetLateralMenu("Relatorios > Lançamentos > Por Periodo Vertical")
+        cls.oHelper.SetButton('Confirmar')
         
 
     def test_geracao_relatorio_verba(self):

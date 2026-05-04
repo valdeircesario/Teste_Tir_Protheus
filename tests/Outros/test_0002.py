@@ -23,32 +23,32 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class GPEA133(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
-        self.Matricula = '208201'
-        self.Nome = 'MARCELO CORREA'
-        self.Roteiro = "VTR"
-        self.Processo = '00001'
-        self.Verba = '620'
+        cls.filial = '02DF0001'
+        cls.Matricula = '208201'
+        cls.Nome = 'MARCELO CORREA'
+        cls.Roteiro = "VTR"
+        cls.Processo = '00001'
+        cls.Verba = '620'
         
         
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
+        cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
                 
         
-        self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")# self.oHelper.Program("GPEM009")
+        cls.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")# self.oHelper.Program("GPEM009")
          
         #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.
 
         
 
-    def test_lancamento_vale_transporte_e_claculo_folha(self):
+    def test_lancamento_vale_transporte(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -321,12 +321,12 @@ class GPEA133(unittest.TestCase):
             
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA133('test_lancamento_vale_transporte_e_claculo_folha'))
+    suite.addTest(GPEA133('test_lancamento_vale_transporte'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

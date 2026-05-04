@@ -57,7 +57,6 @@ class GPEA133(unittest.TestCase):
         cls.oHelper = Webapp(configfile)
 
 
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '02')
         cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '02')
         cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')

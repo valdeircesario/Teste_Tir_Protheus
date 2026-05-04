@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# .\venv\Scripts\python.exe -m pytest .\TESTS\Outros\test_CSAM010.py -s
+# python -m pytest tests/Outros/test_CSAM010.py -v -s --html=reports/report_CSAM010.html --self-contained-html
 
 #
 
@@ -19,7 +19,7 @@ class CSAM010(unittest.TestCase):
         cls.tabelaSalarial = '002'
         cls.tipoAumento = '003'
         
-        cls.dataref = (datetime.today()-timedelta(days=65)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
+        cls.dataref = (datetime.today()-timedelta(days=10)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
     
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
@@ -39,8 +39,8 @@ class CSAM010(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
         
         sleep(5)
-        self.oHelper.WaitShow("Este programa atualiza o salario dos funcionarios conforme a Tabela Salarial.")       
-        self.oHelper.Screenshot("reajuste_salarial_01") 
+        self.oHelper.WaitShow("Este programa atualiza o salario dos funcionarios conforme a Tabela Salarial.")      
+        self.oHelper.Screenshot("reajuste_salarial_01")
         self.oHelper.SetButton("Param.") 
         self.oHelper.WaitShow("Parametros")
         self.oHelper.Screenshot("reajuste_salarial_02")   
@@ -65,13 +65,24 @@ class CSAM010(unittest.TestCase):
             self.oHelper.ClickLabel("Em Disco")
             self.oHelper.Screenshot("reajuste_salarial_06")
             self.oHelper.SetButton("OK")
-            sleep(15)
+            sleep(25)
             self.oHelper.Screenshot("reajuste_salarial_07")
-            self.oHelper.SetButton("Sair")     
-            
-        self.oHelper.Screenshot("reajuste_salarial_08")    
-        self.oHelper.WaitProcessing("Processando")
+            self.oHelper.SetButton("Sair") 
+                
+        
+        sleep(0.5)
+        self.oHelper.Screenshot("reajuste_salarial_08")
+        self.oHelper.WaitShow("Histórico Salarial")
         self.oHelper.Screenshot("reajuste_salarial_09")
+        sleep(10)
+        self.oHelper.WaitProcessing("Histórico Salarial")
+        sleep(2)
+        
+        self.oHelper.SetLateralMenu("Miscelanea > Reajuste > Salário Por Tabela")
+        self.oHelper.SetButton('Confirmar')
+        sleep(1)
+        self.oHelper.WaitShow("Este programa atualiza o salario dos funcionarios conforme a Tabela Salarial.")       
+        self.oHelper.Screenshot("reajuste_salarial_10")
         
         self.oHelper.AssertTrue()
         
@@ -85,8 +96,8 @@ class CSAM010(unittest.TestCase):
     
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':
