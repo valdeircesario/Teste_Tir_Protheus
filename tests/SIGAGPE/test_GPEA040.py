@@ -26,7 +26,7 @@ class GPEA040(unittest.TestCase):
         cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Definições Cálculo > Verbas")
 
-    def test_de_incluir_Verbas(self):
+    def test_incluir_verba(self):
 
         if self.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             self.oHelper.SetButton('Fechar')
@@ -161,7 +161,7 @@ class GPEA040(unittest.TestCase):
             self.oHelper.AssertFalse()
 
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-        print("X 🎯 test_de_incluir_Verbas")
+        print("X 🎯 test_incluir_verba")
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
@@ -173,6 +173,6 @@ class GPEA040(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA040('test_de_incluir_Verbas'))
+    suite.addTest(GPEA040('test_incluir_verba'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

@@ -15,7 +15,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class CSAM010(unittest.TestCase):	
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.tabelaSalarial = '002'
         cls.tipoAumento = '003'
         
@@ -23,7 +23,7 @@ class CSAM010(unittest.TestCase):
     
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '40')
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '40')
         cls.oHelper.SetLateralMenu("Miscelanea > Reajuste > Salário Por Tabela")
         cls.oHelper.SetButton('Confirmar')
         

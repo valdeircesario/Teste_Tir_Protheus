@@ -15,18 +15,18 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class CTBA060(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Codigo = '111001'
-        self.Descricao = 'TESTE CL VALOR'
-        self.DescricaoEdit = 'TESTE CL VALOR ALTERADO'
-        self.supervisor = '000000677'
+    def setUpClass(cls):
+        cls.filial = '01'
+        cls.Codigo = '111001'
+        cls.Descricao = 'TESTE CL VALOR'
+        cls.DescricaoEdit = 'TESTE CL VALOR ALTERADO'
+        cls.supervisor = '000000677'
         
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         
-        self.oHelper.SetLateralMenu("Atualizações > Cadastros (23) > Classe de Valor")
+        cls.oHelper.SetLateralMenu("Atualizações > Cadastros (23) > Classe de Valor")
         
        
     def test_cadastro_de_classe_valor_CRUD(self):
@@ -122,8 +122,8 @@ class CTBA060(unittest.TestCase):
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':

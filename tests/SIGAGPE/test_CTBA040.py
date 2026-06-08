@@ -15,17 +15,17 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class CTBA040(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Codigo = '111001'
-        self.Descricao = 'TESTE ITEM CONTABIL'
-        self.DescricaoEdit = 'TESTE ITEM CONTABIL ALTERADO'
+    def setUpClass(cls):
+        cls.filial = '01'
+        cls.Codigo = '111001'
+        cls.Descricao = 'TESTE ITEM CONTABIL'
+        cls.DescricaoEdit = 'TESTE ITEM CONTABIL ALTERADO'
         
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         
-        self.oHelper.SetLateralMenu("Atualizações > Cadastros (23) > Item Contábil")
+        cls.oHelper.SetLateralMenu("Atualizações > Cadastros (23) > Item Contábil")
         
        
     def test_cadastro_de_item_contabil_CRUD(self):
@@ -121,8 +121,8 @@ class CTBA040(unittest.TestCase):
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':

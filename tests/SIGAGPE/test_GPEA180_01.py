@@ -11,20 +11,20 @@ from time import sleep
 
 # TRANSFERENCIA FUNCIONÁRIO ENTRE CENTRO DE CUSTO DIFERENTE
 
-class GPEA180_01(unittest.TestCase):
+class GPEA180(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.mat = '220120' 
-        self.CC_destino = '000000677'
-        self.DP_destino = '000000877' 
-        self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")# AJUSTAR DADA PARA PERIODO EM ABERTO
-        self.Periodo_Para = (datetime.today()+timedelta(days=-0)).strftime("%Y%m")# AJUSTAR DADA PARA PERIODO EM ABERTO
+    def setUpClass(cls):
+        cls.filial = '02DF0001'
+        cls.mat = '220120' 
+        cls.CC_destino = '000000677'
+        cls.DP_destino = '000000877' 
+        cls.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")# AJUSTAR DADA PARA PERIODO EM ABERTO
+        cls.Periodo_Para = (datetime.today()+timedelta(days=-0)).strftime("%Y%m")# AJUSTAR DADA PARA PERIODO EM ABERTO
     
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
-        self.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
         
 
     def test_transferencia_funcionario_entre_centro_de_custo_diferenteUTA(self):
@@ -128,12 +128,12 @@ class GPEA180_01(unittest.TestCase):
     
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA180_01('test_test_transferencia_funcionario_entre_centro_de_custo_diferenteUTA'))
+    suite.addTest(GPEA180('test_test_transferencia_funcionario_entre_centro_de_custo_diferenteUTA'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

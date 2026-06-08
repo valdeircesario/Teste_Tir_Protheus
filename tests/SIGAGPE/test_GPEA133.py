@@ -22,22 +22,22 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class GPEA133(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
                                                                         
-        self.filial = '02DF0001'
-        self.Matricula = '210168'
-        self.Nome = 'TAIS SIMOES SEIDLER'
-        self.Verba = '620'
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
+        cls.filial = '02DF0001'
+        cls.Matricula = '210168'
+        cls.Nome = 'TAIS SIMOES SEIDLER'
+        cls.Verba = '620'
+        cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
                 
         
-        self.oHelper.SetLateralMenu("Atualizações > Beneficios > Vt / Vr / Va > Atualização")
+        cls.oHelper.SetLateralMenu("Atualizações > Beneficios > Vt / Vr / Va > Atualização")
          
-        #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.
+        #cls.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.
 
         
 
@@ -135,7 +135,7 @@ class GPEA133(unittest.TestCase):
         self.oHelper.Screenshot("Calculo_vtr_06.png")
         sleep(1) 
         self.oHelper.ScrollGrid(column="Matricula", match_value = self.Matricula, grid_number=1)
-        sleep
+        sleep(1)
         self.oHelper.Screenshot("Calculo_vtr_07.png")
         
         #-----------------------
@@ -192,8 +192,8 @@ class GPEA133(unittest.TestCase):
             
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':

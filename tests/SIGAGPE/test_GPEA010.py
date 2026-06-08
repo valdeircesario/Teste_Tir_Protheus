@@ -5,7 +5,7 @@ from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# # python -m pytest tests/Modulo_07/test_GPEA010.py -v -s --html=reports/report_GPEA010.html --self-contained-html
+# # python -m pytest tests/SIGAGPE/test_GPEA010.py -v -s --html=reports/report_GPEA010.html --self-contained-html
 # # .\venv\Scripts\python.exe 
 #------------------------------------------
 #-- Teste GPEA010 - Cadastro de Funcionários

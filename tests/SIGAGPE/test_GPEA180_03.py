@@ -12,18 +12,18 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # TRANSFERENCIA FUNCIONÁRIO PARA OUTRO DEPARTAMENTO /TRANSMITIR PARA O AD/ GERAÇÃO GLPI
 # ESTE TESTE E INTEGRADO COM A TRANSFERENCIA, ROINA > GPEA180 COM A ROTINA PXGPEA36
 
-class GPEA180_03(unittest.TestCase):
+class GPEA180(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.mat = '227914' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
-        self.DP_destino = '000000876' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  > 
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
+    def setUpClass(cls):
+        cls.filial = '02DF0001'
+        cls.mat = '227914' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
+        cls.DP_destino = '000000876' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  > 
+        cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
     
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
-        self.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
         
 
     def test_transferencia_funcionario_de_departamento_transmitir_AD_gerar_GLPI(self):
@@ -259,12 +259,12 @@ class GPEA180_03(unittest.TestCase):
     
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA180_03('test_transferencia_funcionario_de_departamento_transmitir_AD_gerar_GLPI'))
+    suite.addTest(GPEA180('test_transferencia_funcionario_de_departamento_transmitir_AD_gerar_GLPI'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

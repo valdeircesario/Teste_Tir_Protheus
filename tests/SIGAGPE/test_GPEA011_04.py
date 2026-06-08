@@ -9,24 +9,24 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 # LANÇAMENTO RETROATIVO ASSISTENCIA MEDICA
 #-----------------------------------------
 
-class GPEA011_04(unittest.TestCase):
+class GPEA011(unittest.TestCase):
 
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
 
-        self.filial = '02DF0001'
-        self.cpf = '01530041180'
-        self.matricula = '227900'
+        cls.filial = '01'
+        cls.cpf = '01530041180'
+        cls.matricula = '227900'
 
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.diaant = (datetime.today()+timedelta(days=-110)).strftime("%d/%m/%Y") # Ajustar a data para o periodo em aberto!!!!
-        self.oHelper.Setup('SIGAMDI', self.diaant, '02', self.filial, '07')
-        self.oHelper.Program('GPEA011')
-        self.oHelper.SetButton('Confirmar')
+        cls.oHelper = Webapp(configfile)
+        cls.diaant = (datetime.today()+timedelta(days=-110)).strftime("%d/%m/%Y") # Ajustar a data para o periodo em aberto!!!!
+        cls.oHelper.Setup('SIGAMDI', cls.diaant, '99', cls.filial, '07')
+        cls.oHelper.Program('GPEA011')
+        cls.oHelper.SetButton('Confirmar')
         #self.oHelper.SetButton("Fechar")
 
-    def test_GPEA011_04(self):
+    def test_teste_assitencia_medica(self):
 
         #----------
         # INCLUIR
@@ -125,11 +125,11 @@ class GPEA011_04(unittest.TestCase):
         self.oHelper.AssertTrue()
 
     @classmethod
-    def tearDownClass(inst):
-        inst.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA011_04('test_GPEA011_04'))
+    suite.addTest(GPEA011('test_test_teste_assitencia_medica'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

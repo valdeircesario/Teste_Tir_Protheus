@@ -13,28 +13,28 @@ from time import sleep
 
 class GPEA180(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
         
         # FILIAL E MATRICULA DE ORIGEM
-        self.filial = '02BA0051'
-        self.mat = '209410' # SEMPRE USAR MATRICULA DIFERENTE, E VERIFICAR SE E UNICA " PODE CONTER DUAS MATRICULAR IGUAIS" 228290 ,202173,209410
+        cls.filial = '02BA0051'
+        cls.mat = '209410' # SEMPRE USAR MATRICULA DIFERENTE, E VERIFICAR SE E UNICA " PODE CONTER DUAS MATRICULAR IGUAIS" 228290 ,202173,209410
         
         # FILIAL E MATRICULA DE DESTINO
-        self.Fl_destino = "02DF0001"
-        self.CC_destino = '000000678'
-        self.DP_destino = '000000865'
+        cls.Fl_destino = "02DF0001"
+        cls.CC_destino = '000000678'
+        cls.DP_destino = '000000865'
         
        
          
-        self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y") # AJUSTAR DATAS PARA PEIODO EM ABERTO
-        self.Periodo_Para = (datetime.today()+timedelta(days=-0)).strftime("%Y%m") # AJUSTAR DATAS PARA PEIODO EM ABERTO
-        self.Nro_Pagto_Para = '01'
+        cls.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y") # AJUSTAR DATAS PARA PEIODO EM ABERTO
+        cls.Periodo_Para = (datetime.today()+timedelta(days=-0)).strftime("%Y%m") # AJUSTAR DATAS PARA PEIODO EM ABERTO
+        cls.Nro_Pagto_Para = '01'
         
 
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
-        self.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '07')
+        cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
         
 
     def test_transferencia_funcionario_de_filial(self):
@@ -208,8 +208,8 @@ class GPEA180(unittest.TestCase):
     
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':

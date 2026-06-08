@@ -11,18 +11,18 @@ from time import sleep
 
 # TRANSFERENCIA FUNCIONÁRIO PARA OUTRO DEPARTAMENTO
 
-class GPEA180_02(unittest.TestCase):
+class GPEA180(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.mat = '225742' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
-        self.DP_destino = '000000883' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  >  
-        self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
+    def setUpClass(cls):
+        cls.filial = '01'
+        cls.mat = '225742' # O TESTE DEVE SEMPRE PROCURAR UM FUNCIONARIO DO CENTRO DE CUSTOS 000000677 PARA MELHOR RESULTADO
+        cls.DP_destino = '000000883' # USE SEMPRE UM DOS DEPATAMENTOS AQUI  >  
+        cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
     
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
-        self.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '07')
+        cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
         
 
     def test_transferencia_funcionario_de_departamento(self):
@@ -137,12 +137,12 @@ class GPEA180_02(unittest.TestCase):
     
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA180_02('test_transferencia_funcionario_de_departamento'))
+    suite.addTest(GPEA180('test_transferencia_funcionario_de_departamento'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

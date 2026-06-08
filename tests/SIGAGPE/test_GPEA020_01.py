@@ -8,23 +8,24 @@ from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 # .\venv\Scripts\python.exe -m pytest tests/Outros/test_GPEA020_01.py -s
+# #cd Testes-Protheus .\venv\Scripts\activate pytest TESTS/SIGAGPE/GPEA020/test_GPEA020.py
 
 #------------------------
 # EXCLUSÃO DE DEPENDENTES
 #------------------------
 
-class GPEA020_01(unittest.TestCase):
+class GPEA020(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.Matricula = '227900'
-        self.filial = '02DF0001'
-        self.DataNasc = (datetime.today()-timedelta(days=360)).strftime("%d/%m/%Y")
-        self.DataEntrega = (datetime.today()-timedelta(days=20)).strftime("%d/%m/%Y")  
+    def setUpClass(cls):
+        cls.Matricula = '227900'
+        cls.filial = '01'
+        cls.DataNasc = (datetime.today()-timedelta(days=360)).strftime("%d/%m/%Y")
+        cls.DataEntrega = (datetime.today()-timedelta(days=20)).strftime("%d/%m/%Y")  
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         
-        self.oHelper.SetLateralMenu("Atualizações > Funcionários > Dependentes")
+        cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Dependentes")
         
   
 
@@ -106,16 +107,16 @@ class GPEA020_01(unittest.TestCase):
         print("X ✅ Teste finalizado com sucesso")
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         
-        #cd Testes-Protheus .\venv\Scripts\activate pytest TESTS/SIGAGPE/GPEA020/test_GPEA020.py
+        
             
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(GPEA020_01('test_Exclusão_de_dependentes'))
+    suite.addTest(GPEA020('test_Exclusão_de_dependentes'))
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
