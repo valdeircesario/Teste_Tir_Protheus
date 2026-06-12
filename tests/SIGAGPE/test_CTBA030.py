@@ -1,9 +1,16 @@
+import os
+import sys
+
 from tir import Webapp
 from os import getcwd
 import unittest
 from datetime import datetime
 from time import sleep
 DateSystem = datetime.today().strftime('%d/%m/%Y')
+
+# FUNÇÃO QUE GERAR O ARQUIVO HTML DE HOMOLAÇÃO ---- PARA PASTA C:\Relatorios_Homologacao.... LOCAL
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'tools')))
+from gerador_relatorio import gerar_guia_homologacao
 
  # # python -m pytest tests/Modulo_07/test_CTBA030.py -v -s --html=reports/report_CTBA030.html --self-contained-html
 
@@ -74,6 +81,7 @@ class CTBA030(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.oHelper.TearDown()
+        gerar_guia_homologacao(__file__)
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
