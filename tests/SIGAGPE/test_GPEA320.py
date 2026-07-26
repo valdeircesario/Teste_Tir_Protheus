@@ -1,1 +1,0 @@
-### teste de manutenção por tabela de sigagpe/GPEA040.py

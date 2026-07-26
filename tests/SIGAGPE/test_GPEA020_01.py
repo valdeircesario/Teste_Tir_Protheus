@@ -50,55 +50,37 @@ class GPEA020(unittest.TestCase):
         
         self.oHelper.WaitShow("Dependentes")
         
-        
+        print('-----------------------Pesquisar')
         self.oHelper.SetButton("Outras Ações","Pesquisar")
         self.oHelper.SetButton("Parâmetro")
         self.oHelper.SetValue("Filial",self.filial)
         self.oHelper.SetValue("Matricula",self.Matricula)
         self.oHelper.SetButton("OK")
-        sleep(0.5)
         
-        
-        self.oHelper.SetButton("Manutenção")
-        
+        print('---------------------------Excluir')
+        self.oHelper.SetButton("Manutenção")  
         self.oHelper.SearchBrowse(self.filial)
-        sleep(0.3)
         self.oHelper.SetButton("OK")
          
         self.oHelper.WaitShow("Funcionários - MANUTENÇÃO")
-        sleep(1)
-        self.oHelper.SetKey("Delete")
-        sleep(0.5)    
-       
+        self.oHelper.SetKey("Delete",           wait_change=False)
         self.oHelper.SetButton("Confirmar")
-        
-        
-        sleep(1)
-        if self.oHelper.IfExists("Atenção!"):
-            self.oHelper.WaitShow("Registro enviado para o TAF com sucesso!")
-            self.oHelper.Screenshot("dependente01.png")
-            self.oHelper.SetButton("OK")
             
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
+        self.oHelper.WaitShow("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("dependente02.png")
+        self.oHelper.SetButton("Fechar")
+
+        #--------------------------
+        # Visualizar
+        #-------------------
             
-        if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.Screenshot("dependente02.png")
-            self.oHelper.SetButton("Fechar")
             
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
+        print('--------------------Visualizar')    
         self.oHelper.WaitShow("Dependentes")
-        self.oHelper.SetButton("Visualizar")
-        sleep(0.5)
-        
+        self.oHelper.SetButton("Visualizar")        
         self.oHelper.WaitShow("Funcionários - VISUALIZAR")
         self.oHelper.Screenshot("dependente03.png")
         self.oHelper.SetButton("Fechar")
-        sleep(0.5)
         self.oHelper.WaitShow("Dependentes")
         
         print("/")

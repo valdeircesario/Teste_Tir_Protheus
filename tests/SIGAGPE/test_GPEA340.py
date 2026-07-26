@@ -43,58 +43,51 @@ class GPEA340(unittest.TestCase):
 
         self.oHelper.WaitShow("Cadastro de Sindicatos")
         self.oHelper.Screenshot("Sindicato001")
-        
+        #-------------------
+        # Incluir
+        #-------------------
+
+        print('--------------------------Incluir')
         self.oHelper.SetButton("Incluir")
-        sleep(1)
         self.oHelper.WaitShow("Sindicatos - INCLUIR")
         self.oHelper.Screenshot("Sindicato002")
-        self.oHelper.SetValue("RCE_CODIGO", self.Codigo)
-        self.oHelper.SetValue("RCE_DESCRI", self.Descrição)
-        self.oHelper.SetValue("RCE_CGC", self.Cnpj)
-        self.oHelper.SetValue("RCE_ENTSIN", '5487')
-        self.oHelper.SetValue("RCE_ENDER", self.Endereco)
-        self.oHelper.SetValue("RCE_NUMER", self.Numero)
-        self.oHelper.SetValue("RCE_COMPLE", self.Complemento)
-        self.oHelper.SetValue("RCE_BAIRRO", self.Bairro)
-        self.oHelper.SetValue("RCE_CEP", '72800000')
-        self.oHelper.SetValue("RCE_UF", 'DF')
+        self.oHelper.SetValue("RCE_CODIGO", self.Codigo,                    check_value=False)
+        self.oHelper.SetValue("RCE_DESCRI", self.Descrição,                 check_value=False)
+        self.oHelper.SetValue("RCE_CGC", self.Cnpj,                         check_value=False)
+        self.oHelper.SetValue("RCE_ENTSIN", '5487',                         check_value=False)
+        self.oHelper.SetValue("RCE_ENDER", self.Endereco,                   check_value=False)
+        self.oHelper.SetValue("RCE_NUMER", self.Numero,                     check_value=False)
+        self.oHelper.SetValue("RCE_COMPLE", self.Complemento,               check_value=False)
+        self.oHelper.SetValue("RCE_BAIRRO", self.Bairro,                    check_value=False)
+        self.oHelper.SetValue("RCE_CEP", '72800000',                        check_value=False)
+        self.oHelper.SetValue("RCE_UF", 'DF',                               check_value=False)
         self.oHelper.Screenshot("indicato003")
-        self.oHelper.SetValue("RCE_CODMUN", '00108')
-        self.oHelper.SetValue("RCE_DDD", '61')
-        self.oHelper.SetValue("RCE_FONE", '994875124')
-        self.oHelper.SetValue("RCE_EMAIL", 'TESTESINDICATO01@GMAIL.COM')
+        self.oHelper.SetValue("RCE_CODMUN", '00108',                        check_value=False)
+        self.oHelper.SetValue("RCE_DDD", '61',                              check_value=False)
+        self.oHelper.SetValue("RCE_FONE", '994875124',                      check_value=False)
+        self.oHelper.SetValue("RCE_EMAIL", 'TESTESINDICATO01@GMAIL.COM',    check_value=False)
         self.oHelper.SetKey("TAB") 
         self.oHelper.Screenshot("Sindicato004")
 
         self.oHelper.SetButton("Confirmar")
+        print('--------------------------Confirmação')
 
-        if self.oHelper.IfExists("Atenção"):
-            self.oHelper.Screenshot("Sindicato005")
-            self.oHelper.SetButton("Sim")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-        
-        if self.oHelper.IfExists("Registro inserido com sucesso."):
-            self.oHelper.Screenshot("Sindicato006")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-
-        sleep(1)
-            
-        
+        self.oHelper.WaitShow("Atenção")
+        self.oHelper.Screenshot("Sindicato005")
+        self.oHelper.SetButton("Sim")
+             
+        self.oHelper.WaitShow("Registro inserido com sucesso.")
+        self.oHelper.Screenshot("Sindicato006")
+        self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Cadastro de Sindicatos")
         self.oHelper.Screenshot("Sindicato007")
-
-        self.oHelper.SetButton("Visualizar")
-        sleep(1)
         
         #-------------------------
         # Visualização da inclusão
         #-------------------------
 
+        print('--------------------------Visualizar')
+        self.oHelper.SetButton("Visualizar")
         self.oHelper.WaitShow("Sindicatos - VISUALIZAR")
         self.oHelper.Screenshot("Sindicato008")
         self.oHelper.CheckResult("RCE_CODIGO", self.Codigo)
@@ -110,7 +103,6 @@ class GPEA340(unittest.TestCase):
         self.oHelper.CheckResult("RCE_DDD", '61')
         self.oHelper.Screenshot("SIindicato009")
         self.oHelper.SetButton("Fechar")
-        sleep(1)
         self.oHelper.WaitShow("Cadastro de Sindicatos")
         self.oHelper.Screenshot("Sindicato010")
 
@@ -118,31 +110,24 @@ class GPEA340(unittest.TestCase):
         # EDITAR SINDICATO
         #-------------------
 
+        print('--------------------------Alterar')
         self.oHelper.SetButton("Alterar")
-        sleep(1)
         self.oHelper.WaitShow("Sindicatos - ALTERAR")
         self.oHelper.Screenshot("Sindicato011")
-        self.oHelper.SetValue("RCE_DESCRI", self.DescriçãoEdit)
+        self.oHelper.SetValue("RCE_DESCRI", self.DescriçãoEdit,     check_value=False)
         self.oHelper.SetKey("TAB") 
         self.oHelper.Screenshot("Sindicato012")
         self.oHelper.SetButton("Confirmar")
-        sleep(1)
 
-        if self.oHelper.IfExists("Atenção"):
-            self.oHelper.Screenshot("Sindicato013")
-            self.oHelper.SetButton("Sim")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
+        self.oHelper.WaitShow("Atenção")
+        self.oHelper.Screenshot("Sindicato013")
+        self.oHelper.SetButton("Sim")
         
-        if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.Screenshot("Sindicato014")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-
-        sleep(1)
+        self.oHelper.WaitShow("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("Sindicato014")
+        self.oHelper.SetButton("Fechar")
+        self.oHelper.AssertTrue()
+            
 
     
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")

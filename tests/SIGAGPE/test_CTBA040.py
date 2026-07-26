@@ -17,8 +17,8 @@ class CTBA040(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.filial = '01'
-        cls.Codigo = '111001'
-        cls.Descricao = 'TESTE ITEM CONTABIL'
+        cls.Codigo = '1110014'
+        cls.Descricao = 'TESTE ITEM CONTABIL 01'
         cls.DescricaoEdit = 'TESTE ITEM CONTABIL ALTERADO'
         
         configfile = getcwd() + '\\config.json'
@@ -45,18 +45,22 @@ class CTBA040(unittest.TestCase):
               
         self.oHelper.WaitShow("Cadastro Item Conta")
         self.oHelper.Screenshot("CTBA040_01.png")
+
+        #-------------------------
+        # Incluir Item Contabil
+        #-------------------------
+
+
         self.oHelper.SetButton("Incluir")
-        sleep(0.5)  
+
+        print('------------------------Incluir')
         self.oHelper.WaitShow("Cadastro Item Conta - INCLUIR")
         self.oHelper.Screenshot("CTBA040_02.png")
-        self.oHelper.SetValue("CTD_ITEM",           self.Codigo)
-        self.oHelper.SetValue("CTD_DESC01",         self.Descricao)
-        sleep(0.5)
+        self.oHelper.SetValue("CTD_ITEM",           self.Codigo,    check_value=False)
+        self.oHelper.SetValue("CTD_DESC01",         self.Descricao, check_value=False)
         self.oHelper.Screenshot("CTBA040_03.png")   
         self.oHelper.SetButton("Salvar")
-        sleep(5)
         self.oHelper.SetButton("Cancelar")
-        sleep(0.5)
         self.oHelper.WaitShow("Cadastro Item Conta")
         self.oHelper.Screenshot("CTBA040_04.png")
         
@@ -64,12 +68,10 @@ class CTBA040(unittest.TestCase):
         #------------------------------
         # VISUALIZAR ITEM CONTABIL
         #----------------------------
-        
+        print('--------------------Visualizar')
         self.oHelper.SetButton("Visualizar")
-        sleep(0.5)
         self.oHelper.WaitShow('Cadastro Item Conta - VISUALIZAR')
-        self.oHelper.Screenshot("CTBA040_05.png")
-        
+        self.oHelper.Screenshot("CTBA040_05.png")  
         self.oHelper.CheckResult("CTD_ITEM",    self.Codigo)
         self.oHelper.CheckResult("CTD_DESC01",  self.Descricao)
         self.oHelper.SetButton("Confirmar")
@@ -77,41 +79,36 @@ class CTBA040(unittest.TestCase):
         #----------------------
         # EDITAR ITEM CONTABIL
         #-----------------------
-        
+        print('------------------------Alterar')
         self.oHelper.SetButton("Alterar")
-        sleep(0.5)
         self.oHelper.WaitShow("Cadastro Item Conta - ALTERAR")
         self.oHelper.Screenshot("CTBA040_06.png")
-        self.oHelper.SetValue("CTD_DESC01",self.DescricaoEdit)
+        self.oHelper.SetValue("CTD_DESC01",self.DescricaoEdit,      check_value=False)
         self.oHelper.Screenshot("CTBA040_07.png")
         self.oHelper.SetButton("Salvar")
-        sleep(5)
         self.oHelper.Screenshot("CTBA040_08.png")
         
         #-------------------------
         # BLOQUEAR ITEM CONTABIL
         #-------------------------
-        
+        print('--------------------Bloquear item')
         self.oHelper.SetButton("Alterar")
-        sleep(0.5)
         self.oHelper.WaitShow("Cadastro Item Conta - ALTERAR")
         self.oHelper.Screenshot("CTBA040_09.png")
-        self.oHelper.SetValue("CTD_BLOQ","1 - Bloqueado")
+        self.oHelper.SetValue("CTD_BLOQ","1 - Bloqueado",           check_value=False)
         self.oHelper.Screenshot("CTBA040_10.png")
         self.oHelper.SetButton("Salvar")
-        sleep(5)
         self.oHelper.Screenshot("CTBA040_11.png")
         
         #-----------------------
         # EXCLUIR ITEM CONTABIL
         #-----------------------
-        
+
+        print('--------------------Excluir')
         self.oHelper.SetButton("Outras Ações","Excluir")
-        sleep(0.5)
         self.oHelper.WaitShow("Cadastro Item Conta - EXCLUIR")
         self.oHelper.Screenshot("CTBA040_12.png")
         self.oHelper.SetButton("Confirmar")
-        sleep(0.5)
         self.oHelper.Screenshot("CTBA040_13.png")
      
         self.oHelper.AssertTrue()

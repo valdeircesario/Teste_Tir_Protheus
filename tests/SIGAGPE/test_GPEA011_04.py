@@ -45,13 +45,18 @@ class GPEA011(unittest.TestCase):
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
-            
-        """ self.oHelper.SetButton("Pesquisar")
+
+        #-----------------------
+        # Incluir Assitencia
+        #------------------------
+        print('--------------------Pesquisar')   
+        self.oHelper.SetButton("Pesquisar")
         self.oHelper.SetValue("Filial", self.filial)
         self.oHelper.SetValue("Matricula", self.matricula)
-        self.oHelper.SetButton("OK") """
+        self.oHelper.SetButton("OK")
 
-        self.oHelper.SearchBrowse(self.filial + self.cpf, key="Filial+cpf")
+
+        print('-----------------------Incluir')
         self.oHelper.Screenshot("GPEA011_04_01")
         self.oHelper.SetButton("Outras Ações")
         self.oHelper.ClickMenuPopUpItem("Lancamentos")
@@ -59,27 +64,24 @@ class GPEA011(unittest.TestCase):
         self.oHelper.ClickMenuPopUpItem("Alterar")
         self.oHelper.WaitShow("Valores Futuros")
         self.oHelper.Screenshot("GPEA011_04_02")
-        self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "525", grid_number=1)
-        self.oHelper.SetKey("DOWN",                                                   grid=True)
-        self.oHelper.SetValue('Codigo Verba',  "600",                                 grid=True)
-        self.oHelper.SetValue('Vr.Principal',  "50,00", direction='right',            grid=True)
-        self.oHelper.SetValue('Nr. Parcelas',  "1",     direction='right',            grid=True)
+        self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "525")
+        self.oHelper.SetKey("DOWN",                   grid=True,                        wait_change=False)
+        self.oHelper.SetValue('Codigo Verba',  "600",            grid=True,             check_value=False)
+        self.oHelper.SetValue('Vr.Principal',  "50,00", direction='right', grid=True,   check_value=False)
+        self.oHelper.SetValue('Nr. Parcelas',  "1",     direction='right', grid=True,   check_value=False)
         self.oHelper.LoadGrid()
         self.oHelper.Screenshot("GPEA011_04_03")
         
         self.oHelper.SetButton("Salvar")
-        if self.oHelper.IfExists("Atenção"):
-            self.oHelper.SetButton("Confirma")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
+        self.oHelper.WaitShow("Atenção")
+        self.oHelper.SetButton("Confirma")
         self.oHelper.WaitShow("Cadastro Geral")
 
         #------------
         # VISUALIZAR
         #------------
 
-
+        print('--------------------Visualizar')
         self.oHelper.SetButton("Outras Ações")
         self.oHelper.ClickMenuPopUpItem("Lancamentos")
         self.oHelper.ClickMenuPopUpItem("Val.Futuros")
@@ -92,7 +94,7 @@ class GPEA011(unittest.TestCase):
         # EXCLUIR
         #-----------
 
-
+        print('------------------------Excluir')
         self.oHelper.SetButton("Outras Ações")
         self.oHelper.ClickMenuPopUpItem("Lancamentos")
         self.oHelper.ClickMenuPopUpItem("Val.Futuros")
@@ -100,9 +102,9 @@ class GPEA011(unittest.TestCase):
         self.oHelper.WaitShow("Valores Futuros")
         self.oHelper.Screenshot("GPEA011_04_06")
         self.oHelper.LoadGrid()
-        self.oHelper.ScrollGrid(column='Dt.Movimento', match_value= self.diaant, grid_number=1)
+        self.oHelper.ScrollGrid(column='Dt.Movimento', match_value= self.diaant)
         self.oHelper.LoadGrid()
-        self.oHelper.SetKey("DELETE",                                               grid=True)
+        self.oHelper.SetKey("DELETE",        grid=True,                         check_value=False)
         self.oHelper.Screenshot("GPEA011_04_07")
         self.oHelper.SetButton("Salvar")
         self.oHelper.WaitShow("Cadastro Geral")
@@ -112,7 +114,8 @@ class GPEA011(unittest.TestCase):
         #--------------
         # CONFIRMAR EXCLUSÃO
         #--------------
-
+        
+        print('-----------------Confirmar Exclusão')
         self.oHelper.SetButton("Outras Ações")
         self.oHelper.ClickMenuPopUpItem("Lancamentos")
         self.oHelper.ClickMenuPopUpItem("Val.Futuros")

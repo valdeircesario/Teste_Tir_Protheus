@@ -7,23 +7,24 @@ from datetime import date
 from datetime import datetime, timedelta
 from time import sleep
 
-# cd Testes-Protheus; & .\venv\Scripts\Activate.ps1; pytest TESTS/SIGAGPE/GPEA180/test_GPEA180_01.py
+from utilis.click_pageview import click_pageview_visible_button
+DateSystem = datetime.today().strftime('%d/%m/%Y')
+
 
 # TRANSFERENCIA FUNCIONÁRIO ENTRE CENTRO DE CUSTO DIFERENTE
 
 class GPEA180(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
-        cls.mat = '220120' 
-        cls.CC_destino = '000000677'
-        cls.DP_destino = '000000877' 
-        cls.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")# AJUSTAR DADA PARA PERIODO EM ABERTO
+        cls.filial = '01'
+        cls.mat = '00000' 
+        cls.CC_destino = '021'
+        cls.DP_destino = '254' 
         cls.Periodo_Para = (datetime.today()+timedelta(days=-0)).strftime("%Y%m")# AJUSTAR DADA PARA PERIODO EM ABERTO
     
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI',DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Funcionários > Transferências")
         
 
@@ -42,81 +43,63 @@ class GPEA180(unittest.TestCase):
         else:
             self.oHelper.AssertTrue()
             
-        if self.oHelper.IfExists("Departamento possui centro de custo diferente do centro de custos do funcionário"):
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
+        #--------------------------
+        # Tranferencia
+        #----------------------------------
         
-            self.oHelper.AssertTrue()
-            
+        print('----------------------Pesquisando funcionario')  
         self.oHelper.WaitShow("Transferências")
-        self.oHelper.Screenshot("GPEA180_01_01.png")
+        self.oHelper.Screenshot("tranferencias_01_01.png")
         self.oHelper.SetButton("Pesquisar")
         self.oHelper.SetButton("Parâmetros")
         self.oHelper.SetValue("Filial", self.filial)
         self.oHelper.SetValue("Matricula", self.mat)
         self.oHelper.SetButton("Ok")
-        self.oHelper.Screenshot("GPEA180_01_02.png")
+        self.oHelper.Screenshot("tranferencias_01_02.png")
         self.oHelper.SetButton('Outras Ações', 'Transferir')
-        sleep(0.8)
-        
+
+        print('----------------------------Tranferindo')
         self.oHelper.WaitShow('Transferências - TRANSFERIR')
         self.oHelper.ClickBox("Matricula", self.mat,   grid_number=1)
-        self.oHelper.Screenshot("GPEA180_01_03.png")
+        self.oHelper.Screenshot("tranferencias_01_03.png")
         self.oHelper.SetButton('Confirmar')
         
         self.oHelper.WaitShow('Transferências - TRANSFERIR')
-        self.oHelper.Screenshot("GPEA180_01_04.png")
+        self.oHelper.Screenshot("tranferencias_01_04.png")
         
         self.oHelper.SetValue("RA_CC", self.CC_destino,    grid=True, grid_number=2)
         self.oHelper.SetValue("RA_DEPTO", self.DP_destino, grid=True, grid_number=2)
         self.oHelper.LoadGrid()
         self.oHelper.SetButton('Confirmar')
-        
-        if self.oHelper.IfExists("Confirma a Transferência ? "):
-            self.oHelper.Screenshot("GPEA180_01_05.png")
-            self.oHelper.SetButton('Sim')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        sleep(0.5)    
-        if self.oHelper.IfExists("Deseja enviar e-mail dessa Transferência?"):
-            self.oHelper.Screenshot("GPEA180_01_06.png")
-            self.oHelper.SetButton('Sim')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            sleep(0.5)     
-            
-        if self.oHelper.IfExists("Deseja inserir a Data da Portaria?"):
-            self.oHelper.SetButton('Sim')
-            self.oHelper.SetValue("Data da Portaria", self.dataref)
-            self.oHelper.Screenshot("GPEA180_01_07.png")
-            self.oHelper.SetButton('Confirmar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        sleep(0.9) 
-        self.oHelper.SetButton('fechar')
-        
-        sleep(0.5)
+
+        print('-----------------Confirmando transferencia')
+        self.oHelper.WaitShow("Confirma a Transferência ? ")
+        self.oHelper.Screenshot("tranferencias_01_05.png")
+        self.oHelper.SetButton('Sim')
+               
+        self.oHelper.WaitShow("Deseja enviar e-mail dessa Transferência?")
+        self.oHelper.Screenshot("tranferencias_01_06.png")
+        self.oHelper.SetButton('Sim')
+             
+        print('--------------------------Conferindo os logs')
         self.oHelper.WaitShow("Log de Ocorrencias - Gestão de Pessoal - Versao 12")
-        if self.oHelper.IfExists("Log de Ocorrencias - Gestão de Pessoal - Versao 12"):
-            self.oHelper.ClickLabel("Em Disco")
-            self.oHelper.Screenshot("GPEA180_01_08.png")
-            self.oHelper.SetButton("OK")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-        sleep(25)
-        self.oHelper.Screenshot("GPEA180_01_09.png")
+        self.oHelper.ClickLabel("Em Disco")
+        self.oHelper.Screenshot("tranferencias_01_08.png")
+        self.oHelper.SetButton("OK")
+        self.oHelper.Screenshot("tranferencias_01_09.png")
         self.oHelper.SetButton("Sair")
         sleep(10)
+        click_pageview_visible_button(self.oHelper, "Ampliar (+)")
+        self(2)
+        click_pageview_visible_button(self.oHelper, "Ampliar (+)")
+        self(2)
+        click_pageview_visible_button(self.oHelper, "Ampliar (+)")
+        self(2)
+        self.oHelper.Screenshot("GPEA180_12.png")
+        self.oHelper.SetButton("Sair")
+        sleep(5)
         self.oHelper.SetButton("Cancelar")
-        sleep(10)
+        self.oHelper.WaitShow("Transferências")
         self.oHelper.AssertTrue()
         
         print("------------------------------------------------")

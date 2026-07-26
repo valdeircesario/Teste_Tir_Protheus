@@ -1,8 +1,10 @@
 import unittest
-import logging
 from datetime import datetime, timedelta
 from os import getcwd
-from tir import Webapp
+from tir import Webapp, Poui
+from tir.technologies.core.base import By
+#from tir import Poui
+
 
 
 class TestNecessidadeCompraPOUI(unittest.TestCase):
@@ -12,79 +14,59 @@ class TestNecessidadeCompraPOUI(unittest.TestCase):
     # ==================================================
     @classmethod
     def setUpClass(cls):
-        print(">>> INICIO SETUP")
-
-        cls.filial = "02DF0001"
+        cls.filial = "01"
         cls.data_ref = (datetime.today() - timedelta(days=1)).strftime("%d/%m/%Y")
 
         config_path = getcwd() + "\\config.json"
+        
+        # Instanciação dos Helpers do TIR (Webapp para Protheus base e Poui para Angular)
         cls.oHelper = Webapp(config_path)
-        print(">>> ANTES DO SETUP")
+        cls.oHelper_Poui = Poui(config_path)
 
-        # ✅ Inicializa o Protheus
-        cls.oHelper.Setup(
-            "SIGAMDI",
-            cls.data_ref,
-            "02",
-            cls.filial,
-            "02"
-        )
-        print(">>> DEPOIS DO SETUP")
+        # Login e ambiente
+        cls.oHelper.Setup("SIGAMDI", cls.data_ref, "99", cls.filial, "02")
 
-        # ✅ Tratativas padrão
+        # Tratamento de modais/avisos iniciais do Protheus
         if cls.oHelper.IfExists("Este ambiente utiliza base de Homologação."):
             cls.oHelper.SetButton("Fechar")
 
         if cls.oHelper.IfExists("Moedas"):
             cls.oHelper.SetButton("Confirmar")
 
-        # ✅ Navegação PO-UI (MENU)
-        print(">>> ANTES DO MENU")
-        cls.oHelper.SetLateralMenu(
-            "Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras"
-        )
-
+        # Acessa a rotina principal
+        cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')
-        print(">>> DEPOIS DO MENU")
+        
+        if cls.oHelper.IfExists("Confirmar"):
+            cls.oHelper.SetButton('Confirmar')
+            
+        print(">>> Rotina 'Novo Fluxo de Compras' aberta com sucesso!")
 
     # ==================================================
     # TESTE
     # ==================================================
     def test_consultar_necessidade_compra(self):
 
-        # Evidência inicial
-        self.oHelper.Screenshot("Tela_Inicial_Necessidade_Compra")
+        if self.oHelper.IfExists("Moedas"):
+                    self.oHelper.SetButton("Confirmar")
 
-        # ✅ Exemplo: clicar em botão PO-UI
-        self.oHelper.SetButton("Pesquisar")
+        # 1. Interage diretamente com o menu lateral interno em PO UI da rotina
+        self.oHelper_Poui.ClickMenu('Necessidade de Compra')
         
+        # 2. Insira aqui as ações/preenchimentos dentro da tela de Necessidade de Compra
+        self.oHelper_Poui.InputValue('Filtro', '000001')
 
-        # ✅ Exemplo: validar campo PO-UI
-        self.oHelper.CheckResult(
-            campo="Filial",
-            user_value=self.filial,
-            po_component="po-input"
-        )
+        
+        # Usa o ClickButton do Poui apontando para a legenda
+        self.oHelper_Poui.ClickButton('Compra Centralizada')
 
-        # ✅ Exemplo: interação com tabela PO-UI
-        self.oHelper.ClickTable(
-            columns="Status",
-            values="Aberto"
-        )
+        # titulos de cabeçalho 
+        self.oHelper_Poui.POtabs(label='Em Aberto')
 
-        self.oHelper.Screenshot("Resultado_Pesquisa")
-
-        # ✅ Exemplo: clicar ação da linha
-        self.oHelper.ClickTable(
-            columns="Status",
-            values="Aberto",
-            click_cell="Detalhar"
-        )
-
-        self.oHelper.WaitProcessing()
-        self.oHelper.Screenshot("Detalhe_Necessidade")
-
-        # ✅ Validação final
+        # Marca o checkbox da linha onde a Solicitação é '000001'
+        self.oHelper_Poui.ClickTable(columns='Solicitação', values='000001', checkbox=True)
+        
+        # 3. Validação do resultado do teste
         self.oHelper.AssertTrue()
 
     # ==================================================
@@ -92,9 +74,14 @@ class TestNecessidadeCompraPOUI(unittest.TestCase):
     # ==================================================
     @classmethod
     def tearDownClass(cls):
-        logging.info("Encerrando teste PO-UI")
-        cls.oHelper.Finish()
+        # Finaliza os processos do navegador
+        cls.oHelper_Poui.TearDown()
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
+if __name__ == '__main__':
+    suite = unittest.TestSuite()
+    # Adiciona a classe e o nome exato da função de teste
+    suite.addTest(TestNecessidadeCompraPOUI('test_consultar_necessidade_compra'))
+    
+    runner = unittest.TextTestRunner(verbosity=2)
+    runner.run(suite)

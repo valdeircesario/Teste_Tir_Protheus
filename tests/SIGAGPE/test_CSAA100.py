@@ -19,9 +19,9 @@ class CSAA100(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Descrição = 'GESTÃO DE PESSOAS'
+        cls.Descrição = 'GESTÃO CONTAIL'
         cls.CentroCusto = '003'
-        cls.DepartamentoSuper = '000000002'
+        cls.DepartamentoSuper = '000000003'
         cls.Responsavel = '000012'
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
@@ -38,36 +38,35 @@ class CSAA100(unittest.TestCase):
             self.oHelper.CheckResult('Dolar', '0,0000')
             self.oHelper.SetButton('Confirmar')
 
-        self.oHelper.WaitShow("Departamento")
         
-        self.oHelper.SetButton("Incluir")
-        sleep(1)
-        self.oHelper.WaitShow("Departamento - INCLUIR")
-        self.oHelper.SetValue("QB_DESCRIC", self.Descrição)
-        self.oHelper.SetValue("QB_CC", self.CentroCusto)
-        self.oHelper.SetValue("QB_DEPSUP", self.DepartamentoSuper)
-        self.oHelper.SetValue("QB_MATRESP", self.Responsavel)
+        self.oHelper.WaitShow("Departamento")
 
+
+        print('--------------------Incluir')  
+        self.oHelper.SetButton("Incluir")
+        self.oHelper.WaitShow("Departamento - INCLUIR")
+        self.oHelper.SetValue("QB_DESCRIC", self.Descrição,check_value=False)
+        self.oHelper.SetValue("QB_CC", self.CentroCusto,check_value=False)
+        self.oHelper.SetValue("QB_DEPSUP", self.DepartamentoSuper,check_value=False)
+        self.oHelper.SetValue("QB_MATRESP", self.Responsavel,check_value=False)
         self.oHelper.SetButton("Salvar")
         sleep(1)
         self.oHelper.SetButton("Cancelar")
-        sleep(1)
         self.oHelper.WaitShow("Departamento")
 
         #-------------------------
         # Visualização da inclusão
         #-------------------------
+        print('--------------------Visualizar')
         self.oHelper.SetButton("Visualizar")
         self.oHelper.WaitShow("Departamento - VISUALIZAR")
         self.oHelper.CheckResult("QB_DESCRIC", self.Descrição)
         self.oHelper.CheckResult("QB_CC", self.CentroCusto)
         self.oHelper.CheckResult("QB_DEPSUP", self.DepartamentoSuper)
         self.oHelper.CheckResult("QB_MATRESP", self.Responsavel)
-
         self.oHelper.SetButton("Confirmar")
-        sleep(1)
-
         self.oHelper.WaitShow("Departamento")
+        
 
         self.oHelper.AssertTrue()
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")

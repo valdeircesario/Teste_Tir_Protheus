@@ -15,20 +15,20 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class GPEA580_CTRL_F9(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
-        self.Matricula = '227884'
-        self.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")
+        cls.filial = '01'
+        cls.Matricula = '00123'
+        cls.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
         
-        self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
-        #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.
+        cls.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
+        cls.oHelper.SetButton('Confirmar')
 
         
 
@@ -54,55 +54,43 @@ class GPEA580_CTRL_F9(unittest.TestCase):
         #------------------------------------
         # PESQUISAR O FUNCIONARIO PARA O CALCULO
         #------------------------------------ 
+        print('--------------------------Pesquisar funcionario')
         self.oHelper.SearchBrowse(self.filial + self.Matricula, key="Filial+matricula+Nome")
-        sleep(0.5)
-        self.oHelper.Screenshot("ctrlF9_06.png")
-        sleep(1) 
+        self.oHelper.Screenshot("ctrlF9_02.png")
         self.oHelper.ScrollGrid(column="Matricula", match_value = self.Matricula, grid_number=1)
-        sleep
-        self.oHelper.Screenshot("ctrlF9_07.png")
+        self.oHelper.Screenshot("ctrlF9_03.png")
         
         #-----------------------
         # CALCULAR FOLHA CTRL+F9
         #-----------------------
-        
+        print('--------------------------calcular com ctrl+f9')
         sc = SeleniumCommands(self.oHelper._Webapp__webapp.driver)
         sc.send_key('body',Keys.CONTROL+Keys.F9)
         
    
-        if self.oHelper.IfExists("Deseja processar o contracheques do funcionario(a):"):
-            self.oHelper.Screenshot("ctrlF9_08.png")
-            self.oHelper.SetButton('Sim')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
+        self.oHelper.WaitShow("Deseja processar o contracheques do funcionario(a):")
+        self.oHelper.Screenshot("ctrlF9_04.png")
+        self.oHelper.SetButton('Sim')
             
-        self.oHelper.Screenshot("ctrlF9_10.png")
-        sleep(90)
-        self.oHelper.Screenshot("ctrlF9_11.png")
-        sleep(90) 
+        self.oHelper.Screenshot("ctrlF9_05.png")
+        self.oHelper.WaitProcessing('Processando')
+        self.oHelper.Screenshot("ctrlF9_06.png")
         self.oHelper.SetButton('x')
         sleep(2)
         
         #---------------------
         # CONSULTAR CALCULO 
         #---------------------
-        
+        print('--------------------------Consultar calculo')
         self.oHelper.SetButton('Alterar')   
-        sleep(5) 
         self.oHelper.WaitShow("Lançamentos por Funcionário")        
-        self.oHelper.Screenshot("ctrlF9_12.png")
-        sleep(5) 
-        self.oHelper.SetKey("F7")
-        sleep(1)
-        self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "120",          grid_number=1)
-        self.oHelper.Screenshot("ctrlF9_13.png")
+        self.oHelper.Screenshot("ctrlF9_07.png")
+        self.oHelper.SetKey("F7",wait_change=False)
+        self.oHelper.ScrollGrid(column="Codigo Verba", match_value= "120")
+        self.oHelper.Screenshot("ctrlF9_08.png")
         self.oHelper.LoadGrid()
-        sleep(1)
         self.oHelper.SetButton('Confirmar') 
-        sleep(0.5) 
         self.oHelper.SetButton("Salvar")
-        sleep(2)
         self.oHelper.WaitShow("Lançamentos por Período")
         self.oHelper.AssertTrue()
        
@@ -116,8 +104,8 @@ class GPEA580_CTRL_F9(unittest.TestCase):
             
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':

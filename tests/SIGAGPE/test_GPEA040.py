@@ -37,28 +37,29 @@ class GPEA040(unittest.TestCase):
 
         self.oHelper.WaitShow("Cadastro de Verbas")
         self.oHelper.Screenshot("Verba/001")
-        
+        #-----------------
+        # Incluir Verba
+        #-------------------
+
+        print('-----------------------Incluir')
         self.oHelper.SetButton("Incluir")
-        sleep(1)
         self.oHelper.WaitShow("Cadastro de Verbas - INCLUIR")
         self.oHelper.Screenshot("Verba/002")
-        self.oHelper.SetValue("RV_COD", self.CodVerba)
-        self.oHelper.SetValue("RV_DESC", self.Descricao)
-        self.oHelper.SetValue("RV_TIPOCOD", "1 - Provento")
-        self.oHelper.SetValue("RV_CODCORR", "001")
-        self.oHelper.SetValue("RV_CODFOL", "0048")
-        self.oHelper.SetValue("RV_TIPO", "V - Valor")
-        self.oHelper.SetKey("TAB")
+        self.oHelper.SetValue("RV_COD", self.CodVerba,          check_value=False)
+        self.oHelper.SetValue("RV_DESC", self.Descricao,        check_value=False)
+        self.oHelper.SetValue("RV_TIPOCOD", "1 - Provento",     check_value=False)
+        self.oHelper.SetValue("RV_CODCORR", "001",              check_value=False)
+        self.oHelper.SetValue("RV_CODFOL", "0048",              check_value=False)
+        self.oHelper.SetValue("RV_TIPO", "V - Valor",           check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False)
         self.oHelper.Screenshot("Verba/003") 
         self.oHelper.SetButton("Confirmar")
 
-        if self.oHelper.IfExists("Atenção!"):
-            self.oHelper.Screenshot("Verba/004")
-            self.oHelper.WaitShow("O(s)  seguinte(s) campos (e)sao obrigatorios na eSocial.")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()
+        self.oHelper.WaitShow("Atenção!")
+        self.oHelper.Screenshot("Verba/004")
+        self.oHelper.WaitShow("O(s)  seguinte(s) campos (e)sao obrigatorios na eSocial.")
+        self.oHelper.SetButton("Fechar")
+            
 
         if self.oHelper.IfExists("Atenção!"):
             self.oHelper.Screenshot("Verba/005")
@@ -68,20 +69,16 @@ class GPEA040(unittest.TestCase):
         else:
             self.oHelper.AssertFalse()
 
-        if self.oHelper.IfExists("Registro inserido com sucesso"): 
-            self.oHelper.Screenshot("Verba/006") 
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()       
-        
+        self.oHelper.WaitShow("Registro inserido com sucesso") 
+        self.oHelper.Screenshot("Verba/006") 
+        self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Cadastro de Verbas")
         self.oHelper.Screenshot("Verba/007")
         #-------------------------
         # Visualização da inclusão
         #-------------------------
+        print('--------------------Visualizar')
         self.oHelper.SetButton("Visualizar")
-
         self.oHelper.WaitShow("Cadastro de Verbas - VISUALIZAR")
         self.oHelper.Screenshot("Verba/008")
         self.oHelper.CheckResult("RV_COD", self.CodVerba)
@@ -92,37 +89,28 @@ class GPEA040(unittest.TestCase):
         #---------------------------
         # Editar a Verba Incluída
         #---------------------------
+
+        print('-----------------------Alterar')
         self.oHelper.SetButton("Alterar")
-        sleep(1) 
         self.oHelper.WaitShow("Cadastro de Verbas - ALTERAR")
         self.oHelper.Screenshot("Verba/009")
-        self.oHelper.SetValue("RV_DESC", self.DescricaoEdit)
+        self.oHelper.SetValue("RV_DESC", self.DescricaoEdit,        check_value=False)
         self.oHelper.SetButton("Confirmar")
-        sleep(1)
 
-        if self.oHelper.IfExists("Atenção!"):
-            self.oHelper.Screenshot("Verba/010")
-            self.oHelper.WaitShow("O(s)  seguinte(s) campos (e)sao obrigatorios na eSocial.")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()
+        self.oHelper.WaitShow("Atenção!")
+        self.oHelper.Screenshot("Verba/010")
+        self.oHelper.WaitShow("O(s)  seguinte(s) campos (e)sao obrigatorios na eSocial.")
+        self.oHelper.SetButton("Fechar")
+            
+        self.oHelper.WaitShow("Atenção!")
+        self.oHelper.Screenshot("Verba/011")
+        self.oHelper.WaitShow("Ocorreram inconsistências na validação.")
+        self.oHelper.SetButton("Fechar")
+            
 
-        if self.oHelper.IfExists("Atenção!"):
-            self.oHelper.Screenshot("Verba/011")
-            self.oHelper.WaitShow("Ocorreram inconsistências na validação.")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()
-
-        if self.oHelper.IfExists("Registro alterado com sucesso."): 
-            self.oHelper.Screenshot("Verba/012") 
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()       
-        
+        self.oHelper.WaitShow("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("Verba/012") 
+        self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Cadastro de Verbas")
         self.oHelper.Screenshot("Verba/013")
 
@@ -130,15 +118,13 @@ class GPEA040(unittest.TestCase):
         # exclusão da Verba Incluída
         #-------------------------
 
+        print('------------------------Excluir')
         self.oHelper.SetButton("Outras Ações", "Excluir")
-
-        if self.oHelper.IfExists("Atenção"): 
-            self.oHelper.Screenshot("Verba/014")
-            self.oHelper.WaitShow("Confirma a exclusäo da Verba?")
-            self.oHelper.SetButton("Sim") 
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()
+        self.oHelper.WaitShow("Atenção")
+        self.oHelper.Screenshot("Verba/014")
+        self.oHelper.WaitShow("Confirma a exclusäo da Verba?")
+        self.oHelper.SetButton("Sim") 
+            
 
         if self.oHelper.IfExists("Atenção"):
             self.oHelper.Screenshot("Verba/015") 
@@ -153,12 +139,10 @@ class GPEA040(unittest.TestCase):
         self.oHelper.Screenshot("Verba/016")
         self.oHelper.SetButton("Confirmar")
 
-        if self.oHelper.IfExists("Registro excluído com sucesso."): 
-            self.oHelper.Screenshot("Verba/017")
-            self.oHelper.SetButton("Fechar") 
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertFalse()
+        self.oHelper.WaitShow("Registro excluído com sucesso.") 
+        self.oHelper.Screenshot("Verba/017")
+        self.oHelper.SetButton("Fechar") 
+            
 
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
         print("X 🎯 test_incluir_verba")

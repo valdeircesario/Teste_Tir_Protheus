@@ -63,85 +63,84 @@ class GPEA010(unittest.TestCase):
 
         self.oHelper.WaitShow("Cadastro de Funcionários")
         self.oHelper.Screenshot('Funcionario/GPEA010_01')
-        
+        # --------------------
+        # Incluir
+        #---------------------
+
+        print('--------------------Incluir')
         self.oHelper.SetButton("Incluir")
-        sleep(1)
         self.oHelper.WaitShow("Cadastro de Funcionários")
         self.oHelper.Screenshot('Funcionario/GPEA010_02')
-
-        self.oHelper.SetValue("RA_NOME", self.Nome, check_value = False)
-        self.oHelper.SetValue("RA_MAE", self.Mãe, check_value = False)
-        self.oHelper.SetValue("RA_PAI", self.Pai)
-        self.oHelper.SetValue("Sexo", self.Sexo)
+        self.oHelper.SetValue("RA_NOME", self.Nome,         check_value = False)
+        self.oHelper.SetValue("RA_MAE", self.Mãe,           check_value = False)
+        self.oHelper.SetValue("RA_PAI", self.Pai,           check_value=False)
+        self.oHelper.SetValue("Sexo", self.Sexo,            check_value=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_03')
-        self.oHelper.SetValue("Raca/Cor", "2 - Branca")
-        self.oHelper.SetValue("RA_NASC", self.Nacimento)
-        self.oHelper.SetValue("RA_ESTCIVI", self.EstadoCivil)
-        self.oHelper.SetValue("RA_CPAISOR", "01058")
-        self.oHelper.SetValue("RA_NACIONA", "10")
-        self.oHelper.SetValue("RA_NATURAL", "DF")
-        self.oHelper.SetValue("RA_CODMUNN", "00108")
+        self.oHelper.SetValue("Raca/Cor", "2 - Branca",     check_value=False)
+        self.oHelper.SetValue("RA_NASC", self.Nacimento,    check_value=False)
+        self.oHelper.SetValue("RA_ESTCIVI",self.EstadoCivil,check_value=False)
+        self.oHelper.SetValue("RA_CPAISOR", "01058",        check_value=False)
+        self.oHelper.SetValue("RA_NACIONA", "10",           check_value=False)
+        self.oHelper.SetValue("RA_NATURAL", "DF",           check_value=False)
+        self.oHelper.SetValue("RA_CODMUNN", "00108",        check_value=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_04')
-        self.oHelper.SetValue("RA_APELIDO", self.Apelido)
-        self.oHelper.SetValue("RA_GRINRAI", "55")
-        self.oHelper.SetValue("RA_EMAIL", self.Email)
-
-        self.oHelper.SetKey("TAB") 
+        self.oHelper.SetValue("RA_APELIDO", self.Apelido,   check_value=False)
+        self.oHelper.SetValue("RA_GRINRAI", "55",           check_value=False)
+        self.oHelper.SetValue("RA_EMAIL", self.Email,       check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False) 
 
         #-----------------------
         # Acesso a aba Funcionais
         #-----------------------
-
+        print('---------------------Dados Funcionais')
         self.oHelper.ClickFolder("Funcionais")
         self.oHelper.Screenshot('Funcionario/GPEA010_05')
-
-        self.oHelper.SetValue("RA_CC", self.CentroCusto)
-        self.oHelper.SetValue("RA_ADMISSA", DateSystem)
-        self.oHelper.SetValue("RA_TIPOADM", "1B")
-        self.oHelper.SetValue("RA_HRSMES", "180", check_value = False)
-        self.oHelper.SetValue("RA_PROCES", "00001", check_value = False)
-        self.oHelper.SetValue("RA_CATFUNC", "M")
+        self.oHelper.SetValue("RA_CC", self.CentroCusto,      check_value=False)
+        self.oHelper.SetValue("RA_ADMISSA", DateSystem,       check_value=False)
+        self.oHelper.SetValue("RA_TIPOADM", "1B",             check_value=False)
+        self.oHelper.SetValue("RA_HRSMES", "180",             check_value = False)
+        self.oHelper.SetValue("RA_PROCES", "00001",           check_value = False)
+        self.oHelper.SetValue("RA_CATFUNC", "M",              check_value=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_06')
-        self.oHelper.SetValue("RA_CODFUNC", "00011")
-        self.oHelper.SetValue("RA_PGCTSIN", "N")
-        self.oHelper.SetValue("RA_TIPOALT", "001")
-        self.oHelper.SetValue("Ct.T.Parcial", "2 - Não")
-        self.oHelper.SetValue("RA_SINDICA", "01")
-        self.oHelper.SetValue("RA_TIPOPGT", "M")
+        self.oHelper.SetValue("RA_CODFUNC", "00011",          check_value=False)
+        self.oHelper.SetValue("RA_PGCTSIN", "N",              check_value=False)
+        self.oHelper.SetValue("RA_TIPOALT", "001",            check_value=False)
+        self.oHelper.SetValue("Ct.T.Parcial", "2 - Não",      check_value=False)
+        self.oHelper.SetValue("RA_SINDICA", "01",             check_value=False)
+        self.oHelper.SetValue("RA_TIPOPGT", "M",              check_value=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_07')
-        self.oHelper.SetValue("RA_VIEMRAI", "15")
-        self.oHelper.SetValue("RA_CARGO", "0002")
-        self.oHelper.SetValue("RA_CODTIT", "01")
-        self.oHelper.SetValue("RA_DEPTO", "000000004", check_value = False)
-        self.oHelper.SetValue("Comp. Sábado", "2 - Não", check_value = False)
-        self.oHelper.SetKey("TAB") 
+        self.oHelper.SetValue("RA_VIEMRAI", "15",             check_value=False)
+        self.oHelper.SetValue("RA_CARGO", "0002",             check_value=False)
+        self.oHelper.SetValue("RA_CODTIT", "01",              check_value=False)
+        self.oHelper.SetValue("RA_DEPTO", "000000004",        check_value = False)
+        self.oHelper.SetValue("Comp. Sábado", "2 - Não",      check_value = False)
+        self.oHelper.SetKey("TAB",wait_change=False) 
         self.oHelper.Screenshot('Funcionario/GPEA010_08')
 
         #-----------------------
         # Acesso a aba Documentos
         #-----------------------
-
+        print('--------------Numeros de documentos')
         self.oHelper.ClickFolder("No.documentos")
         self.oHelper.Screenshot('Funcionario/GPEA010_09')
-
-        self.oHelper.SetValue("RA_CIC", self.CPF)
-        self.oHelper.SetValue("RA_PIS", self.Pis)
-        self.oHelper.SetValue("RA_RG", self.RG)
-        self.oHelper.SetValue("RA_DTRGEXP", self.DataEmisao)#
-        self.oHelper.SetValue("RA_RGUF", "DF")
+        self.oHelper.SetValue("RA_CIC", self.CPF,               check_value=False)
+        self.oHelper.SetValue("RA_PIS", self.Pis,               check_value=False)
+        self.oHelper.SetValue("RA_RG", self.RG,                 check_value=False)
+        self.oHelper.SetValue("RA_DTRGEXP", self.DataEmisao,    check_value=False)#
+        self.oHelper.SetValue("RA_RGUF", "DF",                  check_value=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_10')
-        self.oHelper.SetValue("RA_RGORG", "SSP")
-        self.oHelper.SetValue("RA_NUMCP", "458795")
-        self.oHelper.SetValue("RA_SERCP", "02")
-        self.oHelper.SetValue("RA_UFCP", "DF")
-        self.oHelper.SetValue("RA_DTCPEXP", self.DataEmisao)
+        self.oHelper.SetValue("RA_RGORG", "SSP",                check_value=False)
+        self.oHelper.SetValue("RA_NUMCP", "458795",             check_value=False)
+        self.oHelper.SetValue("RA_SERCP", "02",                 check_value=False)
+        self.oHelper.SetValue("RA_UFCP", "DF",                  check_value=False)
+        self.oHelper.SetValue("RA_DTCPEXP", self.DataEmisao,    check_value=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_11')
-
-        self.oHelper.SetKey("TAB")
+        self.oHelper.SetKey("TAB",wait_change=False)
 
         #-------------------------
         # Acesso a aba Benefícios
         #-------------------------
+        print('--------------------Beneficios')
         self.oHelper.ClickFolder("Beneficios")
         sleep(1)
 
@@ -150,20 +149,18 @@ class GPEA010(unittest.TestCase):
         #-----------------------
         # Acesso a aba Relogios Registrador
         #-----------------------
-
+        print('---------------------Relogio Registrador')
         self.oHelper.ClickFolder("Relógio Registrador")
-        sleep(1)
-        self.oHelper.SetValue("RA_TNOTRAB", "02")
-        self.oHelper.SetKey("TAB")
-        self.oHelper.SetValue("RA_CRACHA", "123458")
-
-        self.oHelper.SetKey("TAB")
+        self.oHelper.SetValue("RA_TNOTRAB", "02",       check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False)
+        self.oHelper.SetValue("RA_CRACHA", "123458",    check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_12')
 
         #-----------------------
         # Acesso a aba de Outras Informações
         #-----------------------
-
+        print('----------------------Outras Informações')
         self.oHelper.ClickFolder("Outras Informacoes")
         sleep(1)
         # Sem outras informações, apenas acesso para teste
@@ -171,7 +168,7 @@ class GPEA010(unittest.TestCase):
         #-------------------------
         # Acesso a aba de Cargo e Salarios
         #-------------------------
-
+        print('-------------------------Cargos e Salarios')
         self.oHelper.ClickFolder("Cargos e Salarios")
         sleep(1)
         # Sem cargos e salarios, apenas acesso para teste
@@ -179,33 +176,32 @@ class GPEA010(unittest.TestCase):
         #-------------------------
         # Acesso a aba de Endereço
         #-------------------------
-
+        print('-----------------------Endereço')
         self.oHelper.ClickFolder("Endereço")
-        sleep(1)
         self.oHelper.Screenshot('Funcionario/GPEA010_13')
-        self.oHelper.SetValue("Tip.Endereço", "2 - Residencial")
+        self.oHelper.SetValue("Tip.Endereço", "2 - Residencial",    check_value=False)
 
-        self.oHelper.SetValue("RA_LOGRDSC", self.Logradouro, check_value = False)
-        self.oHelper.SetValue("RA_LOGRNUM", self.Numero, check_value = False)
-        self.oHelper.SetValue("RA_ENDEREC", self.Endereco, check_value = False)
-        self.oHelper.SetValue("RA_NUMENDE", "CENTRO", check_value = False)
+        self.oHelper.SetValue("RA_LOGRDSC", self.Logradouro,        check_value = False)
+        self.oHelper.SetValue("RA_LOGRNUM", self.Numero,            check_value = False)
+        self.oHelper.SetValue("RA_ENDEREC", self.Endereco,          check_value = False)
+        self.oHelper.SetValue("RA_NUMENDE", "CENTRO",               check_value = False)
         self.oHelper.Screenshot('Funcionario/GPEA010_14')
-        self.oHelper.SetValue("RA_COMPLEM", self.Complemento, check_value = False)
-        self.oHelper.SetValue("RA_BAIRRO", self.Bairro, check_value = False)
-        self.oHelper.SetValue("RA_ESTADO", "DF")
-        self.oHelper.SetValue("RA_CODMUN", "00108")
-        self.oHelper.SetValue("RA_MUNICIP", "BRASILIA")
-        self.oHelper.SetValue("RA_CEP", self.CEP)
-        self.oHelper.SetValue("RA_CEPCXPO", self.CEP)
-        self.oHelper.SetValue("RA_DDDFONE", self.DDDFONE)
-        self.oHelper.SetValue("RA_TELEFON", self.TELEFON)
-        self.oHelper.SetKey("TAB")
+        self.oHelper.SetValue("RA_COMPLEM", self.Complemento,       check_value = False)
+        self.oHelper.SetValue("RA_BAIRRO", self.Bairro,             check_value = False)
+        self.oHelper.SetValue("RA_ESTADO", "DF",                    check_value=False)
+        self.oHelper.SetValue("RA_CODMUN", "00108",                 check_value=False)
+        self.oHelper.SetValue("RA_MUNICIP", "BRASILIA",             check_value=False)
+        self.oHelper.SetValue("RA_CEP", self.CEP,                   check_value=False)
+        self.oHelper.SetValue("RA_CEPCXPO", self.CEP,               check_value=False)
+        self.oHelper.SetValue("RA_DDDFONE", self.DDDFONE,           check_value=False)
+        self.oHelper.SetValue("RA_TELEFON", self.TELEFON,           check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False)
         self.oHelper.Screenshot('Funcionario/GPEA010_15')
 
         #-------------------------
         # Acessar a aba de Estrangeiros
         #-------------------------
-
+        print('---------------------Estrangeiro')
         self.oHelper.ClickFolder("Estrangeiro")
         sleep(1)
         # Sem dados de estrangeiro, apenas acesso para teste
@@ -213,7 +209,7 @@ class GPEA010(unittest.TestCase):
         #-------------------------
         # Acessar a aba Adicionais
         #-------------------------
-
+        print('-----------------------Adicionais')
         self.oHelper.ClickFolder("Adicionais")
         sleep(1)
         # Sem dados adicionais, apenas acesso para teste
@@ -221,6 +217,7 @@ class GPEA010(unittest.TestCase):
         #-------------------------
         # Acessar a aba de Outros
         #-------------------------
+        print('---------------------Outros')
         self.oHelper.ClickFolder("Outros")
         sleep(1)
         # Sem dados adicionais, apenas acesso para teste
@@ -229,17 +226,12 @@ class GPEA010(unittest.TestCase):
         #-------------------------
         # Salvar o cadastro do funcionário
         #-------------------------
-
+        print('--------------------Voltar ao cadastro e salvar')
         self.oHelper.ClickFolder("Cadastrais")
-        sleep(0.5)
         self.oHelper.Screenshot('Funcionario/GPEA010_16')
-
         self.oHelper.SetButton("Salvar")
-
-        sleep(0.5)
         self.oHelper.Screenshot('Funcionario/GPEA010_17')
         self.oHelper.CheckHelp(text="CAMPO NÃO PREENCHIDO", button="Fechar")
-        sleep(3)
         self.oHelper.Screenshot('Funcionario/GPEA010_18')
        
         

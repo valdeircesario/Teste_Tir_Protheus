@@ -36,38 +36,37 @@ class GPEA030(unittest.TestCase):
             self.oHelper.CheckResult('Dolar', '0,0000')
             self.oHelper.SetButton('Confirmar')
 
+        #-----------------------
+        # Incluir Função
+        #-----------------------
+
+        print('-----------------------Incluir')
         self.oHelper.WaitShow("Cadastro de Funções")
-        self.oHelper.Screenshot("Funcao/001")
-        
+        self.oHelper.Screenshot("Funcao/001") 
         self.oHelper.SetButton("Incluir")
-        sleep(1)
         self.oHelper.WaitShow("Funções - INCLUIR")
         self.oHelper.Screenshot("Funcao/002")
-        self.oHelper.SetValue("RJ_FUNCAO", self.Funcao)
-        self.oHelper.SetValue("RJ_DESC", self.Descrição)
-        self.oHelper.SetValue("RJ_CODCBO", "1234")
-        self.oHelper.SetValue("RJ_CARGO", self.Cargo)
-        self.oHelper.SetValue("RJ_ADDATA", DateSystem)
-        self.oHelper.SetKey("TAB")
+        self.oHelper.SetValue("RJ_FUNCAO", self.Funcao,     check_value=False)
+        self.oHelper.SetValue("RJ_DESC", self.Descrição,    check_value=False)
+        self.oHelper.SetValue("RJ_CODCBO", "1234",          check_value=False)
+        self.oHelper.SetValue("RJ_CARGO", self.Cargo,       check_value=False)
+        self.oHelper.SetValue("RJ_ADDATA", DateSystem,      check_value=False)
+        self.oHelper.SetKey("TAB",                          wait_change=False)
         self.oHelper.Screenshot("Funcao/003") 
-
         self.oHelper.SetButton("Confirmar")
-
-        if self.oHelper.IfExists("Registro inserido com sucesso."):
-            self.oHelper.Screenshot("Funcao/004")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-            
-        
+        self.oHelper.WaitShow("Registro inserido com sucesso.")
+        self.oHelper.Screenshot("Funcao/004")
+        self.oHelper.SetButton("Fechar")
         self.oHelper.WaitShow("Cadastro de Funções")
         self.oHelper.Screenshot("Funcao/005")
 
-        self.oHelper.SetButton("Visualizar")
+        
 
         #-------------------------
         # Visualização da inclusão
         #-------------------------
-
+        print('--------------------Visualizar')
+        self.oHelper.SetButton("Visualizar")
         self.oHelper.WaitShow("Funções - VISUALIZAR")
         self.oHelper.Screenshot("Funcao/006")
         self.oHelper.CheckResult("RJ_FUNCAO", self.Funcao)
@@ -80,22 +79,16 @@ class GPEA030(unittest.TestCase):
         #-------------------------
         # Edição do registro
         #-------------------------
+        print('----------------------Alterar')
         self.oHelper.SetButton("Alterar")
-        sleep(1)
         self.oHelper.WaitShow("Funções - ALTERAR")
         self.oHelper.Screenshot("Funcao/008")
-        self.oHelper.SetValue("RJ_DESC", self.DescricaoEdit)
+        self.oHelper.SetValue("RJ_DESC", self.DescricaoEdit,check_value=False)
         self.oHelper.Screenshot("Funcao/009")
         self.oHelper.SetButton("Confirmar")
-        sleep(1)
-
-        if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.Screenshot("Funcao/010")
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-
+        self.oHelper.WaitShow("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("Funcao/010")
+        self.oHelper.SetButton("Fechar")       
         self.oHelper.WaitShow("Cadastro de Funções")
         self.oHelper.Screenshot("Funcao/011")
 

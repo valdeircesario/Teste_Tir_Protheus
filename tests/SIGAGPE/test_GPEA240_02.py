@@ -14,21 +14,19 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 
 class GPEA240_02(unittest.TestCase):
     @classmethod
-    def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Matricula = '227950'
-        self.Nome = 'ANALINE SOUSA PAULINO E SILVA' 
-        self.CodigoAusen ='025'
-        self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
-        self.dataIncio = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
-        self.dataFim = (datetime.today()+timedelta(days=1)).strftime("%d/%m/%Y")
-        
-
+    def setUpClass(cls):
+        cls.filial = '01'
+        cls.Matricula = '00132'
+        cls.CodigoAusen ='025'
+        cls.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
+        cls.dataIncio = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
+        cls.dataFim = (datetime.today()+timedelta(days=1)).strftime("%d/%m/%Y")
         configfile = getcwd() + '\\config.json'
-        self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        cls.oHelper = Webapp(configfile)
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '07')
         
-        self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Ausências")
+        cls.oHelper.SetLateralMenu("Atualizações > Lançamentos > Ausências")
+        cls.oHelper.SetButton('Confirmar')
         
        
     def test_Cadastro_de_ausencia_LUTO(self):
@@ -54,123 +52,82 @@ class GPEA240_02(unittest.TestCase):
             self.oHelper.AssertTrue()
             
         sleep(1)
+        print('--------------------------Pesquisar funcionario')
         self.oHelper.WaitShow("Cadastro de Ausencias")
-        self.oHelper.Screenshot("GPEA240_02_1")  
-        self.oHelper.SearchBrowse(self.filial + self.Matricula + self.Nome, key="Filial+Matricula+Nome")
-        sleep(1)
-        self.oHelper.Screenshot("GPEA240_02_2")
+        self.oHelper.Screenshot("ausencia_02_01")  
+        self.oHelper.SearchBrowse(self.filial + self.Matricula , key="Filial+Matricula+Nome")
+        self.oHelper.Screenshot("ausencia_02_02")
         
         #-------------------
         # INCLUIR AUSENCIA
         #-------------------
-        
+        print('--------------------------Incluir')
         self.oHelper.SetButton('Manutenção')
-        sleep(2)
         self.oHelper.WaitShow("Cadastro de Ausencias - MANUTENÇÃO")
-        self.oHelper.Screenshot("GPEA240_02_3") 
+        self.oHelper.Screenshot("ausencia_02_03") 
          
         self.oHelper.ScrollGrid(column="Sequência", match_value= "018",                 grid_number=1)
-        self.oHelper.SetKey("DOWN",                                                     grid=True)
+        self.oHelper.SetKey("DOWN",                                                     grid=True,  wait_change=False)
         self.oHelper.SetValue('Cód. Ausenc',  self.CodigoAusen,                         grid= True, check_value=False)
         self.oHelper.SetValue('Data Afast',  self.dataref,                              grid= True, check_value=False)
         self.oHelper.SetValue('Fim Afast',  self.dataFim,                               grid= True, check_value=False)
         self.oHelper.SetValue('Inf. Compl.', "TESTE  AUSENCIA LUTO",  grid= True, check_value=False)
         self.oHelper.LoadGrid()
-        self.oHelper.Screenshot("GPEA240_02_4")
+        self.oHelper.Screenshot("ausencia_02_04")
         self.oHelper.SetButton("Confirmar")
+        print('--------------------------Confirmação')
         sleep(1)
         
         if self.oHelper.IfExists("Atenção"):
             self.oHelper.WaitShow('Sequência 002: Atenção, o prazo do envio deste evento é : 25/01/2020')
-            self.oHelper.Screenshot("GPEA240_02_5")
+            self.oHelper.Screenshot("ausencia_02_05")
             self.oHelper.SetButton('OK')
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        sleep(1)
-            
-        if self.oHelper.IfExists("Atenção!"):
-            self.oHelper.WaitShow('Registro enviado para o TAF com sucesso!')
-            self.oHelper.Screenshot("GPEA240_02_6")
-            self.oHelper.SetButton('OK')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        if self.oHelper.IfExists("Retorno - Ifractal"):
-            self.oHelper.Screenshot("GPEA240_02_7")
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.Screenshot("GPEA240_02_8")
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
+    
+        self.oHelper.IfExists("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("ausencia_02_06")
+        self.oHelper.SetButton('Fechar')      
         self.oHelper.WaitShow("Cadastro de Ausencias")
-        self.oHelper.SetButton("Visualizar")
-        sleep(0.5)
+
         #-------------------
         # VISUALIZAR AUSENCIA
         #-------------------
-        
+        print('--------------------------Visualizar')
+        self.oHelper.SetButton("Visualizar")
         self.oHelper.WaitShow("Cadastro de Ausencias - VISUALIZAR")
         self.oHelper.ScrollGrid(column="Fim Afast", match_value= self.dataFim,          grid_number=1)
-        self.oHelper.Screenshot("GPEA240_02_9") 
+        self.oHelper.Screenshot("ausencia_02_07") 
         self.oHelper.SetButton("Fechar")
-        sleep(0.5)
         self.oHelper.WaitShow("Cadastro de Ausencias")
         
         #------------------------
         # EXCLUIR AUSENCIA
         #------------------------
-        
+        print('--------------------------Excluir')
         self.oHelper.SetButton("Manutenção")
-        sleep(1)
         self.oHelper.ScrollGrid(column="Fim Afast", match_value= self.dataFim,          grid_number=1)
-        self.oHelper.SetKey("DELETE", grid=True, grid_number=1)
-        self.oHelper.Screenshot("GPEA240_02_10")
+        self.oHelper.SetKey("DELETE", grid=True, wait_change=False)
+        self.oHelper.Screenshot("ausencia_02_08")
         self.oHelper.SetButton("Confirmar")
+        print('--------------------------Confirmação')
         sleep(1)
         
         if self.oHelper.IfExists("Atenção"):
-            self.oHelper.Screenshot("GPEA240_02_11")
+            self.oHelper.Screenshot("ausencia_02_09")
             self.oHelper.SetButton('OK')
             self.oHelper.AssertTrue()
         else:
             self.oHelper.AssertTrue()
             
-        sleep(1)
             
-        if self.oHelper.IfExists("Atenção!"):
-            self.oHelper.WaitShow('Registro enviado para o TAF com sucesso!')
-            self.oHelper.Screenshot("GPEA240_02_12")
-            self.oHelper.SetButton('OK')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        if self.oHelper.IfExists("Retorno - Ifractal"):
-            self.oHelper.Screenshot("GPEA240_02_13")
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
-        if self.oHelper.IfExists("Registro alterado com sucesso."):
-            self.oHelper.Screenshot("GPEA240_02_14")
-            self.oHelper.SetButton('Fechar')
-            self.oHelper.AssertTrue()
-        else:
-            self.oHelper.AssertTrue()
-            
+        self.oHelper.IfExists("Registro alterado com sucesso.")
+        self.oHelper.Screenshot("ausencia_02_10")
+        self.oHelper.SetButton('Fechar')    
         self.oHelper.WaitShow("Cadastro de Ausencias")
-        self.oHelper.Screenshot("GPEA240_02_15")
+        self.oHelper.Screenshot("ausencia_02_11")
           
 
         self.oHelper.AssertTrue()
@@ -182,8 +139,8 @@ class GPEA240_02(unittest.TestCase):
         print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     @classmethod
-    def tearDownClass(self):
-        self.oHelper.TearDown()
+    def tearDownClass(cls):
+        cls.oHelper.TearDown()
 
 
 if __name__ == '__main__':

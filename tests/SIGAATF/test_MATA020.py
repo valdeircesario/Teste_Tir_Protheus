@@ -24,7 +24,7 @@ class MATA020(unittest.TestCase):
         cls.endereco = "QUADRA SHIN QI 1 CONJUNTO 8"
         cls.numero = '20'
         cls.bairro = "SETOR NORTE"
-        cls.cnpj = '93087344000160'
+        cls.cnpj = '73391799000168'
         cls.email = 'fornecedorteste@gmail.com' 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
@@ -43,7 +43,6 @@ class MATA020(unittest.TestCase):
             self.oHelper.CheckResult('Dolar', '0,0000')
             self.oHelper.SetButton('Confirmar')
         
-        sleep(5)
         self.oHelper.WaitShow("Fornecedores") 
         
         
@@ -53,48 +52,44 @@ class MATA020(unittest.TestCase):
         
              
         self.oHelper.Screenshot("FORNECEDORES_01")
+        print('-----------------------------Incluir')
         self.oHelper.SetButton("Incluir")
-        sleep(2) 
         self.oHelper.WaitShow("Fornecedores - Incluir")
-        self.oHelper.Screenshot("FORNECEDORES_02")   
-        self.oHelper.SetValue('A2_LOJA',"1542",                     check_value=False)
+        self.oHelper.Screenshot("FORNECEDORES_02") 
+        self.oHelper.SetValue('A2_COD',"1542",                      check_value=False)  
+        self.oHelper.SetValue('A2_LOJA',"10",                       check_value=False)
         self.oHelper.SetValue('A2_NOME',self.razaoSocial,           check_value=False)
-        self.oHelper.SetValue('A2_XOBS','TESTE',                    check_value=False)
         self.oHelper.SetValue('A2_NREDUZ',self.fantasia,            check_value=False)
         self.oHelper.SetValue('A2_END',self.endereco,               check_value=False)
-        self.oHelper.SetValue('A2_NR_END',self.numero,              check_value=False)
         self.oHelper.SetValue('A2_BAIRRO',self.bairro,              check_value=False)
         self.oHelper.SetValue('A2_EST','DF',                        check_value=False)
         self.oHelper.Screenshot("FORNECEDORES_03")
         self.oHelper.SetValue('A2_COD_MUN','00108',                 check_value=False)
         self.oHelper.SetValue('A2_MUN','BRASILIA',                  check_value=False)
         self.oHelper.SetValue('A2_CEP','70330040',                  check_value=False)
+        self.oHelper.SetValue('Tipo',"J - Juridico",                check_value=False)
         self.oHelper.SetValue('A2_CGC',self.cnpj,                   check_value=False)
         self.oHelper.SetValue('A2_DDI','55',                        check_value=False)
+        self.oHelper.SetValue('A2_DDD',"61",                        check_value=False)
+        self.oHelper.SetValue('A2_TEL',"98745212",                  check_value=False)
         self.oHelper.SetValue('A2_PAIS','105',                      check_value=False)
         self.oHelper.SetValue('A2_EMAIL',self.email,                check_value=False)
-        self.oHelper.Screenshot("FORNECEDORES_04")
-        
+        self.oHelper.Screenshot("FORNECEDORES_04")  
         
         self.oHelper.SetButton("Confirmar")
-        sleep(5)
-        if self.oHelper.IfExists("Registro inserido com sucesso"):
-            self.oHelper.Screenshot("FORNECEDORES_05")
-            self.oHelper.SetButton('Fechar')
-            
+        self.oHelper.WaitShow("Registro inserido com sucesso")
+        self.oHelper.Screenshot("FORNECEDORES_05")
+        self.oHelper.SetButton('Fechar')     
         self.oHelper.Screenshot("FORNECEDORES_06")    
-        sleep(5)
         
         #-----------------------
         # VISUALIZAR INCLUSÃO 
         #------------------------
         
-        
+        print('---------------------------------Visualizar')
         self.oHelper.SetButton("Visualizar")
-        sleep(2)
         self.oHelper.WaitShow("Fornecedores - Visualizar")
-        self.oHelper.Screenshot("FORNECEDORES_07")
-        
+        self.oHelper.Screenshot("FORNECEDORES_07")   
         self.oHelper.CheckResult('A2_NOME', self.razaoSocial)
         self.oHelper.CheckResult('A2_NREDUZ',self.fantasia)
         self.oHelper.CheckResult('A2_END',self.endereco)
@@ -102,20 +97,19 @@ class MATA020(unittest.TestCase):
         self.oHelper.CheckResult('A2_CEP','70330040')
         self.oHelper.CheckResult('A2_CGC',self.cnpj)
         self.oHelper.CheckResult('A2_EMAIL',self.email)
-        self.oHelper.Screenshot("FORNECEDORES_08")
-        
+        self.oHelper.Screenshot("FORNECEDORES_08")    
         self.oHelper.SetButton("Fechar")
+        self.oHelper.WaitShow("Fornecedores")
         
         #-------------------
         # EDITAR FORNECEDOR
         #-------------------
         
-        
+        print('---------------------------------Aterar')
         self.oHelper.SetButton("Alterar")
         self.oHelper.WaitShow("Fornecedores - Alterar")
         self.oHelper.Screenshot("FORNECEDORES_09")
         self.oHelper.SetValue('A2_NOME',self.razaoSocialEdt,           check_value=False)
-        self.oHelper.SetValue('A2_XOBS','TESTE EDIT',                    check_value=False)
         self.oHelper.SetValue('A2_NREDUZ',self.fantasiaEdt,            check_value=False)
         self.oHelper.Screenshot("FORNECEDORES_10")
         self.oHelper.SetButton("Confirmar")
@@ -123,35 +117,38 @@ class MATA020(unittest.TestCase):
         self.oHelper.Screenshot("FORNECEDORES_11")
         if self.oHelper.IfExists("Registro alterado com sucesso"):
             self.oHelper.SetButton('Fechar')
+
+        self.oHelper.WaitShow("Fornecedores")
+
             
         #------------------------
         # VISUALIZAR EDIÇÃO
         #------------------------
+        print('---------------------------------Visualizar Alteração')
         self.oHelper.SetButton("Visualizar")
-        sleep(2)
         self.oHelper.WaitShow("Fornecedores - Visualizar")
         self.oHelper.Screenshot("FORNECEDORES_12") 
         self.oHelper.CheckResult('A2_NOME', self.razaoSocialEdt)
         self.oHelper.CheckResult('A2_NREDUZ',self.fantasiaEdt)
         self.oHelper.Screenshot("FORNECEDORES_13")
         self.oHelper.SetButton("Fechar")
+        self.oHelper.WaitShow("Fornecedores")
         
         #--------------------
         # EXCLUIR FORNECEDOR
         #--------------------
         
         
-        
+        print('---------------------------------Excluir')
         self.oHelper.SetButton("Outras Ações","Excluir")
-        sleep(5)
         self.oHelper.Screenshot("FORNECEDORES_14")
         self.oHelper.WaitShow("Tem certeza que deseja excluir o item abaixo?")
         self.oHelper.SetButton("Confirmar")
-        sleep(35)
         
-        if self.oHelper.IfExists("Registro excluído com sucesso"):
-            self.oHelper.Screenshot("FORNECEDORES_15")
-            self.oHelper.SetButton('Fechar')
+        self.oHelper.WaitShow("Registro excluído com sucesso")
+        self.oHelper.Screenshot("FORNECEDORES_15")
+        self.oHelper.SetButton('Fechar')
+        self.oHelper.WaitShow("Fornecedores")
         
         
         self.oHelper.AssertTrue()

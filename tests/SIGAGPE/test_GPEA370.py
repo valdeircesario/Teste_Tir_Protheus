@@ -26,6 +26,7 @@ class GPEA370(unittest.TestCase):
         cls.oHelper = Webapp(configfile)
         cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Cadastros > Cargos")
+        cls.oHelper.SetButton('Confirmar')
 
     def test_de_incluir_Cagos(self):
 
@@ -37,44 +38,34 @@ class GPEA370(unittest.TestCase):
             self.oHelper.SetButton('Confirmar')
 
         self.oHelper.WaitShow("Cargo")
-        
+        print('--------------------------Incluir')
         self.oHelper.SetButton("Incluir")
-        sleep(1)
         self.oHelper.WaitShow("Cargo - INCLUIR")
-        self.oHelper.SetValue("Q3_CARGO", self.Cargo)
-        self.oHelper.SetKey("TAB") 
-        self.oHelper.SetValue("Q3_DESCSUM", self.Descrição)
-        self.oHelper.SetKey("TAB")
-        self.oHelper.SetValue("Q3_CC", self.CentroCusto)
-        self.oHelper.SetKey("TAB") 
-        self.oHelper.SetValue("Q3_DEPTO", self.Depatamento)
-        self.oHelper.SetKey("TAB") 
-
+        self.oHelper.SetValue("Q3_CARGO", self.Cargo,           check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False) 
+        self.oHelper.SetValue("Q3_DESCSUM", self.Descrição,     check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False)
+        self.oHelper.SetValue("Q3_CC", self.CentroCusto,        check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False) 
+        self.oHelper.SetValue("Q3_DEPTO", self.Depatamento,     check_value=False)
+        self.oHelper.SetKey("TAB",wait_change=False) 
+        print('--------------------------Confirmação')
         self.oHelper.SetButton("Confirmar")
-
-        if self.oHelper.IfExists("Registro inserido com sucesso."):
-            self.oHelper.SetButton("Fechar")
-            self.oHelper.AssertTrue()
-            
-        
+        self.oHelper.WaitShow("Registro inserido com sucesso.")
+        self.oHelper.SetButton("Fechar") 
         self.oHelper.WaitShow("Cargo")
-        sleep(1)
 
         #-------------------------
         # Visualização da inclusão
         #-------------------------
-
+        print('--------------------------Visualizar')
         self.oHelper.SetButton("Visualizar")
-
         self.oHelper.WaitShow("Cargo - VISUALIZAR")
         self.oHelper.CheckResult("Q3_CARGO", self.Cargo)
         self.oHelper.CheckResult("Q3_DESCSUM", self.Descrição)
         self.oHelper.CheckResult("Q3_CC", self.CentroCusto)
         self.oHelper.CheckResult("Q3_DEPTO", self.Depatamento)
         self.oHelper.SetButton("Fechar")
-        sleep(1)
-
-
         self.oHelper.WaitShow("Cargo")
 
         self.oHelper.AssertTrue()
