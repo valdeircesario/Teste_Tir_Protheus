@@ -7,6 +7,10 @@ from datetime import date
 from datetime import datetime, timedelta
 from time import sleep
 
+import sys
+from os import path
+sys.path.append(path.abspath(path.join(path.dirname(__file__), '..', '..')))
+
 from utilis.click_pageview import click_pageview_visible_button
 
 
