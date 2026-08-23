@@ -1,0 +1,17 @@
+{
+  "test_MATA020": {
+    "status": "PASSOU",
+    "data_hora": "23/08/2026 12:44:18",
+    "duracao": 604.771886587143,
+    "descricao": "Inclusão, Visualização, Alteração  e exclusão de Fornecedor",
+    "caminho_rotina": "Atualizações > Cadastros > Fornecedores",
+    "contadores": {
+      "cliques": 13,
+      "validacoes": 12,
+      "insercoes": 19,
+      "leituras": 0,
+      "screenshots": 15
+    },
+    "erro": null
+  }
+}
