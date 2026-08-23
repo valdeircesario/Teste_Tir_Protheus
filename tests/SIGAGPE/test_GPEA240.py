@@ -26,7 +26,7 @@ class GPEA240(unittest.TestCase):
 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '07')
         
         cls.oHelper.SetLateralMenu("Atualizações > Lançamentos > Ausências")
         cls.oHelper.SetButton('Confirmar')

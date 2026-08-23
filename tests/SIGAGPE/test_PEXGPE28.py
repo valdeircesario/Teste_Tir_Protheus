@@ -16,7 +16,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class PEXGPE28(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.descricao = 'TESTE INCLUSAO'
         self.descricaoEdit = 'TESTE ALTERADO'
         self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
@@ -31,7 +31,7 @@ class PEXGPE28(unittest.TestCase):
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         self.oHelper.SetLateralMenu("Atualizações > Especificos > Tipo de Convenio")
 
     def test_de_Crud_Convenio(self):
@@ -56,16 +56,13 @@ class PEXGPE28(unittest.TestCase):
         # INCLUIR CONVENIO
         #--------------------
         
-        self.oHelper.SetButton("Incluir")
-        
-        self.oHelper.WaitShow("Tipos de Convenios - INCLUIR")
-        
+        self.oHelper.SetButton("Incluir")  
+        self.oHelper.WaitShow("Tipos de Convenios - INCLUIR")  
         self.oHelper.SetValue("ZD_DESCONV", self.descricao,check_value=False)
         self.oHelper.SetValue("ZD_TPMOV",self.Movimentacao,check_value=False)
         self.oHelper.SetValue("ZD_TPALTSA","003")
         self.oHelper.Screenshot("convenio_01.png")  
-        
-            
+                
         self.oHelper.WaitShow("Histórico")
         self.oHelper.SetValue("Data Inicio", self.dataref, grid=True, grid_number=1,check_value=False)
         self.oHelper.SetValue("Vlr Titular", self.ValorTitular, grid= True, grid_number=1,check_value=False)
