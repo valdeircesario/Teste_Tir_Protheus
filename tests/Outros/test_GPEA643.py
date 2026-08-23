@@ -19,13 +19,11 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class GPEA643(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Matricula = '228348'
-        self.Nome = 'PLINIO JOSE DE SOUZA'
+        self.filial = '01'
+        self.Matricula = '00XXX'
         self.Roteiro = "VTR"
         self.Processo = '00001'
-        self.Verba = '620'
-        
+        self.Verba = '201'
         
         
         self.dataref = (datetime.today()-timedelta(days=15)).strftime("%d/%m/%Y") # AJUSTAR DATA PARA PERIODO EM ABERTO ss

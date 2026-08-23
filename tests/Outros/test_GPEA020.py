@@ -16,8 +16,8 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class GPEA020(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.Matricula = '227900'
-        self.filial = '02DF0001'
+        self.Matricula = 'XX0000'
+        self.filial = '01'
         self.Nome = 'TESTE DE DEPENDENTE 01'
         self.Sexo = 'M'
         self.Tipo = '03'
@@ -28,7 +28,7 @@ class GPEA020(unittest.TestCase):
         self.DataEntrega = (datetime.today()-timedelta(days=20)).strftime("%d/%m/%Y")
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Funcionários > Dependentes")
         

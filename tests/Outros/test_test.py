@@ -16,14 +16,14 @@ class GPEA133(unittest.TestCase):
     def setUpClass(cls):
         
         
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.dataref = (datetime.today() - timedelta(days=5)).strftime("%d/%m/%Y")
 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
 
 
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '02')
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '02')
         cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')
 

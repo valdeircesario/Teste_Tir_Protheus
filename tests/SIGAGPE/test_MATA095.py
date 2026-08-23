@@ -16,13 +16,13 @@ class MATA095(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
-        cls.Usuario = '001016'
+        cls.filial = '01'
+        cls.Usuario = '12316'
         cls.Aprovador = '000005'
         cls.Limite = '9999999'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', DateSystem, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Gestao de Viagens > Controle de Alcada (5) > Aprovadores")
 
     def test_Cadastro_Orcamento_Viagem_CRUD(self):

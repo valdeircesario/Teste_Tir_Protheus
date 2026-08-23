@@ -16,14 +16,14 @@ class GPEA030(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.Codigo = '1119'
         cls.FuncaoAd = 'FUNÇÃO TESTE'
         cls.CBO = '0111'
         cls.FuncaoAdEdt = 'FUNÇÃO TESTE EDITADO'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', DateSystem, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Cadastros > Funções")
 
     def test_de_Cadastro_de_função_CRUD(self):

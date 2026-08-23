@@ -16,10 +16,10 @@ class PXGPEA47_01(unittest.TestCase):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
+        self.filial = '01'
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Especificos > Jovem Aprendiz")
         

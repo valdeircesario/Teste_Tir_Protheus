@@ -10,13 +10,13 @@ class CASO_DE_USO(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.Mat = '225327'# 
-        cls.filial = '02DF0001'
+        cls.Mat = 'XXXXXX'# 
+        cls.filial = '01'
         cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         cls.datafim = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI',cls.dataref , '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI',cls.dataref , '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Especificos > Manutencao AD")
 
     def test_Ponto_fixo_caso_de_uso(self):

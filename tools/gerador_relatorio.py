@@ -26,7 +26,7 @@ def gerar_guia_homologacao(caminho_arquivo_teste):
         conteudo = f.read()
         linhas = conteudo.splitlines()
 
-    # Dicionário para mapear variáveis do código (ex: self.filial -> '02DF0001')
+    # Dicionário para mapear variáveis do código (ex: self.filial -> '01')
     variaveis_valor = {}
     atribuicoes = re.findall(r"(?:self|cls)\.(\w+)\s*=\s*['\"](.*?)['\"]", conteudo)
     for var, valor in atribuicoes:

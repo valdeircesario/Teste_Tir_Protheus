@@ -14,7 +14,7 @@ class PXGPEA40(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.Ano = '2025'
         cls.Valor = '15000'
         cls.Valor01 = '11000'
@@ -49,7 +49,7 @@ class PXGPEA40(unittest.TestCase):
         self.oHelper.SetValue("Z91_TIPO", self.Tipo) 
         self.oHelper.SetFocus("Z91_CONTAB")
         self.oHelper.SetValue("Z91_CONTAB", self.contabil)  
-        self.oHelper.SetValue("Z91_CC","000000086", check_value =False)
+        self.oHelper.SetValue("Z91_CC","0086", check_value =False)
         self.oHelper.SetKey("TAB", grid=True)   
         self.oHelper.SetFocus("Centro de Custo vs Valor")
         self.oHelper.WaitShow("Centro de Custo vs Valor")  

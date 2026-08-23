@@ -5,34 +5,17 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#----------------------------------------------------------------
-# LANÇAMENTO DE VALE TRANSPORTE E CALCULO NA FOLHA E VALIDAÇÃO
-#----------------------------------------------------------------
-
-# OBSERVAÇÃO >>> DEVE EXECUTAR ESSE TESTE SEMPRE COM UM FUNCIONARIO QUE NÃO POSSUA VTR NA FOLHA.
-
-# ESTE TESTE TEM POR OBJETIVO FAZER UM LANÇAMENTO DE VTR PARA UM FUNCIONARIO, 
-# FAZER O CALCULO POR ROTEIRO PARA LANÇAR O VTR NA FOLHA, E CONSUSTAR A FOLHA PARA VERIFICAR O LANÇAMENTO DO VTR.
-
-
-
-# ROTINAS > GPEA133 / CTBA211 / CALCULO POR ROTEIRO VTR     
-
-#python -m pytest tests/Outros/test_GPEA133.py -v -s
-
-
 class GPEA133(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        cls.filial = '02DF0001'
-        cls.Matricula = '208201'
-        cls.Nome = 'MARCELO CORREA'
+        cls.filial = '01'
+        cls.Matricula = 'XXX000'
         cls.Roteiro = "VTR"
         cls.Processo = '00001'
-        cls.Verba = '620'
+        cls.Verba = '001'
         
         
         cls.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")

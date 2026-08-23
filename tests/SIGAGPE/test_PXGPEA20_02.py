@@ -16,9 +16,9 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class PXGPEA24_02(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Matricula = '228419'
-        self.Nome = 'MURILO AUGUSTO DA SILVA'
+        self.filial = '01'
+        self.Matricula = '00XXXX'
+        self.Nome = 'TESTE AUTOMATIZADO DA SILVA'
         self.dataref = (datetime.today()-timedelta(days=0)).strftime("%d/%m/%Y")
         self.dataVenv = (datetime.today()-timedelta(days= 0)).strftime("%d/%m/%Y")
         self.Movimentacao = '1 - Titular'
@@ -32,7 +32,7 @@ class PXGPEA24_02(unittest.TestCase):
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
         

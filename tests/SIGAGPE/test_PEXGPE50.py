@@ -15,16 +15,16 @@ class PEXGPE50(unittest.TestCase):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
-        self.Matricula = '228383'
-        self.Nome = "CLAUDIO RODRIGUES ALEXANDRE"
+        self.filial = '01'
+        self.Matricula = '1234566'
+        self.Nome = "TESTE AUTOMAÇÃO SILVA"
         self.IdentFuncao = "000610"
         self.TipoAumento = '005'
         self.dataref = (datetime.today()-timedelta(days=15)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Especificos > Funcoes Incorporadas")
         #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.

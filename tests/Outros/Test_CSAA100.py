@@ -17,10 +17,10 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class CSAA100(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
-        self.CentoCusto = '000000677'
-        self.MatriculaResp = "227884"
-        self.DepartSuper = "000000005"
+        self.filial = '01'
+        self.CentoCusto = '007'
+        self.MatriculaResp = "XXX000"
+        self.DepartSuper = "00005"
         self.DescricaoAD = "TESTE DEPARTAMENTO"
         self.DescricaoADEdt = "TESTE EDITADO"
         self.DescricaoEdt = 'TESTE 01'
@@ -31,7 +31,7 @@ class CSAA100(unittest.TestCase):
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Cadastros > Departamentos")
         

@@ -1,7 +1,7 @@
 # 📑 Relatório de Execução de Testes
 ### Módulo 07 - Gestão de Pessoal
 
-**Resumo:** 6 teste(s) · 🟩 6 passou(aram) · 🟥 0 falhou(aram)
+**Resumo:** 7 teste(s) · 🟩 6 passou(aram) · 🟥 1 falhou(aram)
 
 ---
 
@@ -101,19 +101,46 @@
 ---
 
 <details>
-<summary><b>🟩 PASSOU | <code>test_CTBA030.py</code> — Inclusão, Visualização, Alteração  e exclusão de Centro Custo</b> (⏱️ 270.52s)</summary>
+<summary><b>🟥 FALHOU | <code>test_CTBA030.py</code> — Inclusão, Visualização, Alteração  e exclusão de Centro Custo</b> (⏱️ 121.55s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Cadastros › Centro de Custos
-> **Última Execução:** 23/08/2026 12:54:05 | **Resultado:** `PASSOU`
+> **Última Execução:** 23/08/2026 20:42:32 | **Resultado:** `FALHOU`
 
 * **📊 Métricas do Teste:**
-  * **Cliques/Confirmações:** `10`
-  * **Validações:** `9`
-  * **Inserções/Alterações:** `3`
+  * **Cliques/Confirmações:** `2`
+  * **Validações:** `2`
+  * **Inserções/Alterações:** `0`
   * **Leitura de Campos:** `0`
-  * **Screenshots/Prints:** `9`
-  * **Tempo de Execução:** `270.52 segundos`
+  * **Screenshots/Prints:** `2`
+  * **Tempo de Execução:** `121.55 segundos`
+  * **❌ Detalhes da Falha:**
+  ```text
+Traceback (most recent call last):
+  File "C:\GitHub\Teste_Tir_Protheus\tests\SIGAGPE\test_CTBA030.py", line 79, in test_de_incluir_Centro_de_Custo
+    self.oHelper.SetValue("CTT_CUSTO", self.CentroCusto4,        check_value=False)
+                                       ^^^^^^^^^^^^^^^^^
+AttributeError: 'CTBA030' object has no attribute 'CentroCusto4'. Did you mean: 'CentroCusto'?
+  ```
+
+</details>
+
+---
+
+<details>
+<summary><b>🟩 PASSOU | <code>test_GPEA010.py</code> — Inclusão de um Novo Funcionario</b> (⏱️ 1358.72s)</summary>
+<br>
+
+> **Rotina:** Atualizações › Funcionários › Funcionários
+> **Última Execução:** 23/08/2026 20:36:55 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `2`
+  * **Validações:** `2`
+  * **Inserções/Alterações:** `57`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `18`
+  * **Tempo de Execução:** `1358.72 segundos`
 
 </details>
 

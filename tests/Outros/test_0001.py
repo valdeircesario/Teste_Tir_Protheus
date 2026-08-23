@@ -11,8 +11,8 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class GPER102(unittest.TestCase):# 	GPER102
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
-        cls.matricula = '227902'
+        cls.filial = '01'
+        cls.matricula = '0XXX00'
         cls.situacao = ' ADFT*'
         cls.periodo = '202601'
         

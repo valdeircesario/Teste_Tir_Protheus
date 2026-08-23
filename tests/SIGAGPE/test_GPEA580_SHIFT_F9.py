@@ -21,13 +21,13 @@ class GPEA580_SHIFT_F9(unittest.TestCase):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
-        self.Matricula = '227884'
+        self.filial = '01'
+        self.Matricula = '123456'
         self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Atualizações > Lançamentos > Por Funcionário ")
         #self.oHelper.SetButton('Confirmar') -- observar essas linha, em meu ambiete de trabalho, o browser não visualiza a tela de trocar modulos.

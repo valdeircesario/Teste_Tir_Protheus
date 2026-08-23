@@ -8,24 +8,20 @@ from selenium.webdriver.common.by import By
 
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#  .\venv\Scripts\python.exe -m pytest tests/Outros/test_PXGPEM89.py -s
 
-# OBSERVAÇÃO:
-# O ACORDO COLETIVO S SEMPRE ACORDADO PARA O MES, 09 DE CADA ANO, SEMPRE QUE EXECUTAR ESSE TESTE PROCURAR USAR O PERIODO DO ACORDO 
-# SEMPRE OS PERIODOS DOS MESES: 11,12,01,02,03,04,05,06,07,08. E USAR O ACESSO AO CALCULO COM A DATA DO PERIODO EM ABERTO.
 class PXGPEM89(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
-        cls.matricula = '209690'
+        cls.filial = '01'
+        cls.matricula = '123456'
         cls.processo = '00001'
         cls.periodo = '012026'# PERIODO  QUE FOI CONCEDIDO O ACORDO COLETIVO 
-        cls.nome = 'RENATO DE SOUZA BRITO'
+        cls.nome = 'TESTE DE SOUZA SILVA'
         
         cls.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")
         cls.oHelper.SetButton('Confirmar')
         

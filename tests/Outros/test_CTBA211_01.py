@@ -12,11 +12,11 @@ class CTBA211_01(unittest.TestCase):
     def setUpClass(self):
                                                                         
        
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y") 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
                 
         
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos > Integrações")

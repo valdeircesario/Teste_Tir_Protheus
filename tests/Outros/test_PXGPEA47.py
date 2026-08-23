@@ -5,7 +5,6 @@ from os import getcwd
 from datetime import datetime, timedelta
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-#py -m pytest tests/Outros/test_PXGPEA47.py -s
 
 #----------------------------------------------------------------
 # CRUD COMPLETO DO JOVEM APRENDIZ
@@ -17,7 +16,7 @@ class PXGPEA47(unittest.TestCase):
         from tir.technologies.core.base import By
         from tir import Webapp
                                                                         
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.CPF = '54214723023'
         self.Nome = 'TESTE JOVEM APRENDIZ'
         self.NomeEdit = 'EDIÇÃO JOVEM APRENDIZ'

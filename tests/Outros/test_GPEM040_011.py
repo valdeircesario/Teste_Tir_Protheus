@@ -16,9 +16,8 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class GPEM040_01(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Matricula = '202394'
-        self.Nome = 'ELMAR DIAS DE ABREU'
+        self.filial = '01'
+        self.Matricula = '00XXX'
         self.data ='09/10/2020'
         self.Periodo = '202603'
         self.dataref = (datetime.today()-timedelta(days=10)).strftime("%d/%m/%Y")
@@ -26,7 +25,7 @@ class GPEM040_01(unittest.TestCase):
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Rescisão")
         #self.oHelper.SetButton('Confirmar')
 

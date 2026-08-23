@@ -33,7 +33,7 @@ class CTBA030(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.CentroCusto = '032'# SEMPRE USAR 3 DIGITOS
+        cls.CentroCusto = '033'# SEMPRE USAR 3 DIGITOS
         cls.Descricao = 'DEPEM'# SEMPRE RENOMEAR
         cls.DescricaoEdt = 'DEPEDR'
         cls.filial = '01'
@@ -76,7 +76,7 @@ class CTBA030(unittest.TestCase):
             self.oHelper.SetButton("Incluir")
             self.oHelper.WaitShow("Cadastro C Custo - INCLUIR")
             self.oHelper.Screenshot("CentroCusto/002")   
-            self.oHelper.SetValue("CTT_CUSTO", self.CentroCusto,        check_value=False)
+            self.oHelper.SetValue("CTT_CUSTO", self.CentroCusto4,        check_value=False)
             self.oHelper.SetValue("CTT_DESC01", self.Descricao,         check_value=False)
             self.oHelper.Screenshot("CentroCusto/003")
             self.oHelper.SetButton("Salvar")

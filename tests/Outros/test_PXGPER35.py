@@ -33,14 +33,14 @@ class PXGPER35(unittest.TestCase):
         
         
         cls.oHelper_Poui = Poui()
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.dataref = (datetime.today() - timedelta(days=5)).strftime("%d/%m/%Y")
 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
 
 
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Especificos > Extrato Abono Assiduidade")
         cls.oHelper.SetButton('Confirmar')
 

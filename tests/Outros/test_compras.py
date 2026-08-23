@@ -12,7 +12,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-## python -m pytest tests/Outros/test_compras.py -v -s --html=reports/report_compras.html --self-contained-html
 
 #------------------------------------------
 #-- Teste compras no fuxo de compras
@@ -30,10 +29,10 @@ class CSAA100(unittest.TestCase):
         cls.CentroCusto = '003'
         cls.DepartamentoSuper = '000000002'
         cls.Responsavel = '000012'
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', DateSystem, '02', cls.filial, '02')
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '02')
         cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')
 

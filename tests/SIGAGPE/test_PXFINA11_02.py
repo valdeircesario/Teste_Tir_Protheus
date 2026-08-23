@@ -14,19 +14,19 @@ class PXFINA11_01(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.Descrição = 'TESTE AUTOMATIZADO'
-        cls.UTA = '000000677'
+        cls.UTA = '007'
         cls.ValorPrev = '4500'
         cls.ValorReal = '5500'
         cls.Motivo = 'USO PARA TESTE AUTOMATIZADO'
         cls.Tipo = '1 - Servico'
-        cls.Favorecido = '227884'
+        cls.Favorecido = '123456'
         cls.dataref_inicio = (datetime.today()+timedelta(days=5)).strftime("%d/%m/%Y")
         cls.dataref_fim = (datetime.today()+timedelta(days=10)).strftime("%d/%m/%Y")  
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', DateSystem, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Gestao de Viagens > Solicitações")
 
     def test_Cadastro_Orcamento_Viagem(self):

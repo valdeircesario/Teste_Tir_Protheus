@@ -16,14 +16,14 @@ class GPEA040(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.lcontinua = True
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.Codigo = '9B5'
         self.Descricao = 'TESTE_01'
         self.Natureza = '1000'
         self.DescricaoEdit = 'TESTE ALTERADO'
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07')
         self.oHelper.SetLateralMenu("Atualizações > Definições Cálculo > Verbas")
 
         #--------------------------

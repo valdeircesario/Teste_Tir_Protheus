@@ -16,14 +16,14 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class CTBA030(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.CentroCustoEdit = '00088888'
         self.DescricaoEdit = 'TESTE ALTERADO'
         self.CentroCusto = '00099999'
         self.custoAD = 'TESTE AUTOMATIZADO 01'
         self.custoADEdit = 'TESTE AUTOMATIZADO 01 EDITADO'
         self.Decricao = 'DESCRICAO TESTE AUTOMATIZADO 01'
-        self.supervisor = '000000677'
+        self.supervisor = '007'
         
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)

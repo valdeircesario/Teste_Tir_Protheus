@@ -16,16 +16,15 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class GPEA320(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Matricula = '208228'
-        self.Nome = 'ROGERIO DA SILVA CARDEAL'
+        self.filial = '01'
+        self.Matricula = '00XXX'
         self.TipoRes ='02'
         self.dataref = (datetime.today()-timedelta(days=5)).strftime("%d/%m/%Y")
         
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Rescisão")
         

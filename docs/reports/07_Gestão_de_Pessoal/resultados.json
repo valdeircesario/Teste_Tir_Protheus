@@ -75,17 +75,32 @@
     "erro": null
   },
   "test_CTBA030": {
-    "status": "PASSOU",
-    "data_hora": "23/08/2026 12:54:05",
-    "duracao": 270.51873660087585,
+    "status": "FALHOU",
+    "data_hora": "23/08/2026 20:42:32",
+    "duracao": 121.55275702476501,
     "descricao": "Inclusão, Visualização, Alteração  e exclusão de Centro Custo",
     "caminho_rotina": "Atualizações > Cadastros > Centro de Custos",
     "contadores": {
-      "cliques": 10,
-      "validacoes": 9,
-      "insercoes": 3,
+      "cliques": 2,
+      "validacoes": 2,
+      "insercoes": 0,
       "leituras": 0,
-      "screenshots": 9
+      "screenshots": 2
+    },
+    "erro": "Traceback (most recent call last):\n  File \"C:\\GitHub\\Teste_Tir_Protheus\\tests\\SIGAGPE\\test_CTBA030.py\", line 79, in test_de_incluir_Centro_de_Custo\n    self.oHelper.SetValue(\"CTT_CUSTO\", self.CentroCusto4,        check_value=False)\n                                       ^^^^^^^^^^^^^^^^^\nAttributeError: 'CTBA030' object has no attribute 'CentroCusto4'. Did you mean: 'CentroCusto'?\n"
+  },
+  "test_GPEA010": {
+    "status": "PASSOU",
+    "data_hora": "23/08/2026 20:36:55",
+    "duracao": 1358.7212657928467,
+    "descricao": "Inclusão de um Novo Funcionario",
+    "caminho_rotina": "Atualizações > Funcionários > Funcionários",
+    "contadores": {
+      "cliques": 2,
+      "validacoes": 2,
+      "insercoes": 57,
+      "leituras": 0,
+      "screenshots": 18
     },
     "erro": null
   }

@@ -17,7 +17,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class GPEM120(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.periodofercham = '202602'# PERIODO QUE DESEJA FECHAMENTO
         
         #------------------------------------------------------------
@@ -29,7 +29,7 @@ class GPEM120(unittest.TestCase):
     
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         self.oHelper.SetLateralMenu("Atualizações > Definições Cálculo > Períodos")
         #self.oHelper.SetLateralMenu("Miscelanea > Fechamentos > Período") 
         self.oHelper.SetButton('Confirmar')

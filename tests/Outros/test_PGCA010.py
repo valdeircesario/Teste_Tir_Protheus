@@ -14,16 +14,16 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class PGCA010(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
-        cls.matricula = '209690'
+        cls.filial = '01'
+        cls.matricula = '22140'
         cls.processo = '00001'
         cls.periodo = '012026'# PERIODO  QUE FOI CONCEDIDO O ACORDO COLETIVO 
-        cls.nome = 'RENATO DE SOUZA BRITO'
+        cls.nome = 'TESTE DE SOUZA BRITO'
         
         cls.dataref = (datetime.today()-timedelta(days=30)).strftime("%d/%m/%Y")# AJUSTAR DATA PARA PERIODO EM ABERTO 
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', cls.dataref, '02', cls.filial, '02')
+        cls.oHelper.Setup('SIGAMDI', cls.dataref, '99', cls.filial, '02')
         cls.oHelper.SetLateralMenu("Atualizações > Novo Fluxo de Compras > Novo Fluxo de Compras")
         cls.oHelper.SetButton('Confirmar')
         

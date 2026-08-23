@@ -32,10 +32,10 @@ class GPEA340(unittest.TestCase):
         self.Fone ='984060840'
         self.Email = 'TESTE123@GAMIL.COM'
         self.Verba = '232'
-        self.filial = '02DF0001'
+        self.filial = '01'
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', DateSystem, '02', self.filial, '07') 
+        self.oHelper.Setup('SIGAMDI', DateSystem, '99', self.filial, '07') 
         self.oHelper.SetLateralMenu("Atualizações > Cadastros > Sindicatos")
          
 

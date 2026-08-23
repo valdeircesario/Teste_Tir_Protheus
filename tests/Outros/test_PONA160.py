@@ -16,8 +16,8 @@ class PONA160(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
-        cls.Matricula = '228383'
+        cls.filial = '01'
+        cls.Matricula = '12345'
         cls.Nome = 'FUNÇÃO TESTE'
         
         
@@ -25,7 +25,7 @@ class PONA160(unittest.TestCase):
         cls.FuncaoAdEdt = 'FUNÇÃO TESTE EDITADO'
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI', DateSystem, '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Ponto Eletrônico > Trocas de Turno")
 
     def test_troca_de_turmo_trabalho(self):

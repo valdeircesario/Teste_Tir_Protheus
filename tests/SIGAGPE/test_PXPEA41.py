@@ -16,7 +16,7 @@ class PXPEA41(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.descricao = 'TESTE INCLUSAO DE PONTO FIXO'
         cls.descricaoEdit = 'TESTE EDITADO PONTO FIXO'
         cls.telefone = '(61)888888888'

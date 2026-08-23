@@ -28,15 +28,14 @@ class GPEM040_01(unittest.TestCase):
     
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
-        self.Matricula = '200561' # ACONSELHO UTILIZAR SEMPRE UM FUNCIONARIO DEFERENTE, PARA MELHOR CALCULO DO TESTE
-        self.Nome = 'JOSE AFONSO TAVARES'
+        self.filial = '01'
+        self.Matricula = 'XX0000' # ACONSELHO UTILIZAR SEMPRE UM FUNCIONARIO DEFERENTE, PARA MELHOR CALCULO DO TESTE
         self.dataref = (datetime.today()-timedelta(days=13)).strftime("%d/%m/%Y")# USE O PERIODO EM ABERTO
         
 
         configfile = getcwd() + '\\config.json'
         self.oHelper = Webapp(configfile)
-        self.oHelper.Setup('SIGAMDI', self.dataref, '02', self.filial, '07')
+        self.oHelper.Setup('SIGAMDI', self.dataref, '99', self.filial, '07')
         
         self.oHelper.SetLateralMenu("Miscelanea > Cálculos (13)> Rescisão")
         self.oHelper.SetButton('Confirmar')

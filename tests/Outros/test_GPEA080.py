@@ -10,13 +10,13 @@ class GPEA080(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.filial = '02DF0001'
+        cls.filial = '01'
         cls.descricao = "09:05 AS 15:05 - INTERVALO 13:20 AS 13:35"
         cls.descricaoEdit = "09:05 AS 15:05 - INTERVALO 13:15 AS 13:30"
         cls.descricaoTipJorn = "TESTE"
         configfile = getcwd() + '\\config.json'
         cls.oHelper = Webapp(configfile)
-        cls.oHelper.Setup('SIGAMDI',DateSystem , '02', cls.filial, '07')
+        cls.oHelper.Setup('SIGAMDI',DateSystem , '99', cls.filial, '07')
         cls.oHelper.SetLateralMenu("Atualizações > Ponto Eletrônico > Turnos de Trabalho")
 
     def test_CRUD_turno_de_trabalho(self):

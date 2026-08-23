@@ -16,7 +16,7 @@ DateSystem = datetime.today().strftime('%d/%m/%Y')
 class SPOOL(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.filial = '02DF0001'
+        self.filial = '01'
         self.Log = 'VTR'
         self.dataref = (datetime.today()-timedelta(days=90)).strftime("%d/%m/%Y")
         self.Processo = '00001'

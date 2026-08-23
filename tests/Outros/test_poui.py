@@ -13,7 +13,7 @@ class PGCA010(unittest.TestCase):
         configfile = getcwd() + '\\config.json'
         cls.oHelper_Poui = Poui(configfile)
         cls.oHelper_Webapp = Webapp(configfile, autostart=False)
-        cls.oHelper_Webapp.Setup("SIGAMDI", datetime.today().strftime('%d/%m/%Y'), "02", "02DF0001", '02')
+        cls.oHelper_Webapp.Setup("SIGAMDI", datetime.today().strftime('%d/%m/%Y'), "02", "01", '02')
         cls.oHelper_Webapp.Program('PGCA010')
         cls.oHelper_Webapp.SetButton('Confirmar')
         
