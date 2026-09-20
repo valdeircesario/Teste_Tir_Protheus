@@ -1,0 +1,110 @@
+# CT01_ATFA01 – Rateio
+
+## 1. Nome do Caso de Teste
+
+**CT01_ATFA011 – Rateio**
+
+## 2. Módulo
+
+**Ativo Fiscal**
+
+## 3. Nome da Rotina
+
+**ATFA011 – Rateio**
+
+## 4. Caminho da Rotina
+
+**Protheus → Ativo Fiscal → Atualizações → Cadastros → Rateio**
+
+## 5. Objetivo
+
+Validar a funcionalidade de **inclusão e visualização de Rateio** na rotina **ATFA011**, garantindo que o sistema permita cadastrar um rateio com os parâmetros obrigatórios informados, realizar a gravação corretamente e posteriormente visualizar o registro incluído.
+
+O teste deve garantir que a rotina execute o processo de inclusão sem apresentar **erros, falhas de validação indevidas ou inconsistências nos dados**, assegurando o correto funcionamento da funcionalidade.
+
+## 6. Cenário de Teste
+
+**Incluir um novo Rateio e posteriormente visualizar o registro cadastrado.**
+
+O Rateio deverá ser incluído informando os seguintes parâmetros:
+
+* **Percentual**
+* **Centro de Custo**
+* **Conta Contábil**
+* **Item Conta**
+* **Classe Valor**
+
+Após o preenchimento dos parâmetros, o cadastro deverá ser salvo e posteriormente localizado para validação das informações.
+
+## 7. Passo a Passo
+
+### CREATE – Inclusão de Rateio
+
+| Nº | Ação                                                                                      | Resultado Esperado                                                                          |
+| -: | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 01 | Acessar a rotina **ATFA011 – Rateio** pelo caminho **Atualizações → Cadastros → Rateio**. | A rotina deve ser apresentada corretamente, sem erros ou falhas de carregamento.            |
+| 02 | Selecionar a opção **Incluir**.                                                           | O sistema deve apresentar a tela para inclusão de um novo Rateio.                           |
+| 03 | Informar o **Percentual** do rateio.                                                      | O sistema deve aceitar o percentual informado conforme as regras da rotina.                 |
+| 04 | Informar o **Centro de Custo**.                                                           | O sistema deve aceitar e apresentar corretamente o Centro de Custo informado.               |
+| 05 | Informar a **Conta Contábil**.                                                            | O sistema deve aceitar e apresentar corretamente a Conta Contábil informada.                |
+| 06 | Informar o **Item Conta**.                                                                | O sistema deve aceitar e apresentar corretamente o Item Conta informado.                    |
+| 07 | Informar a **Classe Valor**.                                                              | O sistema deve aceitar e apresentar corretamente a Classe Valor informada.                  |
+| 08 | Conferir os parâmetros preenchidos antes da gravação.                                     | O sistema deve apresentar corretamente todos os parâmetros informados, sem inconsistências. |
+| 09 | Selecionar a opção **Salvar/Confirmar**.                                                  | O sistema deve validar os dados e gravar o Rateio sem apresentar erros ou falhas.           |
+| 10 | Confirmar a conclusão da inclusão.                                                        | O sistema deve concluir a operação e disponibilizar o Rateio cadastrado para consulta.      |
+
+### READ – Visualização do Rateio
+
+| Nº | Ação                                               | Resultado Esperado                                                                                              |
+| -: | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 11 | Localizar o Rateio incluído na rotina **ATFA011**. | O Rateio cadastrado deve ser localizado corretamente.                                                           |
+| 12 | Abrir o registro do Rateio.                        | O sistema deve apresentar os dados do Rateio cadastrado.                                                        |
+| 13 | Conferir o **Percentual** informado.               | O percentual apresentado deve corresponder ao valor utilizado durante a inclusão.                               |
+| 14 | Conferir o **Centro de Custo** informado.          | O Centro de Custo apresentado deve corresponder ao valor utilizado durante a inclusão.                          |
+| 15 | Conferir a **Conta Contábil** informada.           | A Conta Contábil apresentada deve corresponder ao valor utilizado durante a inclusão.                           |
+| 16 | Conferir o **Item Conta** informado.               | O Item Conta apresentado deve corresponder ao valor utilizado durante a inclusão.                               |
+| 17 | Conferir a **Classe Valor** informada.             | A Classe Valor apresentada deve corresponder ao valor utilizado durante a inclusão.                             |
+| 18 | Validar o registro completo após a visualização.   | O Rateio deve apresentar todos os dados gravados corretamente, sem perda ou alteração indevida das informações. |
+
+## 8. Validação da Inclusão
+
+| Nº | Ação                                                                            | Resultado Esperado                                                                                          |
+| -: | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 19 | Tentar salvar o Rateio após o preenchimento dos parâmetros obrigatórios.        | O sistema deve permitir a gravação quando os dados informados forem válidos.                                |
+| 20 | Verificar o comportamento do sistema durante a gravação.                        | O sistema não deve apresentar erros inesperados, travamentos ou falhas que impeçam a conclusão da operação. |
+| 21 | Consultar o Rateio após a gravação.                                             | O registro deve estar disponível para visualização na rotina.                                               |
+| 22 | Comparar os dados apresentados na consulta com os dados informados na inclusão. | Os dados devem permanecer íntegros e consistentes após a gravação.                                          |
+
+## 9. Resultado Esperado
+
+A rotina **ATFA011 – Rateio**, do módulo **Ativo Fiscal**, deve permitir a **inclusão e visualização de um Rateio** corretamente.
+
+O sistema deve:
+
+* Permitir o acesso à rotina sem apresentar erros.
+* Permitir a inclusão de um novo Rateio.
+* Permitir o preenchimento do **Percentual**.
+* Permitir o preenchimento do **Centro de Custo**.
+* Permitir o preenchimento da **Conta Contábil**.
+* Permitir o preenchimento do **Item Conta**.
+* Permitir o preenchimento da **Classe Valor**.
+* Validar os dados informados conforme as regras da rotina.
+* Permitir a gravação do Rateio sem erros ou falhas.
+* Disponibilizar o Rateio cadastrado para visualização.
+* Apresentar corretamente os dados gravados.
+* Manter a integridade dos dados após a inclusão.
+* Não apresentar falhas que impeçam a execução do processo.
+
+## 10. Critério de Aprovação
+
+O caso de teste será considerado **APROVADO** quando for possível **incluir um Rateio na rotina ATFA011 e posteriormente visualizá-lo**, com todos os parâmetros informados — **Percentual, Centro de Custo, Conta Contábil, Item Conta e Classe Valor** — gravados e apresentados corretamente.
+
+A operação deve ser concluída **sem erros, falhas, travamentos ou inconsistências nos dados**, garantindo o funcionamento esperado da rotina.
+
+**Status:** `A definir durante a execução`
+
+**Evidências:** `A anexar durante a execução`
+
+**Responsável:** `A definir`
+
+**Data de Execução:** `A definir`

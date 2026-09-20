@@ -16,14 +16,10 @@ from tir import Webapp
 from utilis.md_reporter import TirReportAgent
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-## python -m pytest tests/Modulo_02/test_CSAA100.py -v -s --html=reports/report_CSAA100.html --self-contained-html
 
 #------------------------------------------
 #-- Teste CSAA100 - Cadastro de Departamentos
 #------------------------------------------
-
-
-
 
 class CSAA100(unittest.TestCase):
 
@@ -45,7 +41,7 @@ class CSAA100(unittest.TestCase):
             tir_instance=webapp_base,
             cod_modulo="07",
             nome_modulo="Gestão de Pessoal",
-            ct_nome="test_CTBA060",
+            ct_nome="test_CSAA100",
             descricao="Inclusão, Visualização, Edição e Exclusão de Departamento"
         )
         cls.oHelper.Setup('SIGAMDI', DateSystem, '99', cls.filial, '07')
@@ -85,6 +81,7 @@ class CSAA100(unittest.TestCase):
             #-------------------------
             # Visualização da inclusão
             #-------------------------
+
             print('--------------------Visualizar')
             self.oHelper.SetButton("Visualizar")
             self.oHelper.WaitShow("Departamento - VISUALIZAR")
@@ -99,6 +96,7 @@ class CSAA100(unittest.TestCase):
             #-------------------------
             # Editar a inclusão
             #-------------------------
+            
             print('--------------------Visualizar')
             self.oHelper.SetButton("Alterar")
             self.oHelper.WaitShow("Departamento - ALTERAR")
@@ -115,6 +113,7 @@ class CSAA100(unittest.TestCase):
             #-------------------------
             # Exclusão
             #-------------------------
+
             print('--------------------Visualizar')
             self.oHelper.SetButton("Outras Ações","Excluir")
             self.oHelper.WaitShow("Departamento - EXCLUIR")

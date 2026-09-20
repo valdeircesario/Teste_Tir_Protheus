@@ -58,5 +58,35 @@
       "screenshots": 8
     },
     "erro": null
+  },
+  "test_MATA110": {
+    "status": "PASSOU",
+    "data_hora": "20/09/2026 12:55:44",
+    "duracao": 1504.1555404663086,
+    "descricao": "Inclusão,Visualização, Alteração e Exclusão de Solicitação de Compras",
+    "caminho_rotina": "Atualizações > Solicitações > Solicitação de Compras",
+    "contadores": {
+      "cliques": 15,
+      "validacoes": 12,
+      "insercoes": 11,
+      "leituras": 1,
+      "screenshots": 10
+    },
+    "erro": null
+  },
+  "test_MATA360": {
+    "status": "PASSOU",
+    "data_hora": "20/09/2026 16:33:40",
+    "duracao": 456.6423101425171,
+    "descricao": "Inclusão,Visualização, Alteração e Exclusão de Condição de Pagamento",
+    "caminho_rotina": "Atualizações > Cadastros > Condição de Pagamento",
+    "contadores": {
+      "cliques": 17,
+      "validacoes": 14,
+      "insercoes": 10,
+      "leituras": 0,
+      "screenshots": 13
+    },
+    "erro": null
   }
 }

@@ -58,5 +58,20 @@
       "screenshots": 16
     },
     "erro": null
+  },
+  "test_CTBA020": {
+    "status": "PASSOU",
+    "data_hora": "20/09/2026 09:41:59",
+    "duracao": 582.9702694416046,
+    "descricao": "Inclusão e Visualização ,Ateração e Exclusão de uma Conta a Pagar",
+    "caminho_rotina": "Atualizações > Cadastros > Planos de Contas",
+    "contadores": {
+      "cliques": 17,
+      "validacoes": 14,
+      "insercoes": 8,
+      "leituras": 0,
+      "screenshots": 13
+    },
+    "erro": null
   }
 }

@@ -7,35 +7,29 @@ from os import getcwd
 import unittest
 from datetime import datetime
 from time import sleep
-
 # Garante a importação dos módulos da pasta utilis
 PROJECT_ROOT = path.abspath(path.join(path.dirname(__file__), '..', '..'))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
+from time import sleep
 
 from tir import Webapp
 from utilis.md_reporter import TirReportAgent
 
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# FUNÇÃO QUE GERAR O ARQUIVO HTML DE HOMOLAÇÃO ---- PARA PASTA C:\Relatorios_Homologacao.... LOCAL
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'tools')))
-#from gerador_relatorio import gerar_guia_homologacao
-
 
 #------------------------------------------
 # Teste de centro de custo
 #------------------------------------------
-
-
 class CTBA030(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
        
-        cls.CentroCusto = '033'# SEMPRE USAR 3 DIGITOS
-        cls.Descricao = 'DEPEM'# SEMPRE RENOMEAR
-        cls.DescricaoEdt = 'DEPEDR'
+        cls.CentroCusto = '125'# SEMPRE USAR 3 DIGITOS
+        cls.Descricao = 'SARES'# SEMPRE RENOMEAR
+        cls.DescricaoEdt = 'SARESTS'
         cls.filial = '01'
         configfile = getcwd() + '\\config.json'
         # 1. Instância base do TIR
@@ -73,10 +67,12 @@ class CTBA030(unittest.TestCase):
             self.oHelper.Screenshot("CentroCusto/001")
 
             print('--------------------Incluir')
+
+            print('-------------------------Incluir')
             self.oHelper.SetButton("Incluir")
             self.oHelper.WaitShow("Cadastro C Custo - INCLUIR")
             self.oHelper.Screenshot("CentroCusto/002")   
-            self.oHelper.SetValue("CTT_CUSTO", self.CentroCusto4,        check_value=False)
+            self.oHelper.SetValue("CTT_CUSTO", self.CentroCusto,        check_value=False)
             self.oHelper.SetValue("CTT_DESC01", self.Descricao,         check_value=False)
             self.oHelper.Screenshot("CentroCusto/003")
             self.oHelper.SetButton("Salvar")
@@ -141,7 +137,6 @@ class CTBA030(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.oHelper.TearDown()
-        #gerar_guia_homologacao(__file__)
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()

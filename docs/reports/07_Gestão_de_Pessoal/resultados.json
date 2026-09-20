@@ -91,16 +91,46 @@
   },
   "test_GPEA010": {
     "status": "PASSOU",
-    "data_hora": "23/08/2026 20:36:55",
-    "duracao": 1358.7212657928467,
+    "data_hora": "20/09/2026 17:36:52",
+    "duracao": 1408.2319214344025,
     "descricao": "Inclusão de um Novo Funcionario",
     "caminho_rotina": "Atualizações > Funcionários > Funcionários",
     "contadores": {
-      "cliques": 2,
+      "cliques": 3,
       "validacoes": 2,
       "insercoes": 57,
       "leituras": 0,
       "screenshots": 18
+    },
+    "erro": null
+  },
+  "test_CSAA100": {
+    "status": "PASSOU",
+    "data_hora": "20/09/2026 16:40:16",
+    "duracao": 352.93639755249023,
+    "descricao": "Inclusão, Visualização, Edição e Exclusão de Departamento",
+    "caminho_rotina": "Atualizações > Cadastros > Departamentos",
+    "contadores": {
+      "cliques": 12,
+      "validacoes": 11,
+      "insercoes": 5,
+      "leituras": 0,
+      "screenshots": 12
+    },
+    "erro": null
+  },
+  "test_GPEA180": {
+    "status": "PASSOU",
+    "data_hora": "20/09/2026 19:04:45",
+    "duracao": 438.4965434074402,
+    "descricao": "Transferencia de funcionario departamento",
+    "caminho_rotina": "Atualizações > Funcionários > Transferências",
+    "contadores": {
+      "cliques": 14,
+      "validacoes": 7,
+      "insercoes": 4,
+      "leituras": 0,
+      "screenshots": 12
     },
     "erro": null
   }

@@ -1,12 +1,69 @@
 # 📑 Relatório de Execução de Testes
 ### Módulo 07 - Gestão de Pessoal
 
-**Resumo:** 7 teste(s) · 🟩 6 passou(aram) · 🟥 1 falhou(aram)
+**Resumo:** 9 teste(s) · ✅ 8 passou(aram) · 🔴 1 falhou(aram)
+
+<details>
+<summary><b>✅ PASSOU | <code>test_GPEA180.py</code> — Transferencia de funcionario departamento</b> (⏱️ 438.50s)</summary>
+<br>
+
+> **Rotina:** Atualizações › Funcionários › Transferências
+> **Última Execução:** 20/09/2026 19:04:45 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `14`
+  * **Validações:** `7`
+  * **Inserções/Alterações:** `4`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `12`
+  * **Tempo de Execução:** `438.50 segundos`
+
+</details>
+
 
 ---
 
 <details>
-<summary><b>🟩 PASSOU | <code>test_GPEA030.py</code> — Inclusão, Visualização e Alteração de Funções</b> (⏱️ 289.14s)</summary>
+<summary><b>✅ PASSOU | <code>test_CSAA100.py</code> — Inclusão, Visualização, Edição e Exclusão de Departamento</b> (⏱️ 352.94s)</summary>
+<br>
+
+> **Rotina:** Atualizações › Cadastros › Departamentos
+> **Última Execução:** 20/09/2026 16:40:16 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `12`
+  * **Validações:** `11`
+  * **Inserções/Alterações:** `5`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `12`
+  * **Tempo de Execução:** `352.94 segundos`
+
+</details>
+
+---
+
+<details>
+<summary><b>✅ PASSOU | <code>test_GPEA010.py</code> — Inclusão de um Novo Funcionario</b> (⏱️ 1408.23s)</summary>
+<br>
+
+> **Rotina:** Atualizações › Funcionários › Funcionários
+> **Última Execução:** 20/09/2026 17:36:52 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `3`
+  * **Validações:** `2`
+  * **Inserções/Alterações:** `57`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `18`
+  * **Tempo de Execução:** `1408.23 segundos`
+
+</details>
+
+
+---
+
+<details>
+<summary><b>✅ PASSOU | <code>test_GPEA030.py</code> — Inclusão, Visualização e Alteração de Funções</b> (⏱️ 289.14s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Cadastros › Funções
@@ -25,7 +82,7 @@
 ---
 
 <details>
-<summary><b>🟩 PASSOU | <code>test_GPEA040.py</code> — Inclusão, Visualização, Alteração  e Exclusão de Verba</b> (⏱️ 649.61s)</summary>
+<summary><b>✅ PASSOU | <code>test_GPEA040.py</code> — Inclusão, Visualização, Alteração  e Exclusão de Verba</b> (⏱️ 649.61s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Definições Cálculo › Verbas
@@ -44,7 +101,7 @@
 ---
 
 <details>
-<summary><b>🟩 PASSOU | <code>test_CTBA060.py</code> — Inclusão, Visualização, Edição e Exclusão de Departamento</b> (⏱️ 295.78s)</summary>
+<summary><b>✅ PASSOU | <code>test_CTBA060.py</code> — Inclusão, Visualização, Edição e Exclusão de Departamento</b> (⏱️ 295.78s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Cadastros › Departamentos
@@ -63,7 +120,7 @@
 ---
 
 <details>
-<summary><b>🟩 PASSOU | <code>test_GPEA340.py</code> — Inclusão, Visualização, Alteração e Exclusão de Sindicato</b> (⏱️ 606.34s)</summary>
+<summary><b>✅ PASSOU | <code>test_GPEA340.py</code> — Inclusão, Visualização, Alteração e Exclusão de Sindicato</b> (⏱️ 606.34s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Cadastros › Sindicatos
@@ -82,7 +139,7 @@
 ---
 
 <details>
-<summary><b>🟩 PASSOU | <code>test_GPEA370.py</code> — Inclusão, Visualização e Alteração de Cargos</b> (⏱️ 250.29s)</summary>
+<summary><b>✅ PASSOU | <code>test_GPEA370.py</code> — Inclusão, Visualização e Alteração de Cargos</b> (⏱️ 250.29s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Cadastros › Cargos
@@ -101,7 +158,7 @@
 ---
 
 <details>
-<summary><b>🟥 FALHOU | <code>test_CTBA030.py</code> — Inclusão, Visualização, Alteração  e exclusão de Centro Custo</b> (⏱️ 121.55s)</summary>
+<summary><b>🔴 FALHOU | <code>test_CTBA030.py</code> — Inclusão, Visualização, Alteração  e exclusão de Centro Custo</b> (⏱️ 121.55s)</summary>
 <br>
 
 > **Rotina:** Atualizações › Cadastros › Centro de Custos
@@ -127,21 +184,3 @@ AttributeError: 'CTBA030' object has no attribute 'CentroCusto4'. Did you mean: 
 
 ---
 
-<details>
-<summary><b>🟩 PASSOU | <code>test_GPEA010.py</code> — Inclusão de um Novo Funcionario</b> (⏱️ 1358.72s)</summary>
-<br>
-
-> **Rotina:** Atualizações › Funcionários › Funcionários
-> **Última Execução:** 23/08/2026 20:36:55 | **Resultado:** `PASSOU`
-
-* **📊 Métricas do Teste:**
-  * **Cliques/Confirmações:** `2`
-  * **Validações:** `2`
-  * **Inserções/Alterações:** `57`
-  * **Leitura de Campos:** `0`
-  * **Screenshots/Prints:** `18`
-  * **Tempo de Execução:** `1358.72 segundos`
-
-</details>
-
----

@@ -17,9 +17,6 @@ from utilis.md_reporter import TirReportAgent
 
 from utilis.cpf_utilis import gerar_cpf
 DateSystem = datetime.today().strftime('%d/%m/%Y')
-
-# # python -m pytest tests/SIGAGPE/test_GPEA010.py -v -s --html=reports/report_GPEA010.html --self-contained-html
-# # .\venv\Scripts\python.exe 
 #------------------------------------------
 #-- Teste GPEA010 - Cadastro de Funcionários
 #------------------------------------------
@@ -29,8 +26,8 @@ class GPEA010(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Nome = 'MARIA PEREIRA CAMARGO'
-        cls.Mãe = 'LENA FERNANDES DA SILVA'
+        cls.Nome = 'MARIA PAULA DE SOUZA'
+        cls.Mãe = 'JOSELHA FERNADES OLIVEIRA'
         cls.Pai = 'JORGE OLIVEIRA DA SILVA'
         cls.Sexo = 'M - Masculino'# M - Masculino, F - Feminino
         cls.Nacimento = '01/01/1996'
@@ -43,7 +40,7 @@ class GPEA010(unittest.TestCase):
 
         #documentos
         cls.CPF = gerar_cpf()
-        cls.Pis = '06953700070'#86292005064,21036015841,39350366875
+        cls.Pis = '06953700070'
         cls.RG = '5428982'
         cls.DataEmisao = '01/06/2001'
         cls.UFEmisao = 'DF'
