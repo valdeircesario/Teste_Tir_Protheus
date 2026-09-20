@@ -130,7 +130,7 @@ class TirReportAgent:
     # ---------- Renderização ----------
 
     def _render_bloco(self, nome_teste, info):
-        emoji = "🟩" if info["status"] == "PASSOU" else "🟥"
+        emoji = "✅" if info["status"] == "PASSOU" else "🔴"
         arquivo_teste = nome_teste if nome_teste.endswith(".py") else f"{nome_teste}.py"
 
         # O ">" usado como separador no caminho da rotina (ex: "Atualizações > Cadastros")
@@ -187,7 +187,7 @@ class TirReportAgent:
             "# 📑 Relatório de Execução de Testes",
             f"### Módulo {self.modulo} - {self.nome_modulo}",
             "",
-            f"**Resumo:** {len(dados)} teste(s) · 🟩 {passou} passou(aram) · 🟥 {falhou} falhou(aram)",
+            f"**Resumo:** {len(dados)} teste(s) · ✅ {passou} passou(aram) · 🔴 {falhou} falhou(aram)",
             "",
             "---",
             "",
@@ -213,7 +213,7 @@ def atualizar_indice_geral():
         "",
         f"_Atualizado em {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}_",
         "",
-        "| Módulo | Testes | 🟩 Passou | 🟥 Falhou | Última Execução | Relatório |",
+        "| Módulo | Testes | ✅ Passou | 🔴 Falhou | Última Execução | Relatório |",
         "| --- | --- | --- | --- | --- | --- |",
     ]
 

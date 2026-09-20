@@ -1,6 +1,5 @@
 from os import getcwd, path
 import sys
-
 from tir import Webapp
 from pytest import mark
 import unittest
@@ -15,10 +14,8 @@ if PROJECT_ROOT not in sys.path:
 from tir import Webapp
 from utilis.md_reporter import TirReportAgent
 
-
 DateSystem = datetime.today().strftime('%d/%m/%Y')
 
-# python -m pytest tests/SIGAATF/test_MATA020.py -v -s --html=reports/report_MATA020.html --self-contained-html
 
 # TESTE DE CADASTRO DE FORNECEDORES
 

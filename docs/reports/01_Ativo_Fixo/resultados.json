@@ -13,5 +13,50 @@
       "screenshots": 15
     },
     "erro": null
+  },
+  "test_ATFA012": {
+    "status": "PASSOU",
+    "data_hora": "19/09/2026 16:29:08",
+    "duracao": 865.0492582321167,
+    "descricao": "Inclusão, Visualização, Alteração  e exclusão de Ativos",
+    "caminho_rotina": "Atualizações > Cadastros > Ativos",
+    "contadores": {
+      "cliques": 14,
+      "validacoes": 14,
+      "insercoes": 14,
+      "leituras": 0,
+      "screenshots": 14
+    },
+    "erro": null
+  },
+  "test_ATFA011": {
+    "status": "PASSOU",
+    "data_hora": "19/09/2026 18:32:18",
+    "duracao": 355.66663932800293,
+    "descricao": "Inclusão e Visualização Rateio",
+    "caminho_rotina": "Atualizações > Cadastros > Rateio",
+    "contadores": {
+      "cliques": 6,
+      "validacoes": 6,
+      "insercoes": 5,
+      "leituras": 1,
+      "screenshots": 4
+    },
+    "erro": null
+  },
+  "test_ATFA025": {
+    "status": "PASSOU",
+    "data_hora": "19/09/2026 20:24:24",
+    "duracao": 498.36267042160034,
+    "descricao": "Inclusão e Visualização, Alteração e Exclusão de Locais",
+    "caminho_rotina": "Atualizações > Cadastros > Locais",
+    "contadores": {
+      "cliques": 19,
+      "validacoes": 16,
+      "insercoes": 8,
+      "leituras": 0,
+      "screenshots": 16
+    },
+    "erro": null
   }
 }
