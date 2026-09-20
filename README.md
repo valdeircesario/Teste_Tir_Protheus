@@ -95,24 +95,52 @@ O repositorio possui atualmente **75 arquivos Python de teste**, **14 casos func
 
 ```text
 Teste_Tir_Protheus/
-├── tests/                 testes executaveis por modulo
-│   ├── SIGAGPE/
-│   ├── SIGACOM/
-│   ├── SIGAATF/
-│   ├── SIGACSA/
-│   ├── SIGACTB/
-│   └── Outros/
-├── casos_de_testes/       especificacoes funcionais em Markdown
-├── utilis/                helpers reutilizaveis e agente de relatorios
-├── tools/                 extensoes Selenium e gerador HTML
-├── screenshot/            evidencias visuais por rotina
-├── Log/                   logs e artefatos nativos do TIR
-├── docs/Project/          documentacao tecnica do projeto
-├── docs/reports/          resultados consolidados por modulo
-├── reports/               relatorios HTML do pytest
-├── config.template.json   modelo de configuracao
-├── setup.ps1              criacao do ambiente virtual
-└── run_test.py            atalho legado de execucao
+│
+├── 🧪 tests/                         Suíte de testes automatizados
+│   ├── SIGAGPE/                      Gestão de Pessoal
+│   ├── SIGACOM/                      Compras e Materiais
+│   ├── SIGAATF/                      Ativo Fixo
+│   ├── SIGACSA/                      Saúde e Segurança
+│   ├── SIGACTB/                      Contabilidade
+│   └── Outros/                       Cenários auxiliares e legados
+│
+├── 📋 casos_de_testes/               Casos funcionais em Markdown
+│   ├── SIGAGPE/                      Especificações de Gestão de Pessoal
+│   ├── SIGACOM/                      Especificações de Compras
+│   ├── SIGAATF/                      Especificações de Ativo Fixo
+│   └── SIGACSA/                      Especificações de CSA
+│
+├── 🧩 utilis/                        Helpers reutilizáveis do projeto
+│   ├── md_reporter.py                Agente de relatórios Markdown
+│   ├── poui_utilis.py                Apoio à automação PO-UI
+│   ├── grid_combobox.py              Interação com grids e combos
+│   ├── selenium_utilis.py            Ações Selenium complementares
+│   ├── click_pageview.py             Interação com relatórios PageView
+│   └── cpf_utilis.py                 Geração de massa de CPF
+│
+├── 🛠️ tools/                        Extensões e ferramentas de automação
+│   ├── Selenium_commands.py          Comandos Selenium customizados
+│   ├── click_css.py                  Cliques em elementos e Shadow DOM
+│   ├── click_helper.py               Cliques com espera explícita
+│   └── gerador_relatorio.py          Gerador de guia HTML de homologação
+│
+├── 📸 screenshot/                    Evidências visuais por rotina
+│   ├── Produto/
+│   ├── Funcao/
+│   ├── Fornecedor/
+│   ├── CentroCusto/
+│   ├── Sindicato/
+│   └── VIDEOS/
+│
+├── 📝 Log/                           Logs e artefatos nativos do TIR
+├── 📚 docs/
+│   ├── Project/                      Documentação técnica do projeto
+│   └── reports/                      Relatórios consolidados por módulo
+│
+├── 📊 reports/                       Relatórios HTML gerados pelo Pytest
+├── ⚙️ config.template.json           Modelo de configuração do ambiente
+├── 🚀 setup.ps1                      Preparação do ambiente virtual
+└── ▶️ run_test.py                    Atalho legado para execução de testes
 ```
 
 ### Fluxo em uma imagem
