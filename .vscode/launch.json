@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Arquivo Atual",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "PYDEVD_WARN_EVALUATION_TIMEOUT": "30.0",
+                "PYDEVD_UNBLOCK_THREADS_TIMEOUT": "30.0"
+            }
+        }
+    ]
+}

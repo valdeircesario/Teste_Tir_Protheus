@@ -27,7 +27,7 @@ class GPEA340(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
        
-        cls.Codigo = '09'
+        cls.Codigo = '010'
         cls.Descrição = 'TESTE 02 SINDICATO DOS TRABALHADORES'
         cls.DescriçãoEdit = 'SINDICATO DOS TRABALHADORES SDT'
         cls.Cnpj = '01450256000163'

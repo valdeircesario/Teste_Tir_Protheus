@@ -156,10 +156,18 @@ class TirReportAgent:
             f"  * **Tempo de Execução:** `{info['duracao']:.2f} segundos`",
         ]
         if info.get("erro"):
+            erro_escapado = (
+                info["erro"].rstrip()
+                .replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+            )
             linhas.append("  * **❌ Detalhes da Falha:**")
-            linhas.append("  ```text")
-            linhas.append(info["erro"].rstrip())
-            linhas.append("  ```")
+            linhas.append("")
+            linhas.append("<pre><code>")
+            linhas.append(erro_escapado)
+            linhas.append("</code></pre>")
+            linhas.append("")
         linhas += ["", "</details>", "", "---", ""]
         return "\n".join(linhas)
 

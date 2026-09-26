@@ -133,5 +133,65 @@
       "screenshots": 12
     },
     "erro": null
+  },
+  "test_GPEA240_01": {
+    "status": "PASSOU",
+    "data_hora": "26/09/2026 17:24:01",
+    "duracao": 308.04209876060486,
+    "descricao": "Inclusão , Visualização e Exclusão de uma Ausencia",
+    "caminho_rotina": "Atualizações > Lançamentos > Ausências",
+    "contadores": {
+      "cliques": 10,
+      "validacoes": 7,
+      "insercoes": 4,
+      "leituras": 1,
+      "screenshots": 11
+    },
+    "erro": null
+  },
+  "test_GPEA580_01": {
+    "status": "FALHOU",
+    "data_hora": "26/09/2026 17:26:21",
+    "duracao": 113.73462772369385,
+    "descricao": "calcular folha do funcionario",
+    "caminho_rotina": "Atualizações > Lançamentos > Por Funcionário ",
+    "contadores": {
+      "cliques": 1,
+      "validacoes": 1,
+      "insercoes": 0,
+      "leituras": 0,
+      "screenshots": 2
+    },
+    "erro": "Traceback (most recent call last):\n  File \"C:\\GitHub\\Teste_Tir_Protheus\\tests\\SIGAGPE\\test_GPEA580_01.py\", line 82, in test__Calcular_Folha\n    sc = SeleniumCommands(self.oHelper._Webapp__webapp.driver)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'function' object has no attribute 'driver'\n"
+  },
+  "test_GPEA645": {
+    "status": "PASSOU",
+    "data_hora": "26/09/2026 16:25:16",
+    "duracao": 360.1820981502533,
+    "descricao": "Inclusão, Visualizar, Alterar e Excluir uma Disciplina",
+    "caminho_rotina": "Atualizações > Controle Disciplinar > Disciplina",
+    "contadores": {
+      "cliques": 12,
+      "validacoes": 13,
+      "insercoes": 3,
+      "leituras": 1,
+      "screenshots": 12
+    },
+    "erro": null
+  },
+  "test_GPEA020_FOL": {
+    "status": "PASSOU",
+    "data_hora": "26/09/2026 17:18:23",
+    "duracao": 216.43373155593872,
+    "descricao": "calcular Roteiro FOL",
+    "caminho_rotina": "Miscelanea > Cálculos (13)> Por Roteiros",
+    "contadores": {
+      "cliques": 10,
+      "validacoes": 3,
+      "insercoes": 4,
+      "leituras": 0,
+      "screenshots": 9
+    },
+    "erro": null
   }
 }
