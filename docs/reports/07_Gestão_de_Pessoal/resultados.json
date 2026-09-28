@@ -193,5 +193,65 @@
       "screenshots": 9
     },
     "erro": null
+  },
+  "test_GPEA020_VTR": {
+    "status": "PASSOU",
+    "data_hora": "28/09/2026 16:41:15",
+    "duracao": 243.9884443283081,
+    "descricao": "calcular Roteiro VTR",
+    "caminho_rotina": "Miscelanea > Cálculos > Por Roteiros",
+    "contadores": {
+      "cliques": 8,
+      "validacoes": 5,
+      "insercoes": 2,
+      "leituras": 0,
+      "screenshots": 7
+    },
+    "erro": null
+  },
+  "test_PONA160": {
+    "status": "PASSOU",
+    "data_hora": "28/09/2026 17:07:52",
+    "duracao": 300.5086052417755,
+    "descricao": "Incluir, Visualizar,Alterar e Excluir um Turno de Trabalho",
+    "caminho_rotina": "Atualizações > Ponto Eletrônico > Turnos de Trabalho",
+    "contadores": {
+      "cliques": 12,
+      "validacoes": 10,
+      "insercoes": 5,
+      "leituras": 0,
+      "screenshots": 10
+    },
+    "erro": null
+  },
+  "test_CTBA211_02": {
+    "status": "PASSOU",
+    "data_hora": "28/09/2026 18:45:16",
+    "duracao": 335.82062458992004,
+    "descricao": "Integração de todos os roteiros da folha",
+    "caminho_rotina": "Miscelanea > Cálculos > Integrações",
+    "contadores": {
+      "cliques": 11,
+      "validacoes": 1,
+      "insercoes": 1,
+      "leituras": 0,
+      "screenshots": 7
+    },
+    "erro": null
+  },
+  "test_GPEA020": {
+    "status": "PASSOU",
+    "data_hora": "28/09/2026 19:36:46",
+    "duracao": 492.3824260234833,
+    "descricao": "Inclusão e Visualização  de dependente",
+    "caminho_rotina": "Atualizações > Funcionários > Dependentes",
+    "contadores": {
+      "cliques": 6,
+      "validacoes": 6,
+      "insercoes": 15,
+      "leituras": 0,
+      "screenshots": 6
+    },
+    "erro": null
   }
 }

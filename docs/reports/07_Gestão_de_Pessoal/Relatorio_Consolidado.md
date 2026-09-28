@@ -1,7 +1,7 @@
 # 📑 Relatório de Execução de Testes
 ### Módulo 07 - Gestão de Pessoal
 
-**Resumo:** 13 teste(s) · ✅ 11 passou(aram) · 🔴 2 falhou(aram)
+**Resumo:** 17 teste(s) · ✅ 15 passou(aram) · 🔴 2 falhou(aram)
 
 ---
 
@@ -267,6 +267,82 @@ AttributeError: 'function' object has no attribute 'driver'
   * **Leitura de Campos:** `0`
   * **Screenshots/Prints:** `9`
   * **Tempo de Execução:** `216.43 segundos`
+
+</details>
+
+---
+
+<details>
+<summary><b>✅ PASSOU | <code>test_GPEA020_VTR.py</code> — calcular Roteiro VTR</b> (⏱️ 243.99s)</summary>
+<br>
+
+> **Rotina:** Miscelanea › Cálculos › Por Roteiros
+> **Última Execução:** 28/09/2026 16:41:15 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `8`
+  * **Validações:** `5`
+  * **Inserções/Alterações:** `2`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `7`
+  * **Tempo de Execução:** `243.99 segundos`
+
+</details>
+
+---
+
+<details>
+<summary><b>✅ PASSOU | <code>test_PONA160.py</code> — Incluir, Visualizar,Alterar e Excluir um Turno de Trabalho</b> (⏱️ 300.51s)</summary>
+<br>
+
+> **Rotina:** Atualizações › Ponto Eletrônico › Turnos de Trabalho
+> **Última Execução:** 28/09/2026 17:07:52 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `12`
+  * **Validações:** `10`
+  * **Inserções/Alterações:** `5`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `10`
+  * **Tempo de Execução:** `300.51 segundos`
+
+</details>
+
+---
+
+<details>
+<summary><b>✅ PASSOU | <code>test_CTBA211_02.py</code> — Integração de todos os roteiros da folha</b> (⏱️ 335.82s)</summary>
+<br>
+
+> **Rotina:** Miscelanea › Cálculos › Integrações
+> **Última Execução:** 28/09/2026 18:45:16 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `11`
+  * **Validações:** `1`
+  * **Inserções/Alterações:** `1`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `7`
+  * **Tempo de Execução:** `335.82 segundos`
+
+</details>
+
+---
+
+<details>
+<summary><b>✅ PASSOU | <code>test_GPEA020.py</code> — Inclusão e Visualização  de dependente</b> (⏱️ 492.38s)</summary>
+<br>
+
+> **Rotina:** Atualizações › Funcionários › Dependentes
+> **Última Execução:** 28/09/2026 19:36:46 | **Resultado:** `PASSOU`
+
+* **📊 Métricas do Teste:**
+  * **Cliques/Confirmações:** `6`
+  * **Validações:** `6`
+  * **Inserções/Alterações:** `15`
+  * **Leitura de Campos:** `0`
+  * **Screenshots/Prints:** `6`
+  * **Tempo de Execução:** `492.38 segundos`
 
 </details>
 
